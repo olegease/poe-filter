@@ -1,0 +1,87 @@
+# Global styles
+## Disable Drop Sound for everything
+Show
+    DisableDropSound
+    Continue
+## Normal Rariry Items
+Show
+Rarity Normal
+    SetTextColor 200 200 200
+    Continue
+## Magic Rarity items
+Show
+Rarity Magic
+    SetTextColor 136 136 255
+    Continue
+## Rare Rarity items
+Show
+Rarity Rare
+    SetTextColor 255 255 119
+    Continue
+## Unique Rariry Items
+Show
+Rarity Unique
+    SetTextColor 175 96 37
+    Continue
+## Str bases
+Show
+BaseType "Plate Vest" "Iron Hat"
+    SetBorderColor 255 0 0
+    Continue
+## Dex bases
+Show
+BaseType "Shabby Jerkin"
+    SetBorderColor 0 255 0
+    Continue
+## Int bases
+Show
+BaseType "Simple Robe"
+    SetBorderColor 0 0 255
+    Continue
+## Str/Dex bases
+Show
+BaseType "Scale Vest"
+    SetBorderColor 255 255 0
+    Continue
+## Str/Int bases
+Show
+BaseType "Chainmail Vest"
+    SetBorderColor 255 0 255
+    Continue
+## Dex/Int bases
+Show
+BaseType "Padded Vest"
+    SetBorderColor 0 255 255
+    Continue
+##
+
+
+# Test
+Show
+Class "Body Armours" "Gloves" "Boots" "Helmets"
+    SetBackgroundColor 0 77 0
+    SetFontSize 45
+    SetTextColor 255 255 255
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Error (Should be last)
+Show
+    SetBorderColor 255 0 0
+    SetBackgroundColor 255 255 255
+    SetTextColor 255 0 0
+    SetFontSize 45
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+    CustomAlertSound "homm3snd/DANGER.wav"

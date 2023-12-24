@@ -1,5 +1,5 @@
 root = true
-[*.{asm,h,c,hxx,cxx,cs,php,js,sql,py}]
+[*.{asm,h,c,hxx,cxx,cs,php,js,sql,py,filter}]
 charset = utf-8
 end_of_line = lf
 indent_size = 4
