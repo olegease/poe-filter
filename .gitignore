@@ -1,0 +1,4 @@
+# ignore all files AND folders starting with period (except those with !)
+.*
+!.gitignore
+!.editorconfig
