@@ -3,7 +3,7 @@
 ##   0.1 --- Disable drop sounds for all items
 ###  0.1.1 ----- All items
 ##   0.2 --- Text
-###  0.2.1 ----- Normal Rarirty
+###  0.2.1 ----- Normal Rarity
 ###  0.2.2 ----- Magic Rarity
 ###  0.2.3 ----- Rare Rarity
 ###  0.2.4 ----- Unique Rarity
@@ -61,12 +61,27 @@
 ###  3.2.1 ----- Progression
 ###  3.2.2 ----- Best
 ##   3.3 --- Utility
-#    4   - Recipes
-##   4.1 --- Currency
-###  4.1.1 ----- Chisel
-###  4.1.2 ----- Chromatic
-###  4.1.3 ----- Prism
-###  4.1.4 ----- Bubble
+#    4   - Special
+##   4.1 --- Fractured
+##   4.2 --- Influenced
+#    5   - League specific
+##   5.1 - Legion
+##   5.2 - Breach
+##   5.3 - Expedition
+##   5.4 - Delirium
+##   5.5 - Heist
+##   5.6 - Harvest
+#    6   - Recipes
+##   6.1 --- Currency
+###  6.1.1 ----- Chromatic
+###  6.1.2 ----- Bubble
+###  6.1.3 ----- Prism
+###  6.1.4 ----- Chisel
+#    8   - Hiding
+##   8.1 --- Rarity based
+###  8.1.1 ----- Normal Items
+###  8.1.2 ----- Magic Items
+###  8.1.3 ----- Rare Items
 
 
 #    0   - Global styles (always Continue)
@@ -76,7 +91,7 @@ Show
     DisableDropSound
     Continue
 ##   0.2 --- Text
-###  0.2.1 ----- Normal Rarirty
+###  0.2.1 ----- Normal Rarity
 Show
 Rarity Normal
     SetTextColor 200 200 200
@@ -207,7 +222,7 @@ BaseType "Grasping Mail" "Sacrificial Garb" "Runic"
 ##   0.5 --- Font
 ###  0.5.1 ----- All items
 Show
-    SetFontSize 45
+    SetFontSize 33
     Continue
 #    1   - Currency
 ##   1.1 --- Basic Vendor
@@ -458,6 +473,77 @@ AreaLevel >= 60
 Show
 Class "Life Flasks"
 BaseType "Divine" "Eternal"
+##   3.3 --- Utility
+#    4   - Recipes
+##   4.1 --- Currency
+###  4.1.1 ----- Chromatic
+###  4.1.2 ----- Bubble
+###  4.1.3 ----- Prism
+###  4.1.4 ----- Chisel
+#    5   - Hiding
+##   5.1 --- Rarity based
+###  5.1.1 ----- Normal Items
+Show
+Class "Amulets" "Belts" "Rings"
+Rarity Normal
+AreaLevel < 24
+    SetFontSize 45
+Show
+Rarity Normal
+AreaLevel < 2
+    SetFontSize 45
+Hide
+Rarity Normal
+AreaLevel < 4
+Sockets < 3
+    SetFontSize 18
+Hide
+Rarity Normal
+AreaLevel < 8
+LinkedSockets < 2
+    SetFontSize 21
+Hide
+Rarity Normal
+AreaLevel < 24
+LinkedSockets < 3
+    SetFontSize 24
+Hide
+Rarity Normal
+AreaLevel < 68
+LinkedSockets < 4
+    SetFontSize 27
+Hide
+Rarity Normal
+LinkedSockets < 5
+    SetFontSize 30
+###  5.1.2 ----- Magic Items
+Show
+Rarity Magic
+AreaLevel < 4
+    SetFontSize 45
+Show
+Rarity Magic
+AreaLevel < 8
+    SetFontSize 39
+Show
+Rarity Magic
+AreaLevel < 24
+    SetFontSize 33
+Hide
+Rarity Magic
+AreaLevel < 68
+LinkedSockets < 4
+    SetFontSize 27
+Hide
+Rarity Magic
+LinkedSockets < 5
+    SetFontSize 30
+###  5.1.3 ----- Rare Items
+Show
+Rarity Rare
+    SetFontSize 45
+
+
 # Error
 ## if rules not match show red error item to fix it
 Show
