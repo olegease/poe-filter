@@ -83,7 +83,10 @@
 ###  8.1.2 ----- Magic Items
 ###  8.1.3 ----- Rare Items
 
-
+Show
+Class "Quest Items"
+    CustomAlertSound "homm3snd/DEFAULT.wav"
+    SetFontSize 45
 #    0   - Global styles (always Continue)
 ##   0.1 --- Disable drop sounds for all items
 ###  0.1.1 ----- All items
@@ -120,22 +123,22 @@ Class "Stackable Currency"
 ###  0.3.2 ----- Weapons
 Show
 Class "Bows" "Swords" "Axes" "Daggers" "Claws" "Maces" "Sceptre"
-    SetBackgroundColor 255 100 100
+    SetBackgroundColor 64 0 0
     Continue
 ###  0.3.3 ----- Armours
 Show
 Class "Body Armours" "Boots" "Gloves" "Helmets"
-    SetBackgroundColor 100 255 100
+    SetBackgroundColor 0 64 0
     Continue
 ###  0.3.4 ----- Off-hands
 Show
 Class "Shields" "Quivers"
-    SetBackgroundColor 100 100 255
+    SetBackgroundColor 64 0 64
     Continue
 ###  0.3.5 ----- Jewelery
 Show
 Class "Rings" "Amulets" "Belts"
-    SetBackgroundColor 100 0 255
+    SetBackgroundColor 0 0 64
     Continue
 ###  0.3.6 ----- Mana Flasks
 Show
@@ -244,36 +247,43 @@ BaseType "Portal Scroll"
 Show
 Class "Stackable Currency"
 BaseType "Orb of Transmutation"
+    SetFontSize 36
     SetTextColor 0 0 255
 ###  1.1.4 ----- Augmentation
 Show
 Class "Stackable Currency"
 BaseType "Orb of Augmentation"
+    SetFontSize 36
     SetTextColor 0 0 255
 ###  1.1.5 ----- Alteration
 Show
 Class "Stackable Currency"
 BaseType "Orb of Alteration"
+    SetFontSize 39
     SetTextColor 0 0 255
 ###  1.1.6 ----- Jewelers
 Show
 Class "Stackable Currency"
 BaseType "Jeweller's Orb"
+    SetFontSize 39
     SetTextColor 80 80 80
 ###  1.1.7 ----- Chromatic
 Show
 Class "Stackable Currency"
 BaseType "Chromatic Orb"
+    SetFontSize 39
     SetTextColor 255 255 255
 ###  1.1.8 ----- Fusing
 Show
 Class "Stackable Currency"
 BaseType "Orb of Fusing"
+    SetFontSize 39
     SetTextColor 80 80 80
 ###  1.1.9 ----- Chance
 Show
 Class "Stackable Currency"
 BaseType "Orb of Chance"
+    SetFontSize 39
     SetTextColor 80 80 80
 ###  1.1.10----- Scouring
 Show
@@ -281,6 +291,7 @@ Class "Stackable Currency"
 BaseType "Orb of Scouring"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
+    SetFontSize 42
     SetTextColor 200 200 200
 ###  1.1.11----- Regret
 Show
@@ -288,6 +299,7 @@ Class "Stackable Currency"
 BaseType "Orb of Regret"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
+    SetFontSize 42
     SetTextColor 200 200 200
 ###  1.1.12----- Alchemy
 Show
@@ -295,6 +307,7 @@ Class "Stackable Currency"
 BaseType "Orb of Alchemy"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
+    SetFontSize 42
     SetTextColor 200 200 80
 ##   1.2 --- Basic Quality Vendor
 ###  1.2.1 ----- Scrap
@@ -308,7 +321,6 @@ Show
 Class "Stackable Currency"
 BaseType "Armourer's Scrap"
 AreaLevel < 68
-    SetFontSize 33
     SetTextColor 0 0 0
 Hide
 Class "Stackable Currency"
