@@ -77,7 +77,7 @@
 ##   5.2   --- Influenced
 #    6     - Other
 ##   6.1   --- Divination Cards
-###  6.1.1 ----- Decks
+###  6.1.1 ----- Fragments
 ###  6.1.2 ----- Normal Items
 ###  6.1.2 ----- Magic Items
 ###  6.1.3 ----- Rare Items
@@ -570,39 +570,56 @@ Rarity < Unique
 ##   5.2   --- Influenced
 #    6     - Other
 ##   6.1   --- Divination Cards
-###  6.1.1 ----- Decks
+###  6.1.1 ----- Fragments
+Show
+Class "Divination Cards"
+BaseType "Last Hope"
+    SetFontSize 45
+    SetTextColor 255 255 255 255
 ###  6.1.2 ----- Normal Items
 Show
 Class "Divination Cards"
-BaseType "The Celestial Justicar"
+BaseType "The Celestial Justicar" "Bowyer's Dream"
     SetFontSize 45
     SetTextColor 200 200 200 255
 Show
 Class "Divination Cards"
-BaseType "The Chains that Bind" "The Dark Mage"
+BaseType "The Chains that Bind" "The Dark Mage" "The Surveyor"
     SetFontSize 42
+    SetTextColor 200 200 200 255
+Show
+Class "Divination Cards"
+BaseType "The Flora's Gift"
+    SetFontSize 39
     SetTextColor 200 200 200 255
 Show
 Class "Divination Cards"
 BaseType "The Metalsmith's Gift"
     SetTextColor 200 200 200 255
-
 ###  6.1.2 ----- Magic Items
 Show
 Class "Divination Cards"
-BaseType "The Road to Power"
-    SetFontSize 45
+BaseType "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon"
+    SetFontSize 42
     SetTextColor 136 136 255 255
 Show
 Class "Divination Cards"
-BaseType "The Carrion Crow"
-    SetFontSize 39
+BaseType "The Twins"
+    SetFontSize 36
+    SetTextColor 136 136 255 255
+Show
+Class "Divination Cards"
+BaseType "The Carrion Crow" "The King's Blade" "The Inoculated"
     SetTextColor 136 136 255 255
 ###  6.1.3 ----- Rare Items
 Show
 Class "Divination Cards"
 BaseType "The Lover"
     SetFontSize 36
+    SetTextColor 255 255 119 255
+Show
+Class "Divination Cards"
+BaseType "Lantador's Lost Love"
     SetTextColor 255 255 119 255
 ###  6.1.4 ----- Unique Items
 Show
@@ -614,7 +631,7 @@ BaseType "The Doctor"
     SetTextColor 175 96 37 255
 Show
 Class "Divination Cards"
-BaseType "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic"
+BaseType "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic" "Doedre's Madness" "The Betrayal" "The Last One Standing" "The Pack Leader" "Death" "The Conduit" "Assassin's Favour" "Hunter's Resolve" "Scholar of the Seas" "The Tower" "The Vast" "Hubris" "Hunter's Reward" "The Aesthete"
     SetFontSize 45
     SetTextColor 175 96 37 255
 ###  6.1.5 ----- Corrupted
@@ -627,23 +644,30 @@ BaseType "The Fiend"
     SetTextColor 210 0 0 255
 Show
 Class "Divination Cards"
-BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden"
+BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden" "The Artist" "The Encroaching Darkness" "The One With All" "The Siren" "The Dragon's Heart" "The Gentleman" "The Mercenary" "The Trial" "Wealth and Power" "Audacity" "Pride Before the Fall" "The Lich" "Anarchy's Price" "Blind Venture" "The Fletcher" "The Thaumaturgist" "Volatile Power"
     SetFontSize 45
     SetTextColor 210 0 0 255
 ###  6.1.6 ----- Currency
-Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret
+Show # 1xKalandra
 Class "Divination Cards"
-BaseType "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token"
+BaseType "House of Mirrors"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
     SetFontSize 45
     SetTextColor 255 215 0 255
-Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos
+Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret 10xChaos 10xChisel
 Class "Divination Cards"
-BaseType "Chaotic Disposition" "Coveted Possession" "Lucky Connections" "The Gemcutter" "Three Faces in the Dark"
+BaseType "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token" "The Wrath" "The Cartographer"
+    SetFontSize 45
+    SetTextColor 255 215 0 255
+Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos 7xAlchemy
+Class "Divination Cards"
+BaseType "Chaotic Disposition" "Coveted Possession" "Lucky Connections" "The Gemcutter" "Three Faces in the Dark" "The Survivalist"
     SetFontSize 42
     SetTextColor 255 215 0 255
-Show # 5xRandom 1xChaos
+Show # 5xRandom 1xChaos 3xFusing 1xVaal
 Class "Divination Cards"
-BaseType "Emperor's Luck" "Rain of Chaos"
+BaseType "Emperor's Luck" "Rain of Chaos" "Loyalty" "The Catalyst"
     SetFontSize 39
     SetTextColor 255 215 0 255
 Show # 40xWisdom
@@ -651,11 +675,22 @@ Class "Divination Cards"
 BaseType "The Scholar"
     SetTextColor 255 215 0 255
 ###  6.1.7 ----- Gems
-Show # RandomQ20 MinionQ20
+Show # Enlighten3L
 Class "Divination Cards"
-BaseType "Gemcutter's Promise" "The Summoner"
+BaseType "The Enlightened"
+    SetFontSize 45
+    SetTextColor 27 162 155 255
+Show # Random20Q Minion20Q SRS20Q ArrowQ20
+Class "Divination Cards"
+BaseType "Gemcutter's Promise" "The Summoner" "Grave Knowledge" "The Doppelganger"
     SetFontSize 42
     SetTextColor 27 162 155 255
+Show # Support20L Random20L
+Class "Divination Cards"
+BaseType "Gift of the Gemling Queen" "The Fox"
+    SetFontSize 36
+    SetTextColor 27 162 155 255
+
 ###  6.1.8 ----- Other Divinations
 Show
 Class "Divination Cards"
