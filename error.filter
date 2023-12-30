@@ -49,11 +49,13 @@
 ###  1.2.4 ----- Prism
 ###  1.2.5 ----- Chisel
 ##   1.3   --- Basic "Droponly"
-###  1.3.1 ----- Regal
-###  1.3.2 ----- Chaos
-###  1.3.3 ----- Exalted
-###  1.3.4 ----- Annulment
-###  1.3.5 ----- Divine
+###  1.3.1 ----- Binding
+###  1.3.2 ----- Regal
+###  1.3.3 ----- Chaos
+###  1.3.4 ----- Vaal
+###  1.3.5 ----- Exalted
+###  1.3.6 ----- Annulment
+###  1.3.7 ----- Divine
 #    2     - Gems
 #    3     - Flasks
 ##   3.1   --- Mana
@@ -97,6 +99,7 @@
 ###  8.1.1 ----- Normal Items
 ###  8.1.2 ----- Magic Items
 ###  8.1.3 ----- Rare Items
+###  8.1.4 ----- Unique Items
 #    9     - Error
 ##   9.1   --- Global
 ###  9.1.1 ----- Everything
@@ -287,30 +290,35 @@ BaseType "Orb of Augmentation"
 Show
 Class "Stackable Currency"
 BaseType "Orb of Alteration"
+    MinimapIcon 2 Orange Circle
     SetFontSize 39
     SetTextColor 0 0 255 255
 ###  1.1.6 ----- Jewelers
 Show
 Class "Stackable Currency"
 BaseType "Jeweller's Orb"
+    MinimapIcon 2 Orange Circle
     SetFontSize 39
     SetTextColor 80 80 80 255
 ###  1.1.7 ----- Chromatic
 Show
 Class "Stackable Currency"
 BaseType "Chromatic Orb"
+    MinimapIcon 2 Orange Circle
     SetFontSize 39
     SetTextColor 255 255 255 255
 ###  1.1.8 ----- Fusing
 Show
 Class "Stackable Currency"
 BaseType "Orb of Fusing"
+    MinimapIcon 2 Orange Circle
     SetFontSize 39
     SetTextColor 80 80 80 255
 ###  1.1.9 ----- Chance
 Show
 Class "Stackable Currency"
 BaseType "Orb of Chance"
+    MinimapIcon 2 Orange Circle
     SetFontSize 39
     SetTextColor 80 80 80 255
 ###  1.1.10----- Scouring
@@ -318,7 +326,7 @@ Show
 Class "Stackable Currency"
 BaseType "Orb of Scouring"
     CustomAlertSound "homm3snd/LUCK.wav"
-    MinimapIcon 2 Orange Circle
+    MinimapIcon 1 Orange Circle
     SetFontSize 42
     SetTextColor 200 200 200 255
 ###  1.1.11----- Regret
@@ -326,7 +334,7 @@ Show
 Class "Stackable Currency"
 BaseType "Orb of Regret"
     CustomAlertSound "homm3snd/LUCK.wav"
-    MinimapIcon 2 Orange Circle
+    MinimapIcon 1 Orange Circle
     SetFontSize 42
     SetTextColor 200 200 200 255
 ###  1.1.12----- Alchemy
@@ -334,7 +342,7 @@ Show
 Class "Stackable Currency"
 BaseType "Orb of Alchemy"
     CustomAlertSound "homm3snd/LUCK.wav"
-    MinimapIcon 2 Orange Circle
+    MinimapIcon 1 Orange Circle
     SetFontSize 42
     SetTextColor 200 200 80 255
 ##   1.2 --- Basic Quality Vendor
@@ -365,7 +373,15 @@ BaseType "Glassblower's Bauble"
     SetFontSize 42
     SetTextColor 0 0 0 255
 ##   1.3 --- Basic "Droponly"
-###  1.3.1 ----- Regal
+###  1.3.1 ----- Binding
+Show
+Class "Stackable Currency"
+BaseType "Orb of Binding"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Circle
+    SetFontSize 42
+    SetTextColor 200 200 80 255
+###  1.3.2 ----- Regal
 Show
 Class "Stackable Currency"
 BaseType "Regal Orb"
@@ -373,7 +389,7 @@ BaseType "Regal Orb"
     MinimapIcon 1 Orange Circle
     SetFontSize 42
     SetTextColor 200 200 120 255
-###  1.3.2 ----- Chaos
+###  1.3.3 ----- Chaos
 Show
 Class "Stackable Currency"
 BaseType "Chaos Orb"
@@ -381,9 +397,17 @@ BaseType "Chaos Orb"
     MinimapIcon 1 Orange Circle
     SetFontSize 42
     SetTextColor 200 200 80 255
-###  1.3.3 ----- Exalted
-###  1.3.4 ----- Annulment
-###  1.3.5 ----- Divine
+###  1.3.4 ----- Vaal
+Show
+Class "Stackable Currency"
+BaseType "Vaal Orb"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Circle
+    SetFontSize 42
+    SetTextColor 210 0 0 255
+###  1.3.4 ----- Exalted
+###  1.3.5 ----- Annulment
+###  1.3.6 ----- Divine
 # Gems
 Show
 Class "Gems"
@@ -567,6 +591,12 @@ Rarity < Unique
 ##   4.6   --- Harvest
 #    5     - Special
 ##   5.1   --- Fractured
+Show
+FracturedItem True
+    MinimapIcon 0 Cyan Raindrop
+    PlayEffect Cyan
+    SetFontSize 45
+    SetTextColor 0 255 255 255
 ##   5.2   --- Influenced
 #    6     - Other
 ##   6.1   --- Divination Cards
@@ -860,6 +890,20 @@ Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
     SetFontSize 42
+###  8.1.4 ----- Unique Items
+Show
+Class "Belts"
+BaseType "Leather Belt" "Heavy Belt"
+Rarity Unique
+    CustomAlertSound "homm3snd/BADLUCK.wav"
+    MinimapIcon 0 Brown Pentagon
+    PlayEffect Brown
+Show
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Pentagon
+    SetFontSize 45
 #    9     - Error
 ##   9.1   --- Global
 ###  9.1.1 ----- Everything
