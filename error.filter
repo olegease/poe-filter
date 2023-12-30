@@ -1,13 +1,13 @@
 # Contents
-#    0   - Global styles (always Continue)
-##   0.1 --- Disable drop sounds for all items
+#    0     - Global styles (always Continue)
+##   0.1   --- Disable drop sounds for all items
 ###  0.1.1 ----- All items
-##   0.2 --- Text
+##   0.2   --- Text
 ###  0.2.1 ----- Normal Rarity
 ###  0.2.2 ----- Magic Rarity
 ###  0.2.3 ----- Rare Rarity
 ###  0.2.4 ----- Unique Rarity
-##   0.3 --- Background
+##   0.3   --- Background
 ###  0.3.1 ----- Currency
 ###  0.3.2 ----- Weapons
 ###  0.3.3 ----- Armours
@@ -16,7 +16,8 @@
 ###  0.3.6 ----- Mana Flasks
 ###  0.3.7 ----- Life Flasks
 ###  0.3.8 ----- Utility Flasks
-##   0.4 --- Border
+###  0.3.9 ----- Divination Cards
+##   0.4   --- Border
 ###  0.4.1 ----- Strength bases
 ###  0.4.2 ----- Str/Dex bases
 ###  0.4.3 ----- Str/Int bases
@@ -24,10 +25,11 @@
 ###  0.4.5 ----- Dex/Int bases
 ###  0.4.6 ----- Intelligence bases
 ###  0.4.7 ----- Str/Dex/Int bases
-##   0.5 --- Font
+###  0.4.8 ----- Divination Cards
+##   0.5   --- Font
 ###  0.5.1 ----- All items
-#    1   - Currency
-##   1.1 --- Basic Vendor
+#    1     - Currency
+##   1.1   --- Basic Vendor
 ###  1.1.1 ----- Wisdom
 ###  1.1.2 ----- Portal
 ###  1.1.3 ----- Transmutation
@@ -40,50 +42,64 @@
 ###  1.1.10----- Scouring
 ###  1.1.11----- Regret
 ###  1.1.12----- Alchemy
-##   1.2 --- Basic Quality Vendor
+##   1.2   --- Basic Quality Vendor
 ###  1.2.1 ----- Scrap
 ###  1.2.2 ----- Whetstone
 ###  1.2.3 ----- Bubble
 ###  1.2.4 ----- Prism
 ###  1.2.5 ----- Chisel
-##   1.3 --- Basic "Droponly"
+##   1.3   --- Basic "Droponly"
 ###  1.3.1 ----- Regal
 ###  1.3.2 ----- Chaos
 ###  1.3.3 ----- Exalted
 ###  1.3.4 ----- Annulment
 ###  1.3.5 ----- Divine
-#    2   - Gems
-#    3   - Flasks
-##   3.1 --- Mana
+#    2     - Gems
+#    3     - Flasks
+##   3.1   --- Mana
 ###  3.1.1 ----- Progression
 ###  3.1.2 ----- Best
-##   3.2 --- Life
+##   3.2   --- Life
 ###  3.2.1 ----- Progression
 ###  3.2.2 ----- Best
-##   3.3 --- Utility
-##   3.4 --- Hybrid
+##   3.3   --- Utility
+##   3.4   --- Hybrid
 ###  3.4.1 ----- Hide All
-#    4   - Special
-##   4.1 --- Fractured
-##   4.2 --- Influenced
-#    5   - League specific
-##   5.1 - Legion
-##   5.2 - Breach
-##   5.3 - Expedition
-##   5.4 - Delirium
-##   5.5 - Heist
-##   5.6 - Harvest
-#    6   - Recipes
-##   6.1 --- Currency
-###  6.1.1 ----- Chromatic
-###  6.1.2 ----- Bubble
-###  6.1.3 ----- Prism
-###  6.1.4 ----- Chisel
-#    8   - Hiding
-##   8.1 --- Rarity based
+#    4     - League specific
+##   4.1   --- Legion
+##   4.2   --- Breach
+##   4.3   --- Expedition
+##   4.4   --- Delirium
+##   4.5   --- Heist
+##   4.6   --- Harvest
+#    5     - Special
+##   5.1   --- Fractured
+##   5.2   --- Influenced
+#    6     - Other
+##   6.1   --- Divination Cards
+###  6.1.1 ----- Decks
+###  6.1.2 ----- Normal Items
+###  6.1.2 ----- Magic Items
+###  6.1.3 ----- Rare Items
+###  6.1.4 ----- Unique Items
+###  6.1.5 ----- Corrupted
+###  6.1.6 ----- Currency
+###  6.1.7 ----- Gems
+###  6.1.8 ----- Other Divinations
+#    7     - Recipes
+##   7.1   --- Currency
+###  7.1.1 ----- Chromatic
+###  7.1.2 ----- Bubble
+###  7.1.3 ----- Prism
+###  7.1.4 ----- Chisel
+#    8     - Hiding
+##   8.1   --- Rarity based
 ###  8.1.1 ----- Normal Items
 ###  8.1.2 ----- Magic Items
 ###  8.1.3 ----- Rare Items
+#    9     - Error
+##   9.1   --- Global
+###  9.1.1 ----- Everything
 
 Show
 Class "Quest Items"
@@ -157,6 +173,11 @@ Show
 Class "Utility Flasks"
     SetBackgroundColor 30 130 80 255
     Continue
+###  0.3.9 ----- Divination Cards
+Show
+Class "Divination Cards"
+    SetBackgroundColor 64 64 64 255
+    Continue
 ##   0.4 --- Border
 ###  0.4.1 ----- Strength bases
 Show
@@ -223,6 +244,11 @@ Show
 Class "Body Armours"
 BaseType "Grasping Mail" "Sacrificial Garb" "Runic"
     SetBorderColor 128 128 128 255
+    Continue
+###  0.4.8 ----- Divination Cards
+Show
+Class "Divination Cards"
+    SetBorderColor 8 8 8 255
     Continue
 ##   0.5 --- Font
 ###  0.5.1 ----- All items
@@ -530,16 +556,121 @@ BaseType "Divine" "Eternal"
 ###  3.4.1 ----- Hide All
 Hide
 Class "Hybrid Flasks"
+Rarity < Unique
     SetFontSize 18
-#    4   - Recipes
-##   4.1 --- Currency
-###  4.1.1 ----- Chromatic
-###  4.1.2 ----- Bubble
-###  4.1.3 ----- Prism
-###  4.1.4 ----- Chisel
-#    5   - Hiding
-##   5.1 --- Rarity based
-###  5.1.1 ----- Normal Items
+#    4     - League specific
+##   4.1   --- Legion
+##   4.2   --- Breach
+##   4.3   --- Expedition
+##   4.4   --- Delirium
+##   4.5   --- Heist
+##   4.6   --- Harvest
+#    5     - Special
+##   5.1   --- Fractured
+##   5.2   --- Influenced
+#    6     - Other
+##   6.1   --- Divination Cards
+###  6.1.1 ----- Decks
+###  6.1.2 ----- Normal Items
+Show
+Class "Divination Cards"
+BaseType "The Celestial Justicar"
+    SetFontSize 45
+    SetTextColor 200 200 200 255
+Show
+Class "Divination Cards"
+BaseType "The Chains that Bind" "The Dark Mage"
+    SetFontSize 42
+    SetTextColor 200 200 200 255
+Show
+Class "Divination Cards"
+BaseType "The Metalsmith's Gift"
+    SetTextColor 200 200 200 255
+
+###  6.1.2 ----- Magic Items
+Show
+Class "Divination Cards"
+BaseType "The Road to Power"
+    SetFontSize 45
+    SetTextColor 136 136 255 255
+Show
+Class "Divination Cards"
+BaseType "The Carrion Crow"
+    SetFontSize 39
+    SetTextColor 136 136 255 255
+###  6.1.3 ----- Rare Items
+Show
+Class "Divination Cards"
+BaseType "The Lover"
+    SetFontSize 36
+    SetTextColor 255 255 119 255
+###  6.1.4 ----- Unique Items
+Show
+Class "Divination Cards"
+BaseType "The Doctor"
+    MinimapIcon 0 Grey Star
+    PlayEffect Brown
+    SetFontSize 45
+    SetTextColor 175 96 37 255
+Show
+Class "Divination Cards"
+BaseType "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic"
+    SetFontSize 45
+    SetTextColor 175 96 37 255
+###  6.1.5 ----- Corrupted
+Show
+Class "Divination Cards"
+BaseType "The Fiend"
+    MinimapIcon 0 Grey Star
+    PlayEffect Red
+    SetFontSize 45
+    SetTextColor 210 0 0 255
+Show
+Class "Divination Cards"
+BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden"
+    SetFontSize 45
+    SetTextColor 210 0 0 255
+###  6.1.6 ----- Currency
+Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret
+Class "Divination Cards"
+BaseType "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token"
+    SetFontSize 45
+    SetTextColor 255 215 0 255
+Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos
+Class "Divination Cards"
+BaseType "Chaotic Disposition" "Coveted Possession" "Lucky Connections" "The Gemcutter" "Three Faces in the Dark"
+    SetFontSize 42
+    SetTextColor 255 215 0 255
+Show # 5xRandom 1xChaos
+Class "Divination Cards"
+BaseType "Emperor's Luck" "Rain of Chaos"
+    SetFontSize 39
+    SetTextColor 255 215 0 255
+Show # 40xWisdom
+Class "Divination Cards"
+BaseType "The Scholar"
+    SetTextColor 255 215 0 255
+###  6.1.7 ----- Gems
+Show # RandomQ20 MinionQ20
+Class "Divination Cards"
+BaseType "Gemcutter's Promise" "The Summoner"
+    SetFontSize 42
+    SetTextColor 27 162 155 255
+###  6.1.8 ----- Other Divinations
+Show
+Class "Divination Cards"
+BaseType "The Gambler"
+    SetFontSize 39
+    SetTextColor 14 186 255 255
+#    7   - Recipes
+##   7.1 --- Currency
+###  7.1.1 ----- Chromatic
+###  7.1.2 ----- Bubble
+###  7.1.3 ----- Prism
+###  7.1.4 ----- Chisel
+#    8     - Hiding
+##   8.1   --- Rarity based
+###  8.1.1 ----- Normal Items
 Show
 Class "Amulets" "Belts" "Rings"
 Rarity Normal
@@ -584,7 +715,7 @@ Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws"
 Rarity Normal
 LinkedSockets < 5
     SetFontSize 30
-###  5.1.2 ----- Magic Items
+###  8.1.2 ----- Magic Items
 Show
 Class "Amulets" "Belts" "Rings"
     SetFontSize 42
@@ -620,7 +751,7 @@ HasInfluence None
 FracturedItem False
 SynthesisedItem False
     SetFontSize 30
-###  5.1.3 ----- Rare Items
+###  8.1.3 ----- Rare Items
 Show
 Class "Amulets" "Belts" "Rings"
 Rarity Rare
@@ -629,10 +760,9 @@ Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
     SetFontSize 42
-
-
-# Error
-## if rules not match show red error item to fix it
+#    9     - Error
+##   9.1   --- Global
+###  9.1.1 ----- Everything
 Show
     CustomAlertSound "homm3snd/DANGER.wav"
     MinimapIcon 0 Red Star
