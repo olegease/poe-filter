@@ -576,6 +576,11 @@ Class "Divination Cards"
 BaseType "Last Hope"
     SetFontSize 45
     SetTextColor 255 255 255 255
+Show
+Class "Divination Cards"
+BaseType "Her Mask"
+    SetFontSize 36
+    SetTextColor 255 255 255 255
 ###  6.1.2 ----- Normal Items
 Show
 Class "Divination Cards"
@@ -584,7 +589,7 @@ BaseType "The Celestial Justicar" "Bowyer's Dream"
     SetTextColor 200 200 200 255
 Show
 Class "Divination Cards"
-BaseType "The Chains that Bind" "The Dark Mage" "The Surveyor"
+BaseType "The Chains that Bind" "The Dark Mage" "The Surveyor" "Lost Worlds" "The Ethereal" "The Warlord" "The Dapper Prodigy" "Emperor of Purity" "The Porcupine"
     SetFontSize 42
     SetTextColor 200 200 200 255
 Show
@@ -594,24 +599,49 @@ BaseType "The Flora's Gift"
     SetTextColor 200 200 200 255
 Show
 Class "Divination Cards"
+BaseType "The Arena Champion" "Boundless Realms" "Rain Tempter" "Cartographer's Delight"
+    SetFontSize 36
+    SetTextColor 200 200 200 255
+Show
+Class "Divination Cards"
 BaseType "The Metalsmith's Gift"
     SetTextColor 200 200 200 255
 ###  6.1.2 ----- Magic Items
 Show
 Class "Divination Cards"
-BaseType "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon"
+BaseType "Shard of Fate" "The Web" "The Endurance"
+    SetFontSize 45
+    SetTextColor 136 136 255 255
+Show
+Class "Divination Cards"
+BaseType "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon" "The Tyrant"
     SetFontSize 42
     SetTextColor 136 136 255 255
 Show
 Class "Divination Cards"
-BaseType "The Twins"
+BaseType "The Jester"
+    SetFontSize 39
+    SetTextColor 136 136 255 255
+Show
+Class "Divination Cards"
+BaseType "The Twins" "The Lord in Black" "The Rabid Rhoa" "Struck by Lightning"
     SetFontSize 36
     SetTextColor 136 136 255 255
 Show
 Class "Divination Cards"
-BaseType "The Carrion Crow" "The King's Blade" "The Inoculated"
+BaseType "The Carrion Crow" "The King's Blade" "The Inoculated" "Prosperity" "The Sigil"
     SetTextColor 136 136 255 255
 ###  6.1.3 ----- Rare Items
+Show
+Class "Divination Cards"
+BaseType "The Opulent"
+    SetFontSize 42
+    SetTextColor 255 255 119 255
+Show
+Class "Divination Cards"
+BaseType "Destined to Crumble"
+    SetFontSize 39
+    SetTextColor 255 255 119 255
 Show
 Class "Divination Cards"
 BaseType "The Lover"
@@ -631,7 +661,7 @@ BaseType "The Doctor"
     SetTextColor 175 96 37 255
 Show
 Class "Divination Cards"
-BaseType "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic" "Doedre's Madness" "The Betrayal" "The Last One Standing" "The Pack Leader" "Death" "The Conduit" "Assassin's Favour" "Hunter's Resolve" "Scholar of the Seas" "The Tower" "The Vast" "Hubris" "Hunter's Reward" "The Aesthete"
+BaseType "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic" "Doedre's Madness" "The Betrayal" "The Last One Standing" "The Pack Leader" "Death" "The Conduit" "Assassin's Favour" "Hunter's Resolve" "Scholar of the Seas" "The Tower" "The Vast" "Hubris" "Hunter's Reward" "The Aesthete" "Glimmer of Hope" "The Body" "The Demoness" "The Offering" "Birth of the Three" "Rats" "The Dragon" "Tranquillity" "Earth Drinker" "The Lion" "The Risk" "The Wolf's Shadow" "Heterochromia" "Thunderous Skies" "The Cursed King" "The Harvester" "The Lunaris Priestess" "The Stormcaller" "Light and Truth" "The Calling" "The Formless Sea" "The Penitent" "The Soul" "The Valkyrie" "The Visionary" "The Wolf" "Mawr Blaidd" "The Oath" "The Scavenger" "Mitts" "The Coming Storm" "The Forsaken" "The Garish Power" "The Polymath" "The Spark and the Flame" "The Standoff" "The Wolven King's Bite" "The Wretched" "Might is Right"
     SetFontSize 45
     SetTextColor 175 96 37 255
 ###  6.1.5 ----- Corrupted
@@ -644,20 +674,20 @@ BaseType "The Fiend"
     SetTextColor 210 0 0 255
 Show
 Class "Divination Cards"
-BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden" "The Artist" "The Encroaching Darkness" "The One With All" "The Siren" "The Dragon's Heart" "The Gentleman" "The Mercenary" "The Trial" "Wealth and Power" "Audacity" "Pride Before the Fall" "The Lich" "Anarchy's Price" "Blind Venture" "The Fletcher" "The Thaumaturgist" "Volatile Power"
+BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden" "The Artist" "The Encroaching Darkness" "The One With All" "The Siren" "The Dragon's Heart" "The Gentleman" "The Mercenary" "The Trial" "Wealth and Power" "Audacity" "Pride Before the Fall" "The Lich" "Anarchy's Price" "Blind Venture" "The Fletcher" "The Thaumaturgist" "Volatile Power" "A Mother's Parting Gift" "The Traitor" "Turn the Other Cheek" "Treasure Hunter" "The Throne" "Lysah's Respite" "Dialla's Subjugation" "Call to the First Ones" "Lingering Remnants" "The Wolverine" "Atziri's Arsenal"
     SetFontSize 45
     SetTextColor 210 0 0 255
 ###  6.1.6 ----- Currency
-Show # 1xKalandra
+Show # 1xKalandra 10xDivine
 Class "Divination Cards"
-BaseType "House of Mirrors"
+BaseType "House of Mirrors" "The Sephirot"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetFontSize 45
     SetTextColor 255 215 0 255
-Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret 10xChaos 10xChisel
+Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret 10xChaos 10xChisel 10xDeck 2xExalted
 Class "Divination Cards"
-BaseType "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token" "The Wrath" "The Cartographer"
+BaseType "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token" "The Wrath" "The Cartographer" "Lucky Deck" "The Saint's Treasure"
     SetFontSize 45
     SetTextColor 255 215 0 255
 Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos 7xAlchemy
@@ -690,8 +720,21 @@ Class "Divination Cards"
 BaseType "Gift of the Gemling Queen" "The Fox"
     SetFontSize 36
     SetTextColor 27 162 155 255
-
 ###  6.1.8 ----- Other Divinations
+Show
+Class "Divination Cards"
+BaseType "The Immortal"
+    MinimapIcon 0 Grey Star
+    PlayEffect Grey
+    SetFontSize 45
+    SetTextColor 14 186 255 255
+Show
+Class "Divination Cards"
+BaseType "The Void"
+    MinimapIcon 1 Grey Star
+    PlayEffect Grey
+    SetFontSize 45
+    SetTextColor 64 64 64 255
 Show
 Class "Divination Cards"
 BaseType "The Gambler"
