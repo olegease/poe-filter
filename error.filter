@@ -82,12 +82,8 @@
 ##   3.4   --- Hybrid
 ###  3.4.1 ----- Hide All
 #    4     - League specific
-##   4.1   --- Legion
-##   4.2   --- Breach
-##   4.3   --- Expedition
-##   4.4   --- Delirium
-##   4.5   --- Heist
-##   4.6   --- Harvest
+##   4.1   --- Harbinger
+###  4.1.1 ----- Shards
 #    5     - Special
 ##   5.1   --- Fractured
 ##   5.2   --- Influenced
@@ -681,12 +677,44 @@ Class "Hybrid Flasks"
 Rarity < Unique
     SetFontSize 18
 #    4     - League specific
-##   4.1   --- Legion
-##   4.2   --- Breach
-##   4.3   --- Expedition
-##   4.4   --- Delirium
-##   4.5   --- Heist
-##   4.6   --- Harvest
+##   4.1   --- Harbinger
+###  4.1.1 ----- Shards
+Show
+Class "Stackable Currency"
+BaseType "Mirror Shard" "Fracturing Shard"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+Show
+Class "Stackable Currency"
+BaseType "Harbinger's Shard" "Annulment Shard" "Exalted Shard"
+    MinimapIcon 1 Orange Circle
+    PlayEffect Orange Temp
+    SetFontSize 45
+Show
+Class "Stackable Currency"
+BaseType  "Horizon Shard"  "Ancient Shard" "Chaos Shard"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+Show
+Class "Stackable Currency"
+BaseType "Binding Shard" "Regal Shard" "Alchemy Shard" "Engineer's Shard"
+    SetFontSize 39
+Show
+Class "Stackable Currency"
+BaseType "Alteration Shard" "Transmutation Shard"
+Hide
+Class "Stackable Currency"
+BaseType "Scroll Fragment"
+    SetFontSize 18
+##   4.2   --- Heist
+###  4.2.1 ----- Markers
+Show
+Class "Stackable Currency"
+BaseType "Rogue's Marker"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetTextColor 255 170 140 255
 #    5     - Special
 ##   5.1   --- Fractured
 Show
