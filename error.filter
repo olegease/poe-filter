@@ -76,6 +76,9 @@
 ###  3.2.1 ----- Progression
 ###  3.2.2 ----- Best
 ##   3.3   --- Utility
+###  3.3.1 ----- High Area
+###  3.3.2 ----- Medium Ilvl
+###  3.3.3 ----- Low ILvl
 ##   3.4   --- Hybrid
 ###  3.4.1 ----- Hide All
 #    4     - League specific
@@ -474,6 +477,19 @@ GemLevel >= 20
     SetFontSize 45
     SetTextColor 15 145 140 255
 #    3   - Flasks
+##   3.0 --  Quality
+Show
+Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Quality > 14
+    SetFontSize 45
+Show
+Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Quality > 9
+    SetFontSize 42
+Show
+Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Quality > 4
+    SetFontSize 39
 ##   3.1 --- Mana
 ###  3.1.1 ----- Progression
 Show
@@ -633,7 +649,31 @@ AreaLevel >= 60
 Show
 Class "Life Flasks"
 BaseType "Divine" "Eternal"
-##   3.3 --- Utility
+##   3.3   --- Utility
+###  3.3.0 ----- Max Ilvl
+Show
+Class "Utility Flasks"
+ItemLevel >= 85
+    MinimapIcon 0 Green Raindrop
+    PlayEffect Green
+    SetFontSize 45
+###  3.3.1 ----- High Area
+Show
+Class "Utility Flasks"
+ItemLevel >= 80
+    MinimapIcon 1 Green Raindrop
+    SetFontSize 45
+###  3.3.2 ----- Medium Ilvl
+Show
+Class "Utility Flasks"
+    MinimapIcon 2 Green Raindrop
+    SetFontSize 42
+ItemLevel >= 63
+###  3.3.3 ----- Low ILvl
+Show
+Class "Utility Flasks"
+ItemLevel >= 1
+    SetFontSize 39
 ##   3.4 --- Hybrid
 ###  3.4.1 ----- Hide All
 Hide
@@ -853,8 +893,7 @@ Identified False
 Corrupted False
 HasInfluence None
     SetTextColor 255 255 255 255
-###  7.1.2 ----- Bubble
-###  7.1.3 ----- Prism
+###  7.1.2 ----- Prism
 Show
 Class "Gems"
 Quality > 13
@@ -922,6 +961,7 @@ LinkedSockets < 5
 ###  8.1.2 ----- Magic Items
 Show
 Class "Amulets" "Belts" "Rings"
+Rarity Magic
     SetFontSize 42
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
@@ -972,6 +1012,7 @@ Rarity Unique
     CustomAlertSound "homm3snd/BADLUCK.wav"
     MinimapIcon 0 Brown Pentagon
     PlayEffect Brown
+    SetFontSize 45
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Unique
