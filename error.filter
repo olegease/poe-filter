@@ -102,12 +102,12 @@
 ###  6.1.6 ----- Currency
 ###  6.1.7 ----- Gems
 ###  6.1.8 ----- Other Divinations
+##   6.2   --- Jewels
+###  6.2.1 ----- Basic
 #    7     - Recipes
 ##   7.1   --- Currency
 ###  7.1.1 ----- Chromatic
-###  7.1.2 ----- Bubble
-###  7.1.3 ----- Prism
-###  7.1.4 ----- Chisel
+###  7.1.2 ----- Prism
 #    8     - Hiding
 ##   8.1   --- Rarity based
 ###  8.1.1 ----- Normal Items
@@ -701,8 +701,13 @@ FracturedItem True
 ###  6.1.1 ----- Fragments
 Show
 Class "Divination Cards"
-BaseType "Last Hope" "The Obscured"
+BaseType "Last Hope" "The Obscured" "Sambodhi's Vow" "More is Never Enough" "The Eye of Terror"
     SetFontSize 45
+    SetTextColor 255 255 255 255
+Show
+Class "Divination Cards"
+BaseType "Boon of Justice" "Buried Treasure" "The Deal"
+    SetFontSize 42
     SetTextColor 255 255 255 255
 Show
 Class "Divination Cards"
@@ -712,12 +717,14 @@ BaseType "Her Mask" "The Puzzle"
 ###  6.1.2 ----- Normal Items
 Show
 Class "Divination Cards"
-BaseType "The Celestial Justicar" "Bowyer's Dream" "Immortal Resolve" "The Celestial Stone"
+BaseType "The Celestial Justicar" "Bowyer's Dream" "Immortal Resolve" "The Celestial Stone" "The Sacrifice" "Imperial Legacy"
+    MinimapIcon 1 Grey Square
     SetFontSize 45
     SetTextColor 200 200 200 255
 Show
 Class "Divination Cards"
 BaseType "The Chains that Bind" "The Dark Mage" "The Surveyor" "Lost Worlds" "The Ethereal" "The Warlord" "The Dapper Prodigy" "Emperor of Purity" "The Porcupine"
+    MinimapIcon 2 Grey Square
     SetFontSize 42
     SetTextColor 200 200 200 255
 Show
@@ -737,17 +744,17 @@ BaseType "The Metalsmith's Gift"
 ###  6.1.2 ----- Magic Items
 Show
 Class "Divination Cards"
-BaseType "Shard of Fate" "The Web" "The Endurance"
+BaseType "Shard of Fate" "The Web" "The Endurance" "Void of the Elements"
     SetFontSize 45
     SetTextColor 136 136 255 255
 Show
 Class "Divination Cards"
-BaseType "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon" "The Tyrant" "The Undisputed"
+BaseType "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon" "The Tyrant" "The Undisputed" "The Golden Era"
     SetFontSize 42
     SetTextColor 136 136 255 255
 Show
 Class "Divination Cards"
-BaseType "The Jester" "Blessing of God"
+BaseType "The Jester" "Blessing of God" "The Lord of Celebration" "The Archmage's Right Hand"
     SetFontSize 39
     SetTextColor 136 136 255 255
 Show
@@ -757,12 +764,12 @@ BaseType "The Twins" "The Lord in Black" "The Rabid Rhoa" "Struck by Lightning"
     SetTextColor 136 136 255 255
 Show
 Class "Divination Cards"
-BaseType "The Carrion Crow" "The King's Blade" "The Inoculated" "Prosperity" "The Sigil"
+BaseType "The Carrion Crow" "The King's Blade" "The Inoculated" "Prosperity" "The Sigil" "The Mountain"
     SetTextColor 136 136 255 255
 ###  6.1.3 ----- Rare Items
 Show
 Class "Divination Cards"
-BaseType "The Opulent" "Perfection" "The Hale Heart"
+BaseType "The Opulent" "Perfection" "The Hale Heart" "Dark Dreams" "Nook's Crown"
     SetFontSize 42
     SetTextColor 255 255 119 255
 Show
@@ -796,43 +803,55 @@ BaseType "The Samurai's Eye"
     SetTextColor 175 96 37 255
 Show
 Class "Divination Cards"
-BaseType "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic" "Doedre's Madness" "The Betrayal" "The Last One Standing" "The Pack Leader" "Death" "The Conduit" "Assassin's Favour" "Hunter's Resolve" "Scholar of the Seas" "The Tower" "The Vast" "Hubris" "Hunter's Reward" "The Aesthete" "Glimmer of Hope" "The Body" "The Demoness" "The Offering" "Birth of the Three" "Rats" "The Dragon" "Tranquillity" "Earth Drinker" "The Lion" "The Risk" "The Wolf's Shadow" "Heterochromia" "Thunderous Skies" "The Cursed King" "The Harvester" "The Lunaris Priestess" "The Stormcaller" "Light and Truth" "The Calling" "The Formless Sea" "The Penitent" "The Soul" "The Valkyrie" "The Visionary" "The Wolf" "Mawr Blaidd" "The Oath" "The Scavenger" "Mitts" "The Coming Storm" "The Forsaken" "The Garish Power" "The Polymath" "The Spark and the Flame" "The Standoff" "The Wolven King's Bite" "The Wretched" "Might is Right" "The Blazing Fire" "Rebirth" "The Breach" "The Dreamer" "The World Eater" "The Admirer" "The Army of Blood" "The Beast" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Sword King's Salute" "The Witch"
+BaseType "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic" "Doedre's Madness" "The Betrayal" "The Last One Standing" "The Pack Leader" "Death" "The Conduit" "Assassin's Favour" "Hunter's Resolve" "Scholar of the Seas" "The Tower" "The Vast" "Hubris" "Hunter's Reward" "The Aesthete" "Glimmer of Hope" "The Body" "The Demoness" "The Offering" "Birth of the Three" "Rats" "The Dragon" "Tranquillity" "Earth Drinker" "The Lion" "The Risk" "The Wolf's Shadow" "Heterochromia" "Thunderous Skies" "The Cursed King" "The Harvester" "The Lunaris Priestess" "The Stormcaller" "Light and Truth" "The Calling" "The Formless Sea" "The Penitent" "The Soul" "The Valkyrie" "The Visionary" "The Wolf" "Mawr Blaidd" "The Oath" "The Scavenger" "Mitts" "The Coming Storm" "The Forsaken" "The Garish Power" "The Polymath" "The Spark and the Flame" "The Standoff" "The Wolven King's Bite" "The Wretched" "Might is Right" "The Blazing Fire" "Rebirth" "The Breach" "The Dreamer" "The World Eater" "The Admirer" "The Army of Blood" "The Beast" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Sword King's Salute" "The Witch" "Beauty Through Death" "Boon of the First Ones" "The Endless Darkness" "The Twilight Moon" "A Dab of Ink" "The Life Thief" "Alone in the Darkness" "Dark Temptation" "The Mad King" "The Messenger" "Pride of the First Ones" "The Deep Ones" "The Primordial" "Thirst for Knowledge" "The Wolf's Legacy" "Vile Power"
+    MinimapIcon 2 Grey Square
     SetFontSize 45
     SetTextColor 175 96 37 255
 ###  6.1.5 ----- Corrupted
 Show
 Class "Divination Cards"
-BaseType "The Fiend"
-    MinimapIcon 0 Grey Star
-    PlayEffect Red
+BaseType "The Fiend" "The Demon"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
     SetFontSize 45
     SetTextColor 210 0 0 255
 Show
 Class "Divination Cards"
-BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden" "The Artist" "The Encroaching Darkness" "The One With All" "The Siren" "The Dragon's Heart" "The Gentleman" "The Mercenary" "The Trial" "Wealth and Power" "Audacity" "Pride Before the Fall" "The Lich" "Anarchy's Price" "Blind Venture" "The Fletcher" "The Thaumaturgist" "Volatile Power" "A Mother's Parting Gift" "The Traitor" "Turn the Other Cheek" "Treasure Hunter" "The Throne" "Lysah's Respite" "Dialla's Subjugation" "Call to the First Ones" "Lingering Remnants" "The Wolverine" "Atziri's Arsenal" "Left to Fate" "The Eye of the Dragon" "The Ruthless Ceinture" "Forbidden Power" "The Deceiver" "The Insatiable" "The Darkest Dream" "The Rite of Elements" "The Undaunted"
+BaseType "Arrogance of the Vaal"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
     SetFontSize 45
     SetTextColor 210 0 0 255
+Show
+Class "Divination Cards"
+BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden" "The Artist" "The Encroaching Darkness" "The One With All" "The Siren" "The Dragon's Heart" "The Gentleman" "The Mercenary" "The Trial" "Wealth and Power" "Audacity" "Pride Before the Fall" "The Lich" "Anarchy's Price" "Blind Venture" "The Fletcher" "The Thaumaturgist" "Volatile Power" "A Mother's Parting Gift" "The Traitor" "Turn the Other Cheek" "Treasure Hunter" "The Throne" "Lysah's Respite" "Dialla's Subjugation" "Call to the First Ones" "Lingering Remnants" "The Wolverine" "Atziri's Arsenal" "Left to Fate" "The Eye of the Dragon" "The Ruthless Ceinture" "Forbidden Power" "The Deceiver" "The Insatiable" "The Darkest Dream" "The Rite of Elements" "The Undaunted" "The Price of Protection" "The Wilted Rose" "The Landing" "Burning Blood" "Echoes of Love" "Vanity" "Akil's Prophecy" "Azyran's Reward" "Remembrance" "The Damned" "The Old Man" "The Price of Loyalty"
+    MinimapIcon 2 Grey Square
+    SetFontSize 42
+    SetTextColor 210 0 0 255
 ###  6.1.6 ----- Currency
-Show # 1xKalandra 10xDivine
+Show # 1xKalandra 10xDivine 40xRegret 1xMirrorShard
 Class "Divination Cards"
-BaseType "House of Mirrors" "The Sephirot"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
+BaseType "House of Mirrors" "The Sephirot" "The Innocent" "Seven Years Bad Luck"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
     SetFontSize 45
     SetTextColor 255 215 0 255
-Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret 10xChaos 10xChisel 10xDeck 2xExalted 30xScouring 4xTaintedMystic 9xEssense
+Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret 10xChaos 10xChisel 10xDeck 2xExalted 30xScouring 4xTaintedMystic 9xT6Essense 3xT7Essense 2xESextant 1xHarbinger 3xAnnul 10xExalted 1xAnnul 20xReport
 Class "Divination Cards"
-BaseType "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token" "The Wrath" "The Cartographer" "Lucky Deck" "The Saint's Treasure" "No Traces" "The Rusted Bard" "Harmony of Souls"
+BaseType "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token" "The Wrath" "The Cartographer" "Lucky Deck" "The Saint's Treasure" "No Traces" "The Rusted Bard" "Harmony of Souls" "The Cacophony" "Monochrome" "The Journey" "The Seeker" "Alluring Bounty" "Demigod's Wager" "The Side Quest"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
     SetFontSize 45
     SetTextColor 255 215 0 255
-Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos 7xAlchemy 3xEssense
+Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos 7xAlchemy 3xEssense 20xChance 17xChromes
 Class "Divination Cards"
-BaseType "Chaotic Disposition" "Coveted Possession" "Lucky Connections" "The Gemcutter" "Three Faces in the Dark" "The Survivalist" "Three Voices"
+BaseType "Chaotic Disposition" "Coveted Possession" "Lucky Connections" "The Gemcutter" "Three Faces in the Dark" "The Survivalist" "Three Voices" "The Fool" "The Heroic Shot"
+    MinimapIcon 2 Grey Square
     SetFontSize 42
     SetTextColor 255 215 0 255
-Show # 5xRandom 1xChaos 3xFusing 1xVaal
+Show # 5xRandom 1xChaos 3xFusing 1xVaal 20xQualityRng
 Class "Divination Cards"
-BaseType "Emperor's Luck" "Rain of Chaos" "Loyalty" "The Catalyst"
+BaseType "Emperor's Luck" "Rain of Chaos" "Loyalty" "The Catalyst" "The Master Artisan"
     SetFontSize 39
     SetTextColor 255 215 0 255
 Show # 40xWisdom
@@ -845,9 +864,9 @@ Class "Divination Cards"
 BaseType "The Enlightened"
     SetFontSize 45
     SetTextColor 27 162 155 255
-Show # Random20Q Minion20Q SRS20Q ArrowQ20
+Show # Random20Q Minion20Q SRS20Q ArrowQ20 Skeletons23Q
 Class "Divination Cards"
-BaseType "Gemcutter's Promise" "The Summoner" "Grave Knowledge" "The Doppelganger"
+BaseType "Gemcutter's Promise" "The Summoner" "Grave Knowledge" "The Doppelganger" "The Skeleton"
     SetFontSize 42
     SetTextColor 27 162 155 255
 Show # Portal1-20Q
@@ -863,16 +882,16 @@ BaseType "Gift of the Gemling Queen" "The Fox"
 ###  6.1.8 ----- Other Divinations
 Show
 Class "Divination Cards"
-BaseType "The Immortal"
-    MinimapIcon 0 Grey Star
+BaseType "The Immortal" "The Nurse"
+    MinimapIcon 0 Grey Square
     PlayEffect Grey
     SetFontSize 45
     SetTextColor 14 186 255 255
 Show
 Class "Divination Cards"
 BaseType "The Void"
-    MinimapIcon 1 Grey Star
-    PlayEffect Grey
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
     SetFontSize 45
     SetTextColor 64 64 64 255
 Show
@@ -880,6 +899,18 @@ Class "Divination Cards"
 BaseType "The Gambler"
     SetFontSize 39
     SetTextColor 14 186 255 255
+##   6.2   --- Jewels
+###  6.2.1 ----- Basic
+Show
+Class "Jewels"
+BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
+Rarity Rare
+    SetFontSize 42
+Hide
+Class "Jewels"
+BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
+Rarity < Rare
+    SetFontSize 27
 #    7   - Recipes
 ##   7.1 --- Currency
 ###  7.1.1 ----- Chromatic
@@ -1000,10 +1031,32 @@ Show
 Class "Amulets" "Belts" "Rings"
 Rarity Rare
     SetFontSize 45
+Hide
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Rarity Rare
+AreaLevel >= 45
+DropLevel < 15
+    SetFontSize 21
+Hide
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Rarity Rare
+AreaLevel >= 68
+DropLevel < 45
+    SetFontSize 27
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
+DropLevel >= 68
+    SetFontSize 45
+Show
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Rarity Rare
+DropLevel >= 45
     SetFontSize 42
+Show
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Rarity Rare
+    SetFontSize 39
 ###  8.1.4 ----- Unique Items
 Show
 Class "Belts"
