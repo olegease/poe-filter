@@ -1211,7 +1211,11 @@ Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws"
 Rarity Normal
 AreaLevel < 68
 LinkedSockets < 4
-    SetFontSize 27
+    SetFontSize 24
+Hide
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Rarity Normal
+    SetFontSize 18
 ###  7.1.2 ----- Magic Items
 Show
 Class "Amulets" "Belts" "Rings"
