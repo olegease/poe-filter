@@ -72,66 +72,59 @@
 ##   2.2   --- Max
 ###  2.2.1 ----- Quality
 ###  2.2.2 ----- Level
-#    3     - Flasks
-##   3.1   --- Mana
-###  3.1.1 ----- Progression
-###  3.1.2 ----- Best
-##   3.2   --- Life
-###  3.2.1 ----- Progression
-###  3.2.2 ----- Best
-##   3.3   --- Utility
-###  3.3.1 ----- High Area
-###  3.3.2 ----- Medium Ilvl
-###  3.3.3 ----- Low ILvl
-##   3.4   --- Hybrid
-###  3.4.1 ----- Hide All
-#    4     - League specific
-##   4.1   --- Harbinger
-###  4.1.1 ----- Shards
-#    5     - Special
-##   5.0   --- Sockets
-###  5.0.1 ----- 6 link
-###  5.0.2 ----- 5 link
-###  5.0.3 ----- 6 Socket
-##   5.1   --- Unique
-###  5.1.0 ----- Global
-##   5.2   --- Fractured
-###  5.2.0 ----- Global
-##   5.3   --- Synthesised
-###  5.3.0 ----- Global
-##   5.4   --- Influenced
-###  5.4.0 ----- Global
-##   5.5   --- Veiled
-###  5.5.0 ----- Global
-##   5.6   --- Corrupted
-###  5.6.0 ----- Global
-##   5.7   --- Identified
-###  5.7.0 ----- Global
-#    6     - Other
-##   6.1   --- Divination Cards
-###  6.1.1 ----- Fragments
-###  6.1.2 ----- Normal Items
-###  6.1.2 ----- Magic Items
-###  6.1.3 ----- Rare Items
-###  6.1.4 ----- Unique Items
-###  6.1.5 ----- Corrupted
-###  6.1.6 ----- Currency
-###  6.1.7 ----- Gems
-###  6.1.8 ----- Other Divinations
-##   6.2   --- Jewels
-###  6.2.1 ----- Basic
-#    7     - Recipes
-##   7.1   --- Currency
-###  7.1.1 ----- Chromatic
-###  7.1.2 ----- Prism
-#    8     - Hiding
-##   8.1   --- Rarity based
-###  8.1.1 ----- Normal Items
-###  8.1.2 ----- Magic Items
-###  8.1.3 ----- Rare Items
-#    9     - Error
-##   9.1   --- Global
-###  9.1.1 ----- Everything
+#    3     - League specific
+##   3.1   --- Harbinger
+###  3.1.1 ----- Shards
+#    4     - Special
+##   4.0   --- Sockets
+###  4.0.1 ----- 6 link
+###  4.0.2 ----- 5 link
+###  4.0.3 ----- 6 Socket
+##   4.1   --- Unique
+###  4.1.0 ----- Global
+##   4.2   --- Fractured
+###  4.2.0 ----- Global
+##   4.3   --- Synthesised
+###  4.3.0 ----- Global
+##   4.4   --- Influenced
+###  4.4.0 ----- Global
+##   4.5   --- Veiled
+###  4.5.0 ----- Global
+##   4.6   --- Corrupted
+###  4.6.0 ----- Global
+##   4.7   --- Identified
+###  4.7.0 ----- Global
+#    5     - Other
+##   5.1   --- Divination Cards
+###  5.1.1 ----- Fragments
+###  5.1.2 ----- Normal Items
+###  5.1.2 ----- Magic Items
+###  5.1.3 ----- Rare Items
+###  5.1.4 ----- Unique Items
+###  5.1.5 ----- Corrupted
+###  5.1.6 ----- Currency
+###  5.1.7 ----- Gems
+###  5.1.8 ----- Other Divinations
+##   5.2   --- Jewels
+###  5.2.1 ----- Basic
+##   5.3   --- Flasks
+###  5.3.0 ----- Quality
+###  5.3.1 ----- Utility
+###  5.3.2 ----- Life
+###  5.3.3 ----- Mana
+###  5.3.4 ----- Hybrid
+#    6     - Recipes
+##   6.1   --- Currency
+###  6.1.1 ----- Chromatic
+###  6.1.2 ----- Prism
+#    7     - Hiding
+##   7.1   --- Rarity based
+###  7.1.1 ----- Normal Items
+###  7.1.2 ----- Magic Items
+###  7.1.3 ----- Rare Items
+#    8     - Error
+##   8.1   --- Global
+###  8.1.1 ----- Everything
 Show
 Class "Quest Items"
     CustomAlertSound "homm3snd/DEFAULT.wav"
@@ -141,7 +134,7 @@ Class "Quest Items"
 #    0   - Global styles (always Continue)
 ##   0.0   --- Notes
 ###  0.0.0 ----- Overview
-# Version: 0.0.29
+# Version: 0.0.30
 # Filter for SSF
 # default font size for all items 33
 ###  0.0.1 ----- Tiers
@@ -164,9 +157,14 @@ Class "Quest Items"
 # Yellow Square          - Tier 6-10 Maps
 # Red    Square          - Tier 11-15 Maps
 # Brown  Moon            - Unique Belts
+# Brown  Diamond         - Unique Amulet, Rings
 # Brown  UpsideDownHouse - Unique Off-hands
 # Brown  Star            - Uniques Jewels
-# Cyan   Raindrop                - Fractured Items
+# Brown  Raindrop        - Unique Flasks
+# Cyan   Raindrop        - Fractured Items
+# Green  Raindrop        - Utility Flasks
+# Red    Raindrop        - Life Flasks
+# Blue   Raindrop        - Mana Flasks
 ##   0.1 --- Disable drop sounds for all items
 ###  0.1.1 ----- All items
 Show
@@ -520,213 +518,9 @@ GemLevel >= 20
     MinimapIcon 2 Green Triangle
     SetFontSize 45
     SetTextColor 15 145 140 255
-#    3   - Flasks
-##   3.0 --  Quality
-Show
-Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
-Quality > 14
-    SetFontSize 45
-Show
-Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
-Quality > 9
-    SetFontSize 42
-Show
-Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
-Quality > 4
-    SetFontSize 39
-##   3.1 --- Mana
-###  3.1.1 ----- Progression
-Show
-Class "Mana Flasks"
-BaseType "Small"
-AreaLevel < 2
-Hide
-Class "Mana Flasks"
-BaseType "Small"
-AreaLevel >= 2
-Show
-Class "Mana Flasks"
-BaseType "Medium"
-AreaLevel < 6
-Hide
-Class "Mana Flasks"
-BaseType "Medium"
-AreaLevel >= 6
-Show
-Class "Mana Flasks"
-BaseType "Large"
-AreaLevel < 12
-Hide
-Class "Mana Flasks"
-BaseType "Large"
-AreaLevel >= 12
-Show
-Class "Mana Flasks"
-BaseType "Greater"
-AreaLevel < 18
-Hide
-Class "Mana Flasks"
-BaseType "Greater"
-AreaLevel >= 18
-Show
-Class "Mana Flasks"
-BaseType "Grand"
-AreaLevel < 24
-Hide
-Class "Mana Flasks"
-BaseType "Grand"
-AreaLevel >= 24
-Show
-Class "Mana Flasks"
-BaseType "Giant"
-AreaLevel < 30
-Hide
-Class "Mana Flasks"
-BaseType "Giant"
-AreaLevel >= 30
-Show
-Class "Mana Flasks"
-BaseType "Colossal"
-AreaLevel < 36
-Hide
-Class "Mana Flasks"
-BaseType "Colossal"
-AreaLevel >= 36
-Show
-Class "Mana Flasks"
-BaseType "Sacred"
-AreaLevel < 42
-Hide
-Class "Mana Flasks"
-BaseType "Sacred"
-AreaLevel >= 42
-Show
-Class "Mana Flasks"
-BaseType "Hallowed"
-AreaLevel < 50
-Hide
-Class "Mana Flasks"
-BaseType "Hallowed"
-AreaLevel >= 50
-Show
-Class "Mana Flasks"
-BaseType "Sanctified"
-AreaLevel < 60
-Hide
-Class "Mana Flasks"
-BaseType "Sanctified"
-AreaLevel >= 60
-###  3.1.2 ----- Best
-Show
-Class "Mana Flasks"
-BaseType "Divine" "Eternal"
-##   3.2 --- Life
-###  3.2.1 ----- Progression
-Hide
-Class "Life Flasks"
-BaseType "Sacred" "Grand" "Sanctified"
-    SetFontSize 18
-Show
-Class "Life Flasks"
-BaseType "Small"
-AreaLevel < 3
-Hide
-Class "Life Flasks"
-BaseType "Small"
-AreaLevel >= 3
-    SetFontSize 18
-Show
-Class "Life Flasks"
-BaseType "Medium"
-AreaLevel < 6
-Hide
-Class "Life Flasks"
-BaseType "Medium"
-AreaLevel >= 6
-    SetFontSize 18
-Show
-Class "Life Flasks"
-BaseType "Large"
-AreaLevel < 12
-Hide
-Class "Life Flasks"
-BaseType "Large"
-AreaLevel >= 12
-    SetFontSize 21
-Show
-Class "Life Flasks"
-BaseType "Greater"
-AreaLevel < 30
-Hide
-Class "Life Flasks"
-BaseType "Greater"
-AreaLevel >= 30
-    SetFontSize 21
-Show
-Class "Life Flasks"
-BaseType "Giant"
-AreaLevel < 30
-Hide
-Class "Life Flasks"
-BaseType "Giant"
-AreaLevel >= 30
-    SetFontSize 24
-Show
-Class "Life Flasks"
-BaseType "Colossal"
-AreaLevel < 42
-Hide
-Class "Life Flasks"
-BaseType "Colossal"
-AreaLevel >= 42
-    SetFontSize 27
-Show
-Class "Life Flasks"
-BaseType "Hallowed"
-AreaLevel < 60
-Hide
-Class "Life Flasks"
-BaseType "Hallowed"
-AreaLevel >= 60
-    SetFontSize 30
-###  3.2.2 ----- Best
-Show
-Class "Life Flasks"
-BaseType "Divine" "Eternal"
-##   3.3   --- Utility
-###  3.3.0 ----- Max Ilvl
-Show
-Class "Utility Flasks"
-ItemLevel >= 85
-    MinimapIcon 0 Green Raindrop
-    PlayEffect Green
-    SetFontSize 45
-###  3.3.1 ----- High Area
-Show
-Class "Utility Flasks"
-ItemLevel >= 80
-    MinimapIcon 1 Green Raindrop
-    SetFontSize 45
-###  3.3.2 ----- Medium Ilvl
-Show
-Class "Utility Flasks"
-    MinimapIcon 2 Green Raindrop
-    SetFontSize 42
-ItemLevel >= 63
-###  3.3.3 ----- Low ILvl
-Show
-Class "Utility Flasks"
-ItemLevel >= 1
-    SetFontSize 39
-##   3.4 --- Hybrid
-###  3.4.1 ----- Hide All
-Hide
-Class "Hybrid Flasks"
-Rarity < Unique
-    SetFontSize 18
-#    4     - League specific
-##   4.1   --- Harbinger
-###  4.1.1 ----- Shards
+#    3     - League specific
+##   3.1   --- Harbinger
+###  3.1.1 ----- Shards
 Show
 Class "Stackable Currency"
 BaseType "Mirror Shard" "Fracturing Shard"
@@ -755,37 +549,37 @@ Hide
 Class "Stackable Currency"
 BaseType "Scroll Fragment"
     SetFontSize 18
-##   4.2   --- Heist
-###  4.2.1 ----- Markers
+##   3.2   --- Heist
+###  3.2.1 ----- Markers
 Show
 Class "Stackable Currency"
 BaseType "Rogue's Marker"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetTextColor 255 170 140 255
-#    5     - Special
-##   5.0   --- Sockets
-###  5.0.1 ----- 6 link
+#    4     - Special
+##   4.0   --- Sockets
+###  4.0.1 ----- 6 link
 Show
 LinkedSockets 6
     CustomAlertSound "homm3snd/LIGHTBLT.wav"
     MinimapIcon 0 White Pentagon
     PlayEffect White
     SetFontSize 45
-###  5.0.2 ----- 5 link
+###  4.0.2 ----- 5 link
 Show
 LinkedSockets 5
     CustomAlertSound "homm3snd/LIGHTBLT.wav"
     MinimapIcon 1 White Pentagon
     PlayEffect White Temp
     SetFontSize 45
-###  5.0.3 ----- 6 Socket
+###  4.0.3 ----- 6 Socket
 Show
 Sockets 6
     MinimapIcon 2 White Pentagon
     SetFontSize 45
-##   5.1   --- Unique
-###  5.1.1 ----- Base types
+##   4.1   --- Unique
+###  4.1.1 ----- Base types
 Show
 Class "Belts"
 BaseType "Leather Belt" "Heavy Belt"
@@ -794,12 +588,19 @@ Rarity Unique
     MinimapIcon 0 Brown Moon
     PlayEffect Brown
     SetFontSize 45
-###  5.1.2 ------ Global
+###  4.1.2 ------ Global
 Show
 Class "Belts"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 1 Brown Moon
+    PlayEffect Brown Temp
+    SetFontSize 45
+Show
+Class "Flasks"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Raindrop
     PlayEffect Brown Temp
     SetFontSize 45
 Show
@@ -813,7 +614,7 @@ Show
 Class "Amulets" "Rings"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
-    MinimapIcon 1 Brown Cross
+    MinimapIcon 1 Brown Diamond
     PlayEffect Brown Temp
     SetFontSize 45
 Show
@@ -824,6 +625,7 @@ Rarity Unique
     SetFontSize 45
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets"
+Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 2 Brown Square
     SetFontSize 45
@@ -834,47 +636,46 @@ Rarity Unique
     MinimapIcon 2 Brown Kite
     PlayEffect Brown Temp
     SetFontSize 45
-##   5.2   --- Fractured
-###  5.2.0 ----- Global
+##   4.2   --- Fractured
+###  4.2.0 ----- Global
 Show
 FracturedItem True
     MinimapIcon 0 Cyan Raindrop
     PlayEffect Cyan
     SetFontSize 45
     SetTextColor 165 150 100 255
-##   5.3   --- Synthesised
-###  5.3.0 ----- Global
+##   4.3   --- Synthesised
+###  4.3.0 ----- Global
 Show
 SynthesisedItem True
-Rarity < Unique
     MinimapIcon 1 Cyan Raindrop
     PlayEffect Cyan Temp
     SetFontSize 45
     SetTextColor 120 210 195 255
-##   5.4   --- Influenced
-###  5.4.0 ----- Global
-##   5.5   --- Veiled
-###  5.5.0 ----- Global
+##   4.4   --- Influenced
+###  4.4.0 ----- Global
+Show
+HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
+    SetFontSize 45
+##   4.5   --- Veiled
+###  4.5.0 ----- Global
 Show
 HasExplicitMod "Veiled" "Veil"
-Rarity < Unique
     SetFontSize 45
     SetTextColor 192 192 192 255
-##   5.6   --- Corrupted
-###  5.6.0 ----- Global
+##   4.6   --- Corrupted
+###  4.6.0 ----- Global
 Show
 Corrupted True
-Rarity < Unique
     SetFontSize 45
-##   5.7   --- Identified
-###  5.7.0 ----- Global
+##   4.7   --- Identified
+###  4.7.0 ----- Global
 Show
 Identified True
-Rarity < Unique
-    SetFontSize 42
-#    6     - Other
-##   6.1   --- Divination Cards
-###  6.1.1 ----- Fragments
+    SetFontSize 39
+#    5     - Other
+##   5.1   --- Divination Cards
+###  5.1.1 ----- Fragments
 Show
 Class "Divination Cards"
 BaseType "The Eldritch Decay" "Guardian's Challenge"
@@ -897,7 +698,7 @@ Class "Divination Cards"
 BaseType "Her Mask" "The Puzzle"
     SetFontSize 36
     SetTextColor 255 255 255 255
-###  6.1.2 ----- Normal Items
+###  5.1.2 ----- Normal Items
 Show
 Class "Divination Cards"
 BaseType "The White Knight" "Draped in Dreams"
@@ -937,7 +738,7 @@ Show
 Class "Divination Cards"
 BaseType "The Metalsmith's Gift"
     SetTextColor 200 200 200 255
-###  6.1.2 ----- Magic Items
+###  5.1.2 ----- Magic Items
 Show
 Class "Divination Cards"
 BaseType "The Aspirant"
@@ -968,7 +769,7 @@ Show
 Class "Divination Cards"
 BaseType "The Carrion Crow" "The King's Blade" "The Inoculated" "Prosperity" "The Sigil" "The Mountain"
     SetTextColor 136 136 255 255
-###  6.1.3 ----- Rare Items
+###  5.1.3 ----- Rare Items
 Show
 Class "Divination Cards"
 BaseType "Dying Light"
@@ -999,7 +800,7 @@ Show
 Class "Divination Cards"
 BaseType "Lantador's Lost Love"
     SetTextColor 255 255 119 255
-###  6.1.4 ----- Unique Items
+###  5.1.4 ----- Unique Items
 Show
 Class "Divination Cards"
 BaseType "The Doctor"
@@ -1020,7 +821,7 @@ BaseType "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat"
     MinimapIcon 2 Grey Square
     SetFontSize 45
     SetTextColor 175 96 37 255
-###  6.1.5 ----- Corrupted
+###  5.1.5 ----- Corrupted
 Show
 Class "Divination Cards"
 BaseType "The Fiend" "The Demon" "The Cheater" "Desecrated Virtue" "A Modest Request" "The Eternal War" "Lachrymal Necrosis"
@@ -1041,7 +842,7 @@ BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explore
     MinimapIcon 2 Grey Square
     SetFontSize 45
     SetTextColor 210 0 0 255
-###  6.1.6 ----- Currency
+###  5.1.6 ----- Currency
 Show # 1xKalandra 10xDivine 40xRegret 1xMirrorShard 1xEldersExalt 19xMirrorShard
 Class "Divination Cards"
 BaseType "House of Mirrors" "The Sephirot" "The Innocent" "Seven Years Bad Luck" "The Long Con" "Unrequited Love"
@@ -1071,7 +872,7 @@ Show # 40xWisdom
 Class "Divination Cards"
 BaseType "The Scholar"
     SetTextColor 255 215 0 255
-###  6.1.7 ----- Gems
+###  5.1.7 ----- Gems
 Show # Enlighten3L
 Class "Divination Cards"
 BaseType "The Enlightened"
@@ -1092,7 +893,7 @@ Class "Divination Cards"
 BaseType "Gift of the Gemling Queen" "The Fox"
     SetFontSize 36
     SetTextColor 27 162 155 255
-###  6.1.8 ----- Other Divinations
+###  5.1.8 ----- Other Divinations
 Show
 Class "Divination Cards"
 BaseType "The Immortal" "The Nurse" "The Patient"
@@ -1118,8 +919,8 @@ Class "Divination Cards"
 BaseType "The Gambler"
     SetFontSize 39
     SetTextColor 14 186 255 255
-##   6.2   --- Jewels
-###  6.2.1 ----- Basic
+##   5.2   --- Jewels
+###  5.2.1 ----- Basic
 Show
 Class "Jewels"
 BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
@@ -1129,21 +930,154 @@ Hide
 Class "Jewels"
 BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
 Rarity < Rare
-    SetFontSize 27
-#    7   - Recipes
-##   7.1 --- Currency
-###  7.1.1 ----- Chromatic
+    SetFontSize 24
+##   5.3   --- Flasks
+###  5.3.0 ----- Quality
+Show
+Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Quality > 14
+    SetFontSize 45
+Show
+Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Quality > 9
+    SetFontSize 42
+Show
+Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Quality > 4
+    SetFontSize 39
+###  5.3.1 ----- Utility
+Show
+Class "Utility Flasks"
+ItemLevel >= 85
+    MinimapIcon 0 Green Raindrop
+    PlayEffect Green
+    SetFontSize 45
+Show
+Class "Utility Flasks"
+ItemLevel >= 80
+    MinimapIcon 1 Green Raindrop
+    PlayEffect Green Temp
+    SetFontSize 45
+Show
+Class "Utility Flasks"
+ItemLevel >= 63
+    MinimapIcon 2 Green Raindrop
+    SetFontSize 45
+Show
+Class "Utility Flasks"
+AreaLevel < 68
+ItemLevel >= 1
+    SetFontSize 39
+###  5.3.2 ----- Life
+Show
+Class "Life Flasks"
+BaseType "Divine" "Eternal"
+ItemLevel >= 80
+    MinimapIcon 2 Red Raindrop
+    SetFontSize 45
+Show
+Class "Life Flasks"
+BaseType "Divine" "Eternal"
+AreaLevel < 68
+    SetFontSize 45
+Hide
+Class "Life Flasks"
+BaseType "Divine" "Eternal"
+    SetFontSize 30
+Show
+Class "Life Flasks"
+BaseType "Hallowed"
+AreaLevel < 60
+    SetFontSize 42
+Show
+Class "Life Flasks"
+BaseType "Colossal"
+AreaLevel < 42
+    SetFontSize 42
+Show
+Class "Life Flasks"
+BaseType "Giant"
+AreaLevel < 42
+    SetFontSize 42
+Hide
+Class "Life Flasks"
+BaseType "Hallowed" "Colossal" "Giant"
+    SetFontSize 30
+Show
+Class "Life Flasks"
+BaseType "Greater" "Large"
+AreaLevel < 24
+    SetFontSize 39
+Show
+Class "Life Flasks"
+BaseType "Medium" "Small"
+AreaLevel < 10
+    SetFontSize 36
+Hide
+Class "Life Flasks"
+BaseType "Greater" "Large" "Medium" "Small"
+    SetFontSize 24
+Hide
+Class "Life Flasks"
+BaseType "Sacred" "Grand" "Sanctified"
+    SetFontSize 18
+###  5.3.3 ----- Mana
+Show
+Class "Mana Flasks"
+BaseType "Divine" "Eternal"
+ItemLevel >= 82
+    MinimapIcon 2 Blue Raindrop
+    SetFontSize 45
+Show
+Class "Mana Flasks"
+BaseType "Divine" "Eternal"
+AreaLevel < 68
+    SetFontSize 39
+Hide
+Class "Mana Flasks"
+BaseType "Divine" "Eternal"
+    SetFontSize 30
+Show
+Class "Mana Flasks"
+BaseType "Sanctified" "Hallowed"
+AreaLevel < 60
+    SetFontSize 39
+Show
+Class "Mana Flasks"
+BaseType "Sacred" "Colossal" "Giant"
+AreaLevel < 42
+    SetFontSize 39
+Hide
+Class "Mana Flasks"
+BaseType "Sanctified" "Hallowed" "Sacred" "Colossal" "Giant"
+    SetFontSize 24
+Show
+Class "Mana Flasks"
+BaseType "Grand" "Greater" "Large"
+AreaLevel < 24
+    SetFontSize 39
+Show
+Class "Mana Flasks"
+BaseType "Medium" "Small"
+AreaLevel < 10
+    SetFontSize 39
+Hide
+Class "Mana Flasks"
+BaseType "Grand" "Greater" "Large" "Medium" "Small"
+    SetFontSize 18
+###  5.3.4 ----- Hybrid
+Hide
+Class "Hybrid Flasks"
+    SetFontSize 18
+#    6   - Recipes
+##   6.1 --- Currency
+###  6.1.1 ----- Chromatic
 Show
 Class "Gloves" "Helmets" "One Hand" "Shields" "Daggers" "Claws" "Boots"
 SocketGroup RGB
-Rarity < Unique
-FracturedItem False
-SynthesisedItem False
-Identified False
-Corrupted False
 HasInfluence None
     SetTextColor 255 255 255 255
-###  7.1.2 ----- Prism
+###  6.1.2 ----- Prism
 Show
 Class "Gems"
 Quality > 13
@@ -1160,10 +1094,10 @@ Class "Gems"
 Quality > 0
     SetFontSize 36
     SetTextColor 15 145 140 255
-###  7.1.4 ----- Chisel
-#    8     - Hiding
-##   8.1   --- Rarity based
-###  8.1.1 ----- Normal Items
+###  6.1.4 ----- Chisel
+#    7     - Hiding
+##   7.1   --- Rarity based
+###  7.1.1 ----- Normal Items
 Show
 Class "Amulets" "Belts" "Rings"
 Rarity Normal
@@ -1208,7 +1142,7 @@ Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws"
 Rarity Normal
 LinkedSockets < 5
     SetFontSize 30
-###  8.1.2 ----- Magic Items
+###  7.1.2 ----- Magic Items
 Show
 Class "Amulets" "Belts" "Rings"
 Rarity Magic
@@ -1245,7 +1179,7 @@ HasInfluence None
 FracturedItem False
 SynthesisedItem False
     SetFontSize 30
-###  8.1.3 ----- Rare Items
+###  7.1.3 ----- Rare Items
 Show
 Class "Amulets" "Belts" "Rings"
 Rarity Rare
@@ -1276,9 +1210,9 @@ Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
     SetFontSize 39
-#    9     - Error
-##   9.1   --- Global
-###  9.1.1 ----- Everything
+#    8     - Error
+##   8.0   --- Global
+###  8.0.0 ----- Everything
 Show
     CustomAlertSound "homm3snd/DANGER.wav"
     MinimapIcon 0 Red Star
