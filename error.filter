@@ -1,4 +1,4 @@
-# Version: 0.0.32
+# Version: 0.0.33
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -63,19 +63,28 @@
 ##   2.4   --- Basic Droponly
 ###  2.4.1 ----- Instilling Orb
 ###  2.4.2 ----- Enkindling Orb
-###  2.4.3 ----- Binding
-###  2.4.4 ----- Regal
-###  2.4.5 ----- Chaos
-###  2.4.6 ----- Vaal
-###  2.4.7 ----- Annulment
-###  2.4.8 ----- Exalted
-###  2.4.9 ----- Divine
-###  2.4.10----- Kalandra
+###  2.4.3 ----- Deck
+###  2.4.4 ----- Ember
+###  2.4.5 ----- Ichor
+###  2.4.6 ----- Regal
+###  2.4.7 ----- Chaos
+###  2.4.8 ----- Vaal
+###  2.4.9 ----- Blessed
+###  2.4.10----- Prism
+###  2.4.11----- Sextant
+###  2.4.12----- Exalted
+###  2.4.13----- Divine
+###  2.4.14----- Box
+###  2.4.15----- Sacred
+###  2.4.16----- Kalandra
 ###  2.5   --- Basic Droponly Monster Restrict
 ###  2.5.1 ----- All
 #    3     - League specific
 ##   3.1   --- Harbinger
 ###  3.1.1 ----- Shards
+###  3.2.2 ----- Binding
+###  3.3.3 ----- Horizons
+###  3.3.4 ----- Annulment
 ##   3.2   --- Heist
 ###  3.2.1 ----- Markers
 ###  3.2.2 ----- Contracts
@@ -369,8 +378,30 @@ Show
 Class "Stackable Currency"
 BaseType "Scroll of Wisdom"
 StackSize >= 8
-    MinimapIcon 2 Orange Circle
     CustomAlertSound "homm3snd/BUTTON.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBackgroundColor 180 140 100 255
+    SetBorderColor 90 40 50 255
+    SetTextColor 90 40 50 255
+Show
+Class "Stackable Currency"
+BaseType "Scroll of Wisdom"
+StackSize >= 6
+AreaLevel < 78
+    CustomAlertSound "homm3snd/BUTTON.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBackgroundColor 180 140 100 255
+    SetBorderColor 90 40 50 255
+    SetTextColor 90 40 50 255
+Show
+Class "Stackable Currency"
+BaseType "Scroll of Wisdom"
+StackSize >= 4
+AreaLevel < 73
+    CustomAlertSound "homm3snd/BUTTON.wav"
+    MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetBackgroundColor 180 140 100 255
     SetBorderColor 90 40 50 255
@@ -382,10 +413,69 @@ AreaLevel < 68
     SetBackgroundColor 180 140 100 255
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
+Hide
+Class "Stackable Currency"
+BaseType "Scroll of Wisdom"
+    SetFontSize 18
+    SetBackgroundColor 180 140 100 255
+    SetBorderColor 90 40 50 255
+    SetTextColor 90 40 50 255
 ###  2.1.2 ----- Portal
 Show
 Class "Stackable Currency"
 BaseType "Portal Scroll"
+StackSize >= 8
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBackgroundColor 180 140 100 255
+    SetBorderColor 40 80 180 255
+    SetTextColor 40 80 180 255
+Show
+Class "Stackable Currency"
+BaseType "Portal Scroll"
+StackSize >= 6
+AreaLevel < 83
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBackgroundColor 180 140 100 255
+    SetBorderColor 40 80 180 255
+    SetTextColor 40 80 180 255
+Show
+Class "Stackable Currency"
+BaseType "Portal Scroll"
+StackSize >= 4
+AreaLevel < 78
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBackgroundColor 180 140 100 255
+    SetBorderColor 40 80 180 255
+    SetTextColor 40 80 180 255
+Show
+Class "Stackable Currency"
+BaseType "Portal Scroll"
+StackSize >= 2
+AreaLevel < 73
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBackgroundColor 180 140 100 255
+    SetBorderColor 40 80 180 255
+    SetTextColor 40 80 180 255
+Show
+Class "Stackable Currency"
+BaseType "Portal Scroll"
+AreaLevel < 68
+    SetFontSize 36
+    SetBackgroundColor 180 140 100 255
+    SetBorderColor 40 80 180 255
+    SetTextColor 40 80 180 255
+Hide
+Class "Stackable Currency"
+BaseType "Portal Scroll"
+    SetFontSize 18
     SetBackgroundColor 180 140 100 255
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
@@ -411,18 +501,23 @@ BaseType "Orb of Alteration"
 Show
 Class "Stackable Currency"
 BaseType "Jeweller's Orb"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetTextColor 80 80 80 255
 ###  2.1.7 ----- Chromatic
 Show
 Class "Stackable Currency"
 BaseType "Chromatic Orb"
+    CustomAlertSound "homm3snd/Age.wav"
+    MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetTextColor 255 255 255 255
 ###  2.1.8 ----- Fusing
 Show
 Class "Stackable Currency"
 BaseType "Orb of Fusing"
+    CustomAlertSound "homm3snd/Bless.wav"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetTextColor 80 80 80 255
@@ -430,6 +525,7 @@ BaseType "Orb of Fusing"
 Show
 Class "Stackable Currency"
 BaseType "Orb of Chance"
+    CustomAlertSound "homm3snd/Bless.wav"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetTextColor 80 80 80 255
@@ -476,7 +572,7 @@ Class "Stackable Currency"
 BaseType "Glassblower's Bauble"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
-    SetFontSize 42
+    SetFontSize 45
     SetTextColor 0 0 0 255
 ##   2.3   --- Basic Master Vendor
 ###  2.3.1 ----- Unmaking
@@ -504,25 +600,41 @@ BaseType "Cartographer's Chisel"
 Show
 Class "Stackable Currency"
 BaseType "Instilling Orb"
-    CustomAlertSound "homm3snd/Cure.wav"
+    CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
 ###  2.4.2 ----- Enkindling Orb
 Show
 Class "Stackable Currency"
 BaseType "Enkindling Orb"
-    CustomAlertSound "homm3snd/Cure.wav"
+    CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
-###  2.4.3 ----- Binding
+###  2.4.3 ----- Deck
 Show
 Class "Stackable Currency"
-BaseType "Orb of Binding"
-    CustomAlertSound "homm3snd/TREASURE.wav"
+BaseType "Stacked Deck"
+    CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
-    SetTextColor 200 200 80 255
-###  2.4.4 ----- Regal
+    SetTextColor 200 200 120 255
+###  2.4.4 ----- Ember
+Show
+Class "Stackable Currency"
+BaseType "Lesser Eldritch Ember"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetTextColor 250 20 20 255
+###  2.4.5 ----- Ichor
+Show
+Class "Stackable Currency"
+BaseType "Lesser Eldritch Ichor"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetTextColor 20 20 250 255
+###  2.4.6 ----- Regal
 Show
 Class "Stackable Currency"
 BaseType "Regal Orb"
@@ -531,7 +643,7 @@ BaseType "Regal Orb"
     PlayEffect Orange Temp
     SetFontSize 45
     SetTextColor 200 200 120 255
-###  2.4.5 ----- Chaos
+###  2.4.7 ----- Chaos
 Show
 Class "Stackable Currency"
 BaseType "Chaos Orb"
@@ -540,7 +652,7 @@ BaseType "Chaos Orb"
     PlayEffect Orange Temp
     SetFontSize 45
     SetTextColor 200 200 80 255
-###  2.4.6 ----- Vaal
+###  2.4.8 ----- Vaal
 Show
 Class "Stackable Currency"
 BaseType "Vaal Orb"
@@ -549,31 +661,65 @@ BaseType "Vaal Orb"
     PlayEffect Orange Temp
     SetFontSize 45
     SetTextColor 210 0 0 255
-###  2.4.7 ----- Annulment
+###  2.4.9 ----- Blessed
 Show
 Class "Stackable Currency"
-BaseType "Orb of Annulment"
-    CustomAlertSound "homm3snd/QUEST.wav"
+BaseType "Blessed Orb"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Circle
+    PlayEffect Orange Temp
+    SetFontSize 45
+    SetTextColor 210 0 0 255
+###  2.4.10----- Prism
+Show
+Class "Stackable Currency"
+BaseType "Gemcutter's Prism"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Circle
+    PlayEffect Orange Temp
+    SetFontSize 45
+    SetTextColor 210 0 0 255
+###  2.4.11----- Sextant
+Show
+Class "Stackable Currency"
+BaseType "Awakened Sextant"
+    CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetFontSize 45
-###  2.4.8 ----- Exalted
+###  2.4.12----- Exalted
 Show
 Class "Stackable Currency"
 BaseType "Exalted Orb"
-    CustomAlertSound "homm3snd/QUEST.wav"
+    CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetFontSize 45
-###  2.4.9 ----- Divine
+###  2.4.13 ----- Divine
 Show
 Class "Stackable Currency"
 BaseType "Divine Orb"
-    CustomAlertSound "homm3snd/QUEST.wav"
+    CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetFontSize 45
-###  2.4.10----- Kalandra
+###  2.4.14----- Box
+Show
+Class "Stackable Currency"
+BaseType "Valdo's Puzzle Box"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+###  2.4.15----- Sacred
+Show
+Class "Stackable Currency"
+BaseType "Sacred Orb"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+###  2.4.16----- Kalandra
 Class "Stackable Currency"
 BaseType "Mirror of Kalandra"
     CustomAlertSound "homm3snd/UltimateArtifact.wav"
@@ -585,7 +731,7 @@ BaseType "Mirror of Kalandra"
 ###  2.5.1 ----- All
 Class "Stackable Currency"
 BaseType "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Elevated Sextant" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb"
-    CustomAlertSound "homm3snd/QUEST.wav"
+    CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetFontSize 45
@@ -621,6 +767,30 @@ Hide
 Class "Stackable Currency"
 BaseType "Scroll Fragment"
     SetFontSize 18
+###  3.2.2 ----- Binding
+Show
+Class "Stackable Currency"
+BaseType "Orb of Binding"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetTextColor 200 200 80 255
+###  3.3.3 ----- Horizons
+Show
+Class "Stackable Currency"
+BaseType "Orb of Horizons"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Circle
+    PlayEffect Orange Temp
+    SetFontSize 45
+###  3.3.4 ----- Annulment
+Show
+Class "Stackable Currency"
+BaseType "Orb of Annulment"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
 ##   3.2   --- Heist
 ###  3.2.1 ----- Markers
 Show
