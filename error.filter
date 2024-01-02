@@ -1617,15 +1617,70 @@ Rarity Magic
     SetFontSize 18
 ###  7.1.3 ----- Rare Items
 Show
-Class "Amulets" "Belts" "Rings"
+Class "Amulets" "Rings"
+BaseType "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Vermillion Ring" "Amethyst Ring"
 Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Red Diamond
     SetFontSize 45
 Show
-Class "Axes"
-BaseType "Runic Hatchet" "Engraved Hatchet" "Etched Hatchet"
+Class "Belts"
+BaseType "Crystal Belt" "Vanguard Belt" "Rustic Sash"
+Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Red Moon
+    SetFontSize 45
+Show
+Class "Helmets"
+BaseType "Bascinet" "Mask" "Pelt"
+BaseType "Nightmare" "Pig-Faced" "Fluted" "Deicide" "Vaal" "Harlequin" "Regicide" "Lion"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 2 Red Square
+    SetFontSize 45
+Show
+Class "Boots"
+BaseType "Boots"
+BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Fugitive" "Murder" "Assassin's" "Carnal" "Slink"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 2 Red Square
+    SetFontSize 45
+Show
+Class "Gloves"
+BaseType "Gauntlets" "Mitts" "Gloves"
+BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Murder" "Assassin's" "Carnal" "Ambush" "Slink"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 2 Red Square
+    SetFontSize 45
+Show
+Class "Body Armours"
+BaseType "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Desert Brigandine" "Dragonscale Doublet" "Sadist Garb" "Blood Raiment" "Assassin's Garb"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 2 Red Square
+    SetFontSize 45
+Show
+Class "Shields"
+BaseType "Spiked Shield" "Kite Shield"
+BaseType "Supreme" "Mirrored" "Sovereign" "Polished" "Champion"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup06.wav"
+    MinimapIcon 2 Red UpsideDownHouse
+    SetFontSize 45
+Show
+Class "One Hand Axes"
+BaseType "Hatchet"
+BaseType "Runic" "Engraved" "Etched"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Red Kite
     SetFontSize 45
+Show
+Class "Amulets" "Belts" "Rings"
+Rarity Rare
+    SetFontSize 42
 Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
@@ -1660,12 +1715,12 @@ Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
 DropLevel >= 64
-    SetFontSize 45
+    SetFontSize 39
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
 DropLevel >= 45
-    SetFontSize 39
+    SetFontSize 36
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
