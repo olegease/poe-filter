@@ -746,7 +746,7 @@ BaseType "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch
 ###  3.1.1 ----- Group F
 Show
 Class "Stackable Currency"
-BaseType "Remnant of Corruption" "Insanity" "Horror" "Delirium" "Hysteria"
+BaseType "Remnant of Corruption" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 0 Purple Kite
     PlayEffect Purple
@@ -761,20 +761,23 @@ BaseType "Deafening Essence"
     SetFontSize 45
 Show
 Class "Stackable Currency"
-BaseType "Shrieking Essence" "Screaming Essence"
+BaseType "Essence"
+BaseType "Shrieking" "Screaming"
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 1 Purple Kite
     PlayEffect Purple Temp
     SetFontSize 45
 Show
 Class "Stackable Currency"
-BaseType "Wailing Essence"
+BaseType "Essence"
+BaseType "Wailing"
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 2 Purple Kite
     SetFontSize 45
 Show
 Class "Stackable Currency"
 BaseType "Essence"
+BaseType "Weeping" "Muttering" "Whispering"
     SetFontSize 45
 ##   3.2   --- Harbinger
 ###  3.2.1 ----- Shards
@@ -1012,6 +1015,7 @@ Identified True
 Show
 Class "Divination Cards"
 BaseType "The Eldritch Decay" "Guardian's Challenge" "Altered Perception" "Rebirth and Renewal" "Checkmate" "Something Dark"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
     SetFontSize 45
@@ -1035,6 +1039,7 @@ BaseType "Her Mask" "The Puzzle"
 Show
 Class "Divination Cards"
 BaseType "The White Knight" "Draped in Dreams" "Magnum Opus" "Auspicious Ambitions" "Eldritch Perfection"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
     SetFontSize 45
@@ -1042,6 +1047,7 @@ BaseType "The White Knight" "Draped in Dreams" "Magnum Opus" "Auspicious Ambitio
 Show
 Class "Divination Cards"
 BaseType "The Celestial Justicar" "Bowyer's Dream" "Immortal Resolve" "The Celestial Stone" "The Sacrifice" "Imperial Legacy" "Broken Promises" "Duality"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
     SetFontSize 45
@@ -1049,6 +1055,7 @@ BaseType "The Celestial Justicar" "Bowyer's Dream" "Immortal Resolve" "The Celes
 Show
 Class "Divination Cards"
 BaseType "The Chains that Bind" "The Dark Mage" "The Surveyor" "Lost Worlds" "The Ethereal" "The Warlord" "The Dapper Prodigy" "Emperor of Purity" "The Porcupine"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 2 Grey Square
     SetFontSize 45
     SetTextColor 200 200 200 255
@@ -1075,6 +1082,7 @@ BaseType "The Metalsmith's Gift"
 Show
 Class "Divination Cards"
 BaseType "The Aspirant" "Further Invention" "Azure Rage"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 2 Grey Square
     SetFontSize 45
     SetTextColor 136 136 255 255
@@ -1106,6 +1114,7 @@ BaseType "The Carrion Crow" "The King's Blade" "The Inoculated" "Prosperity" "Th
 Show
 Class "Divination Cards"
 BaseType "Imperfect Memories" "A Dusty Memory" "Soul Quenched"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
     SetFontSize 45
@@ -1113,6 +1122,7 @@ BaseType "Imperfect Memories" "A Dusty Memory" "Soul Quenched"
 Show
 Class "Divination Cards"
 BaseType "Dying Light"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 2 Grey Square
     SetFontSize 45
     SetTextColor 255 255 119 255
@@ -1144,6 +1154,7 @@ BaseType "Lantador's Lost Love"
 Show
 Class "Divination Cards"
 BaseType "The Doctor" "Judging Voices" "The Apothecary" "The Shieldbearer"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
     SetFontSize 45
@@ -1151,6 +1162,7 @@ BaseType "The Doctor" "Judging Voices" "The Apothecary" "The Shieldbearer"
 Show
 Class "Divination Cards"
 BaseType "The Samurai's Eye" "Peaceful Moments" "Cursed Words" "Winter's Embrace" "The Forgotten Treasure" "The Prince of Darkness" "Justified Ambition"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
     SetFontSize 45
@@ -1165,6 +1177,7 @@ BaseType "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat"
 Show
 Class "Divination Cards"
 BaseType "The Fiend" "The Demon" "The Cheater" "Desecrated Virtue" "A Modest Request" "The Eternal War" "Lachrymal Necrosis" "The Destination" "The Leviathan" "The Price of Devotion" "The Insane Cat"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
     SetFontSize 45
@@ -1172,6 +1185,7 @@ BaseType "The Fiend" "The Demon" "The Cheater" "Desecrated Virtue" "A Modest Req
 Show
 Class "Divination Cards"
 BaseType "Arrogance of the Vaal" "The Easy Stroll" "The Gulf" "Brotherhood in Exile" "Fateful Meeting" "Love Through Ice" "Luminous Trove" "The Shepherd's Sandals" "Matryoshka"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
     SetFontSize 45
@@ -1179,6 +1193,7 @@ BaseType "Arrogance of the Vaal" "The Easy Stroll" "The Gulf" "Brotherhood in Ex
 Show
 Class "Divination Cards"
 BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden" "The Artist" "The Encroaching Darkness" "The One With All" "The Siren" "The Dragon's Heart" "The Gentleman" "The Mercenary" "The Trial" "Wealth and Power" "Audacity" "Pride Before the Fall" "The Lich" "Anarchy's Price" "Blind Venture" "The Fletcher" "The Thaumaturgist" "Volatile Power" "A Mother's Parting Gift" "The Traitor" "Turn the Other Cheek" "Treasure Hunter" "The Throne" "Lysah's Respite" "Dialla's Subjugation" "Call to the First Ones" "Lingering Remnants" "The Wolverine" "Atziri's Arsenal" "Left to Fate" "The Eye of the Dragon" "The Ruthless Ceinture" "Forbidden Power" "The Deceiver" "The Insatiable" "The Darkest Dream" "The Rite of Elements" "The Undaunted" "The Price of Protection" "The Wilted Rose" "The Landing" "Burning Blood" "Echoes of Love" "Vanity" "Akil's Prophecy" "Azyran's Reward" "Remembrance" "The Damned" "The Old Man" "The Price of Loyalty" "Deathly Designs" "Etched in Blood" "Squandered Prosperity" "The Bones" "The Chosen" "The Strategist" "Gift of Asenath" "The Greatest Intentions" "The Hive of Knowledge" "The Bitter Blossom" "The Unexpected Prize" "Triskaidekaphobia" "Unchained" "The Astromancer" "Deadly Joy" "The Enthusiasts" "The Emptiness" "The Price of Prescience" "A Stone Perfected" "The Fox in the Brambles" "The Magma Crab" "A Fate Worse Than Death" "From Bone to Ashes" "A Chilling Wind" "Poisoned Faith" "Assassin's Gift"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 2 Grey Square
     SetFontSize 45
     SetTextColor 210 0 0 255
@@ -1186,6 +1201,7 @@ BaseType "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explore
 Show # 1xKalandra 10xDivine 40xRegret 1xMirrorShard 1xEldersExalt 19xMirrorShard 1xTaintedMystic 5xElditchChaos 7xDivine 5xDivine 2xDivine 2xFracturing
 Class "Divination Cards"
 BaseType "House of Mirrors" "The Sephirot" "The Innocent" "Seven Years Bad Luck" "The Long Con" "Unrequited Love" "The Transformation" "Darker Half" "Divine Beauty" "Brother's Gift" "The Fortunate" "I See Brothers"
+    CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
     SetFontSize 45
@@ -1193,6 +1209,7 @@ BaseType "House of Mirrors" "The Sephirot" "The Innocent" "Seven Years Bad Luck"
 Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret 10xChaos 10xChisel 10xDeck 2xExalted 30xScouring 4xTaintedMystic 9xT6Essense 3xT7Essense 2xESextant 1xHarbinger 3xAnnul 10xExalted 1xAnnul 20xReport 10xSextant 5xFossil 5xExalt 10xDeliorb 10xVial 7xExalt 10xIncubator 10xOil 10xUnmaking
 Class "Divination Cards"
 BaseType "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token" "The Wrath" "The Cartographer" "Lucky Deck" "The Saint's Treasure" "No Traces" "The Rusted Bard" "Harmony of Souls" "The Cacophony" "Monochrome" "The Journey" "The Seeker" "Alluring Bounty" "Demigod's Wager" "The Side Quest" "Underground Forest" "The Tinkerer's Table" "Brother's Stash" "Dementophobia" "The Rabbit's Foot" "The Scout" "Parasitic Passengers" "The Tireless Extractor" "Ever-Changing"
+    CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
     SetFontSize 45
@@ -1200,8 +1217,9 @@ BaseType "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's To
 Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos 7xAlchemy 3xEssense 20xChance 17xChromes 20xAlteration 10xAlteration 13xAlteration 1xDeliorb 1xDeliorb 1xFertile
 Class "Divination Cards"
 BaseType "Chaotic Disposition" "Coveted Possession" "Lucky Connections" "The Gemcutter" "Three Faces in the Dark" "The Survivalist" "Three Voices" "The Fool" "The Heroic Shot" "Acclimatisation" "Society's Remorse" "A Sea of Blue" "Ambitious Obsession" "Disdain" "The Finishing Touch"
+    CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Grey Square
-    SetFontSize 42
+    SetFontSize 45
     SetTextColor 255 215 0 255
 Show # 5xRandom 1xChaos 3xFusing 1xVaal 20xQualityRng
 Class "Divination Cards"
@@ -1216,6 +1234,7 @@ BaseType "The Scholar"
 Show # Enlighten3L Exceptional1-20Q Exceptional
 Class "Divination Cards"
 BaseType "The Enlightened" "Home" "Gemcutter's Mercy"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 2 Grey Square
     SetFontSize 45
     SetTextColor 27 162 155 255
@@ -1238,6 +1257,7 @@ BaseType "Gift of the Gemling Queen" "The Fox"
 Show
 Class "Divination Cards"
 BaseType "The Immortal" "The Nurse" "The Patient"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
     SetFontSize 45
@@ -1245,6 +1265,7 @@ BaseType "The Immortal" "The Nurse" "The Patient"
 Show
 Class "Divination Cards"
 BaseType "The Void"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
     SetFontSize 45
@@ -1252,6 +1273,7 @@ BaseType "The Void"
 Show
 Class "Divination Cards"
 BaseType "Brush, Paint and Palette"
+    CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 2 Grey Square
     SetFontSize 45
     SetTextColor 64 64 64 255
@@ -1577,22 +1599,44 @@ Show
 Class "Amulets" "Belts" "Rings"
 Rarity Rare
     SetFontSize 45
+Show
+Class "Axes"
+BaseType "Runic Hatchet" "Engraved Hatchet" "Etched Hatchet"
+    SetFontSize 45
 Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
-AreaLevel >= 45
-DropLevel < 15
-    SetFontSize 21
+AreaLevel >= 83
+DropLevel < 64
+    SetFontSize 18
+Hide
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Rarity Rare
+AreaLevel >= 78
+DropLevel < 59
+    SetFontSize 24
+Hide
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Rarity Rare
+AreaLevel >= 73
+DropLevel < 51
+    SetFontSize 24
 Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
 AreaLevel >= 68
 DropLevel < 45
-    SetFontSize 27
+    SetFontSize 30
+Hide
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Rarity Rare
+AreaLevel >= 45
+DropLevel < 15
+    SetFontSize 30
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
-DropLevel >= 68
+DropLevel >= 64
     SetFontSize 45
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
