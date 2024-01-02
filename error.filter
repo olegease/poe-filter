@@ -243,6 +243,7 @@ Rarity Unique
 Show
 Class "Gems"
     SetTextColor 15 145 140 255
+    Continue
 ##   1.4   --- Background
 ###  1.4.1 ----- Currency
 Show
@@ -1437,6 +1438,7 @@ Class "Hybrid Flasks"
 Show
 Class "Gems"
 BaseType "Awakened"
+    CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 0 Green Triangle
     PlayEffect Green
     SetFontSize 45
@@ -1444,6 +1446,7 @@ BaseType "Awakened"
 Show
 Class "Gems"
 BaseType "Enlighten" "Enhance" "Empower"
+    CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 0 Green Triangle
     PlayEffect Green
     SetFontSize 45
@@ -1452,6 +1455,7 @@ Show
 Class "Gems"
 Quality >= 20
 GemLevel >= 20
+    CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 0 Green Triangle
     PlayEffect Green
     SetFontSize 45
@@ -1459,6 +1463,7 @@ GemLevel >= 20
 Show
 Class "Gems"
 GemLevel >= 20
+    CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 1 Green Triangle
     PlayEffect Green Temp
     PlayEffect Green
@@ -1467,12 +1472,14 @@ GemLevel >= 20
 Show
 Class "Gems"
 Quality >= 20
+    CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 1 Green Triangle
     PlayEffect Green Temp
     SetFontSize 45
 Show
 Class "Gems"
 Quality >= 12
+    CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 2 Green Triangle
     SetFontSize 45
 Show
@@ -1500,12 +1507,26 @@ AreaLevel >= 68
 ###  5.5.1 ----- White
 Show
 Class "Maps"
+MapTier < 6
     CustomAlertSound "homm3snd/MORALE.wav"
     MinimapIcon 0 White Square
     PlayEffect White
     SetFontSize 45
 ###  5.5.2 ----- Yellow
+Show
+Class "Maps"
+MapTier < 11
+    CustomAlertSound "homm3snd/MORALE.wav"
+    MinimapIcon 0 Yellow Square
+    PlayEffect Yellow
+    SetFontSize 45
 ###  5.5.3 ----- Red
+Show
+Class "Maps"
+    CustomAlertSound "homm3snd/MORALE.wav"
+    MinimapIcon 0 Red Square
+    PlayEffect Red
+    SetFontSize 45
 #    6     - Recipes
 ##   6.1   --- Currency
 ###  6.1.1 ----- Chromatic
@@ -1602,6 +1623,8 @@ Rarity Rare
 Show
 Class "Axes"
 BaseType "Runic Hatchet" "Engraved Hatchet" "Etched Hatchet"
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Red Kite
     SetFontSize 45
 Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
