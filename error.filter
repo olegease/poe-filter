@@ -1,80 +1,78 @@
+# Version: 0.0.32
 # Contents
-#    0     - Global styles (always Continue)
-##   0.0   --- Notes
-###  0.0.0 ----- Overview
-###  0.0.1 ----- Tiers
-###  0.0.2 ----- Icons
-##   0.1   --- Disable drop sounds for all items
-###  0.1.1 ----- All items
-##   0.2   --- Text
-###  0.2.1 ----- Normal Rarity
-###  0.2.2 ----- Magic Rarity
-###  0.2.3 ----- Rare Rarity
-###  0.2.4 ----- Unique Rarity
-##   0.3   --- Background
-###  0.3.1 ----- Currency
-###  0.3.2 ----- Weapons
-###  0.3.3 ----- Armours
-###  0.3.4 ----- Off-hands
-###  0.3.5 ----- Jewelery
-###  0.3.6 ----- Mana Flasks
-###  0.3.7 ----- Life Flasks
-###  0.3.8 ----- Utility Flasks
-###  0.3.9 ----- Divination Cards
-###  0.3.10----- Gems
-##   0.4   --- Border
-###  0.4.1 ----- Strength bases
-###  0.4.2 ----- Str/Dex bases
-###  0.4.3 ----- Str/Int bases
-###  0.4.4 ----- Dexterity bases
-###  0.4.5 ----- Dex/Int bases
-###  0.4.6 ----- Intelligence bases
-###  0.4.7 ----- Str/Dex/Int bases
-###  0.4.8 ----- Divination Cards
-###  0.4.9 ----- Gems
-##   0.5   --- Font
-###  0.5.1 ----- All items
-#    1     - Currency
-##   1.1   --- Basic Vendor
-###  1.1.1 ----- Wisdom
-###  1.1.2 ----- Portal
-###  1.1.3 ----- Transmutation
-###  1.1.4 ----- Augmentation
-###  1.1.5 ----- Alteration
-###  1.1.6 ----- Jewelers
-###  1.1.7 ----- Chromatic
-###  1.1.8 ----- Fusing
-###  1.1.9 ----- Chance
-###  1.1.10----- Scouring
-###  1.1.11----- Regret
-###  1.1.12----- Alchemy
-##   1.2   --- Basic Quality Vendor
-###  1.2.1 ----- Scrap
-###  1.2.2 ----- Whetstone
-###  1.2.3 ----- Bubble
-###  1.2.4 ----- Prism
-###  1.2.5 ----- Chisel
-##   1.3   --- Basic "Droponly"
-###  1.3.1 ----- Binding
-###  1.3.2 ----- Regal
-###  1.3.3 ----- Chaos
-###  1.3.4 ----- Vaal
-###  1.3.5 ----- Exalted
-###  1.3.6 ----- Annulment
-###  1.3.7 ----- Divine
-##   1.4   --- Basic Flask
-###  1.4.1 ----- Instilling Orb
-###  1.4.2 ----- Enkindling Orb
-#    2     - Gems
-##   2.0   --- Special
-###  2.0.1 ----- Awakened
-###  2.0.2 ----- Exceptional
-##   2.1   --- Min
-###  2.1.1 ----- Quality
-###  2.1.2 ----- Level
-##   2.2   --- Max
-###  2.2.1 ----- Quality
-###  2.2.2 ----- Level
+#    1     - Global styles (always Continue)
+##   1.1   --- Notes
+###  1.1.1 ----- Overview
+###  1.1.2 ----- Tiers
+###  1.1.3 ----- Icons
+###  1.1.4 ----- Sounds
+##   1.2   --- Drop sounds
+###  1.2.1 ----- All items
+##   1.3   --- Text
+###  1.3.1 ----- Normal Rarity
+###  1.3.2 ----- Magic Rarity
+###  1.3.3 ----- Rare Rarity
+###  1.3.4 ----- Unique Rarity
+###  1.3.5 ----- Gems
+##   1.4   --- Background
+###  1.4.1 ----- Currency
+###  1.4.2 ----- Weapons
+###  1.4.3 ----- Armours
+###  1.4.4 ----- Off-hands
+###  1.4.5 ----- Jewelery
+###  1.4.6 ----- Mana Flasks
+###  1.4.7 ----- Life Flasks
+###  1.4.8 ----- Utility Flasks
+###  1.4.9 ----- Divination Cards
+###  1.4.10----- Gems
+##   1.5   --- Border
+###  1.5.1 ----- Strength bases
+###  1.5.2 ----- Str/Dex bases
+###  1.5.3 ----- Str/Int bases
+###  1.5.4 ----- Dexterity bases
+###  1.5.5 ----- Dex/Int bases
+###  1.5.6 ----- Intelligence bases
+###  1.5.7 ----- Str/Dex/Int bases
+###  1.5.8 ----- Divination Cards
+###  1.5.9 ----- Gems
+##   1.6   --- Font
+###  1.6.1 ----- All items
+#    2     - Currency
+##   2.1   --- Basic Vendor
+###  2.1.1 ----- Wisdom
+###  2.1.2 ----- Portal
+###  2.1.3 ----- Transmutation
+###  2.1.4 ----- Augmentation
+###  2.1.5 ----- Alteration
+###  2.1.6 ----- Jewelers
+###  2.1.7 ----- Chromatic
+###  2.1.8 ----- Fusing
+###  2.1.9 ----- Chance
+###  2.1.10----- Scouring
+###  2.1.11----- Regret
+###  2.1.12----- Alchemy
+##   2.2   --- Basic Quality Vendor
+###  2.2.1 ----- Scrap
+###  2.2.2 ----- Whetstone
+###  2.2.3 ----- Bubble
+##   2.3   --- Basic Master Vendor
+###  2.3.1 ----- Unmaking
+###  2.3.2 ----- Chisel
+###  2.3.3 ----- Compass
+###  2.3.4 ----- Bestiary
+##   2.4   --- Basic Droponly
+###  2.4.1 ----- Instilling Orb
+###  2.4.2 ----- Enkindling Orb
+###  2.4.3 ----- Binding
+###  2.4.4 ----- Regal
+###  2.4.5 ----- Chaos
+###  2.4.6 ----- Vaal
+###  2.4.7 ----- Annulment
+###  2.4.8 ----- Exalted
+###  2.4.9 ----- Divine
+###  2.4.10----- Kalandra
+###  2.5   --- Basic Droponly Monster Restrict
+###  2.5.1 ----- All
 #    3     - League specific
 ##   3.1   --- Harbinger
 ###  3.1.1 ----- Shards
@@ -82,24 +80,31 @@
 ###  3.2.1 ----- Markers
 ###  3.2.2 ----- Contracts
 #    4     - Special
-##   4.0   --- Sockets
-###  4.0.1 ----- 6 link
-###  4.0.2 ----- 5 link
-###  4.0.3 ----- 6 Socket
-##   4.1   --- Unique
-###  4.1.0 ----- Global
-##   4.2   --- Fractured
-###  4.2.0 ----- Global
-##   4.3   --- Synthesised
-###  4.3.0 ----- Global
-##   4.4   --- Influenced
-###  4.4.0 ----- Global
-##   4.5   --- Veiled
-###  4.5.0 ----- Global
-##   4.6   --- Corrupted
-###  4.6.0 ----- Global
-##   4.7   --- Identified
-###  4.7.0 ----- Global
+##   4.1   --- Sockets
+###  4.1.1 ----- 6 link
+###  4.1.2 ----- 5 link
+###  4.1.3 ----- 6 Socket
+##   4.2   --- Unique
+###  4.2.1 ----- Bases
+###  4.2.2 ----- Global
+##   4.3   --- Fractured
+###  4.3.1 ----- Exotic
+###  4.3.2 ----- Global
+##   4.4   --- Synthesised
+###  4.4.1 ----- Exotic
+###  4.4.2 ----- Global
+##   4.5   --- Influenced
+###  4.5.1 ----- Exotic
+###  4.5.2 ----- Global
+##   4.6   --- Veiled
+###  4.6.1 ----- Exotic
+###  4.6.2 ----- Global
+##   4.7   --- Corrupted
+###  4.7.1 ----- Exotic
+###  4.7.2 ----- Global
+##   4.8   --- Identified
+###  4.8.1 ----- Exotic
+###  4.8.2 ----- Global
 #    5     - Other
 ##   5.1   --- Divination Cards
 ###  5.1.1 ----- Fragments
@@ -114,19 +119,25 @@
 ##   5.2   --- Jewels
 ###  5.2.1 ----- Basic
 ##   5.3   --- Flasks
-###  5.3.0 ----- Quality
-###  5.3.1 ----- Utility
-###  5.3.2 ----- Life
-###  5.3.3 ----- Mana
-###  5.3.4 ----- Hybrid
-##   5.4   --- Maps
-###  5.4.1 ----- White
-###  5.4.2 ----- Yellow
-###  5.4.3 ----- Red
+###  5.3.1 ----- Quality
+###  5.3.2 ----- Utility
+###  5.3.3 ----- Life
+###  5.3.4 ----- Mana
+###  5.3.5 ----- Hybrid
+##   5.4   --- Gems
+###  5.4.1 ----- Awakened
+###  5.4.2 ----- Exceptional
+###  5.4.3 ----- High Level and Quality
+###  5.4.4 ----- High Quality
+###  5.4.5 ----- High Level
+###  5.4.6 ----- Campaign
+##   5.5   --- Maps
+###  5.5.1 ----- White
+###  5.5.2 ----- Yellow
+###  5.5.3 ----- Red
 #    6     - Recipes
 ##   6.1   --- Currency
 ###  6.1.1 ----- Chromatic
-###  6.1.2 ----- Prism
 #    7     - Hiding
 ##   7.1   --- Rarity based
 ###  7.1.1 ----- Normal Items
@@ -138,16 +149,15 @@
 Show
 Class "Quest Items"
     CustomAlertSound "homm3snd/DEFAULT.wav"
-    MinimapIcon 0 Green Diamond
+    MinimapIcon 0 Green Cross
     PlayEffect Green
     SetFontSize 45
-#    0   - Global styles (always Continue)
-##   0.0   --- Notes
-###  0.0.0 ----- Overview
-# Version: 0.0.31
+#    1     - Global styles (always Continue)
+##   1.1   --- Notes
+###  1.1.1 ----- Overview
 # Filter for SSF
 # default font size for all items 33
-###  0.0.1 ----- Tiers
+###  1.1.2 ----- Tiers
 # Tiers split into 11: 8 tiers for show items, 3 tiers for hidden items, and 8 for items without sound icon and playeffect
 # 1 tier: show, font 45, sound, minimapicon 0, playeffect
 # 2 tier: show, font 45, sound, minimapicon 1, playeffect temp
@@ -160,7 +170,7 @@ Class "Quest Items"
 # 9 tier: hide, font 30
 #10 tier: hide, font 24
 #11 tier: hide, font 18
-###  0.0.2 ----- Icons Color+Shape combos
+###  1.1.3 ----- Icons
 # Orange Circle          - Stackable Currency
 # Grey   Square          - Divination Cards
 # White  Square          - Tier 1-5 Maps
@@ -175,85 +185,103 @@ Class "Quest Items"
 # Green  Raindrop        - Utility Flasks
 # Red    Raindrop        - Life Flasks
 # Blue   Raindrop        - Mana Flasks
-##   0.1 --- Disable drop sounds for all items
-###  0.1.1 ----- All items
+# Green  Cross         - Quest related
+###  1.1.4 ----- Sounds
+# homm3snd/Disease.wav      - Trash Uniques
+# homm3snd/BUTTON.wav       - Currency LOW T2
+# homm3snd/Chat.wav         - Currency LOW T1
+# homm3snd/FLAGMINE.wav     - Currency MID T3
+# homm3snd/Age.wav          - Currency MID T2
+# homm3snd/Bless.wav        - Currency MID T1
+# homm3snd/LUCK.wav         - Currency TOP T3
+# homm3snd/TREASURE.wav     - Currency TOP T2
+# homm3snd/Faerie.wav       - Currency TOP T1
+# homm3snd/UltimateArtifact - Currency T0 and God Tier Items
+# homm3snd/DEFAULT.wav      - Quest Campaign
+# homm3snd/QUEST.wav        - Quest Atlas
+##   1.2   --- Drop sounds
+###  1.2.1 ----- All items
 Show
     DisableDropSound
     Continue
-##   0.2 --- Text
-###  0.2.1 ----- Normal Rarity
+##   1.3   --- Text
+###  1.3.1 ----- Normal Rarity
 Show
 Rarity Normal
     SetTextColor 200 200 200 255
     Continue
-###  0.2.2 ----- Magic Rarity
+###  1.3.2 ----- Magic Rarity
 Show
 Rarity Magic
     SetTextColor 136 136 255 255
     Continue
-###  0.2.3 ----- Rare Rarity
+###  1.3.3 ----- Rare Rarity
 Show
 Rarity Rare
     SetTextColor 255 255 119 255
     Continue
-###  0.2.4 ----- Unique Rarity
+###  1.3.4 ----- Unique Rarity
 Show
 Rarity Unique
     SetTextColor 175 96 37 255
     Continue
-##   0.3 --- Background
-###  0.3.1 ----- Currency
+###  1.3.5 ----- Gems
+Show
+Class "Gems"
+    SetTextColor 15 145 140 255
+##   1.4   --- Background
+###  1.4.1 ----- Currency
 Show
 Class "Stackable Currency"
     SetBackgroundColor 255 215 0 255
     Continue
-###  0.3.2 ----- Weapons
+###  1.4.2 ----- Weapons
 Show
-Class "Bows" "Swords" "Axes" "Daggers" "Claws" "Maces" "Sceptre"
+Class "Bows" "Swords" "Axes" "Daggers" "Claws" "Maces" "Sceptres" "Staves" "Warstaves" "Wands"
     SetBackgroundColor 64 0 0 255
     Continue
-###  0.3.3 ----- Armours
+###  1.4.3 ----- Armours
 Show
 Class "Body Armours" "Boots" "Gloves" "Helmets"
     SetBackgroundColor 0 64 0 255
     Continue
-###  0.3.4 ----- Off-hands
+###  1.4.4 ----- Off-hands
 Show
 Class "Shields" "Quivers"
     SetBackgroundColor 64 0 64 255
     Continue
-###  0.3.5 ----- Jewelery
+###  1.4.5 ----- Jewelery
 Show
 Class "Rings" "Amulets" "Belts"
     SetBackgroundColor 0 0 64 255
     Continue
-###  0.3.6 ----- Mana Flasks
+###  1.4.6 ----- Mana Flasks
 Show
 Class "Mana Flasks"
     SetBackgroundColor 50 70 200 255
     Continue
-###  0.3.7 ----- Life Flasks
+###  1.4.7 ----- Life Flasks
 Show
 Class "Life Flasks"
     SetBackgroundColor 128 20 20 255
     Continue
-###  0.3.8 ----- Utility Flasks
+###  1.4.8 ----- Utility Flasks
 Show
 Class "Utility Flasks"
     SetBackgroundColor 30 130 80 255
     Continue
-###  0.3.9 ----- Divination Cards
+###  1.4.9 ----- Divination Cards
 Show
 Class "Divination Cards"
     SetBackgroundColor 64 64 64 255
     Continue
-###  0.3.10----- Gems
+###  1.4.10----- Gems
 Show
 Class "Gems"
     SetBackgroundColor 25 50 45 255
     Continue
-##   0.4 --- Border
-###  0.4.1 ----- Strength bases
+##   1.5   --- Border
+###  1.5.1 ----- Strength bases
 Show
 Class "Maces"
     SetBorderColor 128 0 0 255
@@ -263,7 +291,7 @@ Class "Body Armours" "Boots" "Gloves" "Helmets"
 BaseType "Plate Vest" "Chestplate" "Plate" "Greaves" "Gauntlets" "Helmet"
     SetBorderColor 128 0 0 255
     Continue
-###  0.4.2 ----- Str/Dex bases
+###  1.5.2 ----- Str/Dex bases
 Show
 Class "Axes" "Swords"
     SetBorderColor 128 128 0 255
@@ -273,7 +301,7 @@ Class "Body Armours" "Boots" "Gloves" "Helmets"
 BaseType "Scale Vest" "Brigandine" "Lamellar" "Full" "Fishscale" "Ironscale" "Bronzescale" "Steelscale" "Serpentscale" "Wyrmscale" "Hydrascale" "Dragonscale" "Helm" "Sallet" "Bascinet" "Lacquered Helmet"
     SetBorderColor 128 128 0 255
     Continue
-###  0.4.3 ----- Str/Int bases
+###  1.5.3 ----- Str/Int bases
 Show
 Class "Axes" "Swords"
     SetBorderColor 128 0 128 255
@@ -283,7 +311,7 @@ Class "Body Armours" "Boots" "Gloves" "Helmets"
 BaseType "Hauberk" "Chainmail" "Ringmail" "Boots" "Gloves" "Coif" "Crown" "Soldier Helmet" "Great Helmet" "Crusader Helmet" "Aventail Helmet" "Zealot Helmet" "Bone Helmet"
     SetBorderColor 128 0 128 255
     Continue
-###  0.4.4 ----- Dexterity bases
+###  1.5.4 ----- Dexterity bases
 Show
 Class "Bows"
     SetBorderColor 0 128 0 255
@@ -293,7 +321,7 @@ Class "Body Armours" "Boots" "Gloves" "Helmets"
 BaseType "Leather" "Garb" "Rawhide" "Goathide" "Deerskin" "Nubuck" "Eelskin" "Sharkskin" "Shagreen" "Stealth" "Slink" "Cap" "Tricorne" "Hood" "Pelt"
     SetBorderColor 0 128 0 255
     Continue
-###  0.4.5 ----- Dex/Int bases
+###  1.5.5 ----- Dex/Int bases
 Show
 Class "Axes" "Swords"
     SetBorderColor 0 128 128 255
@@ -303,7 +331,7 @@ Class "Body Armours" "Boots" "Gloves" "Helmets"
 BaseType "Waxed Garb" "Lacquered Garb" "Sadist" "Wrapped" "Strapped" "Clasped" "Shackled" "Trapper" "Ambush" "Carnal" "Assassin's Boots" "Murder" "Fugitive" "Mitts" "Mask"
     SetBorderColor 0 128 128 255
     Continue
-###  0.4.6 ----- Intelligence bases
+###  1.5.6 ----- Intelligence bases
 Show
 Class "Wands"
     SetBorderColor 0 0 128 255
@@ -313,128 +341,136 @@ Class "Body Armours" "Boots" "Gloves" "Helmets"
 BaseType "Robe" "Vestment" "Regalia" "Wrap" "Silken Garb" "Scholar" "Wool" "Leyline" "Velvet" "Silk" "Embroidered" "Aetherwind" "Satin" "Samite" "Conjurer" "Arcanist" "Sorcerer" "Circlet" "Cage"
     SetBorderColor 0 0 128 255
     Continue
-###  0.4.7 ----- Str/Dex/Int bases
+###  1.5.7 ----- Str/Dex/Int bases
 Show
 Class "Body Armours"
 BaseType "Grasping Mail" "Sacrificial Garb" "Runic"
     SetBorderColor 128 128 128 255
     Continue
-###  0.4.8 ----- Divination Cards
+###  1.5.8 ----- Divination Cards
 Show
 Class "Divination Cards"
     SetBorderColor 8 8 8 255
     Continue
-###  0.4.9 ----- Gems
+###  1.5.9 ----- Gems
 Show
 Class "Gems"
     SetBorderColor 55 80 70 255
     Continue
-##   0.5 --- Font
-###  0.5.1 ----- All items
+##   1.6   --- Font
+###  1.6.1 ----- All items
 Show
     SetFontSize 33
     Continue
-#    1   - Currency
-##   1.1 --- Basic Vendor
-###  1.1.1 ----- Wisdom
+#    2     - Currency
+##   2.1   --- Basic Vendor
+###  2.1.1 ----- Wisdom
 Show
 Class "Stackable Currency"
 BaseType "Scroll of Wisdom"
+StackSize >= 8
+    MinimapIcon 2 Orange Circle
+    CustomAlertSound "homm3snd/BUTTON.wav"
+    SetFontSize 45
     SetBackgroundColor 180 140 100 255
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
-###  1.1.2 ----- Portal
+Show
+Class "Stackable Currency"
+BaseType "Scroll of Wisdom"
+AreaLevel < 68
+    SetBackgroundColor 180 140 100 255
+    SetBorderColor 90 40 50 255
+    SetTextColor 90 40 50 255
+###  2.1.2 ----- Portal
 Show
 Class "Stackable Currency"
 BaseType "Portal Scroll"
     SetBackgroundColor 180 140 100 255
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
-###  1.1.3 ----- Transmutation
+###  2.1.3 ----- Transmutation
 Show
 Class "Stackable Currency"
 BaseType "Orb of Transmutation"
-    SetFontSize 36
+    SetFontSize 39
     SetTextColor 0 0 255 255
-###  1.1.4 ----- Augmentation
+###  2.1.4 ----- Augmentation
 Show
 Class "Stackable Currency"
 BaseType "Orb of Augmentation"
-    SetFontSize 36
+    SetFontSize 42
     SetTextColor 0 0 255 255
-###  1.1.5 ----- Alteration
+###  2.1.5 ----- Alteration
 Show
 Class "Stackable Currency"
 BaseType "Orb of Alteration"
-    MinimapIcon 2 Orange Circle
-    SetFontSize 39
+    SetFontSize 45
     SetTextColor 0 0 255 255
-###  1.1.6 ----- Jewelers
+###  2.1.6 ----- Jewelers
 Show
 Class "Stackable Currency"
 BaseType "Jeweller's Orb"
-    MinimapIcon 2 Orange Circle
-    SetFontSize 39
+    SetFontSize 45
     SetTextColor 80 80 80 255
-###  1.1.7 ----- Chromatic
+###  2.1.7 ----- Chromatic
 Show
 Class "Stackable Currency"
 BaseType "Chromatic Orb"
-    MinimapIcon 2 Orange Circle
-    SetFontSize 39
+    SetFontSize 45
     SetTextColor 255 255 255 255
-###  1.1.8 ----- Fusing
+###  2.1.8 ----- Fusing
 Show
 Class "Stackable Currency"
 BaseType "Orb of Fusing"
     MinimapIcon 2 Orange Circle
-    SetFontSize 39
+    SetFontSize 45
     SetTextColor 80 80 80 255
-###  1.1.9 ----- Chance
+###  2.1.9 ----- Chance
 Show
 Class "Stackable Currency"
 BaseType "Orb of Chance"
     MinimapIcon 2 Orange Circle
-    SetFontSize 39
+    SetFontSize 45
     SetTextColor 80 80 80 255
-###  1.1.10----- Scouring
+###  2.1.10----- Scouring
 Show
 Class "Stackable Currency"
 BaseType "Orb of Scouring"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 1 Orange Circle
-    SetFontSize 42
+    SetFontSize 45
     SetTextColor 200 200 200 255
-###  1.1.11----- Regret
+###  2.1.11----- Regret
 Show
 Class "Stackable Currency"
 BaseType "Orb of Regret"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 1 Orange Circle
-    SetFontSize 42
+    SetFontSize 45
     SetTextColor 200 200 200 255
-###  1.1.12----- Alchemy
+###  2.1.12----- Alchemy
 Show
 Class "Stackable Currency"
 BaseType "Orb of Alchemy"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 1 Orange Circle
-    SetFontSize 42
+    SetFontSize 45
     SetTextColor 200 200 80 255
-##   1.2 --- Basic Quality Vendor
-###  1.2.1 ----- Scrap
+##   2.2   --- Basic Quality Vendor
+###  2.2.1 ----- Scrap
 Show
 Class "Stackable Currency"
 BaseType "Armourer's Scrap"
     SetFontSize 36
     SetTextColor 0 0 0 255
-###  1.2.2 ----- Whetstone
+###  2.2.2 ----- Whetstone
 Show
 Class "Stackable Currency"
 BaseType "Blacksmith's Whetstone"
     SetFontSize 39
     SetTextColor 0 0 0 255
-###  1.2.3 ----- Bubble
+###  2.2.3 ----- Bubble
 Show
 Class "Stackable Currency"
 BaseType "Glassblower's Bauble"
@@ -442,8 +478,43 @@ BaseType "Glassblower's Bauble"
     MinimapIcon 2 Orange Circle
     SetFontSize 42
     SetTextColor 0 0 0 255
-##   1.3 --- Basic "Droponly"
-###  1.3.1 ----- Binding
+##   2.3   --- Basic Master Vendor
+###  2.3.1 ----- Unmaking
+Show
+Class "Stackable Currency"
+BaseType "Orb of Unmaking"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+    SetTextColor 164 100 20 255
+###  2.3.2 ----- Chisel
+Show
+Class "Stackable Currency"
+BaseType "Cartographer's Chisel"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+    SetTextColor 164 100 20 255
+###  2.3.3 ----- Compass
+###  2.3.4 ----- Bestiary
+##   2.4   --- Basic Droponly
+###  2.4.1 ----- Instilling Orb
+Show
+Class "Stackable Currency"
+BaseType "Instilling Orb"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+###  2.4.2 ----- Enkindling Orb
+Show
+Class "Stackable Currency"
+BaseType "Enkindling Orb"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+###  2.4.3 ----- Binding
 Show
 Class "Stackable Currency"
 BaseType "Orb of Binding"
@@ -451,7 +522,7 @@ BaseType "Orb of Binding"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetTextColor 200 200 80 255
-###  1.3.2 ----- Regal
+###  2.4.4 ----- Regal
 Show
 Class "Stackable Currency"
 BaseType "Regal Orb"
@@ -460,7 +531,7 @@ BaseType "Regal Orb"
     PlayEffect Orange Temp
     SetFontSize 45
     SetTextColor 200 200 120 255
-###  1.3.3 ----- Chaos
+###  2.4.5 ----- Chaos
 Show
 Class "Stackable Currency"
 BaseType "Chaos Orb"
@@ -469,7 +540,7 @@ BaseType "Chaos Orb"
     PlayEffect Orange Temp
     SetFontSize 45
     SetTextColor 200 200 80 255
-###  1.3.4 ----- Vaal
+###  2.4.6 ----- Vaal
 Show
 Class "Stackable Currency"
 BaseType "Vaal Orb"
@@ -478,15 +549,7 @@ BaseType "Vaal Orb"
     PlayEffect Orange Temp
     SetFontSize 45
     SetTextColor 210 0 0 255
-###  1.3.5 ----- Exalted
-Show
-Class "Stackable Currency"
-BaseType "Exalted Orb"
-    CustomAlertSound "homm3snd/QUEST.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-    SetFontSize 45
-###  1.3.6 ----- Annulment
+###  2.4.7 ----- Annulment
 Show
 Class "Stackable Currency"
 BaseType "Orb of Annulment"
@@ -494,7 +557,15 @@ BaseType "Orb of Annulment"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetFontSize 45
-###  1.3.7 ----- Divine
+###  2.4.8 ----- Exalted
+Show
+Class "Stackable Currency"
+BaseType "Exalted Orb"
+    CustomAlertSound "homm3snd/QUEST.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+###  2.4.9 ----- Divine
 Show
 Class "Stackable Currency"
 BaseType "Divine Orb"
@@ -502,66 +573,23 @@ BaseType "Divine Orb"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetFontSize 45
-###  1.3.8 ----- Mirror
-##   1.4   --- Basic Flask
-###  1.4.1 ----- Instilling Orb
-Show
+###  2.4.10----- Kalandra
 Class "Stackable Currency"
-BaseType "Instilling Orb"
-    CustomAlertSound "homm3snd/Cure.wav"
-    MinimapIcon 2 Orange Circle
+BaseType "Mirror of Kalandra"
+    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
     SetFontSize 45
-###  1.4.2 ----- Enkindling Orb
-Show
+    SetTextColor 255 0 0 255
+###  2.5   --- Basic Droponly Monster Restrict
+###  2.5.1 ----- All
 Class "Stackable Currency"
-BaseType "Enkindling Orb"
-    CustomAlertSound "homm3snd/Cure.wav"
-    MinimapIcon 2 Orange Circle
+BaseType "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Elevated Sextant" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb"
+    CustomAlertSound "homm3snd/QUEST.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
     SetFontSize 45
-#    2     - Gems
-##   2.0   --- Special
-###  2.0.1 ----- Awakened
-Show
-Class "Gems"
-BaseType "Awakened"
-    MinimapIcon 0 Green Triangle
-    PlayEffect Green
-    SetFontSize 45
-###  2.0.2 ----- Exceptional
-Show
-Class "Gems"
-BaseType "Enlighten" "Enhance" "Empower"
-    MinimapIcon 0 Green Triangle
-    PlayEffect Green
-    SetFontSize 45
-    SetTextColor 15 145 140 255
-##   2.1   --- Min
-###  2.1.1 ----- Quality
-Show
-Class "Gems"
-Quality 0
-    SetTextColor 15 145 140 255
-###  2.1.2 ----- Level
-Show
-Class "Gems"
-Quality 0
-GemLevel < 20
-    SetTextColor 15 145 140 255
-##   2.2   --- Max
-###  2.2.1 ----- Quality
-Show
-Class "Gems"
-Quality >= 20
-    MinimapIcon 1 Green Triangle
-    SetFontSize 45
-    SetTextColor 15 145 140 255
-###  2.2.2 ----- Level
-Show
-Class "Gems"
-GemLevel >= 20
-    MinimapIcon 2 Green Triangle
-    SetFontSize 45
-    SetTextColor 15 145 140 255
+    SetTextColor 255 0 0 255
 #    3     - League specific
 ##   3.1   --- Harbinger
 ###  3.1.1 ----- Shards
@@ -612,8 +640,8 @@ Class "Contracts"
     SetBackgroundColor 0 0 0 255
     SetBorderColor 0 0 0 255
 #    4     - Special
-##   4.0   --- Sockets
-###  4.0.1 ----- 6 link
+##   4.1   --- Sockets
+###  4.1.1 ----- 6 link
 Show
 LinkedSockets 6
     CustomAlertSound "homm3snd/BLOODLUS.wav"
@@ -621,7 +649,7 @@ LinkedSockets 6
     PlayEffect Orange
     SetFontSize 45
     SetTextColor 255 255 255 255
-###  4.0.2 ----- 5 link
+###  4.1.2 ----- 5 link
 Show
 LinkedSockets 5
     CustomAlertSound "homm3snd/LIGHTBLT.wav"
@@ -629,15 +657,16 @@ LinkedSockets 5
     PlayEffect Orange
     SetFontSize 45
     SetTextColor 255 255 255 255
-###  4.0.3 ----- 6 Socket
+###  4.1.3 ----- 6 Socket
 Show
 Sockets 6
+    CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
     SetFontSize 45
     SetTextColor 255 255 255 255
-##   4.1   --- Unique
-###  4.1.1 ----- Base types
+##   4.2   --- Unique
+###  4.2.1 ----- Bases
 Show
 Class "Belts"
 BaseType "Leather Belt" "Heavy Belt"
@@ -646,7 +675,7 @@ Rarity Unique
     MinimapIcon 0 Brown Moon
     PlayEffect Brown
     SetFontSize 45
-###  4.1.2 ------ Global
+###  4.2.2 ----- Global
 Show
 Class "Belts"
 Rarity Unique
@@ -694,40 +723,46 @@ Rarity Unique
     MinimapIcon 2 Brown Kite
     PlayEffect Brown Temp
     SetFontSize 45
-##   4.2   --- Fractured
-###  4.2.0 ----- Global
+##   4.3   --- Fractured
+###  4.3.1 ----- Exotic
+###  4.3.2 ----- Global
 Show
 FracturedItem True
     MinimapIcon 0 Cyan Raindrop
     PlayEffect Cyan
     SetFontSize 45
     SetTextColor 165 150 100 255
-##   4.3   --- Synthesised
-###  4.3.0 ----- Global
+##   4.4   --- Synthesised
+###  4.4.1 ----- Exotic
+###  4.4.2 ----- Global
 Show
 SynthesisedItem True
     MinimapIcon 1 Cyan Raindrop
     PlayEffect Cyan Temp
     SetFontSize 45
     SetTextColor 120 210 195 255
-##   4.4   --- Influenced
-###  4.4.0 ----- Global
+##   4.5   --- Influenced
+###  4.5.1 ----- Exotic
+###  4.5.2 ----- Global
 Show
 HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
     SetFontSize 45
-##   4.5   --- Veiled
-###  4.5.0 ----- Global
+##   4.6   --- Veiled
+###  4.6.1 ----- Exotic
+###  4.6.2 ----- Global
 Show
 HasExplicitMod "Veiled" "Veil"
     SetFontSize 45
     SetTextColor 192 192 192 255
-##   4.6   --- Corrupted
-###  4.6.0 ----- Global
+##   4.7   --- Corrupted
+###  4.7.1 ----- Exotic
+###  4.7.2 ----- Global
 Show
 Corrupted True
     SetFontSize 45
-##   4.7   --- Identified
-###  4.7.0 ----- Global
+##   4.8   --- Identified
+###  4.8.1 ----- Exotic
+###  4.8.2 ----- Global
 Show
 Identified True
     SetFontSize 39
@@ -998,7 +1033,7 @@ BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
 Rarity < Rare
     SetFontSize 24
 ##   5.3   --- Flasks
-###  5.3.0 ----- Quality
+###  5.3.1 ----- Quality
 Show
 Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
 Quality > 14
@@ -1011,7 +1046,7 @@ Show
 Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
 Quality > 4
     SetFontSize 39
-###  5.3.1 ----- Utility
+###  5.3.2 ----- Utility
 Show
 Class "Utility Flasks"
 ItemLevel >= 85
@@ -1034,7 +1069,7 @@ Class "Utility Flasks"
 AreaLevel < 68
 ItemLevel >= 1
     SetFontSize 39
-###  5.3.2 ----- Life
+###  5.3.3 ----- Life
 Show
 Class "Life Flasks"
 BaseType "Divine" "Eternal"
@@ -1087,7 +1122,7 @@ Hide
 Class "Life Flasks"
 BaseType "Sacred" "Grand" "Sanctified"
     SetFontSize 18
-###  5.3.3 ----- Mana
+###  5.3.4 ----- Mana
 Show
 Class "Mana Flasks"
 BaseType "Divine" "Eternal"
@@ -1131,46 +1166,92 @@ Hide
 Class "Mana Flasks"
 BaseType "Grand" "Greater" "Large" "Medium" "Small"
     SetFontSize 18
-###  5.3.4 ----- Hybrid
+###  5.3.5 ----- Hybrid
 Hide
 Class "Hybrid Flasks"
     SetFontSize 18
-##   5.4   --- Maps
-###  5.4.1 ----- White
+##   5.4   --- Gems
+###  5.4.1 ----- Awakened
+Show
+Class "Gems"
+BaseType "Awakened"
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    SetFontSize 45
+###  5.4.2 ----- Exceptional
+Show
+Class "Gems"
+BaseType "Enlighten" "Enhance" "Empower"
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    SetFontSize 45
+###  5.4.3 ----- High Level and Quality
+Show
+Class "Gems"
+Quality >= 20
+GemLevel >= 20
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    SetFontSize 45
+###  5.4.4 ----- High Level
+Show
+Class "Gems"
+GemLevel >= 20
+    MinimapIcon 1 Green Triangle
+    PlayEffect Green Temp
+    PlayEffect Green
+    SetFontSize 45
+###  5.4.5 ----- High Quality
+Show
+Class "Gems"
+Quality >= 20
+    MinimapIcon 1 Green Triangle
+    PlayEffect Green Temp
+    SetFontSize 45
+Show
+Class "Gems"
+Quality >= 12
+    MinimapIcon 2 Green Triangle
+    SetFontSize 45
+Show
+Class "Gems"
+Quality >= 8
+    SetFontSize 45
+Show
+Class "Gems"
+Quality >= 1
+    SetFontSize 39
+Show
+Class "Gems"
+BaseType "Vaal"
+    SetFontSize 39
+###  5.4.6 ----- Campaign
+Show
+Class "Gems"
+AreaLevel < 68
+    SetFontSize 39
+Hide
+Class Gems
+AreaLevel >= 68
+    SetFontSize 30
+##   5.5   --- Maps
+###  5.5.1 ----- White
 Show
 Class "Maps"
     CustomAlertSound "homm3snd/MORALE.wav"
     MinimapIcon 0 White Square
     PlayEffect White
     SetFontSize 45
-###  5.4.2 ----- Yellow
-###  5.4.3 ----- Red
-#    6   - Recipes
-##   6.1 --- Currency
+###  5.5.2 ----- Yellow
+###  5.5.3 ----- Red
+#    6     - Recipes
+##   6.1   --- Currency
 ###  6.1.1 ----- Chromatic
 Show
 Class "Gloves" "Helmets" "One Hand" "Shields" "Daggers" "Claws" "Boots"
 SocketGroup RGB
 HasInfluence None
     SetTextColor 255 255 255 255
-###  6.1.2 ----- Prism
-Show
-Class "Gems"
-Quality > 13
-    MinimapIcon 2 Green Triangle
-    SetFontSize 42
-    SetTextColor 15 145 140 255
-Show
-Class "Gems"
-Quality > 7
-    SetFontSize 39
-    SetTextColor 15 145 140 255
-Show
-Class "Gems"
-Quality > 0
-    SetFontSize 36
-    SetTextColor 15 145 140 255
-###  6.1.4 ----- Chisel
 #    7     - Hiding
 ##   7.1   --- Rarity based
 ###  7.1.1 ----- Normal Items
@@ -1283,8 +1364,8 @@ Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws"
 Rarity Rare
     SetFontSize 33
 #    8     - Error
-##   8.0   --- Global
-###  8.0.0 ----- Everything
+##   8.1   --- Global
+###  8.1.1 ----- Everything
 Show
     CustomAlertSound "homm3snd/DANGER.wav"
     MinimapIcon 0 Red Star
