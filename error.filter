@@ -1,4 +1,4 @@
-# Version: 0.0.35
+# Version: 0.0.36
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -25,6 +25,7 @@
 ###  1.4.8 ----- Utility Flasks
 ###  1.4.9 ----- Divination Cards
 ###  1.4.10----- Gems
+###  1.4.11----- Tainted Currency
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
 ###  1.5.2 ----- Str/Dex bases
@@ -38,6 +39,8 @@
 ##   1.6   --- Font
 ###  1.6.1 ----- All items
 #    2     - Currency
+##   2.0   --- Tainted
+###  2.0.0 ----- All
 ##   2.1   --- Basic Vendor
 ###  2.1.1 ----- Wisdom
 ###  2.1.2 ----- Portal
@@ -83,16 +86,46 @@
 ##   3.1   --- Essence
 ###  3.1.1 ----- Group F
 ###  3.1.2 ----- Tiers
-##   3.2   --- Harbinger
-###  3.2.1 ----- Shards
-###  3.2.2 ----- Binding
-###  3.2.3 ----- Horizons
-###  3.2.4 ----- Annulment
-##   3.3   --- Betrayal
-###  3.3.1 ----- Scarabs
-##   3.4   --- Heist
-###  3.4.1 ----- Markers
-###  3.4.2 ----- Contracts
+##   3.2   --- Breach
+###  3.2.1 ----- Splinters
+###  3.2.2 ----- Blessings
+##   3.3   --- Harbinger
+###  3.3.1 ----- Shards
+###  3.3.2 ----- Binding
+###  3.3.3 ----- Horizons
+###  3.3.4 ----- Annulment
+##   3.3   --- Incursion
+###  3.3.1 ----- Vials
+##   3.4   --- Delve
+###  3.4.1 ----- Fossils
+###  3.4.2 ----- Resonators
+##   3.5   --- Betrayal
+###  3.5.1 ----- Scarabs
+##   3.6   --- Legion
+###  3.6.1 ----- Splinters
+###  3.6.2 ----- Incubators
+##   3.7   --- Blight
+###  3.7.1 ----- Oils
+##   3.8   --- Delirium
+###  3.8.1 ----- Orbs
+###  3.8.2 ----- Splinters
+##   3.9   --- Harvest
+###  3.9.1 ----- Lifeforce
+##   3.10  --- Heist
+###  3.10.1----- Markers
+###  3.10.2----- Contracts
+###  3.10.3----- Blueprints
+##   3.11  --- Ritual
+###  3.11.1----- Splinters
+###  3.11.2----- Vessel
+##   3.12  --- Ultimatum
+###  3.12.1----- Catalysts
+##   3.13  --- Expedition
+###  3.13.1----- Logbooks
+###  3.13.2----- Reroll currency
+##   3.14  --- Sanctum
+###  3.14.1----- Research
+###  3.14.2----- Relics
 #    4     - Special
 ##   4.1   --- Sockets
 ###  4.1.1 ----- 6 link
@@ -149,6 +182,8 @@
 ###  5.5.1 ----- White
 ###  5.5.2 ----- Yellow
 ###  5.5.3 ----- Red
+##   5.6   --- Map Fragments
+###  5.6.1 ----- Vessel
 #    6     - Recipes
 ##   6.1   --- Currency
 ###  6.1.1 ----- Chromatic
@@ -185,7 +220,9 @@ Class "Quest Items"
 #10 tier: hide, font 24
 #11 tier: hide, font 18
 ###  1.1.3 ----- Icons
-# Orange Circle          - Stackable Currency
+# Orange Circle          - Currency Basic
+# Orange Diamond         - Currency Catalyst
+# Orange Raindrop        - Currency Oils
 # Grey   Square          - Divination Cards
 # White  Square          - Tier 1-5 Maps
 # Yellow Square          - Tier 6-10 Maps
@@ -206,11 +243,15 @@ Class "Quest Items"
 # homm3snd/Chat.wav         - Currency LOW T1
 # homm3snd/FLAGMINE.wav     - Currency MID T3
 # homm3snd/Age.wav          - Currency MID T2
-# homm3snd/Bless.wav        - Currency MID T1
+# homm3snd/SysMsg.wav       - Currency MID T1
 # homm3snd/LUCK.wav         - Currency TOP T3
 # homm3snd/TREASURE.wav     - Currency TOP T2
 # homm3snd/Faerie.wav       - Currency TOP T1
 # homm3snd/UltimateArtifact - Currency T0 and God Tier Items
+# homm3snd/BIND.wav         - Low Essences
+# homm3snd/Dragon.wav       - High Essences
+# homm3snd/Graveyard.wav    - Logbooks
+# homm3snd/GetProtection.wav- Guardian Maps
 # homm3snd/DEFAULT.wav      - Quest Campaign
 # homm3snd/QUEST.wav        - Quest Atlas
 ##   1.2   --- Drop sounds
@@ -295,6 +336,12 @@ Show
 Class "Gems"
     SetBackgroundColor 25 50 45 255
     Continue
+###  1.4.11----- Tainted Currency
+Show
+Class "Stackable Currency"
+BaseType "Tainted"
+    SetBackgroundColor 210 0 0 255
+    Continue
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
 Show
@@ -378,6 +425,16 @@ Show
     SetFontSize 33
     Continue
 #    2     - Currency
+##   2.0   --- Tainted
+###  2.0.0 ----- All
+Show
+Class "Stackable Currency"
+BaseType "Tainted"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+    SetFontSize 45
+    SetTextColor 64 64 80
 ##   2.1   --- Basic Vendor
 ###  2.1.1 ----- Wisdom
 Show
@@ -523,7 +580,7 @@ BaseType "Chromatic Orb"
 Show
 Class "Stackable Currency"
 BaseType "Orb of Fusing"
-    CustomAlertSound "homm3snd/Bless.wav"
+    CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetTextColor 80 80 80 255
@@ -531,7 +588,7 @@ BaseType "Orb of Fusing"
 Show
 Class "Stackable Currency"
 BaseType "Orb of Chance"
-    CustomAlertSound "homm3snd/Bless.wav"
+    CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetTextColor 80 80 80 255
@@ -772,7 +829,7 @@ Show
 Class "Stackable Currency"
 BaseType "Essence"
 BaseType "Wailing"
-    CustomAlertSound "homm3snd/DRAGON.wav"
+    CustomAlertSound "homm3snd/BIND.wav"
     MinimapIcon 2 Purple Kite
     SetFontSize 45
 Show
@@ -780,8 +837,31 @@ Class "Stackable Currency"
 BaseType "Essence"
 BaseType "Weeping" "Muttering" "Whispering"
     SetFontSize 45
-##   3.2   --- Harbinger
-###  3.2.1 ----- Shards
+##   3.2   --- Breach
+###  3.2.1 ----- Splinters
+Show
+Class "Stackable Currency"
+BaseType "Splinter of"
+BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Cross
+    SetFontSize 45
+    SetBorderColor 64 16 104 255
+    SetTextColor 128 32 208 255
+###  3.2.2 ----- Blessings
+Show
+Class "Stackable Currency"
+BaseType "Blessing of"
+BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Cross
+    PlayEffect Orange
+    SetFontSize 45
+    SetBorderColor 64 16 104 255
+    SetTextColor 128 32 208 255
+###  3.2.3 ----- Breachstones
+##   3.3   --- Harbinger
+###  3.3.1 ----- Shards
 Show
 Class "Stackable Currency"
 BaseType "Mirror Shard" "Fracturing Shard"
@@ -810,7 +890,7 @@ Hide
 Class "Stackable Currency"
 BaseType "Scroll Fragment"
     SetFontSize 18
-###  3.2.2 ----- Binding
+###  3.3.2 ----- Binding
 Show
 Class "Stackable Currency"
 BaseType "Orb of Binding"
@@ -818,7 +898,7 @@ BaseType "Orb of Binding"
     MinimapIcon 2 Orange Circle
     SetFontSize 45
     SetTextColor 200 200 80 255
-###  3.2.3 ----- Horizons
+###  3.3.3 ----- Horizons
 Show
 Class "Stackable Currency"
 BaseType "Orb of Horizons"
@@ -826,7 +906,7 @@ BaseType "Orb of Horizons"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
     SetFontSize 45
-###  3.2.4 ----- Annulment
+###  3.3.4 ----- Annulment
 Show
 Class "Stackable Currency"
 BaseType "Orb of Annulment"
@@ -834,8 +914,59 @@ BaseType "Orb of Annulment"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetFontSize 45
-##   3.3   --- Betrayal
-###  3.3.1 ----- Scarabs
+##   3.3   --- Incursion
+###  3.3.1 ----- Vials
+Show
+Class "Stackable Currency"
+BaseType "Vial of"
+    CustomAlertSound "homm3snd/Temple.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+    SetTextColor 175 96 37 255
+##   3.4   --- Delve
+###  3.4.1 ----- Fossils
+Show
+Class "Stackable Currency"
+BaseType "Fossil"
+    CustomAlertSound "homm3snd/Age.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+    SetBorderColor 248 128 8 255
+    SetTextColor 248 80 8 255
+###  3.4.2 ----- Resonators
+Show
+Class "Delve Stackable Socketable Currency"
+BaseType "Primitive" "Potent"
+    CustomAlertSound "homm3snd/Prayer.wav"
+    MinimapIcon 2 Yellow Pentagon
+    SetFontSize 45
+    SetBackgroundColor 255 255 128 255
+    SetBorderColor 64 64 8 255
+    SetTextColor 128 92 0 255
+Show
+Class "Delve Stackable Socketable Currency"
+BaseType "Powerful"
+    CustomAlertSound "homm3snd/View.wav"
+    MinimapIcon 1 Yellow Pentagon
+    PlayEffect Yellow Temp
+    SetFontSize 45
+    SetBackgroundColor 255 255 128 255
+    SetBorderColor 64 64 8 255
+    SetTextColor 128 92 0 255
+Show
+Class "Delve Stackable Socketable Currency"
+BaseType "Prime"
+    CustomAlertSound "homm3snd/ARMGEDN.wav"
+    MinimapIcon 0 Yellow Pentagon
+    PlayEffect Yellow
+    SetFontSize 45
+    SetBackgroundColor 255 255 128 255
+    SetBorderColor 64 64 8 255
+    SetTextColor 128 92 0 255
+##   3.5   --- Betrayal
+###  3.5.1 ----- Scarabs
 Show
 Class "Map Fragments"
 BaseType "Winged"
@@ -854,18 +985,152 @@ BaseType "Scarab"
     SetFontSize 45
 Show
 Class "Map Fragments"
-BaseType "Polished"
+BaseType "Polished" "Rusted"
 BaseType "Scarab"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 White Hexagon
     SetFontSize 45
+##   3.6   --- Legion
+###  3.6.1 ----- Splinters
 Show
-Class "Map Fragments"
-BaseType "Rusted"
-BaseType "Scarab"
+Class "Stackable Currency"
+BaseType "Timeless"
+BaseType "Splinter"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Orange Circle
     SetFontSize 45
-##   3.4   --- Heist
-###  3.4.1 ----- Markers
+###  3.6.2 ----- Incubators
+Show
+Class "Incubators"
+    CustomAlertSound "homm3snd/Regener.wav"
+    MinimapIcon 0 Yellow Kite
+    PlayEffect Yellow
+    SetFontSize 45
+    SetBackgroundColor 128 108 20 255
+    SetBorderColor 80 64 8 255
+    SetTextColor 200 188 64 255
+##   3.7   --- Blight
+###  3.7.1 ----- Oils
+Show
+Class "Stackable Currency"
+BaseType "Oil"
+BaseType "Clear"
+    SetFontSize 33
+    SetBorderColor 0 108 20 255
+    SetTextColor 0 164 28 255
+Show
+Class "Stackable Currency"
+BaseType "Oil"
+BaseType "Sepia"
+    SetFontSize 36
+    SetBorderColor 0 108 20 255
+    SetTextColor 0 164 28 255
+Show
+Class "Stackable Currency"
+BaseType "Oil"
+BaseType "Amber"
+    SetFontSize 39
+    SetBorderColor 0 108 20 255
+    SetTextColor 0 164 28 255
+Show
+Class "Stackable Currency"
+BaseType "Oil"
+BaseType "Verdant" "Teal"
+    SetFontSize 42
+    SetBorderColor 0 108 20 255
+    SetTextColor 0 164 28 255
+Show
+Class "Stackable Currency"
+BaseType "Oil"
+BaseType "Azure" "Indigo"
+    SetFontSize 45
+    SetBorderColor 0 108 20 255
+    SetTextColor 0 164 28 255
+Show
+Class "Stackable Currency"
+BaseType "Oil"
+BaseType "Violet" "Crimson"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Raindrop
+    SetFontSize 45
+    SetBorderColor 0 108 20 255
+    SetTextColor 0 164 28 255
+Show
+Class "Stackable Currency"
+BaseType "Oil"
+BaseType "Opalescent" "Black" "Silver"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Raindrop
+    PlayEffect Orange Temp
+    SetFontSize 45
+    SetBorderColor 0 108 20 255
+    SetTextColor 0 164 28 255
+Show
+Class "Stackable Currency"
+BaseType "Oil"
+BaseType "Golden" "Tainted" "Reflective"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Raindrop
+    PlayEffect Orange
+    SetFontSize 45
+    SetBorderColor 0 108 20 255
+    SetTextColor 0 164 28 255
+##   3.8   --- Delirium
+###  3.8.1 ----- Orbs
+Show
+Class "Stackable Currency"
+BaseType "Delirium Orb"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+    SetBorderColor 8 8 8 255
+    SetBackgroundColor 64 64 64 255
+###  3.8.2 ----- Splinters
+Class "Stackable Currency"
+BaseType "Simulacrum Splinter"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBorderColor 8 8 8 255
+    SetBackgroundColor 64 64 64 255
+##   3.9   --- Harvest
+###  3.9.1 ----- Lifeforce
+Show
+Class "Stackable Currency"
+BaseType "Wild Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBorderColor 120 40 35 255
+    SetTextColor 190 55 100 255
+Show
+Class "Stackable Currency"
+BaseType "Vivid Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBorderColor 60 50 10 255
+    SetTextColor 120 140 20 255
+Show
+Class "Stackable Currency"
+BaseType "Primal Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+    SetBorderColor 25 75 100 255
+    SetTextColor 50 140 190 255
+Show
+Class "Stackable Currency"
+BaseType "Sacred Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+    SetBorderColor 80 92 116 255
+    SetTextColor 80 92 116 255
+##   3.10  --- Heist
+###  3.10.1----- Markers
 Show
 Class "Stackable Currency"
 BaseType "Rogue's Marker"
@@ -874,7 +1139,7 @@ BaseType "Rogue's Marker"
     PlayEffect Orange
     SetFontSize 45
     SetTextColor 255 170 140 255
-###  3.4.2 ----- Contracts
+###  3.10.2----- Contracts
 Show
 Class "Contracts"
     CustomAlertSound "homm3snd/Nwherolv.wav"
@@ -883,6 +1148,67 @@ Class "Contracts"
     SetFontSize 45
     SetBackgroundColor 0 0 0 255
     SetBorderColor 0 0 0 255
+###  3.10.3----- Blueprints
+Show
+Class "Blueprints"
+    CustomAlertSound "homm3snd/Lighthouse.wav"
+    MinimapIcon 0 Red Square
+    PlayEffect Red
+    SetFontSize 45
+    SetBackgroundColor 188 140 108 255
+    SetBorderColor 94 69 54 255
+##   3.11  --- Ritual
+###  3.11.1----- Splinters
+###  3.11.2----- Vessel
+##   3.12  --- Ultimatum
+###  3.12.1----- Catalysts
+Show
+Class "Stackable Currency"
+BaseType "Catalyst"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 0 Orange Diamond
+    PlayEffect Orange
+    SetFontSize 45
+##   3.13  --- Expedition
+###  3.13.1----- Logbooks
+Show
+Class "Expedition Logbooks"
+    CustomAlertSound "homm3snd/Graveyard.wav"
+    MinimapIcon 0 Grey Cross
+    PlayEffect Grey
+    SetFontSize 45
+    SetBackgroundColor 98 108 100 255
+    SetBorderColor 72 128 72 255
+###  3.13.2----- Reroll currency
+Show
+Class "Stackable Currency"
+BaseType "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetFontSize 45
+    SetBorderColor 72 128 72 255
+    SetTextColor 80 108 84 255
+##   3.14  --- Sanctum
+###  3.14.1----- Research
+Show
+Class "Sanctum Research"
+BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
+    CustomAlertSound "homm3snd/Mystery.wav"
+    MinimapIcon 0 Green Square
+    PlayEffect Green
+    SetFontSize 45
+    SetBackgroundColor 80 70 60 255
+    SetBorderColor 64 228 64 255
+    SetTextColor 64 228 64 255
+###  3.14.2----- Relics
+Show
+Class "Relics"
+    CustomAlertSound "homm3snd/Preyer.wav"
+    MinimapIcon 2 Pink Hexagon
+    SetFontSize 45
+    SetBackgroundColor 80 70 60 255
+    SetBorderColor 64 228 64 255
 #    4     - Special
 ##   4.1   --- Sockets
 ###  4.1.1 ----- 6 link
@@ -1527,6 +1853,18 @@ Class "Maps"
     MinimapIcon 0 Red Square
     PlayEffect Red
     SetFontSize 45
+##   5.6   --- Map Fragments
+###  5.6.1 ----- Vessel
+Show
+Class "Map Fragments"
+BaseType "Divine Vessel"
+    CustomAlertSound "homm3snd/QUEST.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetFontSize 45
+    SetBackgroundColor 40 50 70 255
+    SetBorderColor 64 84 104 255
+    SetTextColor 184 84 64 255
 #    6     - Recipes
 ##   6.1   --- Currency
 ###  6.1.1 ----- Chromatic
