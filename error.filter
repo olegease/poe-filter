@@ -1221,7 +1221,7 @@ BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
 ###  3.14.2----- Relics
 Show
 Class "Relics"
-    CustomAlertSound "homm3snd/Preyer.wav"
+    CustomAlertSound "homm3snd/Prayer.wav"
     MinimapIcon 2 Pink Hexagon
     SetFontSize 45
     SetBackgroundColor 80 70 60 255
