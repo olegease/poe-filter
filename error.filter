@@ -1,4 +1,4 @@
-# Version: 0.0.36
+# Version: 0.0.37
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -26,6 +26,7 @@
 ###  1.4.9 ----- Divination Cards
 ###  1.4.10----- Gems
 ###  1.4.11----- Tainted Currency
+###  1.4.12----- Jewels
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
 ###  1.5.2 ----- Str/Dex bases
@@ -102,15 +103,18 @@
 ##   3.5   --- Betrayal
 ###  3.5.1 ----- Scarabs
 ##   3.6   --- Legion
-###  3.6.1 ----- Splinters
-###  3.6.2 ----- Incubators
+###  3.6.1 ----- Incubators
+###  3.6.2 ----- Splinters
+###  3.6.3 ----- Emblems
 ##   3.7   --- Blight
 ###  3.7.1 ----- Oils
 ##   3.8   --- Delirium
 ###  3.8.1 ----- Orbs
 ###  3.8.2 ----- Splinters
+###  3.8.3 ----- Simulacrum
 ##   3.9   --- Harvest
 ###  3.9.1 ----- Lifeforce
+###  3.9.2 ----- Blossom
 ##   3.10  --- Heist
 ###  3.10.1----- Markers
 ###  3.10.2----- Contracts
@@ -184,6 +188,12 @@
 ###  5.5.3 ----- Red
 ##   5.6   --- Map Fragments
 ###  5.6.1 ----- Vessel
+###  5.6.2 ----- Atziri
+###  5.6.3 ----- Shaper
+###  5.6.4 ----- Elder
+###  5.6.5 ----- Uber
+###  5.6.6 ----- Sirus
+###  5.6.7 ----- Maven
 #    6     - Recipes
 ##   6.1   --- Currency
 ###  6.1.1 ----- Chromatic
@@ -342,6 +352,10 @@ Class "Stackable Currency"
 BaseType "Tainted"
     SetBackgroundColor 210 0 0 255
     Continue
+###  1.4.12----- Jewels
+Show
+Class "Jewels"
+    SetBackgroundColor 64 80 108 255
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
 Show
@@ -991,15 +1005,7 @@ BaseType "Scarab"
     MinimapIcon 2 White Hexagon
     SetFontSize 45
 ##   3.6   --- Legion
-###  3.6.1 ----- Splinters
-Show
-Class "Stackable Currency"
-BaseType "Timeless"
-BaseType "Splinter"
-    CustomAlertSound "homm3snd/FLAGMINE.wav"
-    MinimapIcon 2 Orange Circle
-    SetFontSize 45
-###  3.6.2 ----- Incubators
+###  3.6.1 ----- Incubators
 Show
 Class "Incubators"
     CustomAlertSound "homm3snd/Regener.wav"
@@ -1009,6 +1015,15 @@ Class "Incubators"
     SetBackgroundColor 128 108 20 255
     SetBorderColor 80 64 8 255
     SetTextColor 200 188 64 255
+###  3.6.2 ----- Splinters
+Show
+Class "Stackable Currency"
+BaseType "Timeless"
+BaseType "Splinter"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Orange Circle
+    SetFontSize 45
+###  3.6.3 ----- Emblems
 ##   3.7   --- Blight
 ###  3.7.1 ----- Oils
 Show
@@ -1094,6 +1109,7 @@ BaseType "Simulacrum Splinter"
     SetFontSize 45
     SetBorderColor 8 8 8 255
     SetBackgroundColor 64 64 64 255
+###  3.8.3 ------ Simulacrum
 ##   3.9   --- Harvest
 ###  3.9.1 ----- Lifeforce
 Show
@@ -1129,6 +1145,7 @@ BaseType "Sacred Crystallised Lifeforce"
     SetFontSize 45
     SetBorderColor 80 92 116 255
     SetTextColor 80 92 116 255
+##   3.9.2 ----- Blossom
 ##   3.10  --- Heist
 ###  3.10.1----- Markers
 Show
@@ -1329,13 +1346,13 @@ HasExplicitMod "Veiled" "Veil"
 ###  4.7.2 ----- Global
 Show
 Corrupted True
-    SetFontSize 45
+    SetFontSize 39
 ##   4.8   --- Identified
 ###  4.8.1 ----- Exotic
 ###  4.8.2 ----- Global
 Show
 Identified True
-    SetFontSize 39
+    SetFontSize 33
 #    5     - Other
 ##   5.1   --- Divination Cards
 ###  5.1.1 ----- Fragments
@@ -1610,6 +1627,23 @@ BaseType "The Gambler"
     SetFontSize 39
     SetTextColor 14 186 255 255
 ##   5.2   --- Jewels
+###  5.2.1 ----- Cluster
+Show
+Class "Jewels"
+BaseType "Cluster"
+    CustomAlertSound "homm3snd/mirth.wav"
+    MinimapIcon 0 Purple Star
+    PlayEffect Purple
+    SetFontSize 45
+###  5.2.2 ----- Abyss
+Show
+Class "Abyss Jewels"
+Rarity Rare
+    SetFontSize 42
+Hide
+Class "Abyss Jewels"
+Rarity < Rare
+    SetFontSize 24
 ###  5.2.1 ----- Basic
 Show
 Class "Jewels"
