@@ -168,7 +168,9 @@
 ###  5.1.7 ----- Gems
 ###  5.1.8 ----- Other Divinations
 ##   5.2   --- Jewels
-###  5.2.1 ----- Basic
+###  5.2.1 ----- Cluster
+###  5.2.2 ----- Abyss
+###  5.2.3 ----- Basic
 ##   5.3   --- Flasks
 ###  5.3.1 ----- Quality
 ###  5.3.2 ----- Utility
@@ -356,6 +358,7 @@ BaseType "Tainted"
 Show
 Class "Jewels"
     SetBackgroundColor 64 80 108 255
+    Continue
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
 Show
@@ -1644,7 +1647,7 @@ Hide
 Class "Abyss Jewels"
 Rarity < Rare
     SetFontSize 24
-###  5.2.1 ----- Basic
+###  5.2.3 ----- Basic
 Show
 Class "Jewels"
 BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
