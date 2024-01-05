@@ -1,4 +1,4 @@
-# Version: 0.0.40
+# Version: 0.0.41
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -15,7 +15,11 @@
 ###  1.3.3 ----- Rare Rarity
 ###  1.3.4 ----- Unique Rarity
 ###  1.3.5 ----- Gems
-###  1.3.6 ----- Fractured Items
+###  1.3.6 ----- Fractured
+###  1.3.7 ----- Synthesised
+###  1.3.8 ----- Influenced
+###  1.3.9 ----- Corrupted
+###  1.3.10----- Crafted
 ##   1.4   --- Background
 ###  1.4.1 ----- Currency
 ###  1.4.2 ----- Weapons
@@ -70,19 +74,20 @@
 ###  2.4.1 ----- Instilling Orb
 ###  2.4.2 ----- Enkindling Orb
 ###  2.4.3 ----- Deck
-###  2.4.4 ----- Ember
-###  2.4.5 ----- Ichor
-###  2.4.6 ----- Regal
-###  2.4.7 ----- Chaos
-###  2.4.8 ----- Vaal
-###  2.4.9 ----- Blessed
-###  2.4.10----- Prism
-###  2.4.11----- Sextant
-###  2.4.12----- Exalted
-###  2.4.13----- Divine
-###  2.4.14----- Box
-###  2.4.15----- Sacred
-###  2.4.16----- Kalandra
+###  2.4.4 ----- Reports
+###  2.4.5 ----- Ember
+###  2.4.6 ----- Ichor
+###  2.4.7 ----- Regal
+###  2.4.8 ----- Chaos
+###  2.4.9 ----- Vaal
+###  2.4.10 ----- Blessed
+###  2.4.11----- Prism
+###  2.4.12----- Sextant
+###  2.4.13----- Exalted
+###  2.4.14----- Divine
+###  2.4.15----- Box
+###  2.4.16----- Sacred
+###  2.4.17----- Kalandra
 ###  2.5   --- Basic Droponly Monster Restrict
 ###  2.5.1 ----- All
 #    3     - League specific
@@ -151,7 +156,7 @@
 ##   4.5   --- Influenced
 ###  4.5.1 ----- Exotic
 ###  4.5.2 ----- Global
-##   4.6   --- Veiled
+##   4.6   --- Elditch
 ###  4.6.1 ----- Exotic
 ###  4.6.2 ----- Global
 ##   4.7   --- Corrupted
@@ -159,7 +164,9 @@
 ###  4.7.2 ----- Global
 ##   4.8   --- Identified
 ###  4.8.1 ----- Exotic
-###  4.8.2 ----- Global
+###  4.8.2 ----- Veiled
+###  4.8.3 ----- Delve
+###  4.8.4 ----- Global
 #    5     - Other
 ##   5.1   --- Divination Cards
 ###  5.1.1 ----- Fragments
@@ -316,10 +323,32 @@ Show
 Class "Gems"
     SetTextColor 15 145 140 255
     Continue
-###  1.3.6 ----- Fractured Items
+###  1.3.6 ----- Fractured
 Show
 FracturedItem True
     SetTextColor 165 150 100 255
+    Continue
+###  1.3.7 ----- Synthesised
+Show
+SynthesisedItem True
+    SetTextColor 165 150 100 255
+    Continue
+###  1.3.8 ----- Influenced
+Show
+HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    SetTextColor 165 150 100 255
+    Continue
+###  1.3.9 ----- Corrupted
+Show
+Corrupted True
+    SetTextColor  210 0 0 255
+    Continue
+###  1.3.10----- Crafted
+Show
+Identified True
+HasExplicitMod "Veil" "Chosen" "Order" "Craft" "Upgraded" "Subterranean" "Underground"
+    SetTextColor 184 218 242 255
+    Continue
 ##   1.4   --- Background
 ###  1.4.1 ----- Currency
 Show
@@ -329,22 +358,22 @@ Class "Stackable Currency"
 ###  1.4.2 ----- Weapons
 Show
 Class "Bows" "Swords" "Axes" "Daggers" "Claws" "Maces" "Sceptres" "Staves" "Warstaves" "Wands"
-    SetBackgroundColor 64 0 0 255
+    SetBackgroundColor 64 8 8 255
     Continue
 ###  1.4.3 ----- Armours
 Show
 Class "Body Armours" "Boots" "Gloves" "Helmets"
-    SetBackgroundColor 0 64 0 255
+    SetBackgroundColor 8 64 8 255
     Continue
 ###  1.4.4 ----- Off-hands
 Show
 Class "Shields" "Quivers"
-    SetBackgroundColor 64 0 64 255
+    SetBackgroundColor 64 64 8 255
     Continue
 ###  1.4.5 ----- Jewelery
 Show
 Class "Rings" "Amulets" "Belts"
-    SetBackgroundColor 0 0 64 255
+    SetBackgroundColor 8 8 64 255
     Continue
 ###  1.4.6 ----- Mana Flasks
 Show
@@ -999,22 +1028,28 @@ Class "Stackable Currency"
 BaseType "Stacked Deck"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
-    SetTextColor 20 20 20 255
-###  2.4.4 ----- Ember
+    SetTextColor 64 64 64 255
+###  2.4.4 ----- Reports
+Show
+Class "Stackable Currency"
+BaseType "Scouting Report"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+###  2.4.5 ----- Ember
 Show
 Class "Stackable Currency"
 BaseType "Lesser Eldritch Ember"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
-    SetTextColor 250 20 20 255
-###  2.4.5 ----- Ichor
+    SetTextColor 248 8 64 255
+###  2.4.6 ----- Ichor
 Show
 Class "Stackable Currency"
 BaseType "Lesser Eldritch Ichor"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
-    SetTextColor 20 20 250 255
-###  2.4.6 ----- Regal
+    SetTextColor 64 8 248 255
+###  2.4.7 ----- Regal
 Show
 Class "Stackable Currency"
 BaseType "Regal Orb"
@@ -1022,15 +1057,15 @@ BaseType "Regal Orb"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
     SetTextColor 200 200 120 255
-###  2.4.7 ----- Chaos
+###  2.4.8 ----- Chaos
 Show
 Class "Stackable Currency"
 BaseType "Chaos Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
-    SetTextColor 200 200 80 255
-###  2.4.8 ----- Vaal
+    SetTextColor 128 96 8 255
+###  2.4.9 ----- Vaal
 Show
 Class "Stackable Currency"
 BaseType "Vaal Orb"
@@ -1038,64 +1073,64 @@ BaseType "Vaal Orb"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
     SetTextColor 210 0 0 255
-###  2.4.9 ----- Blessed
+###  2.4.10----- Blessed
 Show
 Class "Stackable Currency"
 BaseType "Blessed Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
-    SetTextColor 210 0 0 255
-###  2.4.10----- Prism
+###  2.4.11----- Prism
 Show
 Class "Stackable Currency"
 BaseType "Gemcutter's Prism"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
-    SetTextColor 210 0 0 255
-###  2.4.11----- Sextant
+###  2.4.12----- Sextant
 Show
 Class "Stackable Currency"
 BaseType "Awakened Sextant"
     CustomAlertSound "homm3snd/Faerie.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-###  2.4.12----- Exalted
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+###  2.4.13----- Exalted
 Show
 Class "Stackable Currency"
 BaseType "Exalted Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-###  2.4.13 ----- Divine
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+###  2.4.14 ----- Divine
 Show
 Class "Stackable Currency"
 BaseType "Divine Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-###  2.4.14----- Box
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+###  2.4.15----- Box
 Show
 Class "Stackable Currency"
 BaseType "Valdo's Puzzle Box"
     CustomAlertSound "homm3snd/Faerie.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-###  2.4.15----- Sacred
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+###  2.4.16----- Sacred
 Show
 Class "Stackable Currency"
 BaseType "Sacred Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-###  2.4.16----- Kalandra
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+###  2.4.17----- Kalandra
 Class "Stackable Currency"
 BaseType "Mirror of Kalandra"
     CustomAlertSound "homm3snd/UltimateArtifact.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-    SetTextColor 255 0 0 255
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+    SetBackgroundColor 248 128 8 255
+    SetBorderColor 248 216 8 255
+    SetTextColor 248 216 8 255
 ###  2.5   --- Basic Droponly Monster Restrict
 ###  2.5.1 ----- All
 Class "Stackable Currency"
@@ -1103,7 +1138,7 @@ BaseType "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
-    SetTextColor 255 0 0 255
+    SetTextColor 248 8 8 255
 #    3     - League specific
 ##   3.1   --- Essence
 ###  3.1.1 ----- Group F
@@ -1633,21 +1668,82 @@ SynthesisedItem True
 Show
 HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
     MinimapIcon 2 Cyan Cross
-##   4.6   --- Veiled
+##   4.6   --- Elditch
 ###  4.6.1 ----- Exotic
+Show
+HasSearingExarchImplicit >= 5
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+Show
+HasEaterOfWorldsImplicit >= 5
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+Show
+HasSearingExarchImplicit >= 3
+    MinimapIcon 1 Red Cross
+    PlayEffect Red Temp
+Show
+HasEaterOfWorldsImplicit >= 3
+    MinimapIcon 1 Red Cross
+    PlayEffect Red Temp
 ###  4.6.2 ----- Global
 Show
-HasExplicitMod "Veiled" "Veil"
-    SetTextColor 192 192 192 255
+HasSearingExarchImplicit >= 1
+    MinimapIcon 2 Red Cross
+Show
+HasEaterOfWorldsImplicit >= 1
+    MinimapIcon 2 Red Cross
 ##   4.7   --- Corrupted
 ###  4.7.1 ----- Exotic
+Show
+Class "Jewels"
+Corrupted True
+CorruptedMods >= 1
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+    SetFontSize 45
 ###  4.7.2 ----- Global
 Show
 Corrupted True
+CorruptedMods >= 3
+    MinimapIcon 2 Red Cross
+    SetFontSize 45
+Show
+Corrupted True
+CorruptedMods 2
+    SetFontSize 45
+Show
+Corrupted True
+CorruptedMods 1
     SetFontSize 39
+Show
+Corrupted True
+    SetFontSize 33
 ##   4.8   --- Identified
 ###  4.8.1 ----- Exotic
-###  4.8.2 ----- Global
+Show
+Class "Jewels"
+Identified True
+HasExplicitMod "Vivid" "Shielding" "Cerebral"
+HasExplicitMod "of Entropy" "of Exsanguinating" "of Acrimony"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+Show
+Class "Jewels"
+Identified True
+HasExplicitMod "Vivid" "Shielding" "Cerebral" "of Entropy" "of Exsanguinating" "of Acrimony"
+    MinimapIcon 2 Red Cross
+###  4.8.2   --- Veiled
+Show
+Identified True
+HasExplicitMod "Veil"
+    MinimapIcon 2 White Cross
+###  4.8.3   --- Delve
+Show
+Identified True
+HasExplicitMod "Subterranean" "Underground"
+    MinimapIcon 2 Red Cross
+###  4.8.4 ----- Global
 Show
 Identified True
     SetFontSize 33
