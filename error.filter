@@ -1016,12 +1016,14 @@ Class "Stackable Currency"
 BaseType "Instilling Orb"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
+    SetTextColor 30 130 80 255
 ###  2.4.2 ----- Enkindling Orb
 Show
 Class "Stackable Currency"
 BaseType "Enkindling Orb"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
+    SetTextColor 30 130 80 255
 ###  2.4.3 ----- Deck
 Show
 Class "Stackable Currency"
