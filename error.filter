@@ -1,4 +1,4 @@
-# Version: 0.0.39
+# Version: 0.0.40
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -15,6 +15,7 @@
 ###  1.3.3 ----- Rare Rarity
 ###  1.3.4 ----- Unique Rarity
 ###  1.3.5 ----- Gems
+###  1.3.6 ----- Fractured Items
 ##   1.4   --- Background
 ###  1.4.1 ----- Currency
 ###  1.4.2 ----- Weapons
@@ -132,10 +133,12 @@
 ###  3.14.1----- Research
 ###  3.14.2----- Relics
 #    4     - Special
-##   4.1   --- Sockets
-###  4.1.1 ----- 6 link
-###  4.1.2 ----- 5 link
-###  4.1.3 ----- 6 Socket
+##   4.0   --- Sockets
+###  4.0.1 ----- 6 link
+###  4.0.2 ----- 5 link
+###  4.0.3 ----- 6 Socket
+##   4.1   --- Build Rares
+###  4.1.1 ----- All
 ##   4.2   --- Unique
 ###  4.2.1 ----- Bases
 ###  4.2.2 ----- Global
@@ -313,6 +316,10 @@ Show
 Class "Gems"
     SetTextColor 15 145 140 255
     Continue
+###  1.3.6 ----- Fractured Items
+Show
+FracturedItem True
+    SetTextColor 165 150 100 255
 ##   1.4   --- Background
 ###  1.4.1 ----- Currency
 Show
@@ -1472,28 +1479,83 @@ Class "Relics"
     SetBackgroundColor 80 70 60 255
     SetBorderColor 64 228 64 255
 #    4     - Special
-##   4.1   --- Sockets
-###  4.1.1 ----- 6 link
+##   4.0   --- Sockets
+###  4.0.1 ----- 6 link
 Show
 LinkedSockets 6
     CustomAlertSound "homm3snd/BLOODLUS.wav"
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
     SetTextColor 255 255 255 255
-###  4.1.2 ----- 5 link
+###  4.0.2 ----- 5 link
 Show
 LinkedSockets 5
     CustomAlertSound "homm3snd/LIGHTBLT.wav"
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
     SetTextColor 255 255 255 255
-###  4.1.3 ----- 6 Socket
+###  4.0.3 ----- 6 Socket
 Show
 Sockets 6
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
     SetTextColor 255 255 255 255
+##   4.1   --- Build Rares
+###  4.1.1 ----- All
+Show
+Class "Amulets" "Rings"
+BaseType "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Vermillion Ring" "Amethyst Ring"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Purple Diamond
+Show
+Class "Belts"
+BaseType "Crystal Belt" "Vanguard Belt" "Rustic Sash"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Purple Moon
+Show
+Class "Helmets"
+BaseType "Bascinet" "Mask" "Pelt"
+BaseType "Nightmare" "Pig-Faced" "Fluted" "Deicide" "Vaal" "Harlequin" "Regicide" "Lion"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class "Boots"
+BaseType "Boots"
+BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Fugitive" "Murder" "Assassin's" "Carnal" "Slink"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class "Gloves"
+BaseType "Gauntlets" "Mitts" "Gloves"
+BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Murder" "Assassin's" "Carnal" "Ambush" "Slink"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class "Body Armours"
+BaseType "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Desert Brigandine" "Dragonscale Doublet" "Sadist Garb" "Blood Raiment" "Assassin's Garb"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class "Shields"
+BaseType "Spiked Shield" "Kite Shield"
+BaseType "Supreme" "Mirrored" "Sovereign" "Polished" "Champion"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup06.wav"
+    MinimapIcon 2 Purple UpsideDownHouse
+Show
+Class "One Hand Axes"
+BaseType "Hatchet"
+BaseType "Runic" "Engraved" "Etched"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup07.wav"
+    MinimapIcon 2 Purple Kite
 ##   4.2   --- Unique
 ###  4.2.1 ----- Bases
 Show
@@ -1543,21 +1605,26 @@ Class "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Stave
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 2 Brown Kite
-    PlayEffect Brown Temp
 ##   4.3   --- Fractured
 ###  4.3.1 ----- Exotic
+Show
+Class "Jewels" "Flasks"
+FracturedItem True
+    CustomAlertSound "homm3snd/Buildtwn.wav"
+    MinimapIcon 0 Cyan Raindrop
+    PlayEffect Cyan
 ###  4.3.2 ----- Global
 Show
 FracturedItem True
-    MinimapIcon 0 Cyan Raindrop
-    PlayEffect Cyan
-    SetTextColor 165 150 100 255
+    CustomAlertSound "homm3snd/tailwind.wav"
+    MinimapIcon 2 Cyan Raindrop
 ##   4.4   --- Synthesised
 ###  4.4.1 ----- Exotic
 ###  4.4.2 ----- Global
 Show
 SynthesisedItem True
-    MinimapIcon 1 Cyan Raindrop
+    CustomAlertSound "homm3snd/View.wav"
+    MinimapIcon 2 Cyan Raindrop
     PlayEffect Cyan Temp
     SetTextColor 120 210 195 255
 ##   4.5   --- Influenced
@@ -2185,59 +2252,6 @@ Rarity Magic
     SetFontSize 18
 ###  7.1.3 ----- Rare Items
 Show
-Class "Amulets" "Rings"
-BaseType "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Vermillion Ring" "Amethyst Ring"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup01.wav"
-    MinimapIcon 2 Purple Diamond
-Show
-Class "Belts"
-BaseType "Crystal Belt" "Vanguard Belt" "Rustic Sash"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup01.wav"
-    MinimapIcon 2 Purple Moon
-Show
-Class "Helmets"
-BaseType "Bascinet" "Mask" "Pelt"
-BaseType "Nightmare" "Pig-Faced" "Fluted" "Deicide" "Vaal" "Harlequin" "Regicide" "Lion"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup02.wav"
-    MinimapIcon 2 Purple Square
-Show
-Class "Boots"
-BaseType "Boots"
-BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Fugitive" "Murder" "Assassin's" "Carnal" "Slink"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup03.wav"
-    MinimapIcon 2 Purple Square
-Show
-Class "Gloves"
-BaseType "Gauntlets" "Mitts" "Gloves"
-BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Murder" "Assassin's" "Carnal" "Ambush" "Slink"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup04.wav"
-    MinimapIcon 2 Purple Square
-Show
-Class "Body Armours"
-BaseType "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Desert Brigandine" "Dragonscale Doublet" "Sadist Garb" "Blood Raiment" "Assassin's Garb"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup05.wav"
-    MinimapIcon 2 Purple Square
-Show
-Class "Shields"
-BaseType "Spiked Shield" "Kite Shield"
-BaseType "Supreme" "Mirrored" "Sovereign" "Polished" "Champion"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup06.wav"
-    MinimapIcon 2 Purple UpsideDownHouse
-Show
-Class "One Hand Axes"
-BaseType "Hatchet"
-BaseType "Runic" "Engraved" "Etched"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup07.wav"
-    MinimapIcon 2 Purple Kite
-Show
 Class "Amulets" "Belts" "Rings"
 Rarity Rare
     SetFontSize 39
@@ -2271,17 +2285,17 @@ Rarity Rare
 AreaLevel >= 45
 DropLevel < 15
     SetFontSize 30
-Show
+Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
 DropLevel >= 64
     SetFontSize 33
-Show
+Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
 DropLevel >= 45
     SetFontSize 33
-Show
+Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
     SetFontSize 33
