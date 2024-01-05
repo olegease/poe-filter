@@ -1,4 +1,4 @@
-# Version: 0.0.41
+# Version: 0.0.42
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1123,6 +1123,7 @@ BaseType "Sacred Orb"
     MinimapIcon 0 Red Circle
     PlayEffect Red
 ###  2.4.17----- Kalandra
+Show
 Class "Stackable Currency"
 BaseType "Mirror of Kalandra"
     CustomAlertSound "homm3snd/UltimateArtifact.wav"
@@ -1133,6 +1134,7 @@ BaseType "Mirror of Kalandra"
     SetTextColor 248 216 8 255
 ###  2.5   --- Basic Droponly Monster Restrict
 ###  2.5.1 ----- All
+Show
 Class "Stackable Currency"
 BaseType "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Elevated Sextant" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
