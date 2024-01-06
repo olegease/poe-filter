@@ -1875,19 +1875,23 @@ CorruptedMods >= 1
     SetFontSize 45
 ###  4.7.2 ----- Global
 Show
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Corrupted True
 CorruptedMods >= 3
     MinimapIcon 2 Red Cross
     SetFontSize 45
 Show
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Corrupted True
 CorruptedMods 2
     SetFontSize 45
 Show
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Corrupted True
 CorruptedMods 1
     SetFontSize 39
 Show
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Corrupted True
     SetFontSize 33
 ##   4.8   --- Identified
@@ -1916,6 +1920,7 @@ HasExplicitMod "Subterranean" "Underground"
     MinimapIcon 2 Red Cross
 ###  4.8.4 ----- Global
 Show
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Identified True
     SetFontSize 33
 #    5     - Other
