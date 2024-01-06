@@ -1,4 +1,4 @@
-# Version: 0.0.43
+# Version: 0.0.44
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -219,7 +219,7 @@
 ##   8.1   --- Global
 ###  8.1.1 ----- Everything
 Show
-Class "Quest Items"
+Class == "Quest Items"
     CustomAlertSound "homm3snd/DEFAULT.wav"
     MinimapIcon 0 Green Cross
     PlayEffect Green
@@ -352,12 +352,12 @@ HasExplicitMod "Veil" "Chosen" "Order" "Craft" "Upgraded" "Subterranean" "Underg
 ##   1.4   --- Background
 ###  1.4.1 ----- Currency
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
     SetBackgroundColor 248 216 8 255
     Continue
 ###  1.4.2 ----- Weapons
 Show
-Class "Bows" "Swords" "Axes" "Daggers" "Claws" "Maces" "Sceptres" "Staves" "Warstaves" "Wands"
+Class "Bows" "Swords" "Axes" "Daggers" "Claws" "Maces" "Sceptres" "Staves" "Wands"
     SetBackgroundColor 64 8 8 255
     Continue
 ###  1.4.3 ----- Armours
@@ -377,22 +377,22 @@ Class "Rings" "Amulets" "Belts"
     Continue
 ###  1.4.6 ----- Mana Flasks
 Show
-Class "Mana Flasks"
+Class == "Mana Flasks"
     SetBackgroundColor 50 70 200 255
     Continue
 ###  1.4.7 ----- Life Flasks
 Show
-Class "Life Flasks"
+Class == "Life Flasks"
     SetBackgroundColor 128 20 20 255
     Continue
 ###  1.4.8 ----- Utility Flasks
 Show
-Class "Utility Flasks"
+Class == "Utility Flasks"
     SetBackgroundColor 30 130 80 255
     Continue
 ###  1.4.9 ----- Divination Cards
 Show
-Class "Divination Cards"
+Class == "Divination Cards"
     SetBackgroundColor 64 64 64 255
     Continue
 ###  1.4.10----- Gems
@@ -402,7 +402,7 @@ Class "Gems"
     Continue
 ###  1.4.11----- Tainted Currency
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Tainted"
     SetBackgroundColor 210 0 0 255
     Continue
@@ -480,7 +480,7 @@ BaseType "Grasping Mail" "Sacrificial Garb" "Runic"
     Continue
 ###  1.5.8 ----- Divination Cards
 Show
-Class "Divination Cards"
+Class == "Divination Cards"
     SetBorderColor 8 8 8 255
     Continue
 ###  1.5.9 ----- Gems
@@ -497,7 +497,7 @@ Show
 ##   2.0   --- Tainted
 ###  2.0.0 ----- All
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Tainted"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
@@ -506,8 +506,8 @@ BaseType "Tainted"
 ##   2.1   --- Basic Vendor
 ###  2.1.1 ----- Wisdom
 Show
-Class "Stackable Currency"
-BaseType "Scroll of Wisdom"
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
 StackSize 40
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 White Circle
@@ -515,8 +515,8 @@ StackSize 40
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
 Show
-Class "Stackable Currency"
-BaseType "Scroll of Wisdom"
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
 StackSize >= 8
     CustomAlertSound "homm3snd/BUTTON.wav"
     MinimapIcon 2 White Circle
@@ -524,8 +524,8 @@ StackSize >= 8
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
 Show
-Class "Stackable Currency"
-BaseType "Scroll of Wisdom"
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
 AreaLevel < 45
     CustomAlertSound "homm3snd/BUTTON.wav"
     MinimapIcon 2 White Circle
@@ -533,8 +533,8 @@ AreaLevel < 45
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
 Hide
-Class "Stackable Currency"
-BaseType "Scroll of Wisdom"
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
 AreaLevel >= 83
 StackSize < 8
     SetFontSize 18
@@ -542,8 +542,8 @@ StackSize < 8
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
 Hide
-Class "Stackable Currency"
-BaseType "Scroll of Wisdom"
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
 AreaLevel >= 78
 StackSize < 6
     SetFontSize 18
@@ -551,8 +551,8 @@ StackSize < 6
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
 Hide
-Class "Stackable Currency"
-BaseType "Scroll of Wisdom"
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
 AreaLevel >= 73
 StackSize < 5
     SetFontSize 18
@@ -560,8 +560,8 @@ StackSize < 5
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
 Hide
-Class "Stackable Currency"
-BaseType "Scroll of Wisdom"
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
 AreaLevel >= 68
 StackSize < 4
     SetFontSize 18
@@ -569,16 +569,16 @@ StackSize < 4
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
 Show
-Class "Stackable Currency"
-BaseType "Scroll of Wisdom"
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
     SetFontSize 33
     SetBackgroundColor 180 140 100 255
     SetBorderColor 90 40 50 255
     SetTextColor 90 40 50 255
 ###  2.1.2 ----- Portal
 Show
-Class "Stackable Currency"
-BaseType "Portal Scroll"
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
 StackSize 40
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 White Circle
@@ -586,8 +586,8 @@ StackSize 40
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
 Show
-Class "Stackable Currency"
-BaseType "Portal Scroll"
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
 StackSize >= 8
     CustomAlertSound "homm3snd/BUTTON.wav"
     MinimapIcon 2 White Circle
@@ -595,8 +595,8 @@ StackSize >= 8
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
 Show
-Class "Stackable Currency"
-BaseType "Portal Scroll"
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
 AreaLevel < 68
     CustomAlertSound "homm3snd/BUTTON.wav"
     MinimapIcon 2 White Circle
@@ -604,8 +604,8 @@ AreaLevel < 68
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
 Hide
-Class "Stackable Currency"
-BaseType "Portal Scroll"
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
 AreaLevel >= 83
 StackSize < 6
     SetFontSize 18
@@ -613,8 +613,8 @@ StackSize < 6
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
 Hide
-Class "Stackable Currency"
-BaseType "Portal Scroll"
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
 AreaLevel >= 78
 StackSize < 5
     SetFontSize 18
@@ -622,8 +622,8 @@ StackSize < 5
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
 Hide
-Class "Stackable Currency"
-BaseType "Portal Scroll"
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
 AreaLevel >= 73
 StackSize < 4
     SetFontSize 18
@@ -631,8 +631,8 @@ StackSize < 4
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
 Hide
-Class "Stackable Currency"
-BaseType "Portal Scroll"
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
 AreaLevel >= 68
 StackSize < 3
     SetFontSize 18
@@ -640,369 +640,369 @@ StackSize < 3
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
 Show
-Class "Stackable Currency"
-BaseType "Portal Scroll"
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
     SetFontSize 39
     SetBackgroundColor 180 140 100 255
     SetBorderColor 40 80 180 255
     SetTextColor 40 80 180 255
 ###  2.1.3 ----- Transmutation
 Show
-Class "Stackable Currency"
-BaseType "Orb of Transmutation"
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
 StackSize 40
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 0 Blue Circle
     PlayEffect Blue
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Transmutation"
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
 StackSize >= 12
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 0 Blue Circle
     PlayEffect Blue
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Transmutation"
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
 StackSize >= 8
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 1 Blue Circle
     PlayEffect Blue Temp
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Transmutation"
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
 StackSize >= 5
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Blue Circle
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Transmutation"
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
 AreaLevel < 68
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Blue Circle
     SetTextColor 8 128 248 255
 Hide
-Class "Stackable Currency"
-BaseType "Orb of Transmutation"
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
 AreaLevel >= 83
 StackSize < 3
     SetFontSize 30
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Transmutation"
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
 AreaLevel >= 78
 StackSize < 3
     SetFontSize 33
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Transmutation"
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
     SetFontSize 39
     SetTextColor 0 0 255 255
 ###  2.1.4 ----- Augmentation
 Show
-Class "Stackable Currency"
-BaseType "Orb of Augmentation"
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
 StackSize 30
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 0 Blue Circle
     PlayEffect Blue
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Augmentation"
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
 StackSize >= 12
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 0 Blue Circle
     PlayEffect Blue
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Augmentation"
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
 StackSize >= 8
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 1 Blue Circle
     PlayEffect Blue Temp
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Augmentation"
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
 StackSize >= 5
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Blue Circle
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Augmentation"
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
 AreaLevel < 68
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Blue Circle
     SetTextColor 8 128 248 255
 Hide
-Class "Stackable Currency"
-BaseType "Orb of Augmentation"
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
 AreaLevel >= 83
 StackSize < 3
     SetFontSize 30
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Augmentation"
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
 AreaLevel >= 78
     SetFontSize 33
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Augmentation"
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
     SetFontSize 39
     SetTextColor 8 128 248 255
 ###  2.1.5 ----- Alteration
 Show
-Class "Stackable Currency"
-BaseType "Orb of Alteration"
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
 StackSize 20
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 0 Blue Circle
     PlayEffect Blue
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Alteration"
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
 StackSize >= 8
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 0 Blue Circle
     PlayEffect Blue
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Alteration"
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
 StackSize >= 5
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 1 Blue Circle
     PlayEffect Blue Temp
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Alteration"
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
 StackSize >= 3
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Blue Circle
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Alteration"
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
 AreaLevel < 73
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Blue Circle
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Alteration"
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
 AreaLevel >= 83
     SetFontSize 33
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Alteration"
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
 AreaLevel >= 78
     SetFontSize 39
     SetTextColor 8 128 248 255
 Show
-Class "Stackable Currency"
-BaseType "Orb of Alteration"
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
     SetFontSize 45
     SetTextColor 8 128 248 255
 ###  2.1.6 ----- Jewelers
 Show
-Class "Stackable Currency"
-BaseType "Jeweller's Orb"
+Class == "Stackable Currency"
+BaseType == "Jeweller's Orb"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 2 Grey Circle
     SetTextColor 64 64 64 255
 ###  2.1.7 ----- Chromatic
 Show
-Class "Stackable Currency"
-BaseType "Chromatic Orb"
+Class == "Stackable Currency"
+BaseType == "Chromatic Orb"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 2 White Circle
     SetTextColor 248 248 248 255
 ###  2.1.8 ----- Fusing
 Show
-Class "Stackable Currency"
-BaseType "Orb of Fusing"
+Class == "Stackable Currency"
+BaseType == "Orb of Fusing"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 2 Grey Circle
     SetTextColor 64 64 64 255
 ###  2.1.9 ----- Chance
 Show
-Class "Stackable Currency"
-BaseType "Orb of Chance"
+Class == "Stackable Currency"
+BaseType == "Orb of Chance"
     CustomAlertSound "homm3snd/SysMsg.wav"
-    MinimapIcon 2 Yellow Circle
+    MinimapIcon 2 Blue Circle
     SetTextColor 80 80 80 255
 ###  2.1.10----- Scouring
 Show
-Class "Stackable Currency"
-BaseType "Orb of Scouring"
+Class == "Stackable Currency"
+BaseType == "Orb of Scouring"
     CustomAlertSound "homm3snd/SysMsg.wav"
-    MinimapIcon 1 Yellow Circle
+    MinimapIcon 1 White Circle
     SetTextColor 200 200 200 255
 ###  2.1.11----- Regret
 Show
-Class "Stackable Currency"
-BaseType "Orb of Regret"
+Class == "Stackable Currency"
+BaseType == "Orb of Regret"
     CustomAlertSound "homm3snd/SysMsg.wav"
-    MinimapIcon 1 Yellow Circle
+    MinimapIcon 1 White Circle
     SetTextColor 200 200 200 255
 ###  2.1.12----- Alchemy
 Show
-Class "Stackable Currency"
-BaseType "Orb of Alchemy"
+Class == "Stackable Currency"
+BaseType == "Orb of Alchemy"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 1 Yellow Circle
     SetTextColor 200 200 80 255
 ##   2.2   --- Basic Quality Vendor
 ###  2.2.1 ----- Scrap
 Show
-Class "Stackable Currency"
-BaseType "Armourer's Scrap"
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
 StackSize 40
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 0 White Circle
     PlayEffect White
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Armourer's Scrap"
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
 StackSize >= 20
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 0 White Circle
     PlayEffect White
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Armourer's Scrap"
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
 StackSize >= 16
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 1 White Circle
     PlayEffect White Temp
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Armourer's Scrap"
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
 StackSize >= 12
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Armourer's Scrap"
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
 AreaLevel < 45
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
     SetTextColor 128 128 128 255
 Hide
-Class "Stackable Currency"
-BaseType "Armourer's Scrap"
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
 AreaLevel >= 83
 StackSize < 8
     SetFontSize 24
     SetTextColor 128 128 128 255
 Hide
-Class "Stackable Currency"
-BaseType "Armourer's Scrap"
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
 AreaLevel >= 78
 StackSize < 4
     SetFontSize 24
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Armourer's Scrap"
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
     SetFontSize 33
     SetTextColor 128 128 128 255
 ###  2.2.2 ----- Whetstone
 Show
-Class "Stackable Currency"
-BaseType "Blacksmith's Whetstone"
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
 StackSize 40
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 0 White Circle
     PlayEffect White
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Blacksmith's Whetstone"
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
 StackSize >= 12
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 0 White Circle
     PlayEffect White
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Blacksmith's Whetstone"
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
 StackSize >= 10
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 1 White Circle
     PlayEffect White Temp
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Blacksmith's Whetstone"
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
 StackSize >= 8
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Blacksmith's Whetstone"
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
 AreaLevel < 68
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
     SetTextColor 128 128 128 255
 Hide
-Class "Stackable Currency"
-BaseType "Blacksmith's Whetstone"
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 83
 StackSize < 4
     SetFontSize 24
     SetTextColor 128 128 128 255
 Hide
-Class "Stackable Currency"
-BaseType "Blacksmith's Whetstone"
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 78
 StackSize < 2
     SetFontSize 24
     SetTextColor 128 128 128 255
 Show
-Class "Stackable Currency"
-BaseType "Blacksmith's Whetstone"
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
     SetFontSize 36
     SetTextColor 128 128 128 255
 ###  2.2.3 ----- Bubble
 Show
-Class "Stackable Currency"
-BaseType "Glassblower's Bauble"
+Class == "Stackable Currency"
+BaseType == "Glassblower's Bauble"
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Yellow Circle
     SetTextColor 0 0 0 255
 ##   2.3   --- Basic Master Vendor
 ###  2.3.1 ----- Unmaking
 Show
-Class "Stackable Currency"
-BaseType "Orb of Unmaking"
+Class == "Stackable Currency"
+BaseType == "Orb of Unmaking"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Yellow Circle
     PlayEffect Yellow
     SetTextColor 164 100 20 255
 ###  2.3.2 ----- Chisel
 Show
-Class "Stackable Currency"
-BaseType "Cartographer's Chisel"
+Class == "Stackable Currency"
+BaseType == "Cartographer's Chisel"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Yellow Circle
     PlayEffect Yellow
@@ -1012,122 +1012,122 @@ BaseType "Cartographer's Chisel"
 ##   2.4   --- Basic Droponly
 ###  2.4.1 ----- Instilling Orb
 Show
-Class "Stackable Currency"
-BaseType "Instilling Orb"
+Class == "Stackable Currency"
+BaseType == "Instilling Orb"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetTextColor 30 130 80 255
 ###  2.4.2 ----- Enkindling Orb
 Show
-Class "Stackable Currency"
-BaseType "Enkindling Orb"
+Class == "Stackable Currency"
+BaseType == "Enkindling Orb"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetTextColor 30 130 80 255
 ###  2.4.3 ----- Deck
 Show
-Class "Stackable Currency"
-BaseType "Stacked Deck"
+Class == "Stackable Currency"
+BaseType == "Stacked Deck"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetTextColor 64 64 64 255
 ###  2.4.4 ----- Reports
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Scouting Report"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
 ###  2.4.5 ----- Ember
 Show
-Class "Stackable Currency"
-BaseType "Lesser Eldritch Ember"
+Class == "Stackable Currency"
+BaseType == "Lesser Eldritch Ember"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetTextColor 248 8 64 255
 ###  2.4.6 ----- Ichor
 Show
-Class "Stackable Currency"
-BaseType "Lesser Eldritch Ichor"
+Class == "Stackable Currency"
+BaseType == "Lesser Eldritch Ichor"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetTextColor 64 8 248 255
 ###  2.4.7 ----- Regal
 Show
-Class "Stackable Currency"
-BaseType "Regal Orb"
+Class == "Stackable Currency"
+BaseType == "Regal Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
     SetTextColor 200 200 120 255
 ###  2.4.8 ----- Chaos
 Show
-Class "Stackable Currency"
-BaseType "Chaos Orb"
+Class == "Stackable Currency"
+BaseType == "Chaos Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
     SetTextColor 128 96 8 255
 ###  2.4.9 ----- Vaal
 Show
-Class "Stackable Currency"
-BaseType "Vaal Orb"
+Class == "Stackable Currency"
+BaseType == "Vaal Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
     SetTextColor 210 0 0 255
 ###  2.4.10----- Blessed
 Show
-Class "Stackable Currency"
-BaseType "Blessed Orb"
+Class == "Stackable Currency"
+BaseType == "Blessed Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
 ###  2.4.11----- Prism
 Show
-Class "Stackable Currency"
-BaseType "Gemcutter's Prism"
+Class == "Stackable Currency"
+BaseType == "Gemcutter's Prism"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
 ###  2.4.12----- Sextant
 Show
-Class "Stackable Currency"
-BaseType "Awakened Sextant"
+Class == "Stackable Currency"
+BaseType == "Awakened Sextant"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
 ###  2.4.13----- Exalted
 Show
-Class "Stackable Currency"
-BaseType "Exalted Orb"
+Class == "Stackable Currency"
+BaseType == "Exalted Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
 ###  2.4.14 ----- Divine
 Show
-Class "Stackable Currency"
-BaseType "Divine Orb"
+Class == "Stackable Currency"
+BaseType == "Divine Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
 ###  2.4.15----- Box
 Show
-Class "Stackable Currency"
-BaseType "Valdo's Puzzle Box"
+Class == "Stackable Currency"
+BaseType == "Valdo's Puzzle Box"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
 ###  2.4.16----- Sacred
 Show
-Class "Stackable Currency"
-BaseType "Sacred Orb"
+Class == "Stackable Currency"
+BaseType == "Sacred Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
 ###  2.4.17----- Kalandra
 Show
-Class "Stackable Currency"
-BaseType "Mirror of Kalandra"
+Class == "Stackable Currency"
+BaseType == "Mirror of Kalandra"
     CustomAlertSound "homm3snd/UltimateArtifact.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
@@ -1137,8 +1137,8 @@ BaseType "Mirror of Kalandra"
 ###  2.5   --- Basic Droponly Monster Restrict
 ###  2.5.1 ----- All
 Show
-Class "Stackable Currency"
-BaseType "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Elevated Sextant" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb"
+Class == "Stackable Currency"
+BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Elevated Sextant" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
@@ -1147,40 +1147,40 @@ BaseType "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch
 ##   3.1   --- Essence
 ###  3.1.1 ----- Group F
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Remnant of Corruption" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 0 Pink Kite
     PlayEffect Pink
 ###  3.1.2 ----- Tiers
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Deafening Essence"
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 0 Pink Kite
     PlayEffect Pink
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Essence"
 BaseType "Shrieking" "Screaming"
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 1 Pink Kite
     PlayEffect Pink Temp
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Essence"
 BaseType "Wailing"
     CustomAlertSound "homm3snd/BIND.wav"
     MinimapIcon 2 Pink Kite
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Essence"
 BaseType "Weeping" "Muttering" "Whispering"
     SetFontSize 42
 ##   3.2   --- Breach
 ###  3.2.1 ----- Splinters
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Splinter of"
 BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
     CustomAlertSound "homm3snd/Chat.wav"
@@ -1189,7 +1189,7 @@ BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
     SetTextColor 128 32 208 255
 ###  3.2.2 ----- Blessings
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Blessing of"
 BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
     CustomAlertSound "homm3snd/Faerie.wav"
@@ -1201,55 +1201,60 @@ BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
 ##   3.3   --- Harbinger
 ###  3.3.1 ----- Shards
 Show
-Class "Stackable Currency"
-BaseType "Mirror Shard" "Fracturing Shard"
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Mirror" "Fracturing"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
 Show
-Class "Stackable Currency"
-BaseType "Harbinger's Shard" "Annulment Shard" "Exalted Shard"
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Harbinger's" "Annulment" "Exalted"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
 Show
-Class "Stackable Currency"
-BaseType  "Horizon Shard"  "Ancient Shard" "Chaos Shard"
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Horizon"  "Ancient" "Chaos"
     MinimapIcon 2 Orange Circle
 Show
-Class "Stackable Currency"
-BaseType "Binding Shard" "Regal Shard" "Alchemy Shard" "Engineer's Shard"
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Binding" "Regal" "Alchemy" "Engineer's"
     SetFontSize 39
 Show
-Class "Stackable Currency"
-BaseType "Alteration Shard" "Transmutation Shard"
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Alteration" "Transmutation"
 Hide
-Class "Stackable Currency"
-BaseType "Scroll Fragment"
+Class == "Stackable Currency"
+BaseType == "Scroll Fragment"
     SetFontSize 18
 ###  3.3.2 ----- Binding
 Show
-Class "Stackable Currency"
-BaseType "Orb of Binding"
+Class == "Stackable Currency"
+BaseType == "Orb of Binding"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetTextColor 200 200 80 255
 ###  3.3.3 ----- Horizons
 Show
-Class "Stackable Currency"
-BaseType "Orb of Horizons"
+Class == "Stackable Currency"
+BaseType == "Orb of Horizons"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
 ###  3.3.4 ----- Annulment
 Show
-Class "Stackable Currency"
-BaseType "Orb of Annulment"
+Class == "Stackable Currency"
+BaseType == "Orb of Annulment"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
 ##   3.3   --- Incursion
 ###  3.3.1 ----- Vials
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Vial of"
     CustomAlertSound "homm3snd/Temple.wav"
     MinimapIcon 0 Orange Circle
@@ -1258,7 +1263,7 @@ BaseType "Vial of"
 ##   3.4   --- Delve
 ###  3.4.1 ----- Fossils
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Fossil"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 0 Orange Circle
@@ -1267,7 +1272,7 @@ BaseType "Fossil"
     SetTextColor 248 80 8 255
 ###  3.4.2 ----- Resonators
 Show
-Class "Delve Stackable Socketable Currency"
+Class == "Delve Stackable Socketable Currency"
 BaseType "Primitive" "Potent"
     CustomAlertSound "homm3snd/Prayer.wav"
     MinimapIcon 2 Yellow Pentagon
@@ -1275,7 +1280,7 @@ BaseType "Primitive" "Potent"
     SetBorderColor 64 64 8 255
     SetTextColor 128 92 0 255
 Show
-Class "Delve Stackable Socketable Currency"
+Class == "Delve Stackable Socketable Currency"
 BaseType "Powerful"
     CustomAlertSound "homm3snd/View.wav"
     MinimapIcon 1 Yellow Pentagon
@@ -1284,7 +1289,7 @@ BaseType "Powerful"
     SetBorderColor 64 64 8 255
     SetTextColor 128 92 0 255
 Show
-Class "Delve Stackable Socketable Currency"
+Class == "Delve Stackable Socketable Currency"
 BaseType "Prime"
     CustomAlertSound "homm3snd/ARMGEDN.wav"
     MinimapIcon 0 Yellow Pentagon
@@ -1295,21 +1300,21 @@ BaseType "Prime"
 ##   3.5   --- Betrayal
 ###  3.5.1 ----- Scarabs
 Show
-Class "Map Fragments"
+Class == "Map Fragments"
 BaseType "Winged"
 BaseType "Scarab"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 White Hexagon
     PlayEffect White
 Show
-Class "Map Fragments"
+Class == "Map Fragments"
 BaseType "Gilded"
 BaseType "Scarab"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 White Hexagon
     PlayEffect White Temp
 Show
-Class "Map Fragments"
+Class == "Map Fragments"
 BaseType "Polished" "Rusted"
 BaseType "Scarab"
     CustomAlertSound "homm3snd/LUCK.wav"
@@ -1317,7 +1322,7 @@ BaseType "Scarab"
 ##   3.6   --- Legion
 ###  3.6.1 ----- Incubators
 Show
-Class "Incubators"
+Class == "Incubators"
     CustomAlertSound "homm3snd/Regener.wav"
     MinimapIcon 0 Yellow Kite
     PlayEffect Yellow
@@ -1326,7 +1331,7 @@ Class "Incubators"
     SetTextColor 200 188 64 255
 ###  3.6.2 ----- Splinters
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Timeless"
 BaseType "Splinter"
     CustomAlertSound "homm3snd/FLAGMINE.wav"
@@ -1335,41 +1340,41 @@ BaseType "Splinter"
 ##   3.7   --- Blight
 ###  3.7.1 ----- Oils
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Clear"
     SetFontSize 33
     SetBorderColor 0 108 20 255
     SetTextColor 0 164 28 255
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Sepia"
     SetFontSize 36
     SetBorderColor 0 108 20 255
     SetTextColor 0 164 28 255
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Amber"
     SetFontSize 39
     SetBorderColor 0 108 20 255
     SetTextColor 0 164 28 255
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Verdant" "Teal"
     SetFontSize 42
     SetBorderColor 0 108 20 255
     SetTextColor 0 164 28 255
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Azure" "Indigo"
     SetBorderColor 0 108 20 255
     SetTextColor 0 164 28 255
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Violet" "Crimson"
     CustomAlertSound "homm3snd/LUCK.wav"
@@ -1377,7 +1382,7 @@ BaseType "Violet" "Crimson"
     SetBorderColor 0 108 20 255
     SetTextColor 0 164 28 255
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Opalescent" "Black" "Silver"
     CustomAlertSound "homm3snd/TREASURE.wav"
@@ -1386,7 +1391,7 @@ BaseType "Opalescent" "Black" "Silver"
     SetBorderColor 0 108 20 255
     SetTextColor 0 164 28 255
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Golden" "Tainted" "Reflective"
     CustomAlertSound "homm3snd/Faerie.wav"
@@ -1397,7 +1402,7 @@ BaseType "Golden" "Tainted" "Reflective"
 ##   3.8   --- Delirium
 ###  3.8.1 ----- Orbs
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Delirium Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Orange Circle
@@ -1406,8 +1411,8 @@ BaseType "Delirium Orb"
     SetBackgroundColor 64 64 64 255
 ###  3.8.2 ----- Splinters
 Show
-Class "Stackable Currency"
-BaseType "Simulacrum Splinter"
+Class == "Stackable Currency"
+BaseType == "Simulacrum Splinter"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 2 Orange Circle
     SetBorderColor 8 8 8 255
@@ -1416,29 +1421,29 @@ BaseType "Simulacrum Splinter"
 ##   3.9   --- Harvest
 ###  3.9.1 ----- Lifeforce
 Show
-Class "Stackable Currency"
-BaseType "Wild Crystallised Lifeforce"
+Class == "Stackable Currency"
+BaseType == "Wild Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Circle
     SetBorderColor 120 40 35 255
     SetTextColor 190 55 100 255
 Show
-Class "Stackable Currency"
-BaseType "Vivid Crystallised Lifeforce"
+Class == "Stackable Currency"
+BaseType == "Vivid Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Circle
     SetBorderColor 60 50 10 255
     SetTextColor 120 140 20 255
 Show
-Class "Stackable Currency"
-BaseType "Primal Crystallised Lifeforce"
+Class == "Stackable Currency"
+BaseType == "Primal Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Circle
     SetBorderColor 25 75 100 255
     SetTextColor 50 140 190 255
 Show
-Class "Stackable Currency"
-BaseType "Sacred Crystallised Lifeforce"
+Class == "Stackable Currency"
+BaseType == "Sacred Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
@@ -1448,15 +1453,15 @@ BaseType "Sacred Crystallised Lifeforce"
 ##   3.10  --- Heist
 ###  3.10.1----- Markers
 Show
-Class "Stackable Currency"
-BaseType "Rogue's Marker"
+Class == "Stackable Currency"
+BaseType == "Rogue's Marker"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetTextColor 255 170 140 255
 ###  3.10.2----- Contracts
 Show
-Class "Contracts"
+Class == "Contracts"
     CustomAlertSound "homm3snd/Nwherolv.wav"
     MinimapIcon 0 White Square
     PlayEffect White
@@ -1464,7 +1469,7 @@ Class "Contracts"
     SetBorderColor 0 0 0 255
 ###  3.10.3----- Blueprints
 Show
-Class "Blueprints"
+Class == "Blueprints"
     CustomAlertSound "homm3snd/Lighthouse.wav"
     MinimapIcon 0 Red Square
     PlayEffect Red
@@ -1476,7 +1481,7 @@ Class "Blueprints"
 ##   3.12  --- Ultimatum
 ###  3.12.1----- Catalysts
 Show
-Class "Stackable Currency"
+Class == "Stackable Currency"
 BaseType "Catalyst"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 0 Orange Diamond
@@ -1484,7 +1489,7 @@ BaseType "Catalyst"
 ##   3.13  --- Expedition
 ###  3.13.1----- Logbooks
 Show
-Class "Expedition Logbooks"
+Class == "Expedition Logbooks"
     CustomAlertSound "homm3snd/Graveyard.wav"
     MinimapIcon 0 Grey Cross
     PlayEffect Grey
@@ -1492,8 +1497,8 @@ Class "Expedition Logbooks"
     SetBorderColor 72 128 72 255
 ###  3.13.2----- Reroll currency
 Show
-Class "Stackable Currency"
-BaseType "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion"
+Class == "Stackable Currency"
+BaseType == "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
@@ -1502,7 +1507,7 @@ BaseType "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion"
 ##   3.14  --- Sanctum
 ###  3.14.1----- Research
 Show
-Class "Sanctum Research"
+Class == "Sanctum Research"
 BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
     CustomAlertSound "homm3snd/Mystery.wav"
     MinimapIcon 0 Green Square
@@ -1512,7 +1517,7 @@ BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
     SetTextColor 64 228 64 255
 ###  3.14.2----- Relics
 Show
-Class "Relics"
+Class == "Relics"
     CustomAlertSound "homm3snd/Prayer.wav"
     MinimapIcon 2 Pink Hexagon
     SetBackgroundColor 80 70 60 255
@@ -1543,53 +1548,53 @@ Sockets 6
 ##   4.1   --- Build Rares
 ###  4.1.1 ----- All
 Show
-Class "Amulets" "Rings"
-BaseType "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Vermillion Ring" "Amethyst Ring"
+Class == "Amulets" "Rings"
+BaseType == "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Vermillion Ring" "Amethyst Ring"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Diamond
 Show
-Class "Belts"
-BaseType "Crystal Belt" "Vanguard Belt" "Rustic Sash"
+Class == "Belts"
+BaseType == "Crystal Belt" "Vanguard Belt" "Rustic Sash"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Moon
 Show
-Class "Helmets"
+Class == "Helmets"
 BaseType "Bascinet" "Mask" "Pelt"
 BaseType "Nightmare" "Pig-Faced" "Fluted" "Deicide" "Vaal" "Harlequin" "Regicide" "Lion"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup02.wav"
     MinimapIcon 2 Purple Square
 Show
-Class "Boots"
+Class == "Boots"
 BaseType "Boots"
 BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Fugitive" "Murder" "Assassin's" "Carnal" "Slink"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup03.wav"
     MinimapIcon 2 Purple Square
 Show
-Class "Gloves"
+Class == "Gloves"
 BaseType "Gauntlets" "Mitts" "Gloves"
 BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Murder" "Assassin's" "Carnal" "Ambush" "Slink"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup04.wav"
     MinimapIcon 2 Purple Square
 Show
-Class "Body Armours"
-BaseType "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Desert Brigandine" "Dragonscale Doublet" "Sadist Garb" "Blood Raiment" "Assassin's Garb"
+Class == "Body Armours"
+BaseType == "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Desert Brigandine" "Dragonscale Doublet" "Sadist Garb" "Blood Raiment" "Assassin's Garb"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup05.wav"
     MinimapIcon 2 Purple Square
 Show
-Class "Shields"
+Class == "Shields"
 BaseType "Spiked Shield" "Kite Shield"
 BaseType "Supreme" "Mirrored" "Sovereign" "Polished" "Champion"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup06.wav"
     MinimapIcon 2 Purple UpsideDownHouse
 Show
-Class "One Hand Axes"
+Class == "One Hand Axes"
 BaseType "Hatchet"
 BaseType "Runic" "Engraved" "Etched"
 Rarity Rare
@@ -1598,15 +1603,15 @@ Rarity Rare
 ##   4.2   --- Unique
 ###  4.2.1 ----- Bases
 Show
-Class "Belts"
-BaseType "Leather Belt" "Heavy Belt"
+Class == "Belts"
+BaseType == "Leather Belt" "Heavy Belt"
 Rarity Unique
     CustomAlertSound "homm3snd/BADLUCK.wav"
     MinimapIcon 0 Brown Moon
     PlayEffect Brown
 ###  4.2.2 ----- Global
 Show
-Class "Belts"
+Class == "Belts"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 1 Brown Moon
@@ -1624,18 +1629,18 @@ Rarity Unique
     MinimapIcon 1 Brown Star
     PlayEffect Brown Temp
 Show
-Class "Amulets" "Rings"
+Class == "Amulets" "Rings"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 1 Brown Diamond
     PlayEffect Brown Temp
 Show
-Class "Shields" "Quivers"
+Class == "Shields" "Quivers"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 2 Brown UpsideDownHouse
 Show
-Class "Body Armours" "Gloves" "Boots" "Helmets"
+Class == "Body Armours" "Gloves" "Boots" "Helmets"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 2 Brown Square
@@ -2012,159 +2017,157 @@ BaseType "Cluster"
     PlayEffect Purple
 ###  5.2.2 ----- Abyss
 Show
-Class "Abyss Jewels"
+Class == "Abyss Jewels"
 Rarity Rare
     SetFontSize 42
 Hide
-Class "Abyss Jewels"
+Class == "Abyss Jewels"
 Rarity < Rare
     SetFontSize 24
 ###  5.2.3 ----- Basic
 Show
-Class "Jewels"
-BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
+Class == "Jewels"
 Rarity Rare
     SetFontSize 42
 Hide
-Class "Jewels"
-BaseType "Crimson Jewel" "Cobalt Jewel" "Viridian Jewel"
+Class == "Jewels"
 Rarity < Rare
     SetFontSize 24
 ##   5.3   --- Flasks
 ###  5.3.1 ----- Quality
 Show
-Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
 Quality >= 20
     CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 2 White Raindrop
     SetTextColor 248 248 248 255
 Show
-Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
 Quality >= 14
     SetFontSize 39
     SetTextColor 248 248 248 255
 Show
-Class "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
 Quality >= 8
     SetFontSize 33
     SetTextColor 248 248 248 255
 ###  5.3.2 ----- Utility
 Show
-Class "Utility Flasks"
+Class == "Utility Flasks"
 ItemLevel >= 85
     MinimapIcon 0 Green Raindrop
     PlayEffect Green
 Show
-Class "Utility Flasks"
+Class == "Utility Flasks"
 ItemLevel >= 80
     MinimapIcon 2 Green Raindrop
 Show
-Class "Utility Flasks"
+Class == "Utility Flasks"
 ItemLevel >= 63
     SetFontSize 42
 Show
-Class "Utility Flasks"
+Class == "Utility Flasks"
 AreaLevel < 68
 ItemLevel >= 1
     SetFontSize 39
 ###  5.3.3 ----- Life
 Show
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Divine" "Eternal"
 ItemLevel >= 80
     MinimapIcon 2 Red Raindrop
 Show
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Divine" "Eternal"
 AreaLevel < 68
     SetFontSize 36
 Hide
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Divine" "Eternal"
     SetFontSize 30
 Show
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Hallowed"
 AreaLevel < 60
     SetFontSize 33
 Show
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Colossal"
 AreaLevel < 42
     SetFontSize 33
 Show
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Giant"
 AreaLevel < 42
     SetFontSize 33
 Hide
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Hallowed" "Colossal" "Giant"
     SetFontSize 30
 Show
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Greater" "Large"
 AreaLevel < 24
     SetFontSize 33
 Show
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Medium" "Small"
 AreaLevel < 10
     SetFontSize 33
 Hide
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Greater" "Large" "Medium" "Small"
     SetFontSize 18
 Hide
-Class "Life Flasks"
+Class == "Life Flasks"
 BaseType "Sacred" "Grand" "Sanctified"
     SetFontSize 18
 ###  5.3.4 ----- Mana
 Show
-Class "Mana Flasks"
+Class == "Mana Flasks"
 BaseType "Divine" "Eternal"
 ItemLevel >= 82
     MinimapIcon 2 Blue Raindrop
 Show
-Class "Mana Flasks"
+Class == "Mana Flasks"
 BaseType "Divine" "Eternal"
 AreaLevel < 68
     SetFontSize 33
 Hide
-Class "Mana Flasks"
+Class == "Mana Flasks"
 BaseType "Divine" "Eternal"
     SetFontSize 24
 Show
-Class "Mana Flasks"
+Class == "Mana Flasks"
 BaseType "Sanctified" "Hallowed"
 AreaLevel < 60
     SetFontSize 33
 Show
-Class "Mana Flasks"
+Class == "Mana Flasks"
 BaseType "Sacred" "Colossal" "Giant"
 AreaLevel < 42
     SetFontSize 33
 Hide
-Class "Mana Flasks"
+Class == "Mana Flasks"
 BaseType "Sanctified" "Hallowed" "Sacred" "Colossal" "Giant"
     SetFontSize 18
 Show
-Class "Mana Flasks"
+Class == "Mana Flasks"
 BaseType "Grand" "Greater" "Large"
 AreaLevel < 24
     SetFontSize 33
 Show
-Class "Mana Flasks"
+Class == "Mana Flasks"
 BaseType "Medium" "Small"
 AreaLevel < 10
     SetFontSize 33
 Hide
-Class "Mana Flasks"
+Class == "Mana Flasks"
 BaseType "Grand" "Greater" "Large" "Medium" "Small"
     SetFontSize 18
 ###  5.3.5 ----- Hybrid
 Hide
-Class "Hybrid Flasks"
+Class == "Hybrid Flasks"
     SetFontSize 18
 ##   5.4   --- Gems
 ###  5.4.1 ----- Awakened
@@ -2232,29 +2235,29 @@ AreaLevel >= 68
 ##   5.5   --- Maps
 ###  5.5.1 ----- White
 Show
-Class "Maps"
+Class == "Maps"
 MapTier < 6
     CustomAlertSound "homm3snd/MORALE.wav"
     MinimapIcon 0 White Square
     PlayEffect White
 ###  5.5.2 ----- Yellow
 Show
-Class "Maps"
+Class == "Maps"
 MapTier < 11
     CustomAlertSound "homm3snd/MORALE.wav"
     MinimapIcon 0 Yellow Square
     PlayEffect Yellow
 ###  5.5.3 ----- Red
 Show
-Class "Maps"
+Class == "Maps"
     CustomAlertSound "homm3snd/MORALE.wav"
     MinimapIcon 0 Red Square
     PlayEffect Red
 ##   5.6   --- Map Fragments
 ###  5.6.1 ----- Vessel
 Show
-Class "Map Fragments"
-BaseType "Divine Vessel"
+Class == "Map Fragments"
+BaseType == "Divine Vessel"
     CustomAlertSound "homm3snd/QUEST.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
@@ -2274,12 +2277,12 @@ Rarity Normal
 ##   7.1   --- Rarity based
 ###  7.1.1 ----- Normal Items
 Show
-Class "Amulets" "Belts" "Rings"
+Class == "Amulets" "Belts" "Rings"
 Rarity Normal
 AreaLevel < 24
     SetFontSize 39
 Hide
-Class "Amulets" "Belts" "Rings"
+Class == "Amulets" "Belts" "Rings"
 Rarity Normal
     SetFontSize 30
 Show
@@ -2317,12 +2320,12 @@ Rarity Normal
     SetFontSize 18
 ###  7.1.2 ----- Magic Items
 Show
-Class "Amulets" "Belts" "Rings"
+Class == "Amulets" "Belts" "Rings"
 Rarity Magic
 AreaLevel < 24
     SetFontSize 42
 Hide
-Class "Amulets" "Belts" "Rings"
+Class == "Amulets" "Belts" "Rings"
 Rarity Magic
     SetFontSize 24
 Show
@@ -2352,7 +2355,7 @@ Rarity Magic
     SetFontSize 18
 ###  7.1.3 ----- Rare Items
 Show
-Class "Amulets" "Belts" "Rings"
+Class == "Amulets" "Belts" "Rings"
 Rarity Rare
     SetFontSize 39
 Hide
