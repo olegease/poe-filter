@@ -1963,16 +1963,16 @@ Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Corrupted True
 CorruptedMods 2
-    SetFontSize 45
-Show
-Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
-Corrupted True
-CorruptedMods 1
     SetFontSize 39
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Corrupted True
+CorruptedMods 1
     SetFontSize 33
+Show
+Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
+Corrupted True
+    SetFontSize 18
 ##   4.8   --- Identified
 ###  4.8.1 ----- Exotic
 Show
@@ -2001,7 +2001,7 @@ HasExplicitMod "Subterranean" "Underground"
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Identified True
-    SetFontSize 33
+    SetFontSize 18
 #    5     - Other
 ##   5.1   --- Divination Cards
 ###  5.1.1 ----- Fragments
