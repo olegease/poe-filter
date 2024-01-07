@@ -1,4 +1,4 @@
-# Version: 0.0.46
+# Version: 0.0.47
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1384,22 +1384,25 @@ Show
 Class == "Map Fragments"
 BaseType "Winged"
 BaseType "Scarab"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/CHEST.wav"
     MinimapIcon 0 White Hexagon
     PlayEffect White
+    SetTextColor 8 8 8 255
 Show
 Class == "Map Fragments"
 BaseType "Gilded"
 BaseType "Scarab"
-    CustomAlertSound "homm3snd/TREASURE.wav"
+    CustomAlertSound "homm3snd/STORE.wav"
     MinimapIcon 1 White Hexagon
     PlayEffect White Temp
+    SetTextColor 64 64 64 255
 Show
 Class == "Map Fragments"
 BaseType "Polished" "Rusted"
 BaseType "Scarab"
-    CustomAlertSound "homm3snd/LUCK.wav"
+    CustomAlertSound "homm3snd/BADLUCK.wav"
     MinimapIcon 2 White Hexagon
+    SetTextColor 128 128 128 255
 ##   3.7   --- Legion
 ###  3.7.1 ----- Incubators
 Show
@@ -1417,13 +1420,16 @@ BaseType "Timeless"
 BaseType "Splinter"
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Orange Circle
+    SetTextColor 8 64 64 255
 ###  3.7.3 ----- Emblems
 Show
 Class == "Map Fragments"
 BaseType "Emblem"
 BaseType "Timeless"
+    CustomAlertSound "homm3snd/CHEST.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
+    SetTextColor 64 192 192 255
 ##   3.8   --- Blight
 ###  3.8.1 ----- Oils
 Show
@@ -1537,6 +1543,13 @@ BaseType == "Sacred Crystallised Lifeforce"
     SetBorderColor 80 92 116 255
     SetTextColor 80 92 116 255
 ##   3.10.2----- Blossom
+Show
+Class == "Map Fragments"
+BaseType == "Sacred Blossom"
+    CustomAlertSound "homm3snd/NewWeek.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 248 64 64 255
 ##   3.11  --- Heist
 ###  3.11.1----- Markers
 Show
@@ -1578,18 +1591,21 @@ Show
 Class == "Stackable Currency"
 BaseType == "Ritual Splinter"
     MinimapIcon 2 Red Cross
+    SetTextColor 192 8 8 255
 ###  3.12.2----- Vessel
 Show
 Class == "Stackable Currency"
 BaseType == "Ritual Vessel"
     MinimapIcon 1 Red Cross
     PlayEffect Red Temp
+    SetTextColor 192 8 8 255
 ###  3.12.3----- Blood
 Show
 Class == "Map Fragments"
 BaseType == "Blood-filled Vessel"
     MinimapIcon 0 Red Cross
     PlayEffect Red
+    SetTextColor 192 8 8 255
 ##   3.13  --- Ultimatum
 ###  3.13.1----- Catalysts
 Show
