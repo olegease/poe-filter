@@ -1,4 +1,4 @@
-# Version: 0.0.45
+# Version: 0.0.46
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -33,6 +33,8 @@
 ###  1.4.10----- Gems
 ###  1.4.11----- Tainted Currency
 ###  1.4.12----- Jewels
+###  1.4.13----- Fragments
+###  1.4.14----- Maps
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
 ###  1.5.2 ----- Str/Dex bases
@@ -43,6 +45,11 @@
 ###  1.5.7 ----- Str/Dex/Int bases
 ###  1.5.8 ----- Divination Cards
 ###  1.5.9 ----- Gems
+###  1.5.10----- Normal Maps
+###  1.5.11----- Magic Maps
+###  1.5.12----- Rare Maps
+###  1.5.13----- Corrupted Maps
+###  1.5.14----- Unique Maps
 ##   1.6   --- Font
 ###  1.6.1 ----- All items
 #    2     - Currency
@@ -206,6 +213,7 @@
 ###  5.5.1 ----- White
 ###  5.5.2 ----- Yellow
 ###  5.5.3 ----- Red
+###  5.5.4 ----- Other (Influenced, unknown?)
 ##   5.6   --- Map Fragments
 ###  5.6.1 ----- Vessel
 ###  5.6.2 ----- Atziri
@@ -281,6 +289,9 @@ Class == "Quest Items"
 # Blue   Raindrop        - Mana Flasks
 # Green  Traingle        - Gems
 # Green  Cross           - Quest related
+# Yellow Pentagon        - Delve Socketable
+# Orange Pentagon        - 6 Socket
+# Red    Pentagon        - 6 Links
 ###  1.1.4 ----- Sounds
 # homm3snd/DEFAULT.wav      - Quest Campaign
 # homm3snd/QUEST.wav        - Quest Atlas
@@ -305,6 +316,7 @@ Class == "Quest Items"
 # homm3snd/GENIE.wav        - Awakened/Exceptional Gems
 # homm3snd/COLDRAY.wav      - Quality Gems
 # homm3snd/Decay.wav        - Quality Flasks
+# homm3snd/Mystery.wav      - Sanctum Research
 ###  1.1.5 ----- Colors
 # Color Gradation (Preferable use this numbers for RGB colors)
 # Dark:    8  32  64
@@ -429,6 +441,16 @@ Show
 Class "Jewels"
     SetBackgroundColor 64 80 108 255
     Continue
+###  1.4.13----- Fragments
+Show
+Class == "Map Fragments"
+    SetBackgroundColor 192 192 192 255
+    Continue
+###  1.4.14----- Maps
+Show
+Class == "Maps"
+    SetBackgroundColor 8 8 8 255
+    Continue
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
 Show
@@ -505,6 +527,36 @@ Class == "Divination Cards"
 Show
 Class "Gems"
     SetBorderColor 55 80 70 255
+    Continue
+###  1.5.10----- Normal Maps
+Show
+Class == "Maps"
+Rarity Normal
+    SetBorderColor 200 200 200 255
+    Continue
+###  1.5.11----- Magic Maps
+Show
+Class == "Maps"
+Rarity Magic
+    SetBorderColor 136 136 255 255
+    Continue
+###  1.5.12----- Rare Maps
+Show
+Class == "Maps"
+Rarity Rare
+    SetBorderColor 255 255 119 255
+    Continue
+###  1.5.13----- Corrupted Maps
+Show
+Class == "Maps"
+Corrupted True
+    SetBorderColor 210 0 0 255
+    Continue
+###  1.5.14----- Unique Maps
+Show
+Class == "Maps"
+Rarity Unique
+    SetBorderColor 175 96 37 255
     Continue
 ##   1.6   --- Font
 ###  1.6.1 ----- All items
@@ -848,7 +900,7 @@ Class == "Stackable Currency"
 BaseType == "Chromatic Orb"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 2 White Circle
-    SetTextColor 248 248 248 255
+    SetTextColor 8 8 8 255
 ###  2.1.8 ----- Fusing
 Show
 Class == "Stackable Currency"
@@ -869,21 +921,21 @@ Class == "Stackable Currency"
 BaseType == "Orb of Scouring"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 1 White Circle
-    SetTextColor 200 200 200 255
+    SetTextColor 64 64 64 255
 ###  2.1.11----- Regret
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Regret"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 1 White Circle
-    SetTextColor 200 200 200 255
+    SetTextColor 64 64 64 255
 ###  2.1.12----- Alchemy
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Alchemy"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 1 Yellow Circle
-    SetTextColor 200 200 80 255
+    SetTextColor 64 64 8 255
 ##   2.2   --- Basic Quality Vendor
 ###  2.2.1 ----- Scrap
 Show
@@ -893,7 +945,7 @@ StackSize 40
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 0 White Circle
     PlayEffect White
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
@@ -901,7 +953,7 @@ StackSize >= 20
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 0 White Circle
     PlayEffect White
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
@@ -909,40 +961,40 @@ StackSize >= 16
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 1 White Circle
     PlayEffect White Temp
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
 StackSize >= 12
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
 AreaLevel < 45
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Hide
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
 AreaLevel >= 83
 StackSize < 8
     SetFontSize 24
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Hide
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
 AreaLevel >= 78
 StackSize < 4
     SetFontSize 24
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
     SetFontSize 33
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 ###  2.2.2 ----- Whetstone
 Show
 Class == "Stackable Currency"
@@ -951,7 +1003,7 @@ StackSize 40
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 0 White Circle
     PlayEffect White
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
@@ -959,7 +1011,7 @@ StackSize >= 12
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 0 White Circle
     PlayEffect White
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
@@ -967,47 +1019,47 @@ StackSize >= 10
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 1 White Circle
     PlayEffect White Temp
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 StackSize >= 8
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 AreaLevel < 68
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Hide
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 83
 StackSize < 4
     SetFontSize 24
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Hide
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 78
 StackSize < 2
     SetFontSize 24
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 Show
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
     SetFontSize 36
-    SetTextColor 128 128 128 255
+    SetTextColor 8 8 8 255
 ###  2.2.3 ----- Bubble
 Show
 Class == "Stackable Currency"
 BaseType == "Glassblower's Bauble"
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Yellow Circle
-    SetTextColor 0 0 0 255
+    SetTextColor 8 8 8 255
 ##   2.3   --- Basic Master Vendor
 ###  2.3.1 ----- Unmaking
 Show
@@ -1016,7 +1068,7 @@ BaseType == "Orb of Unmaking"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Yellow Circle
     PlayEffect Yellow
-    SetTextColor 164 100 20 255
+    SetTextColor 64 64 64 255
 ###  2.3.2 ----- Chisel
 Show
 Class == "Stackable Currency"
@@ -1024,7 +1076,7 @@ BaseType == "Cartographer's Chisel"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Yellow Circle
     PlayEffect Yellow
-    SetTextColor 164 100 20 255
+    SetTextColor 8 8 8 255
 ###  2.3.3 ----- Compass
 ###  2.3.4 ----- Bestiary
 ##   2.4   --- Basic Droponly
@@ -1055,6 +1107,7 @@ Class == "Stackable Currency"
 BaseType "Scouting Report"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
+    SetTextColor 64 64 8 255
 ###  2.4.5 ----- Ember
 Show
 Class == "Stackable Currency"
@@ -1084,7 +1137,7 @@ BaseType == "Chaos Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
-    SetTextColor 128 96 8 255
+    SetTextColor 128 64 8 255
 ###  2.4.9 ----- Vaal
 Show
 Class == "Stackable Currency"
@@ -1100,6 +1153,7 @@ BaseType == "Blessed Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
+    SetTextColor 128 64 8 255
 ###  2.4.11----- Prism
 Show
 Class == "Stackable Currency"
@@ -1107,6 +1161,7 @@ BaseType == "Gemcutter's Prism"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
+    SetTextColor 64 64 64 255
 ###  2.4.12----- Sextant
 Show
 Class == "Stackable Currency"
@@ -1114,6 +1169,7 @@ BaseType == "Awakened Sextant"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
+    SetTextColor 8 128 128 255
 ###  2.4.13----- Exalted
 Show
 Class == "Stackable Currency"
@@ -1121,6 +1177,7 @@ BaseType == "Exalted Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
+    SetTextColor 248 8 8 255
 ###  2.4.14 ----- Divine
 Show
 Class == "Stackable Currency"
@@ -1128,6 +1185,7 @@ BaseType == "Divine Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
+    SetTextColor 248 8 8 255
 ###  2.4.15----- Box
 Show
 Class == "Stackable Currency"
@@ -1135,6 +1193,7 @@ BaseType == "Valdo's Puzzle Box"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
+    SetTextColor 8 248 248 255
 ###  2.4.16----- Sacred
 Show
 Class == "Stackable Currency"
@@ -1149,9 +1208,8 @@ BaseType == "Mirror of Kalandra"
     CustomAlertSound "homm3snd/UltimateArtifact.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
-    SetBackgroundColor 248 128 8 255
-    SetBorderColor 248 216 8 255
-    SetTextColor 248 216 8 255
+    SetBorderColor 248 8 8 255
+    SetTextColor 248 8 8 255
 ###  2.5   --- Basic Droponly Monster Restrict
 ###  2.5.1 ----- All
 Show
@@ -1170,6 +1228,7 @@ BaseType "Remnant of Corruption" "Essence of Insanity" "Essence of Horror" "Esse
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 0 Pink Kite
     PlayEffect Pink
+    SetTextColor 248 8 248 255
 ###  3.1.2 ----- Tiers
 Show
 Class == "Stackable Currency"
@@ -1177,6 +1236,7 @@ BaseType "Deafening Essence"
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 0 Pink Kite
     PlayEffect Pink
+    SetTextColor 216 8 216 255
 Show
 Class == "Stackable Currency"
 BaseType "Essence"
@@ -1184,17 +1244,20 @@ BaseType "Shrieking" "Screaming"
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 1 Pink Kite
     PlayEffect Pink Temp
+    SetTextColor 192 8 192 255
 Show
 Class == "Stackable Currency"
 BaseType "Essence"
 BaseType "Wailing"
     CustomAlertSound "homm3snd/BIND.wav"
     MinimapIcon 2 Pink Kite
+    SetTextColor 160 8 160 255
 Show
 Class == "Stackable Currency"
 BaseType "Essence"
 BaseType "Weeping" "Muttering" "Whispering"
     SetFontSize 42
+    SetTextColor 128 8 128 255
 ##   3.2   --- Breach
 ###  3.2.1 ----- Splinters
 Show
@@ -1587,8 +1650,8 @@ Class == "Charms"
 Show
 LinkedSockets 6
     CustomAlertSound "homm3snd/BLOODLUS.wav"
-    MinimapIcon 0 Orange Pentagon
-    PlayEffect Orange
+    MinimapIcon 0 Red Pentagon
+    PlayEffect Red
     SetTextColor 255 255 255 255
 ###  4.0.2 ----- 5 link
 Show
@@ -1932,21 +1995,21 @@ BaseType == "The Eldritch Decay" "Guardian's Challenge" "Altered Perception" "Re
     CustomAlertSound "homm3snd/Cure.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
-    SetTextColor 255 255 255 255
+    SetTextColor 192 192 192 255
 Show
 Class == "Divination Cards"
 BaseType == "Last Hope" "The Obscured" "Sambodhi's Vow" "More is Never Enough" "The Eye of Terror" "The Card Sharp"
-    SetTextColor 255 255 255 255
+    SetTextColor 192 192 192 255
 Show
 Class == "Divination Cards"
 BaseType == "Boon of Justice" "Buried Treasure" "The Deal" "Cameria's Cut" "Man With Bear"
     SetFontSize 42
-    SetTextColor 255 255 255 255
+    SetTextColor 192 192 192 255
 Show
 Class == "Divination Cards"
 BaseType == "Her Mask" "The Puzzle"
     SetFontSize 39
-    SetTextColor 255 255 255 255
+    SetTextColor 192 192 192 255
 ###  5.1.2 ----- Normal Items
 Show
 Class == "Divination Cards"
@@ -2103,30 +2166,30 @@ BaseType == "House of Mirrors" "The Sephirot" "The Innocent" "Seven Years Bad Lu
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
-    SetTextColor 255 215 0 255
+    SetTextColor 248 216 8 255
 Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret 10xChaos 10xChisel 10xDeck 2xExalted 30xScouring 4xTaintedMystic 9xT6Essense 3xT7Essense 2xESextant 1xHarbinger 3xAnnul 10xExalted 1xAnnul 20xReport 10xSextant 5xFossil 5xExalt 10xDeliorb 10xVial 7xExalt 10xIncubator 10xOil 10xUnmaking
 Class == "Divination Cards"
 BaseType == "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token" "The Wrath" "The Cartographer" "Lucky Deck" "The Saint's Treasure" "No Traces" "The Rusted Bard" "Harmony of Souls" "The Cacophony" "Monochrome" "The Journey" "The Seeker" "Alluring Bounty" "Demigod's Wager" "The Side Quest" "Underground Forest" "The Tinkerer's Table" "Brother's Stash" "Dementophobia" "The Rabbit's Foot" "The Scout" "Parasitic Passengers" "The Tireless Extractor" "Ever-Changing"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
-    SetTextColor 255 215 0 255
+    SetTextColor 248 216 8 255
 Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos 7xAlchemy 3xEssense 20xChance 17xChromes 20xAlteration 10xAlteration 13xAlteration 1xDeliorb 1xDeliorb 1xFertile
 Class == "Divination Cards"
 BaseType == "Chaotic Disposition" "Coveted Possession" "Lucky Connections" "The Gemcutter" "Three Faces in the Dark" "The Survivalist" "Three Voices" "The Fool" "The Heroic Shot" "Acclimatisation" "Society's Remorse" "A Sea of Blue" "Ambitious Obsession" "Disdain" "The Finishing Touch"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Grey Square
-    SetTextColor 255 215 0 255
+    SetTextColor 248 216 8 255
 Show # 5xRandom 1xChaos 3xFusing 1xVaal 20xQualityRng
 Class == "Divination Cards"
 BaseType == "Emperor's Luck" "Rain of Chaos" "Loyalty" "The Catalyst" "The Master Artisan"
     SetFontSize 39
-    SetTextColor 255 215 0 255
+    SetTextColor 248 216 8 255
 Show # 40xWisdom
 Class == "Divination Cards"
 BaseType == "The Scholar"
     SetFontSize 33
-    SetTextColor 255 215 0 255
+    SetTextColor 248 216 8 255
 ###  5.1.7 ----- Gems
 Show # Enlighten3L Exceptional1-20Q Exceptional
 Class == "Divination Cards"
@@ -2404,9 +2467,10 @@ AreaLevel >= 68
 Show
 Class == "Maps"
 MapTier < 6
-    CustomAlertSound "homm3snd/MORALE.wav"
+    CustomAlertSound "homm3snd/Nwherolv.wav"
     MinimapIcon 0 White Square
     PlayEffect White
+    SetTextColor 192 192 192 255
 ###  5.5.2 ----- Yellow
 Show
 Class == "Maps"
@@ -2414,12 +2478,22 @@ MapTier < 11
     CustomAlertSound "homm3snd/MORALE.wav"
     MinimapIcon 0 Yellow Square
     PlayEffect Yellow
+    SetTextColor 192 192 8 255
 ###  5.5.3 ----- Red
 Show
 Class == "Maps"
-    CustomAlertSound "homm3snd/MORALE.wav"
+HasInfluence None
+    CustomAlertSound "homm3snd/NewDay.wav"
     MinimapIcon 0 Red Square
     PlayEffect Red
+    SetTextColor 192 8 8 255
+###  5.5.4 ----- Other (Influenced, unknown?)
+Show
+Class == "Maps"
+    CustomAlertSound "homm3snd/Lighthouse.wav"
+    MinimapIcon 0 Cyan Square
+    PlayEffect Cyan
+    SetTextColor 8 192 192 255
 ##   5.6   --- Map Fragments
 ###  5.6.1 ----- Vessel
 Show
@@ -2428,55 +2502,68 @@ BaseType == "Divine Vessel"
     CustomAlertSound "homm3snd/QUEST.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
-    SetBackgroundColor 40 50 70 255
-    SetBorderColor 64 84 104 255
-    SetTextColor 184 84 64 255
+    SetBorderColor 64 64 128 255
+    SetTextColor 248 64 64 255
 ###  5.6.2 ----- Atziri
 Show
 Class == "Map Fragments"
 BaseType "Sacrifice"
 BaseType "Dusk" "Noon" "Dawn" "Midnight"
+    CustomAlertSound "homm3snd/NewDay.wav"
     MinimapIcon 2 Red Hexagon
+    SetTextColor 128 64 64 255
 Show
 Class == "Map Fragments"
 BaseType "Mortal"
 BaseType "Grief" "Ignorance" "Hope" "Rage"
+    CustomAlertSound "homm3snd/NewWeek.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
+    SetTextColor 64 128 64 255
 ###  5.6.3 ----- Shaper
 Show
 Class == "Map Fragments"
 BaseType "Fragment"
 BaseType "Hydra" "Chimera" "Minotaur" "Phoenix"
+    CustomAlertSound "homm3snd/NewWeek.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
+    SetTextColor 128 8 64 255
 ###  5.6.4 ----- Elder
 Show
 Class == "Map Fragments"
 BaseType "Fragment"
 BaseType "Purification" "Constriction" "Eradication" "Enslavement"
+    CustomAlertSound "homm3snd/NewWeek.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
+    SetTextColor 64 8 128 255
 ###  5.6.5 ----- Uber
 Show
 Class == "Map Fragments"
 BaseType "Fragment"
 BaseType "Knowledge" "Shape" "Emptiness" "Terror"
+    CustomAlertSound "homm3snd/NEWMONTH.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
+    SetTextColor 128 8 128 255
 ###  5.6.6 ----- Sirus
 Show
 Class == "Map Fragments"
 BaseType "Crest"
 BaseType "Al-Hezmin's" "Baran's" "Drox's" "Veritania's"
+    CustomAlertSound "homm3snd/NEWMONTH.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
+    SetTextColor 64 128 64 255
 ###  5.6.7 ----- Maven
 Show
 Class == "Map Fragments"
 BaseType == "The Maven's Writ"
+    CustomAlertSound "homm3snd/Obelisk.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
+    SetTextColor 8 128 128 255
 ##   5.7   --- Miscellaneous map item
 ###  5.7.1 ----- All
 Show
