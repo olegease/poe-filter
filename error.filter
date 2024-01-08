@@ -28,13 +28,14 @@
 ###  1.4.5 ----- Jewelery
 ###  1.4.6 ----- Mana Flasks
 ###  1.4.7 ----- Life Flasks
-###  1.4.8 ----- Utility Flasks
-###  1.4.9 ----- Divination Cards
-###  1.4.10----- Gems
-###  1.4.11----- Tainted Currency
-###  1.4.12----- Jewels
-###  1.4.13----- Fragments
-###  1.4.14----- Maps
+###  1.4.8 ----- Hybrid Flasks
+###  1.4.9 ----- Utility Flasks
+###  1.4.10----- Divination Cards
+###  1.4.11----- Gems
+###  1.4.12----- Tainted Currency
+###  1.4.13----- Jewels
+###  1.4.14----- Fragments
+###  1.4.15----- Maps
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
 ###  1.5.2 ----- Str/Dex bases
@@ -293,7 +294,9 @@ Class == "Quest Items"
 # Orange Pentagon        - 6 Socket
 # Red    Pentagon        - 6 Links
 ###  1.1.4 ----- Sounds
-# homm3snd/DEFAULT.wav      - Quest Campaign
+# GOOD: (46)
+# homm3snd/DANGER.wav       - Error (missed) Items
+# homm3snd/DEFAULT.wav      - Quest / Heist Targets
 # homm3snd/QUEST.wav        - Quest Atlas
 # homm3snd/Disease.wav      - Trash Uniques / Unique Div Cards
 # homm3snd/BUTTON.wav       - Currency LOW T2
@@ -303,8 +306,8 @@ Class == "Quest Items"
 # homm3snd/SysMsg.wav       - Currency MID T1
 # homm3snd/LUCK.wav         - Currency TOP T3
 # homm3snd/TREASURE.wav     - Currency TOP T2
-# homm3snd/Faerie.wav       - Currency TOP T1
-# homm3snd/UltimateArtifact - Currency T0 and God Tier Items
+# homm3snd/FAERIE.wav       - Currency TOP T1
+# homm3snd/UltimateArtifact - Currency T0 / Double Influenced
 # homm3snd/NOMAD.wav        - Div Cards God Tier (Icon 0)
 # homm3snd/STORE.wav        - Div Cards Top Tier (Icon 1)
 # homm3snd/Cure.wav         - Div Cards (not currency related)
@@ -313,10 +316,54 @@ Class == "Quest Items"
 # homm3snd/Dragon.wav       - High Essences
 # homm3snd/Graveyard.wav    - Logbooks
 # homm3snd/GetProtection.wav- Guardian Maps
-# homm3snd/GENIE.wav        - Awakened/Exceptional Gems
+# homm3snd/GENIE.wav        - Awakened/Exceptional Gems/Div Cards
 # homm3snd/COLDRAY.wav      - Quality Gems
 # homm3snd/Decay.wav        - Quality Flasks
 # homm3snd/Mystery.wav      - Sanctum Research
+# homm3snd/Temple.wav       - Atzoatl Temple Vials
+# homm3snd/Preyer.wav       - Delve Resonator 1-2 sockets
+# homm3snd/View.wav         - Delve Resonator 3 sockets
+# homm3snd/ARMGEDN.wav      - Delve Resonator 4 sockets
+# homm3snd/Lighthouse.wav   - Heist Blueprints
+# homm3snd/BLOODLUS.wav     - 6 Linked Items
+# homm3snd/LIGHTBLT.wav     - 5 Linked Items
+# homm3snd/Pickup01.wav     - Build Amulets,Rings,Belts
+# homm3snd/Pickup02.wav     - Build Helmets
+# homm3snd/Pickup03.wav     - Build Boots
+# homm3snd/Pickup04.wav     - Build Gloves
+# homm3snd/Pickup05.wav     - Build Body
+# homm3snd/Pickup06.wav     - Build Off Hand
+# homm3snd/Pickup07.wav     - Build Main Hand
+# homm3snd/Nwherolv.wav     - Maps White / Contracts
+# homm3snd/MORALE.wav       - Maps Yellow
+# homm3snd/NewDay.wav       - Maps Red / Sacrifice Fragments
+# homm3snd/NewWeek.wav      - Boss Fragments / Harvest
+# homm3snd/NEWMONTH.wav     - Uber Fragments
+# homm3snd/Obelisk.wav      - Maven Fragmnent
+# homm3snd/MILITARY.wav     - Influenced Maps
+# TEMP:
+# homm3snd/CHEST.wav        - Scarabs R4 / Legion Emblems
+# homm3snd/STORE.wav        - Scarabs R3
+# homm3snd/BADLUCK.wav      - Scarabs R1-2 / Uniques Multibase
+# homm3snd/Regener.wav      - Legion Incubators
+# homm3snd/Preyer.wav       - Sanctum Relics
+# homm3snd/Paralyze.wav     - Unique Pieces
+# homm3snd/Buildtwn.wav     - Exotic Fractures
+# homm3snd/tailwind.wav     - Fractures
+# homm3snd/View.wav         - Synthesised
+# homm3snd/mirth.wav        - Cluster Jewels
+# FREE: (11)
+# homm3snd/Fortune.wav
+# homm3snd/Berserk.wav
+# homm3snd/Forget.wav
+# homm3snd/VISIONS.wav
+# homm3snd/Slayer.wav
+# homm3snd/Poison.wav
+# homm3snd/Bless.wav
+# homm3snd/ROGUE.wav
+# homm3snd/Badmrle.wav
+# homm3snd/RESURECT.wav
+# homm3snd/Gazebo.wav
 ###  1.1.5 ----- Colors
 # Color Gradation (Preferable use this numbers for RGB colors)
 # Dark:    8  32  64
@@ -408,45 +455,50 @@ Class "Rings" "Amulets" "Belts"
 ###  1.4.6 ----- Mana Flasks
 Show
 Class == "Mana Flasks"
-    SetBackgroundColor 50 70 200 255
+    SetBackgroundColor 64 64 216 255
     Continue
 ###  1.4.7 ----- Life Flasks
 Show
 Class == "Life Flasks"
-    SetBackgroundColor 128 20 20 255
+    SetBackgroundColor 128 32 32 255
     Continue
-###  1.4.8 ----- Utility Flasks
+###  1.4.8 ----- Hybrid Flasks
+Show
+Class == "Hybrid Flasks"
+    SetBackgroundColor 128 32 128 255
+    Continue
+###  1.4.9 ----- Utility Flasks
 Show
 Class == "Utility Flasks"
-    SetBackgroundColor 30 130 80 255
+    SetBackgroundColor 32 128 64 255
     Continue
-###  1.4.9 ----- Divination Cards
+###  1.4.10----- Divination Cards
 Show
 Class == "Divination Cards"
     SetBackgroundColor 64 64 64 255
     Continue
-###  1.4.10----- Gems
+###  1.4.11----- Gems
 Show
 Class "Gems"
     SetBackgroundColor 25 50 45 255
     Continue
-###  1.4.11----- Tainted Currency
+###  1.4.12----- Tainted Currency
 Show
 Class == "Stackable Currency"
 BaseType "Tainted"
     SetBackgroundColor 210 0 0 255
     Continue
-###  1.4.12----- Jewels
+###  1.4.13----- Jewels
 Show
 Class "Jewels"
     SetBackgroundColor 64 80 108 255
     Continue
-###  1.4.13----- Fragments
+###  1.4.14----- Fragments
 Show
 Class == "Map Fragments"
     SetBackgroundColor 192 192 192 255
     Continue
-###  1.4.14----- Maps
+###  1.4.15----- Maps
 Show
 Class == "Maps"
     SetBackgroundColor 8 8 8 255
@@ -2317,11 +2369,16 @@ AreaLevel < 68
 ItemLevel >= 1
     SetFontSize 39
 ###  5.3.3 ----- Life
+Hide
+Class == "Life Flasks"
+AreaLevel >= 83
+    SetFontSize 30
 Show
 Class == "Life Flasks"
 BaseType "Divine" "Eternal"
 ItemLevel >= 80
     MinimapIcon 2 Red Raindrop
+    SetFontSize 33
 Show
 Class == "Life Flasks"
 BaseType "Divine" "Eternal"
@@ -2374,6 +2431,7 @@ Class == "Mana Flasks"
 BaseType "Divine" "Eternal"
 ItemLevel >= 82
     MinimapIcon 2 Blue Raindrop
+    SetFontSize 33
 Show
 Class == "Mana Flasks"
 BaseType "Divine" "Eternal"
@@ -2454,7 +2512,7 @@ Quality >= 20
     PlayEffect Green Temp
 Show
 Class "Gems"
-Quality >= 12
+Quality >= 14
     CustomAlertSound "homm3snd/COLDRAY.wav"
     MinimapIcon 2 Green Triangle
 Show
@@ -2506,7 +2564,7 @@ HasInfluence None
 ###  5.5.4 ----- Other (Influenced, unknown?)
 Show
 Class == "Maps"
-    CustomAlertSound "homm3snd/Lighthouse.wav"
+    CustomAlertSound "homm3snd/MILITARY.wav"
     MinimapIcon 0 Cyan Square
     PlayEffect Cyan
     SetTextColor 8 192 192 255
