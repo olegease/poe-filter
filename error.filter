@@ -1,4 +1,4 @@
-# Version: 0.0.47
+# Version: 0.0.48
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -76,8 +76,7 @@
 ##   2.3   --- Basic Master Vendor
 ###  2.3.1 ----- Unmaking
 ###  2.3.2 ----- Chisel
-###  2.3.3 ----- Compass
-###  2.3.4 ----- Bestiary
+###  2.3.3 ----- Bestiary
 ##   2.4   --- Basic Droponly
 ###  2.4.1 ----- Instilling Orb
 ###  2.4.2 ----- Enkindling Orb
@@ -90,12 +89,11 @@
 ###  2.4.9 ----- Vaal
 ###  2.4.10 ----- Blessed
 ###  2.4.11----- Prism
-###  2.4.12----- Sextant
-###  2.4.13----- Exalted
-###  2.4.14----- Divine
-###  2.4.15----- Box
-###  2.4.16----- Sacred
-###  2.4.17----- Kalandra
+###  2.4.12----- Exalted
+###  2.4.13----- Divine
+###  2.4.14----- Box
+###  2.4.15----- Sacred
+###  2.4.16----- Kalandra
 ###  2.5   --- Basic Droponly Monster Restrict
 ###  2.5.1 ----- All
 #    3     - League specific
@@ -255,7 +253,7 @@ Class == "Quest Items"
 ##   1.1   --- Notes
 ###  1.1.1 ----- Overview
 # Filter for SSF
-# default font size for all items 33
+# default font size for all items 45
 ###  1.1.2 ----- Tiers
 # Tiers split into 11: 8 tiers for show items, 3 tiers for hidden items, and 8 for items without sound icon and playeffect
 # 1 tier: show, font 45, sound, minimapicon 0, playeffect
@@ -1129,8 +1127,7 @@ BaseType == "Cartographer's Chisel"
     MinimapIcon 0 Yellow Circle
     PlayEffect Yellow
     SetTextColor 8 8 8 255
-###  2.3.3 ----- Compass
-###  2.3.4 ----- Bestiary
+###  2.3.3 ----- Bestiary
 ##   2.4   --- Basic Droponly
 ###  2.4.1 ----- Instilling Orb
 Show
@@ -1214,15 +1211,7 @@ BaseType == "Gemcutter's Prism"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
     SetTextColor 64 64 64 255
-###  2.4.12----- Sextant
-Show
-Class == "Stackable Currency"
-BaseType == "Awakened Sextant"
-    CustomAlertSound "homm3snd/Faerie.wav"
-    MinimapIcon 0 Red Circle
-    PlayEffect Red
-    SetTextColor 8 128 128 255
-###  2.4.13----- Exalted
+###  2.4.12----- Exalted
 Show
 Class == "Stackable Currency"
 BaseType == "Exalted Orb"
@@ -1230,7 +1219,7 @@ BaseType == "Exalted Orb"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetTextColor 248 8 8 255
-###  2.4.14 ----- Divine
+###  2.4.13 ----- Divine
 Show
 Class == "Stackable Currency"
 BaseType == "Divine Orb"
@@ -1238,7 +1227,7 @@ BaseType == "Divine Orb"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetTextColor 248 8 8 255
-###  2.4.15----- Box
+###  2.4.14----- Box
 Show
 Class == "Stackable Currency"
 BaseType == "Valdo's Puzzle Box"
@@ -1246,14 +1235,14 @@ BaseType == "Valdo's Puzzle Box"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetTextColor 8 248 248 255
-###  2.4.16----- Sacred
+###  2.4.15 ----- Sacred
 Show
 Class == "Stackable Currency"
 BaseType == "Sacred Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
-###  2.4.17----- Kalandra
+###  2.4.16 ----- Kalandra
 Show
 Class == "Stackable Currency"
 BaseType == "Mirror of Kalandra"
@@ -1266,7 +1255,7 @@ BaseType == "Mirror of Kalandra"
 ###  2.5.1 ----- All
 Show
 Class == "Stackable Currency"
-BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Elevated Sextant" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb"
+BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
@@ -1434,27 +1423,11 @@ BaseType "Prime"
 ###  3.6.1 ----- Scarabs
 Show
 Class == "Map Fragments"
-BaseType "Winged"
 BaseType "Scarab"
     CustomAlertSound "homm3snd/CHEST.wav"
     MinimapIcon 0 White Hexagon
     PlayEffect White
     SetTextColor 8 8 8 255
-Show
-Class == "Map Fragments"
-BaseType "Gilded"
-BaseType "Scarab"
-    CustomAlertSound "homm3snd/STORE.wav"
-    MinimapIcon 1 White Hexagon
-    PlayEffect White Temp
-    SetTextColor 64 64 64 255
-Show
-Class == "Map Fragments"
-BaseType "Polished" "Rusted"
-BaseType "Scarab"
-    CustomAlertSound "homm3snd/BADLUCK.wav"
-    MinimapIcon 2 White Hexagon
-    SetTextColor 128 128 128 255
 ##   3.7   --- Legion
 ###  3.7.1 ----- Incubators
 Show
@@ -2802,17 +2775,17 @@ Rarity Rare
 AreaLevel >= 45
 DropLevel < 15
     SetFontSize 30
-Hide
+Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
 DropLevel >= 64
-    SetFontSize 33
-Hide
+    SetFontSize 39
+Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
 DropLevel >= 45
-    SetFontSize 33
-Hide
+    SetFontSize 36
+Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
     SetFontSize 33
