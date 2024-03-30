@@ -1,4 +1,4 @@
-# Version: 0.0.48
+# Version: 0.0.49
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1708,51 +1708,54 @@ Sockets 6
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
     SetTextColor 255 255 255 255
+###  4.0.4 ----- 4 link
+Show
+LinkedSockets 4
+AreaLevel < 68
+    CustomAlertSound "homm3snd/Poison.wav"
+    MinimapIcon 2 White Pentagon
+    SetTextColor 255 255 255 255
 ##   4.1   --- Build Rares
 ###  4.1.1 ----- All
 Show
 Class == "Amulets" "Rings"
-BaseType == "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Vermillion Ring" "Amethyst Ring"
+BaseType == "Onyx Amulet" "Agate Amulet" "Amethyst Ring" "Iolite Ring"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Diamond
 Show
 Class == "Belts"
-BaseType == "Crystal Belt" "Vanguard Belt" "Rustic Sash"
+BaseType == "Heavy Belt"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Moon
 Show
 Class == "Helmets"
-BaseType "Bascinet" "Mask" "Pelt"
-BaseType "Nightmare" "Pig-Faced" "Fluted" "Deicide" "Vaal" "Harlequin" "Regicide" "Lion"
+BaseType == "Nightmare Bascinet" "Lion Pelt" "Sinner Tricorne" "Silken Hood"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup02.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Boots"
-BaseType "Boots"
-BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Fugitive" "Murder" "Assassin's" "Carnal" "Slink"
+BaseType == "Dragonscale Boots" "Slink Boots" "Stealth Boots" "Two-Toned Boots"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup03.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Gloves"
-BaseType "Gauntlets" "Mitts" "Gloves"
-BaseType "Dragonscale" "Hydrascale" "Wyrmscale" "Murder" "Assassin's" "Carnal" "Ambush" "Slink"
+BaseType == "Dragonscale Gauntlets" "Slink Gloves" "Stealth Gloves"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup04.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Body Armours"
-BaseType == "Full Dragonscale" "Triumphant Lamellar" "General's Brigandine" "Desert Brigandine" "Dragonscale Doublet" "Sadist Garb" "Blood Raiment" "Assassin's Garb"
+BaseType == "Full Dragonscale" "Zodiac Leather"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup05.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Shields"
-BaseType "Spiked Shield" "Kite Shield"
-BaseType "Supreme" "Mirrored" "Sovereign" "Polished" "Champion"
+BaseType == "Crusader Buckler" "Imperial Buckler" "Mirrored Spiked Shield" "Polished Spiked Shield"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup06.wav"
     MinimapIcon 2 Purple UpsideDownHouse
@@ -2686,18 +2689,21 @@ Sockets < 3
 Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Normal
+AreaLevel >= 4
 AreaLevel < 8
 LinkedSockets < 2
     SetFontSize 21
 Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Normal
+AreaLevel >= 8
 AreaLevel < 24
 LinkedSockets < 3
     SetFontSize 24
 Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Normal
+AreaLevel >= 24
 AreaLevel < 68
 LinkedSockets < 4
     SetFontSize 24
@@ -2728,7 +2734,7 @@ AreaLevel < 8
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Magic
-AreaLevel < 24
+AreaLevel < 12
     SetFontSize 33
 Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
