@@ -1,4 +1,4 @@
-# Version: 0.0.49
+# Version: 0.0.50
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -149,6 +149,8 @@
 ##   3.16  --- Affliction
 ###  3.16.1----- Tinctures
 ###  3.16.2----- Charms
+##   3.17  --- Necropolis
+###  3.17.1----- Allflame
 #    4     - Special
 ##   4.0   --- Sockets
 ###  4.0.1 ----- 6 link
@@ -1685,6 +1687,12 @@ Show
 Class == "Charms"
     MinimapIcon 0 Red Cross
     PlayEffect Red
+##   3.17  --- Necropolis
+###  3.17.1----- Allflame
+Show
+Class == "Embers of the Allflame"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
 #    4     - Special
 ##   4.0   --- Sockets
 ###  4.0.1 ----- 6 link
@@ -1731,25 +1739,25 @@ Rarity Rare
     MinimapIcon 2 Purple Moon
 Show
 Class == "Helmets"
-BaseType == "Nightmare Bascinet" "Lion Pelt" "Sinner Tricorne" "Silken Hood"
+BaseType == "Nightmare Bascinet" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Vaal Mask"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup02.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Boots"
-BaseType == "Dragonscale Boots" "Slink Boots" "Stealth Boots" "Two-Toned Boots"
+BaseType == "Dragonscale Boots" "Slink Boots" "Stealth Boots" "Two-Toned Boots" "Fugitive Boots" "Murder Boots" "Assassin's Boots"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup03.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Gloves"
-BaseType == "Dragonscale Gauntlets" "Slink Gloves" "Stealth Gloves"
+BaseType == "Dragonscale Gauntlets" "Slink Gloves" "Stealth Gloves" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup04.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Body Armours"
-BaseType == "Full Dragonscale" "Zodiac Leather"
+BaseType == "Full Dragonscale" "Zodiac Leather" "Assassin's Garb"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup05.wav"
     MinimapIcon 2 Purple Square
@@ -2747,6 +2755,10 @@ Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws"
 Rarity Magic
     SetFontSize 18
 ###  7.1.3 ----- Rare Items
+Hide
+Class "Wands" "Daggers" "Claws" "Bows" "Quivers" "Swords" "Axes" "Maces" "Sceptres" "Staves"
+Rarity Rare
+    SetFontSize 33
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Rare
@@ -2785,12 +2797,12 @@ Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
 DropLevel >= 64
-    SetFontSize 39
+    SetFontSize 36
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
 DropLevel >= 45
-    SetFontSize 36
+    SetFontSize 33
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
