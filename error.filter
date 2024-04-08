@@ -1,4 +1,4 @@
-# Version: 0.0.50
+# Version: 0.0.51
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1691,8 +1691,12 @@ Class == "Charms"
 ###  3.17.1----- Allflame
 Show
 Class == "Embers of the Allflame"
+    CustomAlertSound "homm3snd/VISIONS.wav"
     MinimapIcon 0 Red Cross
     PlayEffect Red
+    SetBackgroundColor 64 64 64 255
+    SetBorderColor 164 64 8 255
+    SetTextColor 164 64 8 255
 #    4     - Special
 ##   4.0   --- Sockets
 ###  4.0.1 ----- 6 link
@@ -1726,51 +1730,58 @@ AreaLevel < 68
 ##   4.1   --- Build Rares
 ###  4.1.1 ----- All
 Show
-Class == "Amulets" "Rings"
-BaseType == "Onyx Amulet" "Agate Amulet" "Amethyst Ring" "Iolite Ring"
+Class == "Amulets"
+BaseType "Amulet"
+BaseType "Onyx" "Seaglass" "Agate" "Turquoise" "Citrine" "Blue Pearl" "Marble" "Gold"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Diamond
 Show
-Class == "Belts"
-BaseType == "Heavy Belt"
+Class == "Belts" "Rings"
+BaseType "Belt" "Ring"
+BaseType "Crystal" "Heavy" "Leather" "Vanguard" "Vermillion" "Iolite" "Amethyst" "Two-Stone"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Moon
 Show
 Class == "Helmets"
-BaseType == "Nightmare Bascinet" "Lion Pelt" "Sinner Tricorne" "Silken Hood" "Vaal Mask"
+BaseType "Mask" "Circlet" "Cage"
+BaseType "Deicide" "Vaal" "Harlequin" "Regicide" "Callous" "Raven" "Hubris" "Mind"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup02.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Boots"
-BaseType == "Dragonscale Boots" "Slink Boots" "Stealth Boots" "Two-Toned Boots" "Fugitive Boots" "Murder Boots" "Assassin's Boots"
+BaseType "Boots"
+BaseType "Dragonscale" "Slink" "Stealth" "Two-Toned" "Fugitive" "Murder" "Assassin's" "Carnal"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup03.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Gloves"
-BaseType == "Dragonscale Gauntlets" "Slink Gloves" "Stealth Gloves" "Murder Mitts" "Assassin's Mitts" "Hydrascale Gauntlets"
+BaseType "Gauntlets" "Gloves" "Mitts"
+BaseType "Dragonscale" "Slink" "Stealth" "Gripped" "Shagreen" "Murder" "Assassin's" "Carnal"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup04.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Body Armours"
-BaseType == "Full Dragonscale" "Zodiac Leather" "Assassin's Garb"
+BaseType "Full" "Armour" "Garb" "Raiment" "Coat" "Jacket" "Leather"
+BaseType "Dragonscale" "Sadist" "Blood" "Varnished" "Sentinel" "Assassin's" "Zodiac" "Exquisite"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup05.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Shields"
-BaseType == "Crusader Buckler" "Imperial Buckler" "Mirrored Spiked Shield" "Polished Spiked Shield"
+BaseType "Spirit"
+BaseType "Harmonic" "Chiming" "Vaal" "Lacewood" "Ancient" "Jingling" "Twig" "Walnut"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup06.wav"
     MinimapIcon 2 Purple UpsideDownHouse
 Show
-Class == "One Hand Axes"
-BaseType "Hatchet"
-BaseType "Runic" "Engraved" "Etched"
+Class == "Wands"
+BaseType "Wand" "staff"
+BaseType "Imbued" "Engraved" "Carved" "Prophecy" "Omen" "Sage" "Driftwood" "Quarter"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
