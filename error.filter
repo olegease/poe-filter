@@ -447,7 +447,7 @@ Show
 Class "Shields" "Quivers"
     SetBackgroundColor 64 64 8 255
     Continue
-###  1.4.5 ----- Jewelery
+###  1.4.5 ----- Jewellery
 Show
 Class "Rings" "Amulets" "Belts"
     SetBackgroundColor 8 8 64 255
