@@ -1767,7 +1767,7 @@ Rarity Rare
 Show
 Class == "Body Armours"
 BaseType "Plate" "Leather" "Regalia" "Full" "Chainmail" "Garb" "Raiment" "Armour"
-BaseType "Glorius" "Zodiac" "Vaal" "Dragonscale" "Saintly" "Sadist" "Blood" "Carnal"
+BaseType "Glorious" "Zodiac" "Vaal" "Dragonscale" "Saintly" "Sadist" "Blood" "Carnal"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup05.wav"
     MinimapIcon 2 Purple Square
