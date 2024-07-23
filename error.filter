@@ -1,4 +1,4 @@
-# Version: 0.0.51
+# Version: 0.0.52
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -2766,10 +2766,6 @@ Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws"
 Rarity Magic
     SetFontSize 18
 ###  7.1.3 ----- Rare Items
-Hide
-Class "Wands" "Daggers" "Claws" "Bows" "Quivers" "Swords" "Axes" "Maces" "Sceptres" "Staves"
-Rarity Rare
-    SetFontSize 33
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Rare
