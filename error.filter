@@ -1,4 +1,4 @@
-# Version: 0.0.53
+# Version: 0.0.55
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1699,35 +1699,35 @@ Class == "Corpses"
 ##   3.17  --- Settlers
 ###  3.17.1----- Gold
 Show
-Class == "Gold"
+BaseType == "Gold"
 StackSize >= 4096
     SetFontSize 45
     SetBackgroundColor 0 0 0 0
     SetBorderColor 0 0 0 0
     SetTextColor 248 216 8 255
 Show
-Class == "Gold"
+BaseType == "Gold"
 StackSize >=  512
     SetFontSize 42
     SetBackgroundColor 0 0 0 0
     SetBorderColor 0 0 0 0
     SetTextColor 216 192 8 255
 Show
-Class == "Gold"
+BaseType == "Gold"
 StackSize >= 64
     SetFontSize 39
     SetBackgroundColor 0 0 0 0
     SetBorderColor 0 0 0 0
     SetTextColor 192 160 8 255
 Show
-Class == "Gold"
+BaseType == "Gold"
 StackSize >= 8
     SetFontSize 36
     SetBackgroundColor 0 0 0 0
     SetBorderColor 0 0 0 0
     SetTextColor 160 128 8 255
 Show
-Class == "Gold"
+BaseType == "Gold"
     SetFontSize 33
     SetBackgroundColor 0 0 0 0
     SetBorderColor 0 0 0 0
