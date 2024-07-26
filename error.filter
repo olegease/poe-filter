@@ -1735,7 +1735,7 @@ Class == "Gold"
 ###  3.17.2----- Runes
 Class == "Stackable Currency"
 BaseType "Rune"
-BaseType "Life" "Sun" "Bound" "War" "River" "Bounty" "Journey" "Mountaint" "Time" "Power"
+BaseType "Life" "Sun" "Bound" "War" "River" "Bounty" "Journey" "Mountain" "Time" "Power"
     CustomAlertSound "homm3snd/FLAGMINE.wav"
     MinimapIcon 2 Orange Circle
     SetTextColor 8 8 8 255
