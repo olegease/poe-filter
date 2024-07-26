@@ -1,4 +1,4 @@
-# Version: 0.0.52
+# Version: 0.0.53
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -2850,6 +2850,16 @@ Rarity Rare
 AreaLevel >= 45
 DropLevel < 15
     SetFontSize 30
+Show
+Class "Body Armours" "Gloves" "Boots" "Helmets"
+Rarity Rare
+DropLevel >= 84
+    SetFontSize 42
+Show
+Class "Body Armours" "Gloves" "Boots" "Helmets"
+Rarity Rare
+DropLevel >= 74
+    SetFontSize 39
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
