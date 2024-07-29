@@ -1,4 +1,4 @@
-# Version: 0.0.56
+# Version: 0.0.57
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1774,56 +1774,56 @@ AreaLevel < 68
 Show
 Class == "Amulets"
 BaseType "Amulet"
-BaseType "Onyx" "Seaglass" "Agate" "Turquoise" "Citrine" "Blue Pearl" "Marble" "Gold"
+BaseType "Onyx" "Seaglass" "Agate" "Turquoise" "Citrine" "Blue Pearl"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Diamond
 Show
 Class == "Belts" "Rings"
 BaseType "Belt" "Ring"
-BaseType "Vermillion" "Steel" "Opal" "Iolite" "Cerulean" "Amethyst" "Bone" "Two-Stone" "Crystal" "Vanguard" "Heavy" "Leather" "Stygian"
+BaseType "Vermillion" "Steel" "Opal" "Amethyst" "Two-Stone" "Vanguard" "Heavy" "Leather" "Stygian"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Moon
 Show
 Class == "Helmets"
-BaseType "Burgonet" "Pelt" "Circlet" "Bascinet" "Helmet" "Mask"
-BaseType "Royal" "Lion" "Hubris" "Nightmare" "Bone" "Deicide" "Vaal" "Pig-Faced"
+BaseType "Pelt" "Tricorne" "Bascinet" "Helm"
+BaseType "Majestic" "Grizzly" "Dire" "Lion" "Sinner" "Haunted" "Knight" "Nightmare"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup02.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Boots"
-BaseType "Greaves" "Boots"
-BaseType "Titan" "Slink" "Sorcerer" "Dragonscale" "Two-Toned" "Fugitive" "Murder" "Hydrascale"
+BaseType "Boots"
+BaseType "Velour" "Stormrider" "Harpyskin" "Slink" "Stealth" "Shagreen" "Wyvernscale" "Chimerascale" "Two-Toned" "Dragonscale"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup03.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Gloves"
-BaseType "Gloves" "Gauntlets" "Mitts"
-BaseType "Spiked" "Titan" "Slink" "Gripped" "Sorcerer" "Dragonscale" "Apothecary's" "Murder"
+BaseType "Gloves"
+BaseType "Velour" "Harpyskin" "Slink" "Gripped" "Stealth" "Wyvernscale" "Chimerascale" "Dragonscale"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup04.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Body Armours"
-BaseType "Plate" "Leather" "Regalia" "Full" "Chainmail" "Garb" "Raiment" "Armour"
-BaseType "Glorious" "Zodiac" "Vaal" "Dragonscale" "Saintly" "Sadist" "Blood" "Carnal"
+BaseType "Garb" "Leather" "Lamellar" "Brigandine" "Full"
+BaseType "Syndicate's" "Astral" "Supreme" "Assassin's" "Zodiac" "Conquest" "Marshall's" "Wyvernscale" "Triumphant" "Dragonscale"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup05.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Shields"
-BaseType "Shield" "Buckler"
-BaseType "Colossal Tower" "Crusader" "Harmonic Spirit" "Fossilised Spirit" "Titanium Spirit" "Archon Kite" "Champion Kite" "Supreme Spiked"
+BaseType "Tower Shield" "Buckler" "Round Shield"
+BaseType "Colossal" "Imperial" "Crusader" "Lacquered" "Cardinal"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup06.wav"
     MinimapIcon 2 Purple UpsideDownHouse
 Show
-Class == "Claws" "Rune Daggers" "One Hand Axes" "One Hand Maces" "Sceptres" "One Hand Swords" "Thrusting One Hand Swords" "Wands"
-BaseType "Claw" "Skean" "Hatchet" "Mace" "Sceptre" "Sword" "Foil" "Wand"
-BaseType "Gemini" "Imperial" "Runic" "Behemoth" "Void" "Corsair" "Jewelled" "Convoking" "Imbued"
+Class == "Claws"
+BaseType "Claw" "Gouger" "Stabber" "Ripper"
+BaseType "Gemini" "Imperial" "Eye" "Throat" "Twin" "Noble" "Gut" "Double"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
