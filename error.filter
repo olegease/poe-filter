@@ -1,4 +1,4 @@
-# Version: 0.0.55
+# Version: 0.0.56
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -254,6 +254,40 @@ Class == "Quest Items"
     MinimapIcon 0 Green Cross
     PlayEffect Green
     SetFontSize 45
+Show
+BaseType == "Gold"
+StackSize >= 4096
+    SetFontSize 45
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 248 216 8 255
+Show
+BaseType == "Gold"
+StackSize >=  512
+    SetFontSize 42
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 216 192 8 255
+Show
+BaseType == "Gold"
+StackSize >= 64
+    SetFontSize 39
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 192 160 8 255
+Show
+BaseType == "Gold"
+StackSize >= 8
+    SetFontSize 36
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 160 128 8 255
+Show
+BaseType == "Gold"
+    SetFontSize 33
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 128 64 8 255
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
 ###  1.1.1 ----- Overview
@@ -1698,40 +1732,6 @@ Class == "Corpses"
     PlayEffect Red
 ##   3.17  --- Settlers
 ###  3.17.1----- Gold
-Show
-BaseType == "Gold"
-StackSize >= 4096
-    SetFontSize 45
-    SetBackgroundColor 0 0 0 0
-    SetBorderColor 0 0 0 0
-    SetTextColor 248 216 8 255
-Show
-BaseType == "Gold"
-StackSize >=  512
-    SetFontSize 42
-    SetBackgroundColor 0 0 0 0
-    SetBorderColor 0 0 0 0
-    SetTextColor 216 192 8 255
-Show
-BaseType == "Gold"
-StackSize >= 64
-    SetFontSize 39
-    SetBackgroundColor 0 0 0 0
-    SetBorderColor 0 0 0 0
-    SetTextColor 192 160 8 255
-Show
-BaseType == "Gold"
-StackSize >= 8
-    SetFontSize 36
-    SetBackgroundColor 0 0 0 0
-    SetBorderColor 0 0 0 0
-    SetTextColor 160 128 8 255
-Show
-BaseType == "Gold"
-    SetFontSize 33
-    SetBackgroundColor 0 0 0 0
-    SetBorderColor 0 0 0 0
-    SetTextColor 128 64 8 255
 ###  3.17.2----- Runes
 Class == "Stackable Currency"
 BaseType "Rune"
