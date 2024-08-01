@@ -1,4 +1,4 @@
-# Version: 0.0.58
+# Version: 0.0.59
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1822,11 +1822,13 @@ Rarity Rare
 Show
 Class == "Warstaves"
 BaseType == "Judgement Staff" "Maelström Staff"
+Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
 Show
 Class == "Two Hand Maces"
 BaseType "Coronal Maul" "Colossus Mallet"
+Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
 Show
