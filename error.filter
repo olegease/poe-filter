@@ -1,4 +1,4 @@
-# Version: 0.0.57
+# Version: 0.0.58
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1773,57 +1773,71 @@ AreaLevel < 68
 ###  4.1.1 ----- All
 Show
 Class == "Amulets"
-BaseType "Amulet"
-BaseType "Onyx" "Seaglass" "Agate" "Turquoise" "Citrine" "Blue Pearl"
+BaseType == "Blue Pearl Amulet" "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Diamond
 Show
-Class == "Belts" "Rings"
-BaseType "Belt" "Ring"
-BaseType "Vermillion" "Steel" "Opal" "Amethyst" "Two-Stone" "Vanguard" "Heavy" "Leather" "Stygian"
+Class == "Rings"
+BaseType == "Vermillion Ring" "Opal Ring" "Amethyst Ring" "Bone Ring" "Two-Stone Ring" "Ruby Ring"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Purple Diamond
+Show
+Class == "Belts"
+BaseType == "Crystal Belt" "Vanguard Belt" "Heavy Belt" "Leather Belt" "Rustic Sash" "Stygian Vise"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup01.wav"
     MinimapIcon 2 Purple Moon
 Show
 Class == "Helmets"
-BaseType "Pelt" "Tricorne" "Bascinet" "Helm"
-BaseType "Majestic" "Grizzly" "Dire" "Lion" "Sinner" "Haunted" "Knight" "Nightmare"
+BaseType == "Giantslayer Helmet" "Haunted Bascinet" "Divine Crown" "Conqueror's Helmet" "Conquest Helmet" "General's Helmet" "Knight Helm" "Paladin Crown" "Bone Helmet"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup02.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Boots"
-BaseType "Boots"
-BaseType "Velour" "Stormrider" "Harpyskin" "Slink" "Stealth" "Shagreen" "Wyvernscale" "Chimerascale" "Two-Toned" "Dragonscale"
+BaseType == "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Wyvernscale Boots" "Chimerascale Boots" "Dragonscale Boots" "Paladin Boots" "Martyr Boots" "Crusader Boots"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup03.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Gloves"
-BaseType "Gloves"
-BaseType "Velour" "Harpyskin" "Slink" "Gripped" "Stealth" "Wyvernscale" "Chimerascale" "Dragonscale"
+BaseType == "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Paladin Gloves" "Martyr Gloves" "Crusader Gloves"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup04.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Body Armours"
-BaseType "Garb" "Leather" "Lamellar" "Brigandine" "Full"
-BaseType "Syndicate's" "Astral" "Supreme" "Assassin's" "Zodiac" "Conquest" "Marshall's" "Wyvernscale" "Triumphant" "Dragonscale"
+BaseType == "Royal Plate" "Legion Plate" "Titan Plate" "Syndicate's Garb" "Astral Leather" "Supreme Leather" "Sacred Chainmail" "Paladin's Hauberk" "Grand Ringmail"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup05.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Shields"
-BaseType "Tower Shield" "Buckler" "Round Shield"
-BaseType "Colossal" "Imperial" "Crusader" "Lacquered" "Cardinal"
+BaseType == "Imperial Buckler" "Crusader Buckler" "Lacquered Buckler" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup06.wav"
     MinimapIcon 2 Purple UpsideDownHouse
 Show
+Class == "Warstaves"
+BaseType == "Judgement Staff" "Maelström Staff"
+    CustomAlertSound "homm3snd/Pickup07.wav"
+    MinimapIcon 2 Purple Kite
+Show
+Class == "Two Hand Maces"
+BaseType "Coronal Maul" "Colossus Mallet"
+    CustomAlertSound "homm3snd/Pickup07.wav"
+    MinimapIcon 2 Purple Kite
+Show
+Class == "Wands"
+BaseType == "Convoking Wand" "Convening Wand" "Calling Wand"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup07.wav"
+    MinimapIcon 2 Purple Kite
+Show
 Class == "Claws"
-BaseType "Claw" "Gouger" "Stabber" "Ripper"
-BaseType "Gemini" "Imperial" "Eye" "Throat" "Twin" "Noble" "Gut" "Double"
+BaseType == "Gemini Claw" "Imperial Claw" "Eye Gouger" "Throat Stabber" "Twin Claw" "Noble Claw" "Gut Ripper"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
