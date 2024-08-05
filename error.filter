@@ -1,4 +1,4 @@
-# Version: 0.0.59
+# Version: 0.0.60
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1827,19 +1827,13 @@ Rarity Rare
     MinimapIcon 2 Purple Kite
 Show
 Class == "Two Hand Maces"
-BaseType "Coronal Maul" "Colossus Mallet"
+BaseType "Coronal Maul"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
 Show
 Class == "Wands"
 BaseType == "Convoking Wand" "Convening Wand" "Calling Wand"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup07.wav"
-    MinimapIcon 2 Purple Kite
-Show
-Class == "Claws"
-BaseType == "Gemini Claw" "Imperial Claw" "Eye Gouger" "Throat Stabber" "Twin Claw" "Noble Claw" "Gut Ripper"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
@@ -2402,12 +2396,12 @@ Quality >= 20
     SetTextColor 248 248 248 255
 Show
 Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
-Quality >= 14
+Quality >= 8
     SetFontSize 39
     SetTextColor 248 248 248 255
 Show
 Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
-Quality >= 8
+Quality >= 5
     SetFontSize 33
     SetTextColor 248 248 248 255
 ###  5.3.2 ----- Utility
@@ -2836,6 +2830,21 @@ Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Rare
     SetFontSize 39
+Show
+Class == "Body Armours" "Boots" "Gloves" "Helmets"
+Rarity Rare
+DropLevel >= 84
+    SetFontSize 45
+Show
+Class == "Body Armours" "Boots" "Gloves" "Helmets"
+Rarity Rare
+DropLevel >= 78
+    SetFontSize 42
+Show
+Class == "Body Armours" "Boots" "Gloves" "Helmets"
+Rarity Rare
+DropLevel >= 73
+    SetFontSize 39
 Hide
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
@@ -2866,16 +2875,6 @@ Rarity Rare
 AreaLevel >= 45
 DropLevel < 15
     SetFontSize 30
-Show
-Class "Body Armours" "Gloves" "Boots" "Helmets"
-Rarity Rare
-DropLevel >= 84
-    SetFontSize 42
-Show
-Class "Body Armours" "Gloves" "Boots" "Helmets"
-Rarity Rare
-DropLevel >= 74
-    SetFontSize 39
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Rarity Rare
