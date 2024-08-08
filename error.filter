@@ -1,4 +1,4 @@
-# Version: 0.0.60
+# Version: 0.0.61
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -38,11 +38,11 @@
 ###  1.4.15----- Maps
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
-###  1.5.2 ----- Str/Dex bases
-###  1.5.3 ----- Str/Int bases
-###  1.5.4 ----- Dexterity bases
+###  1.5.2 ----- Dexterity bases
+###  1.5.3 ----- Intelligence bases
+###  1.5.4 ----- Str/Dex bases
 ###  1.5.5 ----- Dex/Int bases
-###  1.5.6 ----- Intelligence bases
+###  1.5.6 ----- Int/Str bases
 ###  1.5.7 ----- Str/Dex/Int bases
 ###  1.5.8 ----- Divination Cards
 ###  1.5.9 ----- Gems
@@ -544,69 +544,66 @@ Class == "Maps"
 ##   1.5   --- Border
 ###  1.5.1 ----- Strength bases
 Show
-Class "Maces"
-    SetBorderColor 128 0 0 255
+BaseArmour >= 1
+    SetBorderColor 255 0 0
     Continue
 Show
-Class "Body Armours" "Boots" "Gloves" "Helmets"
-BaseType "Plate Vest" "Chestplate" "Plate" "Greaves" "Gauntlets" "Helmet"
-    SetBorderColor 128 0 0 255
+Class == "One Hand Maces" "Two Hand Maces"
+    SetBorderColor 128 0 0
     Continue
-###  1.5.2 ----- Str/Dex bases
+###  1.5.2 ----- Dexterity bases
 Show
-Class "Axes" "Swords"
-    SetBorderColor 128 128 0 255
-    Continue
-Show
-Class "Body Armours" "Boots" "Gloves" "Helmets"
-BaseType "Scale Vest" "Brigandine" "Lamellar" "Full" "Fishscale" "Ironscale" "Bronzescale" "Steelscale" "Serpentscale" "Wyrmscale" "Hydrascale" "Dragonscale" "Helm" "Sallet" "Bascinet" "Lacquered Helmet"
-    SetBorderColor 128 128 0 255
-    Continue
-###  1.5.3 ----- Str/Int bases
-Show
-Class "Axes" "Swords"
-    SetBorderColor 128 0 128 255
+BaseEvasion >= 1
+    SetBorderColor 0 255 0
     Continue
 Show
-Class "Body Armours" "Boots" "Gloves" "Helmets"
-BaseType "Hauberk" "Chainmail" "Ringmail" "Boots" "Gloves" "Coif" "Crown" "Soldier Helmet" "Great Helmet" "Crusader Helmet" "Aventail Helmet" "Zealot Helmet" "Bone Helmet"
-    SetBorderColor 128 0 128 255
+Class == "Bows"
+    SetBorderColor 0 128 0
     Continue
-###  1.5.4 ----- Dexterity bases
+###  1.5.3 ----- Intelligence bases
 Show
-Class "Bows"
-    SetBorderColor 0 128 0 255
+BaseEnergyShield >= 1
+    SetBorderColor 0 0 255
     Continue
 Show
-Class "Body Armours" "Boots" "Gloves" "Helmets"
-BaseType "Leather" "Garb" "Rawhide" "Goathide" "Deerskin" "Nubuck" "Eelskin" "Sharkskin" "Shagreen" "Stealth" "Slink" "Cap" "Tricorne" "Hood" "Pelt"
-    SetBorderColor 0 128 0 255
+Class == "Wands"
+    SetBorderColor 0 0 128
+###  1.5.4 ----- Str/Dex bases
+Show
+BaseArmour >= 1
+BaseEvasion >= 1
+    SetBorderColor 255 255 0
+    Continue
+Show
+Class == "One Hand Axes" "One Hand Swords" "Two Hand Axes" "Two Hand Swords"
+    SetBorderColor 128 128 0
     Continue
 ###  1.5.5 ----- Dex/Int bases
 Show
-Class "Axes" "Swords"
-    SetBorderColor 0 128 128 255
+BaseEvasion >= 1
+BaseEnergyShield >= 1
+    SetBorderColor 0 255 255
     Continue
 Show
-Class "Body Armours" "Boots" "Gloves" "Helmets"
-BaseType "Waxed Garb" "Lacquered Garb" "Sadist" "Wrapped" "Strapped" "Clasped" "Shackled" "Trapper" "Ambush" "Carnal" "Assassin's Boots" "Murder" "Fugitive" "Mitts" "Mask"
-    SetBorderColor 0 128 128 255
+Class == "Claws" "Daggers"
+    SetBorderColor 0 128 128
     Continue
-###  1.5.6 ----- Intelligence bases
+###  1.5.6 ----- Int/Str bases
 Show
-Class "Wands"
-    SetBorderColor 0 0 128 255
+BaseEnergyShield >= 1
+BaseArmour >= 1
+    SetBorderColor 255 0 255
     Continue
 Show
-Class "Body Armours" "Boots" "Gloves" "Helmets"
-BaseType "Robe" "Vestment" "Regalia" "Wrap" "Silken Garb" "Scholar" "Wool" "Leyline" "Velvet" "Silk" "Embroidered" "Aetherwind" "Satin" "Samite" "Conjurer" "Arcanist" "Sorcerer" "Circlet" "Cage"
-    SetBorderColor 0 0 128 255
+Class == "Warstaves" "Staves"
+    SetBorderColor 128 0 128
     Continue
 ###  1.5.7 ----- Str/Dex/Int bases
 Show
-Class "Body Armours"
-BaseType "Grasping Mail" "Sacrificial Garb" "Runic"
-    SetBorderColor 128 128 128 255
+BaseArmour >= 1
+BaseEvasion >= 1
+BaseEnergyShield >= 1
+    SetBorderColor 255 255 255
     Continue
 ###  1.5.8 ----- Divination Cards
 Show
@@ -1820,20 +1817,8 @@ Rarity Rare
     CustomAlertSound "homm3snd/Pickup06.wav"
     MinimapIcon 2 Purple UpsideDownHouse
 Show
-Class == "Warstaves"
-BaseType == "Judgement Staff" "Maelström Staff"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup07.wav"
-    MinimapIcon 2 Purple Kite
-Show
-Class == "Two Hand Maces"
-BaseType "Coronal Maul"
-Rarity Rare
-    CustomAlertSound "homm3snd/Pickup07.wav"
-    MinimapIcon 2 Purple Kite
-Show
-Class == "Wands"
-BaseType == "Convoking Wand" "Convening Wand" "Calling Wand"
+Class == "One Hand Axes"
+BaseType == "Etched Hatchet" "Engraved Hatchet" "Runic Hatchet"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
