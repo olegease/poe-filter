@@ -1,0 +1,35 @@
+Pattern: ㅣnameㅅorderㅣ
+ㅣㅅㅣ
+Marauder(Tyr): 튀르
+Duelist(Odin): 오딘
+Ranger(Skadi): 스카디
+Scion(Frigg) : 프리그
+Shadow(Loki) : 로키
+Witch(Freya) : 프레이야
+Templar(Thor): 토르
+
+First  (1): 일
+Second (2): 이
+Third  (3): 삼
+Fourth (4): 사
+Fifth  (5): 오
+Sixth  (6): 육
+Seventh(7): 칠
+Eigth  (8): 팔
+Nineth (9): 구
+Tenth (10): 십
+
+11: 십일
+18: 십팔
+80: 팔십
+HC_SSF_R (Hardcore Solo-self found Ruthless)
+First Generation:
+Marauder(Tyr): ㅣ튀르ㅅ일ㅣ
+Duelist(Odin): ㅣ오딘ㅅ일ㅣ
+Ranger(Skadi): ㅣ스카디ㅅ일ㅣ
+Scion(Frigg) : ㅣ프리그ㅅ일ㅣ
+Shadow(Loki) : ㅣ로키ㅅ일ㅣ
+Witch(Freya) : ㅣ프레이야ㅅ일ㅣ
+Templar(Thor): ㅣ토르ㅅ일ㅣ
+
+Go to next generation when all of previous one is died!
