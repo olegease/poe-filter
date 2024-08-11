@@ -1,4 +1,4 @@
-# Version: 0.0.61
+# Version: 0.0.62
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -568,6 +568,7 @@ BaseEnergyShield >= 1
 Show
 Class == "Wands"
     SetBorderColor 0 0 128
+    Continue
 ###  1.5.4 ----- Str/Dex bases
 Show
 BaseArmour >= 1
@@ -1788,25 +1789,81 @@ Rarity Rare
     MinimapIcon 2 Purple Moon
 Show
 Class == "Helmets"
-BaseType == "Giantslayer Helmet" "Haunted Bascinet" "Divine Crown" "Conqueror's Helmet" "Conquest Helmet" "General's Helmet" "Knight Helm" "Paladin Crown" "Bone Helmet"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Helmets"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Helmets"
+DropLevel >= 73
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup02.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Boots"
-BaseType == "Leviathan Greaves" "Precursor Greaves" "Titan Greaves" "Wyvernscale Boots" "Chimerascale Boots" "Dragonscale Boots" "Paladin Boots" "Martyr Boots" "Crusader Boots"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Boots"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Boots"
+DropLevel >= 62
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup03.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Gloves"
-BaseType == "Leviathan Gauntlets" "Precursor Gauntlets" "Titan Gauntlets" "Wyvernscale Gauntlets" "Chimerascale Gauntlets" "Dragonscale Gauntlets" "Paladin Gloves" "Martyr Gloves" "Crusader Gloves"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Gloves"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Gloves"
+DropLevel >= 67
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup04.wav"
     MinimapIcon 2 Purple Square
 Show
 Class == "Body Armours"
-BaseType == "Royal Plate" "Legion Plate" "Titan Plate" "Syndicate's Garb" "Astral Leather" "Supreme Leather" "Sacred Chainmail" "Paladin's Hauberk" "Grand Ringmail"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Body Armours"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Body Armours"
+DropLevel >= 73
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup05.wav"
     MinimapIcon 2 Purple Square
@@ -2726,6 +2783,7 @@ Class "Gloves" "Helmets" "One Hand" "Shields" "Daggers" "Claws" "Boots"
 SocketGroup RGB
 Rarity Normal
     SetFontSize 33
+    SetBackgroundColor 248 216 8 255
     SetTextColor 255 255 255 255
 #    7     - Hiding
 ##   7.1   --- Rarity based
