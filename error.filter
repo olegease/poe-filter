@@ -1,4 +1,4 @@
-# Version: 0.0.62
+# Version: 0.0.63
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1869,13 +1869,12 @@ Rarity Rare
     MinimapIcon 2 Purple Square
 Show
 Class == "Shields"
-BaseType == "Imperial Buckler" "Crusader Buckler" "Lacquered Buckler" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield"
+BaseType == "Colossal Tower Shield" "Lacquered Buckler" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Champion Kite Shield" "Supreme Spiked Shield"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup06.wav"
     MinimapIcon 2 Purple UpsideDownHouse
 Show
-Class == "One Hand Axes"
-BaseType == "Etched Hatchet" "Engraved Hatchet" "Runic Hatchet"
+BaseType == "Opal Sceptre" "Nightmare Mace" "Runic Hatchet" "Eternal Sword" "Imperial Claw" "Ambusher" "Platinum Kris" "Convoking Wand" "Profane Wand" "Prophecy Wand" "Tornado Wand" "Opal Wand" "Demon's Horn"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
@@ -2119,14 +2118,14 @@ Corrupted True
 Show
 Class "Jewels"
 Identified True
-HasExplicitMod "Vivid" "Shielding" "Cerebral"
-HasExplicitMod "of Entropy" "of Exsanguinating" "of Acrimony"
+HasExplicitMod "Vivid" "Cerebral"
+HasExplicitMod "of Wounding" "of Zeal"
     MinimapIcon 0 Red Cross
     PlayEffect Red
 Show
 Class "Jewels"
 Identified True
-HasExplicitMod "Vivid" "Shielding" "Cerebral" "of Entropy" "of Exsanguinating" "of Acrimony"
+HasExplicitMod "Vivid" "Cerebral"
     MinimapIcon 2 Red Cross
 ###  4.8.2   --- Veiled
 Show
