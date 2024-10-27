@@ -1,4 +1,4 @@
-# Version: 0.0.63
+# Version: 0.0.64
 # Contents
 #    1     - Global styles (always Continue)
 ##   1.1   --- Notes
@@ -1874,7 +1874,7 @@ Rarity Rare
     CustomAlertSound "homm3snd/Pickup06.wav"
     MinimapIcon 2 Purple UpsideDownHouse
 Show
-BaseType == "Opal Sceptre" "Nightmare Mace" "Runic Hatchet" "Eternal Sword" "Imperial Claw" "Ambusher" "Platinum Kris" "Convoking Wand" "Profane Wand" "Prophecy Wand" "Tornado Wand" "Opal Wand" "Demon's Horn"
+BaseType == "Opal Sceptre" "Nightmare Mace" "Runic Hatchet" "Eternal Sword" "Imperial Claw" "Ambusher" "Platinum Kris" "Convoking Wand" "Profane Wand" "Prophecy Wand" "Tornado Wand" "Opal Wand" "Demon's Horn" "Imbued Wand"
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
@@ -2783,7 +2783,7 @@ SocketGroup RGB
 Rarity Normal
     SetFontSize 33
     SetBackgroundColor 248 216 8 255
-    SetTextColor 255 255 255 255
+    SetTextColor 8 8 8 255
 #    7     - Hiding
 ##   7.1   --- Rarity based
 ###  7.1.1 ----- Normal Items
