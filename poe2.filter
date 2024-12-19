@@ -1,3 +1,17 @@
+# Contents
+#   0     - Continue only
+##  0.0   --- Except Gold
+### 0.0.0 ----- Stacks
+##  0.1   --- Border
+### 0.1.1 ----- Armour bases
+############################
+#
+# Overview
+#
+############################
+#   0     - Contiune only
+##  0.0   --- Except Gold
+### 0.0.0 ----- Stacks
 Show
 BaseType == "Gold"
 StackSize >= 4096
@@ -32,3 +46,32 @@ BaseType == "Gold"
     SetBackgroundColor 0 0 0 0
     SetBorderColor 0 0 0 0
     SetTextColor 128 64 8 255
+##  0.1   --- Border
+### 0.1.1 ----- Armour bases
+Show
+BaseArmour >= 1
+    SetBorderColor 255 0 0
+    Continue
+Show
+BaseEvasion >= 1
+    SetBorderColor 0 255 0
+    Continue
+Show
+BaseEnergyShield >= 1
+    SetBorderColor 0 0 255
+    Continue
+Show
+BaseArmour >= 1
+BaseEvasion >= 1
+    SetBorderColor 255 255 0
+    Continue
+Show
+BaseEvasion >= 1
+BaseEnergyShield >= 1
+    SetBorderColor 0 255 255
+    Continue
+Show
+BaseEnergyShield >= 1
+BaseArmour >= 1
+    SetBorderColor 255 0 255
+    Continue
