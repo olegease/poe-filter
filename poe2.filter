@@ -5,6 +5,12 @@
 ##  0.1   --- Border
 ### 0.1.1 ----- Armour bases
 ### 0.1.? ----- Quality
+### 0.1.? ----- Sockets
+##  0.2   --- Background
+### 0.2.1 ----- Weapons
+### 0.2.2 ----- Armours
+### 0.2.3 ----- Off-hands
+### 0.2.4 ----- Jewellery
 #   1     - Currency
 ##  1.1   --- Tiers
 ### 1.1.1 -----
@@ -13,6 +19,9 @@
 ### 1.1.4 -----
 ### 1.1.5 -----
 ### 1.1.6 -----
+#   ?     - Items
+##  ?.?   - Socketable
+### ?.?.? - Runes
 ############################
 #
 # Overview
@@ -59,35 +68,61 @@ BaseType == "Gold"
 ### 0.1.1 ----- Armour bases
 Show
 BaseArmour >= 1
-    SetBorderColor 255 0 0
+    SetBorderColor 128 0 0
     Continue
 Show
 BaseEvasion >= 1
-    SetBorderColor 0 255 0
+    SetBorderColor 0 128 0
     Continue
 Show
 BaseEnergyShield >= 1
-    SetBorderColor 0 0 255
+    SetBorderColor 0 0 128
     Continue
 Show
 BaseArmour >= 1
 BaseEvasion >= 1
-    SetBorderColor 255 255 0
+    SetBorderColor 128 128 0
     Continue
 Show
 BaseEvasion >= 1
 BaseEnergyShield >= 1
-    SetBorderColor 0 255 255
+    SetBorderColor 0 128 128
     Continue
 Show
 BaseEnergyShield >= 1
 BaseArmour >= 1
-    SetBorderColor 255 0 255
+    SetBorderColor 128 0 128
     Continue
 ### 0.1.? ----- Quality
 Show
 Quality >= 1
-    SetBorderColor 255 255 255
+    SetBorderColor 248 248 248
+    Continue
+### 0.1.? ----- Sockets
+Show
+Sockets >= 1
+    SetBorderColor 248 248 248
+    Continue
+##  0.2   --- Background
+### 0.2.1 ----- Weapons
+Show
+Class == "Bows" "Crossbows" "One Hand Maces" "Sceptres" "Staves" "Two Hand Maces" "Quarterstaves" "Wands"
+    SetBackgroundColor 64 8 8
+    Continue
+### 0.2.2 ----- Armours
+Show
+Class == "Body Armours" "Boots" "Gloves" "Helmets"
+    SetBackgroundColor 8 64 8
+    Continue
+### 0.2.3 ----- Off-hands
+Show
+Class == "Foci" "Shields" "Quivers"
+    SetBackgroundColor 64 64 8
+    Continue
+### 0.2.4 ----- Jewellery
+Show
+Class == "Amulets" "Belts" "Rings"
+    SetBackgroundColor 8 8 64
     Continue
 #   1     - Currency
 ##  1.1   --- Tiers
@@ -130,10 +165,10 @@ Show
 Class == "Stackable Currency"
 BaseType == "Glassblower's Bauble" "Divine Orb" "Orb of Chance" "Orb of Annulment" "Artificer's Orb" "Perfect Jeweller's Orb" "Gemcutter's Prism"
     SetFontSize 45
+    MinimapIcon 0 Yellow Circle
     SetBackgroundColor 248 216 8
     SetBorderColor 248 216 8
     SetTextColor 8 8 8
-    MinimapIcon 0 Yellow Circle
 ### 1.1.6 -----
 Show
 Class == "Stackable Currency"
@@ -142,3 +177,12 @@ BaseType == "Mirror of Kalandra"
     SetBackgroundColor 248 248 248
     SetBorderColor 248 248 248
     SetTextColor 8 8 8
+#   ?     - Items
+##  ?.?   - Socketable
+### ?.?.? - Runes
+Show
+Class == "Socketable"
+BaseType " Rune"
+    SetFontSize 39
+    MinimapIcon 2 Blue Kite
+    SetTextColor 8 248 248
