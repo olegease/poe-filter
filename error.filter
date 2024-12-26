@@ -404,9 +404,9 @@ BaseType == "Gold"
 # homm3snd/Gazebo.wav
 ###  1.1.5 ----- Colors
 # Color Gradation (Preferable use this numbers for RGB colors)
-# Dark:    8  32  64
-# Grey:        128
-# Light: 160 192 216 248
+# Dark:    8  32    64  88
+# Grey:         128
+# Light: 160 192   216 248
 ##   1.2   --- Drop sounds
 ###  1.2.1 ----- All items
 Show
@@ -416,22 +416,22 @@ Show
 ###  1.3.1 ----- Normal Rarity
 Show
 Rarity Normal
-    SetTextColor 200 200 200 255 # game client color
+    SetTextColor 200 200 200 # game client color
     Continue
 ###  1.3.2 ----- Magic Rarity
 Show
 Rarity Magic
-    SetTextColor 136 136 255 255 # game client color
+    SetTextColor 136 136 248 # game client color
     Continue
 ###  1.3.3 ----- Rare Rarity
 Show
 Rarity Rare
-    SetTextColor 255 255 119 255 # game client color
+    SetTextColor 248 248 119 # game client color
     Continue
 ###  1.3.4 ----- Unique Rarity
 Show
 Rarity Unique
-    SetTextColor 175 96 37 255 # game client color
+    SetTextColor 175 96 37 # game client color
     Continue
 ###  1.3.5 ----- Gems
 Show
@@ -545,7 +545,7 @@ Class == "Maps"
 ###  1.5.1 ----- Strength bases
 Show
 BaseArmour >= 1
-    SetBorderColor 255 0 0
+    SetBorderColor 248 0 0
     Continue
 Show
 Class == "One Hand Maces" "Two Hand Maces"
@@ -554,7 +554,7 @@ Class == "One Hand Maces" "Two Hand Maces"
 ###  1.5.2 ----- Dexterity bases
 Show
 BaseEvasion >= 1
-    SetBorderColor 0 255 0
+    SetBorderColor 0 248 0
     Continue
 Show
 Class == "Bows"
@@ -563,7 +563,7 @@ Class == "Bows"
 ###  1.5.3 ----- Intelligence bases
 Show
 BaseEnergyShield >= 1
-    SetBorderColor 0 0 255
+    SetBorderColor 0 0 248
     Continue
 Show
 Class == "Wands"
@@ -573,7 +573,7 @@ Class == "Wands"
 Show
 BaseArmour >= 1
 BaseEvasion >= 1
-    SetBorderColor 255 255 0
+    SetBorderColor 248 248 0
     Continue
 Show
 Class == "One Hand Axes" "One Hand Swords" "Two Hand Axes" "Two Hand Swords"
@@ -583,7 +583,7 @@ Class == "One Hand Axes" "One Hand Swords" "Two Hand Axes" "Two Hand Swords"
 Show
 BaseEvasion >= 1
 BaseEnergyShield >= 1
-    SetBorderColor 0 255 255
+    SetBorderColor 0 248 248
     Continue
 Show
 Class == "Claws" "Daggers"
@@ -593,7 +593,7 @@ Class == "Claws" "Daggers"
 Show
 BaseEnergyShield >= 1
 BaseArmour >= 1
-    SetBorderColor 255 0 255
+    SetBorderColor 248 0 248
     Continue
 Show
 Class == "Warstaves" "Staves"
@@ -604,7 +604,7 @@ Show
 BaseArmour >= 1
 BaseEvasion >= 1
 BaseEnergyShield >= 1
-    SetBorderColor 255 255 255
+    SetBorderColor 248 248 248
     Continue
 ###  1.5.8 ----- Divination Cards
 Show
@@ -626,13 +626,13 @@ Rarity Normal
 Show
 Class == "Maps"
 Rarity Magic
-    SetBorderColor 136 136 255
+    SetBorderColor 136 136 248
     Continue
 ###  1.5.12----- Rare Maps
 Show
 Class == "Maps"
 Rarity Rare
-    SetBorderColor 255 255 119
+    SetBorderColor 248 248 119
     Continue
 ###  1.5.13----- Corrupted Maps
 Show
@@ -861,7 +861,7 @@ Show
 Class == "Stackable Currency"
 BaseType == "Orb of Transmutation"
     SetFontSize 39
-    SetTextColor 0 0 255
+    SetTextColor 0 0 248
 ###  2.1.4 ----- Augmentation
 Show
 Class == "Stackable Currency"
@@ -1436,7 +1436,7 @@ Class == "Delve Stackable Socketable Currency"
 BaseType "Primitive" "Potent"
     CustomAlertSound "homm3snd/Prayer.wav"
     MinimapIcon 2 Yellow Pentagon
-    SetBackgroundColor 255 255 128
+    SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
     SetTextColor 128 92 0
 Show
@@ -1445,7 +1445,7 @@ BaseType "Powerful"
     CustomAlertSound "homm3snd/View.wav"
     MinimapIcon 1 Yellow Pentagon
     PlayEffect Yellow Temp
-    SetBackgroundColor 255 255 128
+    SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
     SetTextColor 128 92 0
 Show
@@ -1454,7 +1454,7 @@ BaseType "Prime"
     CustomAlertSound "homm3snd/ARMGEDN.wav"
     MinimapIcon 0 Yellow Pentagon
     PlayEffect Yellow
-    SetBackgroundColor 255 255 128
+    SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
     SetTextColor 128 92 0
 ##   3.6   --- Betrayal
@@ -1621,7 +1621,7 @@ BaseType == "Rogue's Marker"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
-    SetTextColor 255 170 140
+    SetTextColor 248 170 140
 ###  3.11.2----- Contracts
 Show
 Class == "Contracts"
@@ -1745,28 +1745,28 @@ LinkedSockets 6
     CustomAlertSound "homm3snd/BLOODLUS.wav"
     MinimapIcon 0 Red Pentagon
     PlayEffect Red
-    SetTextColor 255 255 255
+    SetTextColor 248 248 248
 ###  4.0.2 ----- 5 link
 Show
 LinkedSockets 5
     CustomAlertSound "homm3snd/LIGHTBLT.wav"
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
-    SetTextColor 255 255 255
+    SetTextColor 248 248 248
 ###  4.0.3 ----- 6 Socket
 Show
 Sockets 6
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
-    SetTextColor 255 255 255
+    SetTextColor 248 248 248
 ###  4.0.4 ----- 4 link
 Show
 LinkedSockets 4
 AreaLevel < 68
     CustomAlertSound "homm3snd/Poison.wav"
     MinimapIcon 2 White Pentagon
-    SetTextColor 255 255 255
+    SetTextColor 248 248 248
 ##   4.1   --- Build Rares
 ###  4.1.1 ----- All
 Show
@@ -2219,31 +2219,31 @@ Class == "Divination Cards"
 BaseType == "The Aspirant" "Further Invention" "Azure Rage"
     CustomAlertSound "homm3snd/Cure.wav"
     MinimapIcon 2 Grey Square
-    SetTextColor 136 136 255
+    SetTextColor 136 136 248
 Show
 Class == "Divination Cards"
 BaseType == "Shard of Fate" "The Web" "The Endurance" "Void of the Elements" "A Familiar Call" "Keeper's Corruption" "The Shortcut"
-    SetTextColor 136 136 255
+    SetTextColor 136 136 248
 Show
 Class == "Divination Cards"
 BaseType == "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon" "The Tyrant" "The Undisputed" "The Golden Era" "The Enforcer"
     SetFontSize 42
-    SetTextColor 136 136 255
+    SetTextColor 136 136 248
 Show
 Class == "Divination Cards"
 BaseType == "The Jester" "Blessing of God" "The Lord of Celebration" "The Archmage's Right Hand" "The Tumbleweed" "The Brawny Battle Mage" "Who Asked"
     SetFontSize 39
-    SetTextColor 136 136 255
+    SetTextColor 136 136 248
 Show
 Class == "Divination Cards"
 BaseType == "The Twins" "The Lord in Black" "The Rabid Rhoa" "Struck by Lightning" "The Bear Woman"
     SetFontSize 36
-    SetTextColor 136 136 255
+    SetTextColor 136 136 248
 Show
 Class == "Divination Cards"
 BaseType == "The Carrion Crow" "The King's Blade" "The Inoculated" "Prosperity" "The Sigil" "The Mountain"
     SetFontSize 33
-    SetTextColor 136 136 255
+    SetTextColor 136 136 248
 ###  5.1.3 ----- Rare Items
 Show
 Class == "Divination Cards"
@@ -2251,36 +2251,36 @@ BaseType == "Imperfect Memories" "A Dusty Memory" "Soul Quenched"
     CustomAlertSound "homm3snd/STORE.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
-    SetTextColor 255 255 119
+    SetTextColor 248 248 119
 Show
 Class == "Divination Cards"
 BaseType == "Dying Light"
     CustomAlertSound "homm3snd/Cure.wav"
     MinimapIcon 2 Grey Square
-    SetTextColor 255 255 119
+    SetTextColor 248 248 119
 Show
 Class == "Divination Cards"
 BaseType == "The Awakened" "Bijoux"
-    SetTextColor 255 255 119
+    SetTextColor 248 248 119
 Show
 Class == "Divination Cards"
 BaseType == "The Opulent" "Perfection" "The Hale Heart" "Dark Dreams" "Nook's Crown" "Prometheus' Armoury" "The Journalist"
     SetFontSize 42
-    SetTextColor 255 255 119
+    SetTextColor 248 248 119
 Show
 Class == "Divination Cards"
 BaseType == "Destined to Crumble"
     SetFontSize 39
-    SetTextColor 255 255 119
+    SetTextColor 248 248 119
 Show
 Class == "Divination Cards"
 BaseType == "The Lover"
     SetFontSize 36
-    SetTextColor 255 255 119
+    SetTextColor 248 248 119
 Show
 Class == "Divination Cards"
 BaseType == "Lantador's Lost Love"
-    SetTextColor 255 255 119
+    SetTextColor 248 248 119
 ###  5.1.4 ----- Unique Items
 Show
 Class == "Divination Cards"
@@ -2382,7 +2382,7 @@ BaseType == "The Immortal" "The Nurse" "The Patient"
     CustomAlertSound "homm3snd/NOMAD.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
-    SetTextColor 14 186 255
+    SetTextColor 14 186 248
 Show
 Class == "Divination Cards"
 BaseType == "The Void"
@@ -2400,7 +2400,7 @@ Show
 Class == "Divination Cards"
 BaseType == "The Gambler"
     SetFontSize 39
-    SetTextColor 14 186 255
+    SetTextColor 14 186 248
 ##   5.2   --- Jewels
 ###  5.2.1 ----- Cluster
 Show
@@ -2938,7 +2938,7 @@ Show
     CustomAlertSound "homm3snd/DANGER.wav"
     MinimapIcon 0 Red Star
     PlayEffect Red
-    SetBorderColor 255 0 0
-    SetBackgroundColor 255 255 255
-    SetTextColor 255 0 0
+    SetBorderColor 248 0 0
+    SetBackgroundColor 248 248 248
+    SetTextColor 248 0 0
     SetFontSize 45
