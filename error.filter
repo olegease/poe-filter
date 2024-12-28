@@ -545,59 +545,59 @@ Class == "Maps"
 ###  1.5.1 ----- Strength bases
 Show
 BaseArmour >= 1
-    SetBorderColor 248 0 0
+    SetBorderColor 248 8 8
     Continue
 Show
 Class == "One Hand Maces" "Two Hand Maces"
-    SetBorderColor 128 0 0
+    SetBorderColor 248 8 8
     Continue
 ###  1.5.2 ----- Dexterity bases
 Show
 BaseEvasion >= 1
-    SetBorderColor 0 248 0
+    SetBorderColor 8 248 8
     Continue
 Show
-Class == "Bows"
-    SetBorderColor 0 128 0
+Class == "Bows" "Thrusting One Hand Swords"
+    SetBorderColor 8 248 8
     Continue
 ###  1.5.3 ----- Intelligence bases
 Show
 BaseEnergyShield >= 1
-    SetBorderColor 0 0 248
+    SetBorderColor 8 8 248
     Continue
 Show
 Class == "Wands"
-    SetBorderColor 0 0 128
+    SetBorderColor 8 8 248
     Continue
 ###  1.5.4 ----- Str/Dex bases
 Show
 BaseArmour >= 1
 BaseEvasion >= 1
-    SetBorderColor 248 248 0
+    SetBorderColor 248 248 8
     Continue
 Show
 Class == "One Hand Axes" "One Hand Swords" "Two Hand Axes" "Two Hand Swords"
-    SetBorderColor 128 128 0
+    SetBorderColor 248 248 8
     Continue
 ###  1.5.5 ----- Dex/Int bases
 Show
 BaseEvasion >= 1
 BaseEnergyShield >= 1
-    SetBorderColor 0 248 248
+    SetBorderColor 8 248 248
     Continue
 Show
 Class == "Claws" "Daggers"
-    SetBorderColor 0 128 128
+    SetBorderColor 8 248 248
     Continue
 ###  1.5.6 ----- Int/Str bases
 Show
 BaseEnergyShield >= 1
 BaseArmour >= 1
-    SetBorderColor 248 0 248
+    SetBorderColor 248 8 248
     Continue
 Show
 Class == "Warstaves" "Staves"
-    SetBorderColor 128 0 128
+    SetBorderColor 248 8 248
     Continue
 ###  1.5.7 ----- Str/Dex/Int bases
 Show
@@ -1996,7 +1996,6 @@ HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
     CustomAlertSound "homm3snd/MILITARY.wav"
     MinimapIcon 0 Cyan Square
     PlayEffect Cyan
-HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
 Show # Double Influenced Items
 HasInfluence "Shaper"
 HasInfluence "Elder"
@@ -2815,7 +2814,7 @@ Class "Gloves" "Helmets" "One Hand" "Shields" "Daggers" "Claws" "Boots"
 SocketGroup RGB
 Rarity Normal
     SetFontSize 33
-    SetBackgroundColor 248 216 8
+    SetBackgroundColor 128 88 8
     SetTextColor 8 8 8
 #    7     - Hiding
 ##   7.1   --- Rarity based
