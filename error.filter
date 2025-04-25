@@ -1946,6 +1946,11 @@ Rarity Unique
     MinimapIcon 1 Brown Diamond
     PlayEffect Brown Temp
 Show
+Class == "Shields"
+BaseType == "Pine Buckler" # 1 _Witchable_, SRS; Crest of Perandus; Act 1, Upper Prison (ML9), Sawbones; 1h58m, 3.25 only 1u/base
+Rarity Unique
+    SetFontSize 33
+Show
 Class == "Shields" "Quivers"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
