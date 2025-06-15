@@ -1800,6 +1800,21 @@ AreaLevel < 68
     CustomAlertSound "homm3snd/Poison.wav"
     MinimapIcon 2 White Pentagon
     SetTextColor 248 248 248
+###  4.0.5 ----- RGB
+Show
+Class "One Hand" "Gloves" "Helmets" "Shields" "Daggers" "Claws" "Boots" "Wands"
+SocketGroup RGB
+Rarity Normal
+    SetFontSize 42
+    SetBackgroundColor 128 88 8
+    SetTextColor 8 8 8
+Show
+Class "Two Hand" "Body Armours" "Staves" "Sceptres" "Bows"
+SocketGroup RGB
+Rarity Normal
+    SetFontSize 36
+    SetBackgroundColor 128 88 8
+    SetTextColor 8 8 8
 ##   4.1   --- Build Rares
 ###  4.1.1 ----- All
 Show
@@ -2806,23 +2821,9 @@ Class == "Labyrinth Items"
 Show
 Class == "Labyrinth Trinkets"
     SetTextColor 8 248 8
-#    6     - Recipes
-##   6.1   --- Currency
-###  6.1.1 ----- Chromatic
-Show
-Class "One Hand" "Gloves" "Helmets" "Shields" "Daggers" "Claws" "Boots" "Wands"
-SocketGroup RGB
-Rarity Normal
-    SetFontSize 42
-    SetBackgroundColor 128 88 8
-    SetTextColor 8 8 8
-Show
-Class "Two Hand" "Body Armours" "Staves" "Sceptres" "Bows"
-SocketGroup RGB
-Rarity Normal
-    SetFontSize 36
-    SetBackgroundColor 128 88 8
-    SetTextColor 8 8 8
+#    6     - Crafting Bases
+##   6.1   --- Leveling
+###  6.1.1 ----- In Progress
 #    7     - Hiding
 ##   7.1   --- Rarity based
 ###  7.1.1 ----- Normal Items
