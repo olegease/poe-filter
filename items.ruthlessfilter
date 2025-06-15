@@ -160,6 +160,8 @@
 ###  4.0.3 ----- 6 Socket
 ###  4.0.4 ----- 4 link
 ###  4.0.5 ----- RGB
+###  4.0.6 ----- 3 Link
+###  4.0.7 ----- 2 Link
 ##   4.1   --- Build Rares
 ###  4.1.1 ----- All
 ##   4.2   --- Unique
@@ -1818,6 +1820,18 @@ Rarity Normal
     SetFontSize 36
     SetBackgroundColor 128 88 8
     SetTextColor 8 8 8
+###  4.0.6 ----- 3 Link
+Show
+LinkedSockets 3
+AreaLevel < 34
+Rarity < Rare
+    SetFontSize 39
+###  4.0.7 ----- 2 Link
+Show
+LinkedSockets 2
+AreaLevel < 17
+Rarity < Magic
+    SetFontSize 33
 ##   4.1   --- Build Rares
 ###  4.1.1 ----- All
 Show
