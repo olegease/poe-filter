@@ -420,53 +420,53 @@ Show
 ###  1.3.1 ----- Normal Rarity
 Show
 Rarity Normal
-    SetTextColor 200 200 200 # game client color
+    SetTextColor 192 192 192
     Continue
 ###  1.3.2 ----- Magic Rarity
 Show
 Rarity Magic
-    SetTextColor 136 136 248 # game client color
+    SetTextColor 128 128 248
     Continue
 ###  1.3.3 ----- Rare Rarity
 Show
 Rarity Rare
-    SetTextColor 248 248 119 # game client color
+    SetTextColor 248 248 128
     Continue
 ###  1.3.4 ----- Unique Rarity
 Show
 Rarity Unique
-    SetTextColor 175 96 37 # game client color
+    SetTextColor 160 88 32
     Continue
 ###  1.3.5 ----- Gems
 Show
 Class "Gems"
-    SetTextColor 15 145 140
+    SetTextColor 32 160 160
     Continue
 ###  1.3.6 ----- Fractured
 Show
 FracturedItem True
-    SetTextColor 165 150 100
+    SetTextColor 160 160 88
     Continue
 ###  1.3.7 ----- Synthesised
 Show
 SynthesisedItem True
-    SetTextColor 165 150 100
+    SetTextColor 160 160 88
     Continue
 ###  1.3.8 ----- Influenced
 Show
 HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
-    SetTextColor 165 150 100
+    SetTextColor 160 160 88
     Continue
 ###  1.3.9 ----- Corrupted
 Show
 Corrupted True
-    SetTextColor  210 0 0
+    SetTextColor  216 8 8
     Continue
 ###  1.3.10----- Crafted
 Show
 Identified True
 HasExplicitMod "Veil" "Chosen" "Order" "Craft" "Upgraded" "Subterranean" "Underground"
-    SetTextColor 184 218 242
+    SetTextColor 192 216 248
     Continue
 ##   1.4   --- Background
 ###  1.4.1 ----- Currency
@@ -522,18 +522,18 @@ Class == "Divination Cards"
 ###  1.4.11----- Gems
 Show
 Class "Gems"
-    SetBackgroundColor 25 50 45
+    SetBackgroundColor 32 64 64
     Continue
 ###  1.4.12----- Tainted Currency
 Show
 Class == "Stackable Currency"
 BaseType "Tainted"
-    SetBackgroundColor 210 0 0
+    SetBackgroundColor 216 8 8
     Continue
 ###  1.4.13----- Jewels
 Show
 Class "Jewels"
-    SetBackgroundColor 64 80 108
+    SetBackgroundColor 64 88 128
     Continue
 ###  1.4.14----- Fragments
 Show
@@ -618,37 +618,37 @@ Class == "Divination Cards"
 ###  1.5.9 ----- Gems
 Show
 Class "Gems"
-    SetBorderColor 55 80 70
+    SetBorderColor 64 88 64
     Continue
 ###  1.5.10----- Normal Maps
 Show
 Class == "Maps"
 Rarity Normal
-    SetBorderColor 200 200 200
+    SetBorderColor 216 216 216
     Continue
 ###  1.5.11----- Magic Maps
 Show
 Class == "Maps"
 Rarity Magic
-    SetBorderColor 136 136 248
+    SetBorderColor 128 128 248
     Continue
 ###  1.5.12----- Rare Maps
 Show
 Class == "Maps"
 Rarity Rare
-    SetBorderColor 248 248 119
+    SetBorderColor 248 248 128
     Continue
 ###  1.5.13----- Corrupted Maps
 Show
 Class == "Maps"
 Corrupted True
-    SetBorderColor 210 0 0
+    SetBorderColor 216 8 8
     Continue
 ###  1.5.14----- Unique Maps
 Show
 Class == "Maps"
 Rarity Unique
-    SetBorderColor 175 96 37
+    SetBorderColor 160 88 32
     Continue
 ##   1.6   --- Font
 ###  1.6.1 ----- All items
@@ -857,7 +857,7 @@ Show
 Class == "Stackable Currency"
 BaseType == "Orb of Transmutation"
     SetFontSize 39
-    SetTextColor 0 0 248
+    SetTextColor 8 8 248
 ###  2.1.4 ----- Augmentation
 Show
 Class == "Stackable Currency"
@@ -1191,7 +1191,7 @@ BaseType == "Instilling Orb"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 8
-    SetTextColor 30 130 80
+    SetTextColor 32 128 88
 ###  2.4.2 ----- Enkindling Orb
 Show
 Class == "Stackable Currency"
@@ -1199,7 +1199,7 @@ BaseType == "Enkindling Orb"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 8
-    SetTextColor 30 130 80
+    SetTextColor 32 128 88
 ###  2.4.3 ----- Deck
 Show
 Class == "Stackable Currency"
@@ -1240,7 +1240,7 @@ BaseType == "Regal Orb"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
     SetBackgroundColor 216 192 8
-    SetTextColor 200 200 120
+    SetTextColor 192 192 128
 ###  2.4.8 ----- Chaos
 Show
 Class == "Stackable Currency"
@@ -1258,7 +1258,7 @@ BaseType == "Vaal Orb"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
     SetBackgroundColor 216 192 8
-    SetTextColor 210 0 0
+    SetTextColor 216 8 8
 ###  2.4.10----- Blessed
 Show
 Class == "Stackable Currency"
@@ -1381,8 +1381,8 @@ BaseType "Splinter of"
 BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Cross
-    SetBorderColor 64 16 104
-    SetTextColor 128 32 208
+    SetBorderColor 64 8 88
+    SetTextColor 128 32 216
 ###  3.2.2 ----- Blessings
 Show
 Class == "Stackable Currency"
@@ -1391,8 +1391,8 @@ BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Orange Cross
     PlayEffect Orange
-    SetBorderColor 64 16 104
-    SetTextColor 128 32 208
+    SetBorderColor 64 8 88
+    SetTextColor 128 32 216
 ###  3.2.3 ----- Breachstones
 ##   3.3   --- Harbinger
 ###  3.3.1 ----- Shards
@@ -1432,7 +1432,7 @@ Class == "Stackable Currency"
 BaseType == "Orb of Binding"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
-    SetTextColor 200 200 80
+    SetTextColor 192 192 88
 ###  3.3.3 ----- Horizons
 Show
 Class == "Stackable Currency"
@@ -1455,7 +1455,7 @@ BaseType "Vial of"
     CustomAlertSound "homm3snd/Temple.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
-    SetTextColor 175 96 37
+    SetTextColor 160 88 32
 ##   3.5   --- Delve
 ###  3.5.1 ----- Fossils
 Show
@@ -1465,7 +1465,7 @@ BaseType "Fossil"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetBorderColor 248 128 8
-    SetTextColor 248 80 8
+    SetTextColor 248 88 8
 ###  3.5.2 ----- Resonators
 Show
 Class == "Delve Stackable Socketable Currency"
@@ -1474,7 +1474,7 @@ BaseType "Primitive" "Potent"
     MinimapIcon 2 Yellow Pentagon
     SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
-    SetTextColor 128 92 0
+    SetTextColor 128 88 8
 Show
 Class == "Delve Stackable Socketable Currency"
 BaseType "Powerful"
@@ -1483,7 +1483,7 @@ BaseType "Powerful"
     PlayEffect Yellow Temp
     SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
-    SetTextColor 128 92 0
+    SetTextColor 128 88 8
 Show
 Class == "Delve Stackable Socketable Currency"
 BaseType "Prime"
@@ -1492,7 +1492,7 @@ BaseType "Prime"
     PlayEffect Yellow
     SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
-    SetTextColor 128 92 0
+    SetTextColor 128 88 8
 ##   3.6   --- Betrayal
 ###  3.6.1 ----- Scarabs
 Show
@@ -1511,7 +1511,7 @@ Class == "Incubators"
     PlayEffect Yellow
     SetBackgroundColor 128 108 20
     SetBorderColor 80 64 8
-    SetTextColor 200 188 64
+    SetTextColor 216 192 64
 ###  3.7.2 ----- Splinters
 Show
 Class == "Stackable Currency"
@@ -1536,43 +1536,43 @@ Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Clear"
     SetFontSize 33
-    SetBorderColor 0 108 20
-    SetTextColor 0 164 28
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
 Show
 Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Sepia"
     SetFontSize 36
-    SetBorderColor 0 108 20
-    SetTextColor 0 164 28
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
 Show
 Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Amber"
     SetFontSize 39
-    SetBorderColor 0 108 20
-    SetTextColor 0 164 28
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
 Show
 Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Verdant" "Teal"
     SetFontSize 42
-    SetBorderColor 0 108 20
-    SetTextColor 0 164 28
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
 Show
 Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Azure" "Indigo"
-    SetBorderColor 0 108 20
-    SetTextColor 0 164 28
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
 Show
 Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Violet" "Crimson"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Diamond
-    SetBorderColor 0 108 20
-    SetTextColor 0 164 28
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
 Show
 Class == "Stackable Currency"
 BaseType "Oil"
@@ -1580,8 +1580,8 @@ BaseType "Opalescent" "Black" "Silver"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Diamond
     PlayEffect Orange Temp
-    SetBorderColor 0 108 20
-    SetTextColor 0 164 28
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
 Show
 Class == "Stackable Currency"
 BaseType "Oil"
@@ -1589,8 +1589,8 @@ BaseType "Golden" "Tainted" "Reflective" "Prismatic"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Orange Diamond
     PlayEffect Orange
-    SetBorderColor 0 108 20
-    SetTextColor 0 164 28
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
 ##   3.9   --- Delirium
 ###  3.9.1 ----- Orbs
 Show
@@ -1617,30 +1617,30 @@ Class == "Stackable Currency"
 BaseType == "Wild Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Circle
-    SetBorderColor 120 40 35
-    SetTextColor 190 55 100
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
 Show
 Class == "Stackable Currency"
 BaseType == "Vivid Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Circle
-    SetBorderColor 60 50 10
-    SetTextColor 120 140 20
+    SetBorderColor 64 64 8
+    SetTextColor 128 160 32
 Show
 Class == "Stackable Currency"
 BaseType == "Primal Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Circle
-    SetBorderColor 25 75 100
-    SetTextColor 50 140 190
+    SetBorderColor 32 64 88
+    SetTextColor 64 160 192
 Show
 Class == "Stackable Currency"
 BaseType == "Sacred Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Faerie.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
-    SetBorderColor 80 92 116
-    SetTextColor 80 92 116
+    SetBorderColor 88 88 128
+    SetTextColor 88 88 128
 ##   3.10.2----- Blossom
 Show
 Class == "Map Fragments"
@@ -1657,23 +1657,23 @@ BaseType == "Rogue's Marker"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
-    SetTextColor 248 170 140
+    SetTextColor 248 160 128
 ###  3.11.2----- Contracts
 Show
 Class == "Contracts"
     CustomAlertSound "homm3snd/Nwherolv.wav"
     MinimapIcon 0 White Square
     PlayEffect White
-    SetBackgroundColor 0 0 0
-    SetBorderColor 0 0 0
+    SetBackgroundColor 8 8 8
+    SetBorderColor 8 8 8
 ###  3.11.3----- Blueprints
 Show
 Class == "Blueprints"
     CustomAlertSound "homm3snd/Lighthouse.wav"
     MinimapIcon 0 Red Square
     PlayEffect Red
-    SetBackgroundColor 188 140 108
-    SetBorderColor 94 69 54
+    SetBackgroundColor 192 160 128
+    SetBorderColor 88 64 64
 ###  3.11.4----- Targets
 Show
 Class == "Heist Targets"
@@ -1721,7 +1721,7 @@ Class == "Expedition Logbooks"
     MinimapIcon 0 Grey Cross
     PlayEffect Grey
     SetBackgroundColor 98 108 100
-    SetBorderColor 72 128 72
+    SetBorderColor 64 128 64
 ###  3.14.2----- Reroll currency
 Show
 Class == "Stackable Currency"
@@ -1729,8 +1729,8 @@ BaseType == "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
-    SetBorderColor 72 128 72
-    SetTextColor 80 108 84
+    SetBorderColor 64 128 64
+    SetTextColor 88 128 88
 ##   3.15  --- Sanctum
 ###  3.15.1----- Research
 Show
@@ -1740,15 +1740,15 @@ BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
     MinimapIcon 0 Green Square
     PlayEffect Green
     SetBackgroundColor 80 70 60
-    SetBorderColor 64 228 64
-    SetTextColor 64 228 64
+    SetBorderColor 64 216 64
+    SetTextColor 64 216 64
 ###  3.15.2----- Relics
 Show
 Class == "Relics"
     CustomAlertSound "homm3snd/Prayer.wav"
     MinimapIcon 2 Pink Hexagon
-    SetBackgroundColor 80 70 60
-    SetBorderColor 64 228 64
+    SetBackgroundColor 88 64 64
+    SetBorderColor 64 216 64
 ##   3.16  --- Affliction
 ###  3.16.1----- Tinctures
 Show
@@ -2005,7 +2005,7 @@ SynthesisedItem True
     CustomAlertSound "homm3snd/View.wav"
     MinimapIcon 2 Cyan Raindrop
     PlayEffect Cyan Temp
-    SetTextColor 120 210 195
+    SetTextColor 128 216 192
 ##   4.5   --- Influenced
 ###  4.5.1 ----- Exotic
 Show # Influenced Maps
@@ -2235,69 +2235,69 @@ BaseType == "The White Knight" "Draped in Dreams" "Magnum Opus" "Auspicious Ambi
     CustomAlertSound "homm3snd/NOMAD.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
-    SetTextColor 200 200 200
+    SetTextColor 192 192 192
 Show
 Class == "Divination Cards"
 BaseType == "The Celestial Justicar" "Bowyer's Dream" "Immortal Resolve" "The Celestial Stone" "The Sacrifice" "Imperial Legacy" "Broken Promises" "Duality"
     CustomAlertSound "homm3snd/STORE.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
-    SetTextColor 200 200 200
+    SetTextColor 192 192 192
 Show
 Class == "Divination Cards"
 BaseType == "The Chains that Bind" "The Dark Mage" "The Surveyor" "Lost Worlds" "The Ethereal" "The Warlord" "The Dapper Prodigy" "Emperor of Purity" "The Porcupine"
     CustomAlertSound "homm3snd/Cure.wav"
     MinimapIcon 2 Grey Square
-    SetTextColor 200 200 200
+    SetTextColor 192 192 192
 Show
 Class == "Divination Cards"
 BaseType == "The Fishmonger" "Astral Protection"
-    SetTextColor 200 200 200
+    SetTextColor 192 192 192
 Show
 Class == "Divination Cards"
 BaseType == "The Flora's Gift" "The Jeweller's Boon" "The Catch"
     SetFontSize 39
-    SetTextColor 200 200 200
+    SetTextColor 192 192 192
 Show
 Class == "Divination Cards"
 BaseType == "The Arena Champion" "Boundless Realms" "Rain Tempter" "Cartographer's Delight"
     SetFontSize 36
-    SetTextColor 200 200 200
+    SetTextColor 192 192 192
 Show
 Class == "Divination Cards"
 BaseType == "The Metalsmith's Gift"
-    SetTextColor 200 200 200
+    SetTextColor 192 192 192
 ###  5.1.2 ----- Magic Items
 Show
 Class == "Divination Cards"
 BaseType == "The Aspirant" "Further Invention" "Azure Rage"
     CustomAlertSound "homm3snd/Cure.wav"
     MinimapIcon 2 Grey Square
-    SetTextColor 136 136 248
+    SetTextColor 128 128 248
 Show
 Class == "Divination Cards"
 BaseType == "Shard of Fate" "The Web" "The Endurance" "Void of the Elements" "A Familiar Call" "Keeper's Corruption" "The Shortcut"
-    SetTextColor 136 136 248
+    SetTextColor 128 128 248
 Show
 Class == "Divination Cards"
 BaseType == "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon" "The Tyrant" "The Undisputed" "The Golden Era" "The Enforcer"
     SetFontSize 42
-    SetTextColor 136 136 248
+    SetTextColor 128 128 248
 Show
 Class == "Divination Cards"
 BaseType == "The Jester" "Blessing of God" "The Lord of Celebration" "The Archmage's Right Hand" "The Tumbleweed" "The Brawny Battle Mage" "Who Asked"
     SetFontSize 39
-    SetTextColor 136 136 248
+    SetTextColor 128 128 248
 Show
 Class == "Divination Cards"
 BaseType == "The Twins" "The Lord in Black" "The Rabid Rhoa" "Struck by Lightning" "The Bear Woman"
     SetFontSize 36
-    SetTextColor 136 136 248
+    SetTextColor 128 128 248
 Show
 Class == "Divination Cards"
 BaseType == "The Carrion Crow" "The King's Blade" "The Inoculated" "Prosperity" "The Sigil" "The Mountain"
     SetFontSize 33
-    SetTextColor 136 136 248
+    SetTextColor 128 128 248
 ###  5.1.3 ----- Rare Items
 Show
 Class == "Divination Cards"
@@ -2305,36 +2305,36 @@ BaseType == "Imperfect Memories" "A Dusty Memory" "Soul Quenched"
     CustomAlertSound "homm3snd/STORE.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
-    SetTextColor 248 248 119
+    SetTextColor 248 248 128
 Show
 Class == "Divination Cards"
 BaseType == "Dying Light"
     CustomAlertSound "homm3snd/Cure.wav"
     MinimapIcon 2 Grey Square
-    SetTextColor 248 248 119
+    SetTextColor 248 248 128
 Show
 Class == "Divination Cards"
 BaseType == "The Awakened" "Bijoux"
-    SetTextColor 248 248 119
+    SetTextColor 248 248 128
 Show
 Class == "Divination Cards"
 BaseType == "The Opulent" "Perfection" "The Hale Heart" "Dark Dreams" "Nook's Crown" "Prometheus' Armoury" "The Journalist"
     SetFontSize 42
-    SetTextColor 248 248 119
+    SetTextColor 248 248 128
 Show
 Class == "Divination Cards"
 BaseType == "Destined to Crumble"
     SetFontSize 39
-    SetTextColor 248 248 119
+    SetTextColor 248 248 128
 Show
 Class == "Divination Cards"
 BaseType == "The Lover"
     SetFontSize 36
-    SetTextColor 248 248 119
+    SetTextColor 248 248 128
 Show
 Class == "Divination Cards"
 BaseType == "Lantador's Lost Love"
-    SetTextColor 248 248 119
+    SetTextColor 248 248 128
 ###  5.1.4 ----- Unique Items
 Show
 Class == "Divination Cards"
@@ -2342,20 +2342,20 @@ BaseType == "The Doctor" "Judging Voices" "The Apothecary" "The Shieldbearer"
     CustomAlertSound "homm3snd/NOMAD.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
-    SetTextColor 175 96 37
+    SetTextColor 160 88 32
 Show
 Class == "Divination Cards"
 BaseType == "The Samurai's Eye" "Peaceful Moments" "Cursed Words" "Winter's Embrace" "The Forgotten Treasure" "The Prince of Darkness" "Justified Ambition" "Father's Love"
     CustomAlertSound "homm3snd/STORE.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
-    SetTextColor 175 96 37
+    SetTextColor 160 88 32
 Show
 Class == "Divination Cards"
 BaseType == "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic" "Doedre's Madness" "The Betrayal" "The Last One Standing" "The Pack Leader" "Death" "The Conduit" "Assassin's Favour" "Hunter's Resolve" "Scholar of the Seas" "The Tower" "The Vast" "Hubris" "Hunter's Reward" "The Aesthete" "Glimmer of Hope" "The Body" "The Demoness" "The Offering" "Birth of the Three" "Rats" "The Dragon" "Tranquillity" "Earth Drinker" "The Lion" "The Risk" "The Wolf's Shadow" "Heterochromia" "Thunderous Skies" "The Cursed King" "The Harvester" "The Lunaris Priestess" "The Stormcaller" "Light and Truth" "The Calling" "The Formless Sea" "The Penitent" "The Soul" "The Valkyrie" "The Visionary" "The Wolf" "Mawr Blaidd" "The Oath" "The Scavenger" "Mitts" "The Coming Storm" "The Forsaken" "The Garish Power" "The Polymath" "The Spark and the Flame" "The Standoff" "The Wolven King's Bite" "The Wretched" "Might is Right" "The Blazing Fire" "Rebirth" "The Breach" "The Dreamer" "The World Eater" "The Admirer" "The Army of Blood" "The Beast" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Sword King's Salute" "The Witch" "Beauty Through Death" "Boon of the First Ones" "The Endless Darkness" "The Twilight Moon" "A Dab of Ink" "The Life Thief" "Alone in the Darkness" "Dark Temptation" "The Mad King" "The Messenger" "Pride of the First Ones" "The Deep Ones" "The Primordial" "Thirst for Knowledge" "The Wolf's Legacy" "Vile Power" "Baited Expectations" "Succor of the Sinless" "The Craving" "The Escape" "Council of Cats" "The Progeny of Lunaris" "A Note in the Wind" "The Academic" "The Cache" "Haunting Shadows" "Reckless Ambition" "The Whiteout" "Prejudice" "Sambodhi's Wisdom" "The Adventuring Spirit" "Costly Curio" "The Last Supper" "The Mind's Eyes" "The Offspring" "Chasing Risk" "Desperate Crusade" "Eternal Bonds" "Misery in Darkness" "Silence and Frost" "The One That Got Away" "The Dungeon Master" "The Forward Gaze" "Broken Truce" "Choking Guilt" "Endless Night" "Lethean Temptation" "Alivia's Grace" "The Return of the Rat" "The Wedding Gift" "Fire Of Unknown Origin"
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 2 Grey Square
-    SetTextColor 175 96 37
+    SetTextColor 160 88 32
 ###  5.1.5 ----- Corrupted
 Show
 Class == "Divination Cards"
@@ -2363,20 +2363,20 @@ BaseType == "The Fiend" "The Demon" "The Cheater" "Desecrated Virtue" "A Modest 
     CustomAlertSound "homm3snd/NOMAD.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
-    SetTextColor 210 0 0
+    SetTextColor 216 8 8
 Show
 Class == "Divination Cards"
 BaseType == "Arrogance of the Vaal" "The Easy Stroll" "The Gulf" "Brotherhood in Exile" "Fateful Meeting" "Love Through Ice" "Luminous Trove" "The Shepherd's Sandals" "Matryoshka"
     CustomAlertSound "homm3snd/STORE.wav"
     MinimapIcon 1 Grey Square
     PlayEffect Grey Temp
-    SetTextColor 210 0 0
+    SetTextColor 216 8 8
 Show
 Class == "Divination Cards"
 BaseType == "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden" "The Artist" "The Encroaching Darkness" "The One With All" "The Siren" "The Dragon's Heart" "The Gentleman" "The Mercenary" "The Trial" "Wealth and Power" "Audacity" "Pride Before the Fall" "The Lich" "Anarchy's Price" "Blind Venture" "The Fletcher" "The Thaumaturgist" "Volatile Power" "A Mother's Parting Gift" "The Traitor" "Turn the Other Cheek" "Treasure Hunter" "The Throne" "Lysah's Respite" "Dialla's Subjugation" "Call to the First Ones" "Lingering Remnants" "The Wolverine" "Atziri's Arsenal" "Left to Fate" "The Eye of the Dragon" "The Ruthless Ceinture" "Forbidden Power" "The Deceiver" "The Insatiable" "The Darkest Dream" "The Rite of Elements" "The Undaunted" "The Price of Protection" "The Wilted Rose" "The Landing" "Burning Blood" "Echoes of Love" "Vanity" "Akil's Prophecy" "Azyran's Reward" "Remembrance" "The Damned" "The Old Man" "The Price of Loyalty" "Deathly Designs" "Etched in Blood" "Squandered Prosperity" "The Bones" "The Chosen" "The Strategist" "Gift of Asenath" "The Greatest Intentions" "The Hive of Knowledge" "The Bitter Blossom" "The Unexpected Prize" "Triskaidekaphobia" "Unchained" "The Astromancer" "Deadly Joy" "The Enthusiasts" "The Emptiness" "The Price of Prescience" "A Stone Perfected" "The Fox in the Brambles" "The Magma Crab" "A Fate Worse Than Death" "From Bone to Ashes" "A Chilling Wind" "Poisoned Faith" "Assassin's Gift"
     CustomAlertSound "homm3snd/Curse.wav"
     MinimapIcon 2 Grey Square
-    SetTextColor 210 0 0
+    SetTextColor 216 8 8
 ###  5.1.6 ----- Currency
 Show # 1xKalandra 10xDivine 40xRegret 1xMirrorShard 1xEldersExalt 19xMirrorShard 1xTaintedMystic 5xElditchChaos 7xDivine 5xDivine 2xDivine 2xFracturing
 Class == "Divination Cards"
@@ -2414,21 +2414,21 @@ Class == "Divination Cards"
 BaseType == "The Enlightened" "Home" "Gemcutter's Mercy"
     CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 2 Grey Square
-    SetTextColor 27 162 155
+    SetTextColor 32 160 160
 Show # Random20Q Minion20Q SRS20Q ArrowQ20 Skeletons23Q
 Class == "Divination Cards"
 BaseType == "Gemcutter's Promise" "The Summoner" "Grave Knowledge" "The Doppelganger" "The Skeleton"
-    SetTextColor 27 162 155
+    SetTextColor 32 160 160
 Show # Portal1-20Q
 Class == "Divination Cards"
 BaseType == "The Realm"
     SetFontSize 42
-    SetTextColor 27 162 155
+    SetTextColor 32 160 160
 Show # Support20L Random20L
 Class == "Divination Cards"
 BaseType == "Gift of the Gemling Queen" "The Fox"
     SetFontSize 39
-    SetTextColor 27 162 155
+    SetTextColor 32 160 160
 ###  5.1.8 ----- Other Divinations
 Show
 Class == "Divination Cards"
@@ -2436,7 +2436,7 @@ BaseType == "The Immortal" "The Nurse" "The Patient"
     CustomAlertSound "homm3snd/NOMAD.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
-    SetTextColor 14 186 248
+    SetTextColor 8 192 248
 Show
 Class == "Divination Cards"
 BaseType == "The Void"
@@ -2454,7 +2454,7 @@ Show
 Class == "Divination Cards"
 BaseType == "The Gambler"
     SetFontSize 39
-    SetTextColor 14 186 248
+    SetTextColor 8 192 248
 ##   5.2   --- Jewels
 ###  5.2.1 ----- Cluster
 Show
@@ -2985,6 +2985,6 @@ Show
     CustomAlertSound "homm3snd/DANGER.wav"
     MinimapIcon 0 Red Star
     PlayEffect Red
-    SetBorderColor 248 0 0
+    SetBorderColor 248 8 8
     SetBackgroundColor 248 248 248
-    SetTextColor 248 0 0
+    SetTextColor 248 8 8
