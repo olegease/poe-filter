@@ -158,6 +158,8 @@
 ###  4.0.1 ----- 6 link
 ###  4.0.2 ----- 5 link
 ###  4.0.3 ----- 6 Socket
+###  4.0.4 ----- 4 link
+###  4.0.5 ----- RGB
 ##   4.1   --- Build Rares
 ###  4.1.1 ----- All
 ##   4.2   --- Unique
@@ -179,11 +181,13 @@
 ##   4.7   --- Corrupted
 ###  4.7.1 ----- Exotic
 ###  4.7.2 ----- Global
-##   4.8   --- Identified
-###  4.8.1 ----- Exotic
-###  4.8.2 ----- Veiled
-###  4.8.3 ----- Delve
-###  4.8.4 ----- Global
+##   4.8   --- Zana
+###  4.8.1 ----- Memory
+##   4.9   --- Identified
+###  4.9.1 ----- Exotic
+###  4.9.2 ----- Veiled
+###  4.9.3 ----- Delve
+###  4.9.4 ----- Global
 #    5     - Other
 ##   5.1   --- Divination Cards
 ###  5.1.0 ----- Unknown
@@ -237,9 +241,9 @@
 ##   5.11  --- Lab Items
 ###  5.11.1----- Keys
 ###  5.11.2----- Trinkets
-#    6     - Recipes
-##   6.1   --- Currency
-###  6.1.1 ----- Chromatic
+#    6     - Crafting Bases
+##   6.1   --- Leveling
+###  6.1.1 ----- In Progress
 #    7     - Hiding
 ##   7.1   --- Rarity based
 ###  7.1.1 ----- Normal Items
@@ -975,7 +979,6 @@ AreaLevel >= 78
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Alteration"
-    SetFontSize 45
     SetTextColor 8 128 248
 ###  2.1.6 ----- Jewelers
 Show
@@ -2138,14 +2141,12 @@ Corrupted True
 CorruptedMods >= 1
     MinimapIcon 0 Red Cross
     PlayEffect Red
-    SetFontSize 45
 ###  4.7.2 ----- Global
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Corrupted True
 CorruptedMods >= 3
     MinimapIcon 2 Red Cross
-    SetFontSize 45
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Corrupted True
@@ -2160,8 +2161,14 @@ Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Corrupted True
     SetFontSize 18
-##   4.8   --- Identified
-###  4.8.1 ----- Exotic
+##   4.8   --- Zana
+###  4.8.1 ----- Memory
+Show
+ZanaMemory True
+    MinimapIcon 0 Cyan Star
+    PlayEffect Cyan
+##   4.9   --- Identified
+###  4.9.1 ----- Exotic
 Show
 Class "Jewels"
 Identified True
@@ -2174,17 +2181,17 @@ Class "Jewels"
 Identified True
 HasExplicitMod "Vivid" "Cerebral"
     MinimapIcon 2 Red Cross
-###  4.8.2   --- Veiled
+###  4.9.2   --- Veiled
 Show
 Identified True
 HasExplicitMod "Veil"
     MinimapIcon 2 White Cross
-###  4.8.3   --- Delve
+###  4.9.3   --- Delve
 Show
 Identified True
 HasExplicitMod "Subterranean" "Underground"
     MinimapIcon 2 Red Cross
-###  4.8.4 ----- Global
+###  4.9.4 ----- Global
 Show
 Class "Body Armours" "Gloves" "Boots" "Helmets" "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Shields" "Quivers" "Staves"
 Identified True
@@ -2831,7 +2838,7 @@ Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Normal
 AreaLevel < 24
-    SetFontSize 45
+
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Normal
@@ -2877,7 +2884,7 @@ Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Magic
 AreaLevel < 24
-    SetFontSize 45
+
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Magic
@@ -2911,12 +2918,12 @@ Rarity Magic
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Rare
-    SetFontSize 45
+
 Show
 Class == "Body Armours" "Boots" "Gloves" "Helmets"
 Rarity Rare
 DropLevel >= 84
-    SetFontSize 45
+
 Show
 Class == "Body Armours" "Boots" "Gloves" "Helmets"
 Rarity Rare
