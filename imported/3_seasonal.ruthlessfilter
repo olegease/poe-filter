@@ -274,7 +274,7 @@ BaseType == "Simulacrum Splinter"
     SetBorderColor 8 8 8
     SetBackgroundColor 64 64 64
 ###  3.9.3 ------ Simulacrum
-##   3.10   --- Harvest
+##   3.10  --- Harvest
 ###  3.10.1----- Lifeforce
 Show
 Class == "Stackable Currency"
