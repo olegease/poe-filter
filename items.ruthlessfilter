@@ -2852,7 +2852,7 @@ Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Normal
 AreaLevel < 24
-
+    MinimapIcon 2 White Diamond
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Normal
@@ -2898,7 +2898,7 @@ Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Magic
 AreaLevel < 24
-
+    MinimapIcon 2 Blue Diamond
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Magic
@@ -2932,12 +2932,12 @@ Rarity Magic
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Rare
-
+    MinimapIcon 2 Yellow Diamond
 Show
 Class == "Body Armours" "Boots" "Gloves" "Helmets"
 Rarity Rare
 DropLevel >= 84
-
+    MinimapIcon 2 Yellow Square
 Show
 Class == "Body Armours" "Boots" "Gloves" "Helmets"
 Rarity Rare
