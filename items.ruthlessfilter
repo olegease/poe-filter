@@ -2954,21 +2954,6 @@ Rarity Rare
     MinimapIcon 2 Yellow Moon
 ###  7.3.2 ----- Equipment
 Show
-Class == "Body Armours" "Boots" "Gloves" "Helmets"
-Rarity Rare
-DropLevel >= 84
-    MinimapIcon 2 Yellow Square
-Show
-Class == "Body Armours" "Boots" "Gloves" "Helmets"
-Rarity Rare
-DropLevel >= 78
-    SetFontSize 42
-Show
-Class == "Body Armours" "Boots" "Gloves" "Helmets"
-Rarity Rare
-DropLevel >= 73
-    SetFontSize 39
-Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
 AreaLevel >= 83
