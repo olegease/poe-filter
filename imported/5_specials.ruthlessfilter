@@ -1,0 +1,632 @@
+#    5     - Specials
+##   5.1   --- Divination Cards
+###  5.1.0 ----- Unknown
+Show
+Class == "Divination Cards"
+BaseType == "Avian Pursuit" "Temperance" "Lonely Warrior" "Toxic Tidings" "Friendship" "The Long Watch"
+    CustomAlertSound "homm3snd/DANGER.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 248 8 8
+###  5.1.1 ----- Fragments
+Show
+Class == "Divination Cards"
+BaseType == "The Eldritch Decay" "Guardian's Challenge" "Altered Perception" "Rebirth and Renewal" "Checkmate" "Something Dark"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "Last Hope" "The Obscured" "Sambodhi's Vow" "More is Never Enough" "The Eye of Terror" "The Card Sharp"
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "Boon of Justice" "Buried Treasure" "The Deal" "Cameria's Cut" "Man With Bear"
+    SetFontSize 42
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "Her Mask" "The Puzzle"
+    SetFontSize 39
+    SetTextColor 192 192 192
+###  5.1.2 ----- Normal Items
+Show
+Class == "Divination Cards"
+BaseType == "The White Knight" "Draped in Dreams" "Magnum Opus" "Auspicious Ambitions" "Eldritch Perfection"
+    CustomAlertSound "homm3snd/NOMAD.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Celestial Justicar" "Bowyer's Dream" "Immortal Resolve" "The Celestial Stone" "The Sacrifice" "Imperial Legacy" "Broken Promises" "Duality"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Chains that Bind" "The Dark Mage" "The Surveyor" "Lost Worlds" "The Ethereal" "The Warlord" "The Dapper Prodigy" "Emperor of Purity" "The Porcupine"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Fishmonger" "Astral Protection"
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Flora's Gift" "The Jeweller's Boon" "The Catch"
+    SetFontSize 39
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Arena Champion" "Boundless Realms" "Rain Tempter" "Cartographer's Delight"
+    SetFontSize 36
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Metalsmith's Gift"
+    SetTextColor 192 192 192
+###  5.1.2 ----- Magic Items
+Show
+Class == "Divination Cards"
+BaseType == "The Aspirant" "Further Invention" "Azure Rage"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 128 128 248
+Show
+Class == "Divination Cards"
+BaseType == "Shard of Fate" "The Web" "The Endurance" "Void of the Elements" "A Familiar Call" "Keeper's Corruption" "The Shortcut"
+    SetTextColor 128 128 248
+Show
+Class == "Divination Cards"
+BaseType == "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon" "The Tyrant" "The Undisputed" "The Golden Era" "The Enforcer"
+    SetFontSize 42
+    SetTextColor 128 128 248
+Show
+Class == "Divination Cards"
+BaseType == "The Jester" "Blessing of God" "The Lord of Celebration" "The Archmage's Right Hand" "The Tumbleweed" "The Brawny Battle Mage" "Who Asked"
+    SetFontSize 39
+    SetTextColor 128 128 248
+Show
+Class == "Divination Cards"
+BaseType == "The Twins" "The Lord in Black" "The Rabid Rhoa" "Struck by Lightning" "The Bear Woman"
+    SetFontSize 36
+    SetTextColor 128 128 248
+Show
+Class == "Divination Cards"
+BaseType == "The Carrion Crow" "The King's Blade" "The Inoculated" "Prosperity" "The Sigil" "The Mountain"
+    SetFontSize 33
+    SetTextColor 128 128 248
+###  5.1.3 ----- Rare Items
+Show
+Class == "Divination Cards"
+BaseType == "Imperfect Memories" "A Dusty Memory" "Soul Quenched"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "Dying Light"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "The Awakened" "Bijoux"
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "The Opulent" "Perfection" "The Hale Heart" "Dark Dreams" "Nook's Crown" "Prometheus' Armoury" "The Journalist"
+    SetFontSize 42
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "Destined to Crumble"
+    SetFontSize 39
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "The Lover"
+    SetFontSize 36
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "Lantador's Lost Love"
+    SetTextColor 248 248 128
+###  5.1.4 ----- Unique Items
+Show
+Class == "Divination Cards"
+BaseType == "The Doctor" "Judging Voices" "The Apothecary" "The Shieldbearer"
+    CustomAlertSound "homm3snd/NOMAD.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 160 88 32
+Show
+Class == "Divination Cards"
+BaseType == "The Samurai's Eye" "Peaceful Moments" "Cursed Words" "Winter's Embrace" "The Forgotten Treasure" "The Prince of Darkness" "Justified Ambition" "Father's Love"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 160 88 32
+Show
+Class == "Divination Cards"
+BaseType == "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic" "Doedre's Madness" "The Betrayal" "The Last One Standing" "The Pack Leader" "Death" "The Conduit" "Assassin's Favour" "Hunter's Resolve" "Scholar of the Seas" "The Tower" "The Vast" "Hubris" "Hunter's Reward" "The Aesthete" "Glimmer of Hope" "The Body" "The Demoness" "The Offering" "Birth of the Three" "Rats" "The Dragon" "Tranquillity" "Earth Drinker" "The Lion" "The Risk" "The Wolf's Shadow" "Heterochromia" "Thunderous Skies" "The Cursed King" "The Harvester" "The Lunaris Priestess" "The Stormcaller" "Light and Truth" "The Calling" "The Formless Sea" "The Penitent" "The Soul" "The Valkyrie" "The Visionary" "The Wolf" "Mawr Blaidd" "The Oath" "The Scavenger" "Mitts" "The Coming Storm" "The Forsaken" "The Garish Power" "The Polymath" "The Spark and the Flame" "The Standoff" "The Wolven King's Bite" "The Wretched" "Might is Right" "The Blazing Fire" "Rebirth" "The Breach" "The Dreamer" "The World Eater" "The Admirer" "The Army of Blood" "The Beast" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Sword King's Salute" "The Witch" "Beauty Through Death" "Boon of the First Ones" "The Endless Darkness" "The Twilight Moon" "A Dab of Ink" "The Life Thief" "Alone in the Darkness" "Dark Temptation" "The Mad King" "The Messenger" "Pride of the First Ones" "The Deep Ones" "The Primordial" "Thirst for Knowledge" "The Wolf's Legacy" "Vile Power" "Baited Expectations" "Succor of the Sinless" "The Craving" "The Escape" "Council of Cats" "The Progeny of Lunaris" "A Note in the Wind" "The Academic" "The Cache" "Haunting Shadows" "Reckless Ambition" "The Whiteout" "Prejudice" "Sambodhi's Wisdom" "The Adventuring Spirit" "Costly Curio" "The Last Supper" "The Mind's Eyes" "The Offspring" "Chasing Risk" "Desperate Crusade" "Eternal Bonds" "Misery in Darkness" "Silence and Frost" "The One That Got Away" "The Dungeon Master" "The Forward Gaze" "Broken Truce" "Choking Guilt" "Endless Night" "Lethean Temptation" "Alivia's Grace" "The Return of the Rat" "The Wedding Gift" "Fire Of Unknown Origin"
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 160 88 32
+###  5.1.5 ----- Corrupted
+Show
+Class == "Divination Cards"
+BaseType == "The Fiend" "The Demon" "The Cheater" "Desecrated Virtue" "A Modest Request" "The Eternal War" "Lachrymal Necrosis" "The Destination" "The Leviathan" "The Price of Devotion" "The Insane Cat"
+    CustomAlertSound "homm3snd/NOMAD.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 216 8 8
+Show
+Class == "Divination Cards"
+BaseType == "Arrogance of the Vaal" "The Easy Stroll" "The Gulf" "Brotherhood in Exile" "Fateful Meeting" "Love Through Ice" "Luminous Trove" "The Shepherd's Sandals" "Matryoshka"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 216 8 8
+Show
+Class == "Divination Cards"
+BaseType == "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden" "The Artist" "The Encroaching Darkness" "The One With All" "The Siren" "The Dragon's Heart" "The Gentleman" "The Mercenary" "The Trial" "Wealth and Power" "Audacity" "Pride Before the Fall" "The Lich" "Anarchy's Price" "Blind Venture" "The Fletcher" "The Thaumaturgist" "Volatile Power" "A Mother's Parting Gift" "The Traitor" "Turn the Other Cheek" "Treasure Hunter" "The Throne" "Lysah's Respite" "Dialla's Subjugation" "Call to the First Ones" "Lingering Remnants" "The Wolverine" "Atziri's Arsenal" "Left to Fate" "The Eye of the Dragon" "The Ruthless Ceinture" "Forbidden Power" "The Deceiver" "The Insatiable" "The Darkest Dream" "The Rite of Elements" "The Undaunted" "The Price of Protection" "The Wilted Rose" "The Landing" "Burning Blood" "Echoes of Love" "Vanity" "Akil's Prophecy" "Azyran's Reward" "Remembrance" "The Damned" "The Old Man" "The Price of Loyalty" "Deathly Designs" "Etched in Blood" "Squandered Prosperity" "The Bones" "The Chosen" "The Strategist" "Gift of Asenath" "The Greatest Intentions" "The Hive of Knowledge" "The Bitter Blossom" "The Unexpected Prize" "Triskaidekaphobia" "Unchained" "The Astromancer" "Deadly Joy" "The Enthusiasts" "The Emptiness" "The Price of Prescience" "A Stone Perfected" "The Fox in the Brambles" "The Magma Crab" "A Fate Worse Than Death" "From Bone to Ashes" "A Chilling Wind" "Poisoned Faith" "Assassin's Gift"
+    CustomAlertSound "homm3snd/Curse.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 216 8 8
+###  5.1.6 ----- Currency
+Show # 1xKalandra 10xDivine 40xRegret 1xMirrorShard 1xEldersExalt 19xMirrorShard 1xTaintedMystic 5xElditchChaos 7xDivine 5xDivine 2xDivine 2xFracturing
+Class == "Divination Cards"
+BaseType == "House of Mirrors" "The Sephirot" "The Innocent" "Seven Years Bad Luck" "The Long Con" "Unrequited Love" "The Transformation" "Darker Half" "Divine Beauty" "Brother's Gift" "The Fortunate" "I See Brothers"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 248 216 8
+Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret 10xChaos 10xChisel 10xDeck 2xExalted 30xScouring 4xTaintedMystic 9xT6Essense 3xT7Essense 2xESextant 1xHarbinger 3xAnnul 10xExalted 1xAnnul 20xReport 10xSextant 5xFossil 5xExalt 10xDeliorb 10xVial 7xExalt 10xIncubator 10xOil 10xUnmaking
+Class == "Divination Cards"
+BaseType == "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token" "The Wrath" "The Cartographer" "Lucky Deck" "The Saint's Treasure" "No Traces" "The Rusted Bard" "Harmony of Souls" "The Cacophony" "Monochrome" "The Journey" "The Seeker" "Alluring Bounty" "Demigod's Wager" "The Side Quest" "Underground Forest" "The Tinkerer's Table" "Brother's Stash" "Dementophobia" "The Rabbit's Foot" "The Scout" "Parasitic Passengers" "The Tireless Extractor" "Ever-Changing"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 248 216 8
+Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos 7xAlchemy 3xEssense 20xChance 17xChromes 20xAlteration 10xAlteration 13xAlteration 1xDeliorb 1xDeliorb 1xFertile
+Class == "Divination Cards"
+BaseType == "Chaotic Disposition" "Coveted Possession" "Lucky Connections" "The Gemcutter" "Three Faces in the Dark" "The Survivalist" "Three Voices" "The Fool" "The Heroic Shot" "Acclimatisation" "Society's Remorse" "A Sea of Blue" "Ambitious Obsession" "Disdain" "The Finishing Touch"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 248 216 8
+Show # 5xRandom 1xChaos 3xFusing 1xVaal 20xQualityRng
+Class == "Divination Cards"
+BaseType == "Emperor's Luck" "Rain of Chaos" "Loyalty" "The Catalyst" "The Master Artisan"
+    SetFontSize 39
+    SetTextColor 248 216 8
+Show # 40xWisdom
+Class == "Divination Cards"
+BaseType == "The Scholar"
+    SetFontSize 33
+    SetTextColor 248 216 8
+###  5.1.7 ----- Gems
+Show # Enlighten3L Exceptional1-20Q Exceptional
+Class == "Divination Cards"
+BaseType == "The Enlightened" "Home" "Gemcutter's Mercy"
+    CustomAlertSound "homm3snd/GENIE.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 32 160 160
+Show # Random20Q Minion20Q SRS20Q ArrowQ20 Skeletons23Q
+Class == "Divination Cards"
+BaseType == "Gemcutter's Promise" "The Summoner" "Grave Knowledge" "The Doppelganger" "The Skeleton"
+    SetTextColor 32 160 160
+Show # Portal1-20Q
+Class == "Divination Cards"
+BaseType == "The Realm"
+    SetFontSize 42
+    SetTextColor 32 160 160
+Show # Support20L Random20L
+Class == "Divination Cards"
+BaseType == "Gift of the Gemling Queen" "The Fox"
+    SetFontSize 39
+    SetTextColor 32 160 160
+###  5.1.8 ----- Other Divinations
+Show
+Class == "Divination Cards"
+BaseType == "The Immortal" "The Nurse" "The Patient"
+    CustomAlertSound "homm3snd/NOMAD.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 8 192 248
+Show
+Class == "Divination Cards"
+BaseType == "The Void"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 64 64 64
+Show
+Class == "Divination Cards"
+BaseType == "Brush, Paint and Palette"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 64 64 64
+Show
+Class == "Divination Cards"
+BaseType == "The Gambler"
+    SetFontSize 39
+    SetTextColor 8 192 248
+##   5.2   --- Jewels
+###  5.2.1 ----- Cluster
+Show
+Class "Jewels"
+BaseType "Cluster"
+    CustomAlertSound "homm3snd/mirth.wav"
+    MinimapIcon 0 Purple Star
+    PlayEffect Purple
+###  5.2.2 ----- Abyss
+Show
+Class == "Abyss Jewels"
+Rarity Rare
+    SetFontSize 42
+Show
+Class == "Abyss Jewels"
+Rarity < Rare
+    SetFontSize 24
+###  5.2.3 ----- Basic
+Show
+Class == "Jewels"
+Rarity Rare
+    SetFontSize 42
+Show
+Class == "Jewels"
+Rarity < Rare
+    SetFontSize 24
+##   5.3   --- Flasks
+###  5.3.1 ----- Quality
+Show
+Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Quality >= 20
+    CustomAlertSound "homm3snd/Decay.wav"
+    MinimapIcon 2 White Raindrop
+    SetTextColor 248 248 248
+Show
+Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Quality >= 8
+    SetFontSize 39
+    SetTextColor 248 248 248
+Show
+Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Quality >= 5
+    SetFontSize 33
+    SetTextColor 248 248 248
+###  5.3.2 ----- Utility
+Show
+Class == "Utility Flasks"
+ItemLevel >= 85
+    MinimapIcon 0 Green Raindrop
+    PlayEffect Green
+Show
+Class == "Utility Flasks"
+ItemLevel >= 80
+    MinimapIcon 2 Green Raindrop
+Show
+Class == "Utility Flasks"
+ItemLevel >= 63
+    SetFontSize 42
+Show
+Class == "Utility Flasks"
+AreaLevel < 68
+ItemLevel >= 1
+    SetFontSize 39
+###  5.3.3 ----- Life
+Show
+Class == "Life Flasks"
+AreaLevel >= 83
+    SetFontSize 30
+Show
+Class == "Life Flasks"
+BaseType "Divine" "Eternal"
+ItemLevel >= 80
+    MinimapIcon 2 Red Raindrop
+    SetFontSize 33
+Show
+Class == "Life Flasks"
+BaseType "Divine" "Eternal"
+AreaLevel < 68
+    SetFontSize 36
+Show
+Class == "Life Flasks"
+BaseType "Divine" "Eternal"
+    SetFontSize 30
+Show
+Class == "Life Flasks"
+BaseType "Hallowed"
+AreaLevel < 60
+    SetFontSize 33
+Show
+Class == "Life Flasks"
+BaseType "Colossal"
+AreaLevel < 42
+    SetFontSize 33
+Show
+Class == "Life Flasks"
+BaseType "Giant"
+AreaLevel < 42
+    SetFontSize 33
+Show
+Class == "Life Flasks"
+BaseType "Hallowed" "Colossal" "Giant"
+    SetFontSize 30
+Show
+Class == "Life Flasks"
+BaseType "Greater" "Large"
+AreaLevel < 24
+    SetFontSize 33
+Show
+Class == "Life Flasks"
+BaseType "Medium" "Small"
+AreaLevel < 10
+    SetFontSize 33
+Show
+Class == "Life Flasks"
+BaseType "Greater" "Large" "Medium" "Small"
+    SetFontSize 18
+Show
+Class == "Life Flasks"
+BaseType "Sacred" "Grand" "Sanctified"
+    SetFontSize 18
+###  5.3.4 ----- Mana
+Show
+Class == "Mana Flasks"
+BaseType "Divine" "Eternal"
+ItemLevel >= 82
+    MinimapIcon 2 Blue Raindrop
+    SetFontSize 33
+Show
+Class == "Mana Flasks"
+BaseType "Divine" "Eternal"
+AreaLevel < 68
+    SetFontSize 33
+Show
+Class == "Mana Flasks"
+BaseType "Divine" "Eternal"
+    SetFontSize 24
+Show
+Class == "Mana Flasks"
+BaseType "Sanctified" "Hallowed"
+AreaLevel < 60
+    SetFontSize 33
+Show
+Class == "Mana Flasks"
+BaseType "Sacred" "Colossal" "Giant"
+AreaLevel < 42
+    SetFontSize 33
+Show
+Class == "Mana Flasks"
+BaseType "Sanctified" "Hallowed" "Sacred" "Colossal" "Giant"
+    SetFontSize 18
+Show
+Class == "Mana Flasks"
+BaseType "Grand" "Greater" "Large"
+AreaLevel < 24
+    SetFontSize 33
+Show
+Class == "Mana Flasks"
+BaseType "Medium" "Small"
+AreaLevel < 10
+    SetFontSize 33
+Show
+Class == "Mana Flasks"
+BaseType "Grand" "Greater" "Large" "Medium" "Small"
+    SetFontSize 18
+###  5.3.5 ----- Hybrid
+Show
+Class == "Hybrid Flasks"
+    SetFontSize 18
+##   5.4   --- Gems
+###  5.4.1 ----- Awakened
+Show
+Class "Gems"
+BaseType "Awakened"
+    CustomAlertSound "homm3snd/GENIE.wav"
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+###  5.4.2 ----- Exceptional
+Show
+Class "Gems"
+BaseType "Enlighten" "Enhance" "Empower"
+    CustomAlertSound "homm3snd/GENIE.wav"
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+###  5.4.3 ----- High Level and Quality
+Show
+Class "Gems"
+Quality >= 20
+GemLevel >= 20
+    CustomAlertSound "homm3snd/GENIE.wav"
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+###  5.4.4 ----- High Level
+Show
+Class "Gems"
+GemLevel >= 20
+    CustomAlertSound "homm3snd/COLDRAY.wav"
+    MinimapIcon 1 Green Triangle
+    PlayEffect Green Temp
+###  5.4.5 ----- High Quality
+Show
+Class "Gems"
+Quality >= 20
+    CustomAlertSound "homm3snd/COLDRAY.wav"
+    MinimapIcon 1 Green Triangle
+    PlayEffect Green Temp
+Show
+Class "Gems"
+# TODO: for now in ruthless show all gems, old was: Quality >= 14
+    CustomAlertSound "homm3snd/COLDRAY.wav"
+    MinimapIcon 2 Green Triangle
+Show
+Class "Gems"
+Quality >= 8
+    SetFontSize 42
+Show
+Class "Gems"
+Quality >= 1
+    SetFontSize 33
+Show
+Class "Gems"
+BaseType "Vaal"
+    SetFontSize 39
+###  5.4.6 ----- Campaign
+Show
+Class "Gems"
+AreaLevel < 68
+    SetFontSize 33
+Show
+Class "Gems"
+AreaLevel >= 68
+    SetFontSize 18
+##   5.5   --- Maps
+###  5.5.1 ----- White
+Show
+Class == "Maps"
+MapTier < 6
+    CustomAlertSound "homm3snd/Nwherolv.wav"
+    MinimapIcon 0 White Square
+    PlayEffect White
+    SetTextColor 192 192 192
+###  5.5.2 ----- Yellow
+Show
+Class == "Maps"
+MapTier < 11
+    CustomAlertSound "homm3snd/MORALE.wav"
+    MinimapIcon 0 Yellow Square
+    PlayEffect Yellow
+    SetTextColor 192 192 8
+###  5.5.3 ----- Red
+Show
+Class == "Maps"
+HasInfluence None
+    CustomAlertSound "homm3snd/NewDay.wav"
+    MinimapIcon 0 Red Square
+    PlayEffect Red
+    SetTextColor 192 8 8
+###  5.5.4 ----- Other (Influenced, unknown?)
+Show
+Class == "Maps"
+    CustomAlertSound "homm3snd/MILITARY.wav"
+    MinimapIcon 0 Cyan Square
+    PlayEffect Cyan
+    SetTextColor 8 192 192
+##   5.6   --- Map Fragments
+###  5.6.1 ----- Vessel
+Show
+Class == "Map Fragments"
+BaseType == "Divine Vessel"
+    CustomAlertSound "homm3snd/QUEST.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetBorderColor 64 64 128
+    SetTextColor 248 64 64
+###  5.6.2 ----- Atziri
+Show
+Class == "Map Fragments"
+BaseType "Sacrifice"
+BaseType "Dusk" "Noon" "Dawn" "Midnight"
+    CustomAlertSound "homm3snd/NewDay.wav"
+    MinimapIcon 2 Red Hexagon
+    SetTextColor 128 64 64
+Show
+Class == "Map Fragments"
+BaseType "Mortal"
+BaseType "Grief" "Ignorance" "Hope" "Rage"
+    CustomAlertSound "homm3snd/NewWeek.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 64 128 64
+###  5.6.3 ----- Shaper
+Show
+Class == "Map Fragments"
+BaseType "Fragment"
+BaseType "Hydra" "Chimera" "Minotaur" "Phoenix"
+    CustomAlertSound "homm3snd/NewWeek.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 128 8 64
+###  5.6.4 ----- Elder
+Show
+Class == "Map Fragments"
+BaseType "Fragment"
+BaseType "Purification" "Constriction" "Eradication" "Enslavement"
+    CustomAlertSound "homm3snd/NewWeek.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 64 8 128
+###  5.6.5 ----- Uber
+Show
+Class == "Map Fragments"
+BaseType "Fragment"
+BaseType "Knowledge" "Shape" "Emptiness" "Terror"
+    CustomAlertSound "homm3snd/NEWMONTH.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 128 8 128
+###  5.6.6 ----- Sirus
+Show
+Class == "Map Fragments"
+BaseType "Crest"
+BaseType "Al-Hezmin's" "Baran's" "Drox's" "Veritania's"
+    CustomAlertSound "homm3snd/NEWMONTH.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 64 128 64
+###  5.6.7 ----- Maven
+Show
+Class == "Map Fragments"
+BaseType == "The Maven's Writ"
+    CustomAlertSound "homm3snd/Obelisk.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 8 128 128
+##   5.7   --- Miscellaneous map item
+###  5.7.1 ----- All
+Show
+Class == "Misc Map Items"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+##   5.8   --- Memories
+###  5.8.1 ----- All
+Show
+Class == "Memories"
+    MinimapIcon 0 Green Hexagon
+    PlayEffect Green
+##   5.9   --- Voidstones
+###  5.9.1 ----- All
+Show
+Class == "Atlas Upgrade Items"
+    CustomAlertSound "homm3snd/QUEST.wav"
+    MinimapIcon 0 Green Hexagon
+    PlayEffect Green
+    SetBackgroundColor 216 216 216
+    SetBorderColor 64 192 64
+    SetTextColor 8 248 8
+##   5.10  --- Vault
+###  5.10.1----- Keys
+Show
+Class == "Vault Keys"
+    CustomAlertSound "homm3snd/NOMAD.wav"
+    MinimapIcon 0 Brown Star
+    PlayEffect Brown
+##   5.11  --- Lab Items
+###  5.11.1----- Keys
+Show
+Class == "Labyrinth Items"
+    CustomAlertSound "homm3snd/DEFAULT.wav"
+    MinimapIcon 0 Green Cross
+    PlayEffect Green
+###  5.11.2----- Trinkets
+Show
+Class == "Labyrinth Trinkets"
+    SetTextColor 8 248 8

@@ -1,0 +1,472 @@
+#    1     - Continue
+##   1.0   --- Notes
+###  1.0.1 ----- Overview
+# Filter for SSF
+# default font size for all items 45
+###  1.0.2 ----- Tiers
+# Tiers split into 11: 8 tiers for show items, 3 tiers for hidden items,
+# and 8 for items without sound icon and playeffect
+# 1 tier: show, font 45, sound, minimapicon 0, playeffect
+# 2 tier: show, font 45, sound, minimapicon 1, playeffect temp
+# 3 tier: show, font 45, sound, minimapicon 2
+# 4 tier: show, font 45
+# 5 tier: show, font 42
+# 6 tier: show, font 39
+# 7 tier: show, font 36
+# 8 tier: show, font 33
+# 9 tier: hide, font 30 (show in ruthless)
+#10 tier: hide, font 24 (show in ruthless)
+#11 tier: hide, font 18 (show in ruthless)
+###  1.1.3 ----- Icons
+# Yellow Circle          - Currency Basic
+# Orange Citcle          - Currency Droponly
+# Red    Circle          - Currency Monster Restrict
+# Orange Diamond         - Currency Catalyst
+# Orange Diamond         - Currency Oils
+# Grey   Square          - Divination Cards
+# White  Square          - Tier 1-5 Maps
+# Yellow Square          - Tier 6-10 Maps
+# Red    Square          - Tier 11-15 Maps
+# Brown  Moon            - Unique Belts
+# Brown  Diamond         - Unique Amulet, Rings
+# Brown  UpsideDownHouse - Unique Off-hands
+# Brown  Star            - Uniques Jewels
+# Brown  Raindrop        - Unique Flasks
+# Cyan   Raindrop        - Fractured Items
+# Green  Raindrop        - Utility Flasks
+# Orange Raindrop        - Tincures
+# Red    Raindrop        - Life Flasks
+# Blue   Raindrop        - Mana Flasks
+# Green  Traingle        - Gems
+# Green  Cross           - Quest related
+# Yellow Pentagon        - Delve Socketable
+# Orange Pentagon        - 6 Socket
+# Red    Pentagon        - 6 Links
+###  1.1.4 ----- Sounds
+# GOOD: (46)
+# homm3snd/DANGER.wav       - Error (missed) Items
+# homm3snd/DEFAULT.wav      - Quest / Heist Targets
+# homm3snd/QUEST.wav        - Quest Atlas
+# homm3snd/Disease.wav      - Trash Uniques / Unique Div Cards
+# homm3snd/BUTTON.wav       - Currency LOW T2
+# homm3snd/Chat.wav         - Currency LOW T1
+# homm3snd/FLAGMINE.wav     - Currency MID T3
+# homm3snd/Age.wav          - Currency MID T2
+# homm3snd/SysMsg.wav       - Currency MID T1
+# homm3snd/LUCK.wav         - Currency TOP T3
+# homm3snd/TREASURE.wav     - Currency TOP T2
+# homm3snd/FAERIE.wav       - Currency TOP T1
+# homm3snd/UltimateArtifact - Currency T0 / Double Influenced
+# homm3snd/NOMAD.wav        - Div Cards God Tier (Icon 0)
+# homm3snd/STORE.wav        - Div Cards Top Tier (Icon 1)
+# homm3snd/Cure.wav         - Div Cards (not currency related)
+# homm3snd/Curse.wav        - Div Cards Corrupted
+# homm3snd/BIND.wav         - Low Essences
+# homm3snd/Dragon.wav       - High Essences
+# homm3snd/Graveyard.wav    - Logbooks
+# homm3snd/GetProtection.wav- Guardian Maps
+# homm3snd/GENIE.wav        - Awakened/Exceptional Gems/Div Cards
+# homm3snd/COLDRAY.wav      - Quality Gems
+# homm3snd/Decay.wav        - Quality Flasks
+# homm3snd/Mystery.wav      - Sanctum Research
+# homm3snd/Temple.wav       - Atzoatl Temple Vials
+# homm3snd/Preyer.wav       - Delve Resonator 1-2 sockets
+# homm3snd/View.wav         - Delve Resonator 3 sockets
+# homm3snd/ARMGEDN.wav      - Delve Resonator 4 sockets
+# homm3snd/Lighthouse.wav   - Heist Blueprints
+# homm3snd/BLOODLUS.wav     - 6 Linked Items
+# homm3snd/LIGHTBLT.wav     - 5 Linked Items
+# homm3snd/Pickup01.wav     - Build Amulets,Rings,Belts
+# homm3snd/Pickup02.wav     - Build Helmets
+# homm3snd/Pickup03.wav     - Build Boots
+# homm3snd/Pickup04.wav     - Build Gloves
+# homm3snd/Pickup05.wav     - Build Body
+# homm3snd/Pickup06.wav     - Build Off Hand
+# homm3snd/Pickup07.wav     - Build Main Hand
+# homm3snd/Nwherolv.wav     - Maps White / Contracts
+# homm3snd/MORALE.wav       - Maps Yellow
+# homm3snd/NewDay.wav       - Maps Red / Sacrifice Fragments
+# homm3snd/NewWeek.wav      - Boss Fragments / Harvest
+# homm3snd/NEWMONTH.wav     - Uber Fragments
+# homm3snd/Obelisk.wav      - Maven Fragmnent
+# homm3snd/MILITARY.wav     - Influenced Maps
+# TEMP:
+# homm3snd/CHEST.wav        - Scarabs R4 / Legion Emblems
+# homm3snd/STORE.wav        - Scarabs R3
+# homm3snd/BADLUCK.wav      - Scarabs R1-2 / Uniques Multibase
+# homm3snd/Regener.wav      - Legion Incubators
+# homm3snd/Preyer.wav       - Sanctum Relics
+# homm3snd/Paralyze.wav     - Unique Pieces
+# homm3snd/Buildtwn.wav     - Exotic Fractures
+# homm3snd/tailwind.wav     - Fractures
+# homm3snd/View.wav         - Synthesised
+# homm3snd/mirth.wav        - Cluster Jewels
+# FREE: (11)
+# homm3snd/Fortune.wav
+# homm3snd/Berserk.wav
+# homm3snd/Forget.wav
+# homm3snd/VISIONS.wav
+# homm3snd/Slayer.wav
+# homm3snd/Poison.wav
+# homm3snd/Bless.wav
+# homm3snd/ROGUE.wav
+# homm3snd/Badmrle.wav
+# homm3snd/RESURECT.wav
+# homm3snd/Gazebo.wav
+###  1.1.5 ----- Colors
+# Color Gradation (Preferable use this numbers for RGB colors)
+# Dark:    8  32    64  88
+# Grey:         128
+# Light: 160 192   216 248
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+##   1.1   --- Mandatory
+###  1.1.1 ----- Starting
+Show
+AreaLevel 1
+BaseType == "Burning Arrow"
+Class == "Skill Gems"
+    SetFontSize 45
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    CustomAlertSound "homm3snd/starting/Rampart.mp3" 150
+Show
+AreaLevel 1
+BaseType == "Double Strike"
+Class == "Skill Gems"
+    SetFontSize 45
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    CustomAlertSound "homm3snd/starting/Dungeon.mp3" 150
+Show
+AreaLevel 1
+BaseType == "Fireball"
+Class == "Skill Gems"
+    SetFontSize 45
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    CustomAlertSound "homm3snd/starting/NecroTown.mp3" 150
+Show
+AreaLevel 1
+BaseType == "Glacial Hammer"
+Class == "Skill Gems"
+    SetFontSize 45
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    CustomAlertSound "homm3snd/starting/StrongHold.mp3" 150
+Show
+AreaLevel 1
+BaseType == "Heavy Strike"
+Class == "Skill Gems"
+    SetFontSize 45
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    CustomAlertSound "homm3snd/starting/InfernoTown.mp3" 150
+Show
+AreaLevel 1
+BaseType == "Spectral Throw"
+Class == "Skill Gems"
+    SetFontSize 45
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    CustomAlertSound "homm3snd/starting/CstleTown.mp3" 150
+Show
+AreaLevel 1
+BaseType == "Viper Strike"
+Class == "Skill Gems"
+    SetFontSize 45
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+    CustomAlertSound "homm3snd/starting/FortressTown.mp3" 150
+###  1.1.2 ----- Quest Items
+Show
+Class == "Quest Items"
+    CustomAlertSound "homm3snd/DEFAULT.wav"
+    MinimapIcon 0 Green Cross
+    PlayEffect Green
+    SetFontSize 45
+###  1.1.3 ----- Gold
+Show
+BaseType == "Gold"
+StackSize >= 4096
+    SetFontSize 45
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 248 216 8
+Show
+BaseType == "Gold"
+StackSize >=  512
+    SetFontSize 42
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 216 192 8
+Show
+BaseType == "Gold"
+StackSize >= 64
+    SetFontSize 39
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 192 160 8
+Show
+BaseType == "Gold"
+StackSize >= 8
+    SetFontSize 36
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 160 128 8
+Show
+BaseType == "Gold"
+    SetFontSize 33
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 128 88 8
+##   1.2   --- Drop sounds
+###  1.2.1 ----- All items
+Show
+    DisableDropSound
+    Continue
+##   1.3   --- Text
+###  1.3.1 ----- Normal Rarity
+Show
+Rarity Normal
+    SetTextColor 192 192 192
+    Continue
+###  1.3.2 ----- Magic Rarity
+Show
+Rarity Magic
+    SetTextColor 128 128 248
+    Continue
+###  1.3.3 ----- Rare Rarity
+Show
+Rarity Rare
+    SetTextColor 248 248 128
+    Continue
+###  1.3.4 ----- Unique Rarity
+Show
+Rarity Unique
+    SetTextColor 160 88 32
+    Continue
+###  1.3.5 ----- Gems
+Show
+Class "Gems"
+    SetTextColor 32 160 160
+    Continue
+###  1.3.6 ----- Fractured
+Show
+FracturedItem True
+    SetTextColor 160 160 88
+    Continue
+###  1.3.7 ----- Synthesised
+Show
+SynthesisedItem True
+    SetTextColor 160 160 88
+    Continue
+###  1.3.8 ----- Influenced
+Show
+HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    SetTextColor 160 160 88
+    Continue
+###  1.3.9 ----- Corrupted
+Show
+Corrupted True
+    SetTextColor  216 8 8
+    Continue
+###  1.3.10----- Crafted
+Show
+Identified True
+HasExplicitMod "Veil" "Chosen" "Order" "Craft" "Upgraded" "Subterranean" "Underground"
+    SetTextColor 192 216 248
+    Continue
+##   1.4   --- Background
+###  1.4.1 ----- Currency
+Show
+Class == "Stackable Currency"
+    SetBackgroundColor 128 88 8
+    Continue
+###  1.4.2 ----- Weapons
+Show
+Class "Bows" "Swords" "Axes" "Daggers" "Claws" "Maces" "Sceptres" "Staves" "Wands"
+    SetBackgroundColor 64 8 8
+    Continue
+###  1.4.3 ----- Armours
+Show
+Class "Body Armours" "Boots" "Gloves" "Helmets"
+    SetBackgroundColor 8 64 8
+    Continue
+###  1.4.4 ----- Off-hands
+Show
+Class "Shields" "Quivers"
+    SetBackgroundColor 64 64 8
+    Continue
+###  1.4.5 ----- Jewellery
+Show
+Class "Rings" "Amulets" "Belts"
+    SetBackgroundColor 8 8 64
+    Continue
+###  1.4.6 ----- Mana Flasks
+Show
+Class == "Mana Flasks"
+    SetBackgroundColor 64 64 216
+    Continue
+###  1.4.7 ----- Life Flasks
+Show
+Class == "Life Flasks"
+    SetBackgroundColor 128 32 32
+    Continue
+###  1.4.8 ----- Hybrid Flasks
+Show
+Class == "Hybrid Flasks"
+    SetBackgroundColor 128 32 128
+    Continue
+###  1.4.9 ----- Utility Flasks
+Show
+Class == "Utility Flasks"
+    SetBackgroundColor 32 128 64
+    Continue
+###  1.4.10----- Divination Cards
+Show
+Class == "Divination Cards"
+    SetBackgroundColor 64 64 64
+    Continue
+###  1.4.11----- Gems
+Show
+Class "Gems"
+    SetBackgroundColor 32 64 64
+    Continue
+###  1.4.12----- Tainted Currency
+Show
+Class == "Stackable Currency"
+BaseType "Tainted"
+    SetBackgroundColor 216 8 8
+    Continue
+###  1.4.13----- Jewels
+Show
+Class "Jewels"
+    SetBackgroundColor 64 88 128
+    Continue
+###  1.4.14----- Fragments
+Show
+Class == "Map Fragments"
+    SetBackgroundColor 192 192 192
+    Continue
+###  1.4.15----- Maps
+Show
+Class == "Maps"
+    SetBackgroundColor 8 8 8
+    Continue
+##   1.5   --- Border
+###  1.5.1 ----- Strength bases
+Show
+BaseArmour >= 1
+    SetBorderColor 248 8 8
+    Continue
+Show
+Class == "One Hand Maces" "Two Hand Maces"
+    SetBorderColor 248 8 8
+    Continue
+###  1.5.2 ----- Dexterity bases
+Show
+BaseEvasion >= 1
+    SetBorderColor 8 248 8
+    Continue
+Show
+Class == "Bows" "Thrusting One Hand Swords"
+    SetBorderColor 8 248 8
+    Continue
+###  1.5.3 ----- Intelligence bases
+Show
+BaseEnergyShield >= 1
+    SetBorderColor 8 8 248
+    Continue
+Show
+Class == "Wands"
+    SetBorderColor 8 8 248
+    Continue
+###  1.5.4 ----- Str/Dex bases
+Show
+BaseArmour >= 1
+BaseEvasion >= 1
+    SetBorderColor 248 248 8
+    Continue
+Show
+Class == "One Hand Axes" "One Hand Swords" "Two Hand Axes" "Two Hand Swords"
+    SetBorderColor 248 248 8
+    Continue
+###  1.5.5 ----- Dex/Int bases
+Show
+BaseEvasion >= 1
+BaseEnergyShield >= 1
+    SetBorderColor 8 248 248
+    Continue
+Show
+Class == "Claws" "Daggers"
+    SetBorderColor 8 248 248
+    Continue
+###  1.5.6 ----- Int/Str bases
+Show
+BaseEnergyShield >= 1
+BaseArmour >= 1
+    SetBorderColor 248 8 248
+    Continue
+Show
+Class == "Warstaves" "Staves"
+    SetBorderColor 248 8 248
+    Continue
+###  1.5.7 ----- Str/Dex/Int bases
+Show
+BaseArmour >= 1
+BaseEvasion >= 1
+BaseEnergyShield >= 1
+    SetBorderColor 248 248 248
+    Continue
+###  1.5.8 ----- Divination Cards
+Show
+Class == "Divination Cards"
+    SetBorderColor 8 8 8
+    Continue
+###  1.5.9 ----- Gems
+Show
+Class "Gems"
+    SetBorderColor 64 88 64
+    Continue
+###  1.5.10----- Normal Maps
+Show
+Class == "Maps"
+Rarity Normal
+    SetBorderColor 216 216 216
+    Continue
+###  1.5.11----- Magic Maps
+Show
+Class == "Maps"
+Rarity Magic
+    SetBorderColor 128 128 248
+    Continue
+###  1.5.12----- Rare Maps
+Show
+Class == "Maps"
+Rarity Rare
+    SetBorderColor 248 248 128
+    Continue
+###  1.5.13----- Corrupted Maps
+Show
+Class == "Maps"
+Corrupted True
+    SetBorderColor 216 8 8
+    Continue
+###  1.5.14----- Unique Maps
+Show
+Class == "Maps"
+Rarity Unique
+    SetBorderColor 160 88 32
+    Continue
+##   1.6   --- Font
+###  1.6.1 ----- All items
+Show
+    SetFontSize 45
+    Continue
