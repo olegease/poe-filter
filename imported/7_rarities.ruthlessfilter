@@ -20,51 +20,46 @@ Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" 
 Rarity Normal
 AreaLevel < 73
 DropLevel >= 68
-    SetFontSize 33
+    SetFontSize 30
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Normal
 AreaLevel < 68
 DropLevel >= 55
-    SetFontSize 33
+    SetFontSize 30
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Normal
 AreaLevel < 55
 DropLevel >= 45
-    SetFontSize 33
+    SetFontSize 30
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Normal
 AreaLevel < 45
 DropLevel >= 33
-    SetFontSize 33
+    SetFontSize 30
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Normal
 AreaLevel < 33
 DropLevel >= 13
-    SetFontSize 33
+    SetFontSize 30
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Normal
 AreaLevel < 13
 DropLevel >= 8
-    SetFontSize 33
-Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
-Rarity Normal
-DropLevel >= 83
-    SetFontSize 33
-Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
-Rarity Normal
-DropLevel >= 78
     SetFontSize 30
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Normal
-DropLevel >= 73
+DropLevel >= 83
+    SetFontSize 30
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+DropLevel >= 78
     SetFontSize 24
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
@@ -89,28 +84,58 @@ Rarity Magic
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Magic
-AreaLevel < 4
-    SetFontSize 42
-Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
-Rarity Magic
-AreaLevel < 8
-    SetFontSize 39
-Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
-Rarity Magic
-AreaLevel < 12
+AreaLevel < 73
+DropLevel >= 55
     SetFontSize 36
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Magic
 AreaLevel < 68
-LinkedSockets < 4
-    SetFontSize 33
+DropLevel >= 45
+    SetFontSize 36
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Magic
-    SetFontSize 30
+AreaLevel < 55
+DropLevel >= 33
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+AreaLevel < 45
+DropLevel >= 13
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+AreaLevel < 33
+DropLevel >= 8
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+AreaLevel < 13
+DropLevel >= 4
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+DropLevel >= 83
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+DropLevel >= 78
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+DropLevel >= 73
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+    SetFontSize 24
 ##   7.3   --- Rare Items
 ###  7.3.0 ----- Pickup
 Show
