@@ -4,16 +4,17 @@
 Show
 Class == "Amulets" "Rings"
 Rarity Normal
-AreaLevel < 24
+AreaLevel < 33
     MinimapIcon 2 White Diamond
 Show
 Class == "Belts"
 Rarity Normal
+AreaLevel < 33
     MinimapIcon 2 White Moon
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Normal
-    SetFontSize 39
+    SetFontSize 30
 ###  7.1.2 ----- Equipment
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
@@ -70,16 +71,19 @@ Rarity Normal
 Show
 Class == "Amulets" "Rings"
 Rarity Magic
-AreaLevel < 24
-    MinimapIcon 2 Blue Diamond
+AreaLevel < 45
+    MinimapIcon 1 Blue Diamond
+    PlayEffect Blue Temp
 Show
 Class == "Belts"
+AreaLevel < 45
 Rarity Magic
-    MinimapIcon 2 Blue Moon
+    MinimapIcon 1 Blue Moon
+    PlayEffect Blue Temp
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Magic
-    SetFontSize 42
+    SetFontSize 36
 ###  7.2.2 ----- Equipment
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
@@ -251,11 +255,19 @@ Rarity Rare
 Show
 Class == "Amulets" "Rings"
 Rarity Rare
-    MinimapIcon 2 Yellow Diamond
+AreaLevel < 68
+    MinimapIcon 0 Yellow Diamond
+    PlayEffect Yellow
 Show
 Class == "Belts"
 Rarity Rare
-    MinimapIcon 2 Yellow Moon
+AreaLevel < 68
+    MinimapIcon 0 Yellow Moon
+    PlayEffect Yellow
+Show
+Class == "Amulets" "Belts" "Rings"
+Rarity Rare
+    SetFontSize 42
 ###  7.3.2 ----- Equipment
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
