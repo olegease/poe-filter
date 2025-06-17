@@ -1,0 +1,462 @@
+#    3     - Seasonal
+##   3.1   --- Essence
+###  3.1.1 ----- Group F
+Show
+Class == "Stackable Currency"
+BaseType "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
+    CustomAlertSound "homm3snd/GetProtection.wav"
+    MinimapIcon 0 Pink Kite
+    PlayEffect Pink
+    SetTextColor 248 8 248
+###  3.1.2 ----- Tiers
+Show
+Class == "Stackable Currency"
+BaseType "Deafening Essence" "Remnant of Corruption"
+    CustomAlertSound "homm3snd/DRAGON.wav"
+    MinimapIcon 0 Pink Kite
+    PlayEffect Pink
+    SetTextColor 216 8 216
+Show
+Class == "Stackable Currency"
+BaseType "Essence"
+BaseType "Shrieking" "Screaming"
+    CustomAlertSound "homm3snd/Berserk.wav"
+    MinimapIcon 1 Pink Kite
+    PlayEffect Pink Temp
+    SetTextColor 192 8 192
+Show
+Class == "Stackable Currency"
+BaseType "Essence"
+BaseType "Wailing" "Weeping"
+    CustomAlertSound "homm3snd/BIND.wav"
+    MinimapIcon 2 Pink Kite
+    SetTextColor 160 8 160
+Show
+Class == "Stackable Currency"
+BaseType "Essence"
+BaseType "Muttering" "Whispering"
+    SetFontSize 42
+    SetTextColor 128 8 128
+##   3.2   --- Breach
+###  3.2.1 ----- Splinters
+Show
+Class == "Stackable Currency"
+BaseType "Splinter of"
+BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Cross
+    SetBorderColor 64 8 88
+    SetTextColor 128 32 216
+Show
+Class == "Stackable Currency"
+StackSize >= 8
+BaseType "Splinter of"
+BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 1 Orange Cross
+    PlayEffect Orange Temp
+    SetBackgroundColor 160 128 8
+    SetBorderColor 64 8 88
+    SetTextColor 128 32 216
+###  3.2.2 ----- Blessings
+Show
+Class == "Stackable Currency"
+BaseType "Blessing of"
+BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Cross
+    PlayEffect Orange
+    SetBackgroundColor 248 216 8
+    SetBorderColor 64 8 88
+    SetTextColor 128 32 216
+###  3.2.3 ----- Breachstones
+##   3.3   --- Harbinger
+###  3.3.1 ----- Shards
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Mirror" "Fracturing"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 248 216 8
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Harbinger's" "Annulment" "Exalted"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 1 Orange Circle
+    PlayEffect Orange Temp
+    SetBackgroundColor 160 128 8
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Horizon" "Ancient" "Chaos"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Binding" "Regal" "Alchemy" "Engineer's"
+    SetFontSize 39
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Alteration" "Transmutation"
+    SetFontSize 42
+Show
+Class == "Stackable Currency"
+BaseType == "Scroll Fragment"
+    SetFontSize 18
+###  3.3.2 ----- Binding
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Binding"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 192 160 8
+    SetTextColor 192 192 88
+###  3.3.3 ----- Horizons
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Horizons"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Circle
+    PlayEffect Orange Temp
+    SetBackgroundColor 216 192 8
+###  3.3.4 ----- Annulment
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Annulment"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 248 216 8
+##   3.4   --- Incursion
+###  3.4.1 ----- Vials
+Show
+Class == "Stackable Currency"
+BaseType "Vial of"
+    CustomAlertSound "homm3snd/Temple.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetTextColor 160 88 32
+##   3.5   --- Delve
+###  3.5.1 ----- Fossils
+Show
+Class == "Stackable Currency"
+BaseType "Fossil"
+    CustomAlertSound "homm3snd/Age.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBorderColor 248 128 8
+    SetTextColor 216 216 8
+###  3.5.2 ----- Resonators
+Show
+Class == "Delve Stackable Socketable Currency"
+BaseType "Primitive" "Potent"
+    CustomAlertSound "homm3snd/Prayer.wav"
+    MinimapIcon 2 Yellow Pentagon
+    SetBackgroundColor 248 248 128
+    SetBorderColor 64 64 8
+    SetTextColor 128 88 8
+Show
+Class == "Delve Stackable Socketable Currency"
+BaseType "Powerful"
+    CustomAlertSound "homm3snd/View.wav"
+    MinimapIcon 1 Yellow Pentagon
+    PlayEffect Yellow Temp
+    SetBackgroundColor 248 248 128
+    SetBorderColor 64 64 8
+    SetTextColor 128 88 8
+Show
+Class == "Delve Stackable Socketable Currency"
+BaseType "Prime"
+    CustomAlertSound "homm3snd/ARMGEDN.wav"
+    MinimapIcon 0 Yellow Pentagon
+    PlayEffect Yellow
+    SetBackgroundColor 248 248 128
+    SetBorderColor 64 64 8
+    SetTextColor 128 88 8
+##   3.6   --- Betrayal
+###  3.6.1 ----- Scarabs
+Show
+Class == "Map Fragments"
+BaseType "Scarab"
+    CustomAlertSound "homm3snd/Forget.wav"
+    MinimapIcon 0 White Hexagon
+    PlayEffect White
+    SetTextColor 8 8 8
+##   3.7   --- Legion
+###  3.7.1 ----- Incubators
+Show
+Class == "Incubators"
+    CustomAlertSound "homm3snd/Regener.wav"
+    MinimapIcon 0 Yellow Kite
+    PlayEffect Yellow
+    SetBackgroundColor 128 108 20
+    SetBorderColor 80 64 8
+    SetTextColor 216 192 64
+###  3.7.2 ----- Splinters
+Show
+Class == "Stackable Currency"
+BaseType "Timeless"
+BaseType "Splinter"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 64 64
+###  3.7.3 ----- Emblems
+Show
+Class == "Map Fragments"
+BaseType "Emblem"
+BaseType "Timeless"
+    CustomAlertSound "homm3snd/CHEST.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 64 192 192
+##   3.8   --- Blight
+###  3.8.1 ----- Oils
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Clear"
+    SetFontSize 33
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Sepia" "Amber"
+    SetFontSize 36
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Verdant" "Teal"
+    SetFontSize 39
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Azure" "Indigo"
+    SetFontSize 42
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Violet" "Crimson"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Diamond
+    SetBackgroundColor 192 160 8
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Opalescent" "Black" "Silver"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Diamond
+    PlayEffect Orange Temp
+    SetBackgroundColor 216 192 8
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Golden" "Tainted" "Reflective" "Prismatic"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Diamond
+    PlayEffect Orange
+    SetBackgroundColor 248 216 8
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+##   3.9   --- Delirium
+###  3.9.1 ----- Orbs
+Show
+Class == "Stackable Currency"
+BaseType "Delirium Orb"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 216 192 8
+    SetBorderColor 8 8 8
+###  3.9.2 ----- Splinters
+Show
+Class == "Stackable Currency"
+BaseType == "Simulacrum Splinter"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 160 128 8
+    SetBorderColor 8 8 8
+###  3.9.3 ------ Simulacrum
+##   3.10  --- Harvest
+###  3.10.1----- Lifeforce
+Show
+Class == "Stackable Currency"
+BaseType == "Wild Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Vivid Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetBorderColor 64 64 8
+    SetTextColor 128 160 32
+Show
+Class == "Stackable Currency"
+BaseType == "Primal Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetBorderColor 32 64 88
+    SetTextColor 64 160 192
+Show
+Class == "Stackable Currency"
+BaseType == "Sacred Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Faerie.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBorderColor 88 88 128
+    SetTextColor 88 88 128
+##   3.10.2----- Blossom
+Show
+Class == "Map Fragments"
+BaseType == "Sacred Blossom"
+    CustomAlertSound "homm3snd/Slayer.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 248 64 64
+##   3.11  --- Heist
+###  3.11.1----- Markers
+Show
+Class == "Stackable Currency"
+BaseType == "Rogue's Marker"
+    CustomAlertSound "homm3snd/Age.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 160 128 8
+    SetTextColor 248 160 128
+###  3.11.2----- Contracts
+Show
+Class == "Contracts"
+    CustomAlertSound "homm3snd/ROGUE.wav"
+    MinimapIcon 0 White Square
+    PlayEffect White
+    SetBackgroundColor 8 8 8
+    SetBorderColor 8 8 8
+###  3.11.3----- Blueprints
+Show
+Class == "Blueprints"
+    CustomAlertSound "homm3snd/Lighthouse.wav"
+    MinimapIcon 0 Red Square
+    PlayEffect Red
+    SetBackgroundColor 192 160 128
+    SetBorderColor 88 64 64
+###  3.11.4----- Targets
+Show
+Class == "Heist Targets"
+    CustomAlertSound "homm3snd/DEFAULT.wav"
+    MinimapIcon 0 Green Cross
+    PlayEffect Green
+###  3.11.5----- Equipment
+Show
+Class "Heist"
+Class "Gear" "Tools" "Brooches" "Cloaks"
+##   3.12  --- Ritual
+###  3.12.1----- Splinters
+Show
+Class == "Stackable Currency"
+BaseType == "Ritual Splinter"
+    MinimapIcon 2 Red Cross
+    SetTextColor 192 8 8
+###  3.12.2----- Vessel
+Show
+Class == "Stackable Currency"
+BaseType == "Ritual Vessel"
+    MinimapIcon 1 Red Cross
+    PlayEffect Red Temp
+    SetTextColor 192 8 8
+###  3.12.3----- Blood
+Show
+Class == "Map Fragments"
+BaseType == "Blood-filled Vessel"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+    SetTextColor 192 8 8
+##   3.13  --- Ultimatum
+###  3.13.1----- Catalysts
+Show
+Class == "Stackable Currency"
+BaseType "Catalyst"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 0 Orange Diamond
+    PlayEffect Orange
+    SetBackgroundColor 160 128 8
+##   3.14  --- Expedition
+###  3.14.1----- Logbooks
+Show
+Class == "Expedition Logbooks"
+    CustomAlertSound "homm3snd/Graveyard.wav"
+    MinimapIcon 0 Grey Cross
+    PlayEffect Grey
+    SetBackgroundColor 98 108 100
+    SetBorderColor 64 128 64
+###  3.14.2----- Reroll currency
+Show
+Class == "Stackable Currency"
+BaseType == "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 216 192 8
+    SetBorderColor 64 128 64
+    SetTextColor 88 128 88
+##   3.15  --- Sanctum
+###  3.15.1----- Research
+Show
+Class == "Sanctum Research"
+BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
+    CustomAlertSound "homm3snd/Mystery.wav"
+    MinimapIcon 0 Green Square
+    PlayEffect Green
+    SetBackgroundColor 80 70 60
+    SetBorderColor 64 216 64
+    SetTextColor 64 216 64
+###  3.15.2----- Relics
+Show
+Class == "Relics"
+    CustomAlertSound "homm3snd/Bless.wav"
+    MinimapIcon 2 Pink Hexagon
+    SetBackgroundColor 88 64 64
+    SetBorderColor 64 216 64
+##   3.16  --- Affliction
+###  3.16.1----- Tinctures
+Show
+Class == "Tinctures"
+    MinimapIcon 2 Orange Raindrop
+###  3.16.2----- Charms
+Show
+Class == "Charms"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+###  3.16.3----- Corpses
+Show
+Class == "Corpses"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+##   3.17  --- Settlers
+###  3.17.1----- Gold
+###  3.17.2----- Runes
+Class == "Stackable Currency"
+BaseType "Rune"
+BaseType "Life" "Sun" "Bound" "War" "River" "Bounty" "Journey" "Mountain" "Time" "Power"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 8 8

@@ -1,0 +1,323 @@
+#    7     - Rarities
+##   7.1   --- Normal Items
+###  7.1.1 ----- Jewellery
+Show
+Class == "Amulets" "Rings"
+Rarity Normal
+AreaLevel < 33
+    MinimapIcon 2 White Diamond
+Show
+Class == "Belts"
+Rarity Normal
+AreaLevel < 33
+    MinimapIcon 2 White Moon
+Hide
+Class == "Amulets" "Belts" "Rings"
+Rarity Normal
+    SetFontSize 30
+###  7.1.2 ----- Equipment
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+AreaLevel < 73
+DropLevel >= 68
+    SetFontSize 30
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+AreaLevel < 68
+DropLevel >= 55
+    SetFontSize 30
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+AreaLevel < 55
+DropLevel >= 45
+    SetFontSize 30
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+AreaLevel < 45
+DropLevel >= 33
+    SetFontSize 30
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+AreaLevel < 33
+DropLevel >= 13
+    SetFontSize 30
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+AreaLevel < 13
+DropLevel >= 8
+    SetFontSize 30
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+DropLevel >= 83
+    SetFontSize 30
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+DropLevel >= 78
+    SetFontSize 24
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Normal
+    SetFontSize 18
+##   7.2   --- Magic Items
+###  7.2.1 ----- Jewellery
+Show
+Class == "Amulets" "Rings"
+Rarity Magic
+AreaLevel < 45
+    MinimapIcon 1 Blue Diamond
+    PlayEffect Blue Temp
+Show
+Class == "Belts"
+AreaLevel < 45
+Rarity Magic
+    MinimapIcon 1 Blue Moon
+    PlayEffect Blue Temp
+Show
+Class == "Amulets" "Belts" "Rings"
+Rarity Magic
+    SetFontSize 36
+###  7.2.2 ----- Equipment
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+AreaLevel < 73
+DropLevel >= 55
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+AreaLevel < 68
+DropLevel >= 45
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+AreaLevel < 55
+DropLevel >= 33
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+AreaLevel < 45
+DropLevel >= 13
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+AreaLevel < 33
+DropLevel >= 8
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+AreaLevel < 13
+DropLevel >= 4
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+DropLevel >= 83
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+DropLevel >= 78
+    SetFontSize 36
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+DropLevel >= 73
+    SetFontSize 36
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Magic
+    SetFontSize 24
+##   7.3   --- Rare Items
+###  7.3.0 ----- Pickup
+Show
+Class == "Amulets"
+BaseType == "Blue Pearl Amulet" "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Purple Diamond
+Show
+Class == "Rings"
+BaseType == "Vermillion Ring" "Opal Ring" "Amethyst Ring" "Bone Ring" "Two-Stone Ring" "Ruby Ring"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Purple Diamond
+Show
+Class == "Belts"
+BaseType == "Crystal Belt" "Vanguard Belt" "Heavy Belt" "Leather Belt" "Rustic Sash" "Stygian Vise"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Purple Moon
+Show
+Class == "Helmets"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Helmets"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Helmets"
+DropLevel >= 73
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class == "Boots"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Boots"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Boots"
+DropLevel >= 62
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class == "Gloves"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Gloves"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Gloves"
+DropLevel >= 67
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class == "Body Armours"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Body Armours"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Body Armours"
+DropLevel >= 73
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class == "Shields"
+BaseType == "Colossal Tower Shield" "Lacquered Buckler" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Champion Kite Shield" "Supreme Spiked Shield"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup06.wav"
+    MinimapIcon 2 Purple UpsideDownHouse
+Show
+BaseType == "Opal Sceptre" "Nightmare Mace" "Runic Hatchet" "Eternal Sword" "Imperial Claw" "Ambusher" "Platinum Kris" "Convoking Wand" "Profane Wand" "Prophecy Wand" "Tornado Wand" "Opal Wand" "Demon's Horn" "Imbued Wand"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup07.wav"
+    MinimapIcon 2 Purple Kite
+###  7.3.1 ----- Jewellery
+Show
+Class == "Amulets" "Rings"
+Rarity Rare
+AreaLevel < 68
+    MinimapIcon 0 Yellow Diamond
+    PlayEffect Yellow
+Show
+Class == "Belts"
+Rarity Rare
+AreaLevel < 68
+    MinimapIcon 0 Yellow Moon
+    PlayEffect Yellow
+Show
+Class == "Amulets" "Belts" "Rings"
+Rarity Rare
+    SetFontSize 42
+###  7.3.2 ----- Equipment
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Rare
+AreaLevel < 83
+DropLevel >= 68
+    SetFontSize 42
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Rare
+AreaLevel < 78
+DropLevel >= 55
+    SetFontSize 42
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Rare
+AreaLevel < 73
+DropLevel >= 45
+    SetFontSize 42
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Rare
+AreaLevel < 68
+DropLevel >= 33
+    SetFontSize 42
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Rare
+AreaLevel < 55
+DropLevel >= 13
+    SetFontSize 42
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Rare
+AreaLevel < 45
+DropLevel >= 8
+    SetFontSize 42
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Rare
+AreaLevel < 33
+DropLevel >= 4
+    SetFontSize 42
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Rare
+AreaLevel < 13
+DropLevel >= 1
+    SetFontSize 42
+Hide
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Rarity Rare
+    SetFontSize 30

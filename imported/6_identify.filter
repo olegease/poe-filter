@@ -1,0 +1,15 @@
+#    6     - Identify
+##   6.1   --- Global
+###  6.1.1 ----- In Progress
+Show
+Identified True
+HasExplicitMod >= 2 "Dragon's" "Perandus'" "of Excavation"
+    CustomAlertSound "homm3snd/Fortune.wav"
+    MinimapIcon 0 Pink Hexagon
+    PlayEffect Pink
+Show
+Identified True
+HasExplicitMod >= 1 "of the Deathless" "Exalter's" "of Harmony" "Overseer's" "of Splintering"
+    CustomAlertSound "homm3snd/Fortune.wav"
+    MinimapIcon 0 Pink Hexagon
+    PlayEffect Pink

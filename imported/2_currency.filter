@@ -36,7 +36,7 @@ AreaLevel < 45
     MinimapIcon 2 White Circle
     SetBorderColor 88 32 64
     SetTextColor 88 32 64
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Scroll of Wisdom"
 AreaLevel >= 83
@@ -44,7 +44,7 @@ StackSize < 8
     SetFontSize 18
     SetBorderColor 88 32 64
     SetTextColor 88 32 64
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Scroll of Wisdom"
 AreaLevel >= 78
@@ -52,7 +52,7 @@ StackSize < 6
     SetFontSize 18
     SetBorderColor 88 32 64
     SetTextColor 88 32 64
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Scroll of Wisdom"
 AreaLevel >= 73
@@ -60,7 +60,7 @@ StackSize < 5
     SetFontSize 18
     SetBorderColor 88 32 64
     SetTextColor 88 32 64
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Scroll of Wisdom"
 AreaLevel >= 68
@@ -100,7 +100,7 @@ AreaLevel < 68
     MinimapIcon 2 White Circle
     SetBorderColor 32 88 192
     SetTextColor 32 88 192
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Portal Scroll"
 AreaLevel >= 83
@@ -108,7 +108,7 @@ StackSize < 6
     SetFontSize 24
     SetBorderColor 32 88 192
     SetTextColor 32 88 192
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Portal Scroll"
 AreaLevel >= 78
@@ -116,7 +116,7 @@ StackSize < 5
     SetFontSize 24
     SetBorderColor 32 88 192
     SetTextColor 32 88 192
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Portal Scroll"
 AreaLevel >= 73
@@ -124,7 +124,7 @@ StackSize < 4
     SetFontSize 24
     SetBorderColor 32 88 192
     SetTextColor 32 88 192
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Portal Scroll"
 AreaLevel >= 68
@@ -182,7 +182,7 @@ AreaLevel < 68
     MinimapIcon 2 Blue Circle
     SetBackgroundColor 160 128 8
     SetTextColor 8 128 248
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Orb of Transmutation"
 AreaLevel >= 83
@@ -245,7 +245,7 @@ AreaLevel < 68
     MinimapIcon 2 Blue Circle
     SetBackgroundColor 160 128 8
     SetTextColor 8 128 248
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Orb of Augmentation"
 AreaLevel >= 83
@@ -421,14 +421,14 @@ AreaLevel < 45
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
     SetTextColor 8 8 8
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
 AreaLevel >= 83
 StackSize < 8
     SetFontSize 24
     SetTextColor 8 8 8
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
 AreaLevel >= 78
@@ -480,14 +480,14 @@ AreaLevel < 68
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 White Circle
     SetTextColor 8 8 8
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 83
 StackSize < 4
     SetFontSize 24
     SetTextColor 8 8 8
-Show
+Hide
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 78

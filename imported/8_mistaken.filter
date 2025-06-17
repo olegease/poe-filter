@@ -1,0 +1,10 @@
+#    8     - Mistaken
+##   8.1   --- Global
+###  8.1.1 ----- Everything
+Show
+    CustomAlertSound "homm3snd/DANGER.wav"
+    MinimapIcon 0 Red Star
+    PlayEffect Red
+    SetBorderColor 248 8 8
+    SetBackgroundColor 248 248 248
+    SetTextColor 248 8 8
