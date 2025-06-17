@@ -3,15 +3,15 @@
 ###  3.1.1 ----- Group F
 Show
 Class == "Stackable Currency"
-BaseType "Remnant of Corruption" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
-    CustomAlertSound "homm3snd/DRAGON.wav"
+BaseType "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
+    CustomAlertSound "homm3snd/GetProtection.wav"
     MinimapIcon 0 Pink Kite
     PlayEffect Pink
     SetTextColor 248 8 248
 ###  3.1.2 ----- Tiers
 Show
 Class == "Stackable Currency"
-BaseType "Deafening Essence"
+BaseType "Deafening Essence" "Remnant of Corruption"
     CustomAlertSound "homm3snd/DRAGON.wav"
     MinimapIcon 0 Pink Kite
     PlayEffect Pink
@@ -20,21 +20,21 @@ Show
 Class == "Stackable Currency"
 BaseType "Essence"
 BaseType "Shrieking" "Screaming"
-    CustomAlertSound "homm3snd/DRAGON.wav"
+    CustomAlertSound "homm3snd/Berserk.wav"
     MinimapIcon 1 Pink Kite
     PlayEffect Pink Temp
     SetTextColor 192 8 192
 Show
 Class == "Stackable Currency"
 BaseType "Essence"
-BaseType "Wailing"
+BaseType "Wailing" "Weeping"
     CustomAlertSound "homm3snd/BIND.wav"
     MinimapIcon 2 Pink Kite
     SetTextColor 160 8 160
 Show
 Class == "Stackable Currency"
 BaseType "Essence"
-BaseType "Weeping" "Muttering" "Whispering"
+BaseType "Muttering" "Whispering"
     SetFontSize 42
     SetTextColor 128 8 128
 ##   3.2   --- Breach
