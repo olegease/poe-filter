@@ -162,7 +162,7 @@ BaseType "Prime"
 Show
 Class == "Map Fragments"
 BaseType "Scarab"
-    CustomAlertSound "homm3snd/CHEST.wav"
+    CustomAlertSound "homm3snd/Forget.wav"
     MinimapIcon 0 White Hexagon
     PlayEffect White
     SetTextColor 8 8 8
@@ -309,7 +309,7 @@ BaseType == "Sacred Crystallised Lifeforce"
 Show
 Class == "Map Fragments"
 BaseType == "Sacred Blossom"
-    CustomAlertSound "homm3snd/NewWeek.wav"
+    CustomAlertSound "homm3snd/Slayer.wav"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
     SetTextColor 248 64 64
@@ -325,7 +325,7 @@ BaseType == "Rogue's Marker"
 ###  3.11.2----- Contracts
 Show
 Class == "Contracts"
-    CustomAlertSound "homm3snd/Nwherolv.wav"
+    CustomAlertSound "homm3snd/ROGUE.wav"
     MinimapIcon 0 White Square
     PlayEffect White
     SetBackgroundColor 8 8 8
@@ -409,7 +409,7 @@ BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
 ###  3.15.2----- Relics
 Show
 Class == "Relics"
-    CustomAlertSound "homm3snd/Prayer.wav"
+    CustomAlertSound "homm3snd/Bless.wav"
     MinimapIcon 2 Pink Hexagon
     SetBackgroundColor 88 64 64
     SetBorderColor 64 216 64

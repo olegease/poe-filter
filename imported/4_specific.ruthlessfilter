@@ -128,7 +128,7 @@ FracturedItem True
 ###  4.4.2 ----- Global
 Show
 SynthesisedItem True
-    CustomAlertSound "homm3snd/View.wav"
+    CustomAlertSound "homm3snd/VISIONS.wav"
     MinimapIcon 2 Cyan Raindrop
     PlayEffect Cyan Temp
     SetTextColor 128 216 192
@@ -143,91 +143,91 @@ HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
 Show # Double Influenced Items
 HasInfluence "Shaper"
 HasInfluence "Elder"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Shaper"
 HasInfluence "Crusader"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Shaper"
 HasInfluence "Hunter"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Shaper"
 HasInfluence "Redeemer"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Shaper"
 HasInfluence "Warlord"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Elder"
 HasInfluence "Crusader"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Elder"
 HasInfluence "Hunter"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Elder"
 HasInfluence "Redeemer"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Elder"
 HasInfluence "Warlord"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Crusader"
 HasInfluence "Hunter"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Crusader"
 HasInfluence "Redeemer"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Crusader"
 HasInfluence "Warlord"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Hunter"
 HasInfluence "Redeemer"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Hunter"
 HasInfluence "Warlord"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 Show # Double Influenced Items
 HasInfluence "Redeemer"
 HasInfluence "Warlord"
-    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
 ###  4.5.2 ----- Global

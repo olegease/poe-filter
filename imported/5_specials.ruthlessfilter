@@ -105,8 +105,8 @@ Show
 Class == "Divination Cards"
 BaseType == "Imperfect Memories" "A Dusty Memory" "Soul Quenched"
     CustomAlertSound "homm3snd/STORE.wav"
-    MinimapIcon 0 Grey Square
-    PlayEffect Grey
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
     SetTextColor 248 248 128
 Show
 Class == "Divination Cards"
@@ -616,7 +616,7 @@ Class == "Atlas Upgrade Items"
 ###  5.10.1----- Keys
 Show
 Class == "Vault Keys"
-    CustomAlertSound "homm3snd/NOMAD.wav"
+    CustomAlertSound "homm3snd/Badmrle.wav"
     MinimapIcon 0 Brown Star
     PlayEffect Brown
 ##   5.11  --- Lab Items
@@ -629,4 +629,5 @@ Class == "Labyrinth Items"
 ###  5.11.2----- Trinkets
 Show
 Class == "Labyrinth Trinkets"
+    SetFontSize 42
     SetTextColor 8 248 8

@@ -317,74 +317,71 @@ Import "imported/8_mistaken.ruthlessfilter"
 # Red    Pentagon        - 6 Links
 ###  1.0.4 ----- Sounds
 # GOOD: (46)
-# homm3snd/DANGER.wav       - Error (missed) Items
-# homm3snd/DEFAULT.wav      - Quest / Heist Targets
-# homm3snd/QUEST.wav        - Quest Atlas
-# homm3snd/Disease.wav      - Trash Uniques / Unique Div Cards
-# homm3snd/BUTTON.wav       - Currency LOW T2
-# homm3snd/Chat.wav         - Currency LOW T1
-# homm3snd/FLAGMINE.wav     - Currency MID T3
+# homm3snd/ARMGEDN.wav      - Delve Resonator 4 sockets
 # homm3snd/Age.wav          - Currency MID T2
-# homm3snd/SysMsg.wav       - Currency MID T1
-# homm3snd/LUCK.wav         - Currency TOP T3
-# homm3snd/TREASURE.wav     - Currency TOP T2
-# homm3snd/FAERIE.wav       - Currency TOP T1
-# homm3snd/UltimateArtifact - Currency T0 / Double Influenced
-# homm3snd/NOMAD.wav        - Div Cards God Tier (Icon 0)
-# homm3snd/STORE.wav        - Div Cards Top Tier (Icon 1)
+# homm3snd/BIND.wav         - Low Essences
+# homm3snd/BLOODLUS.wav     - 6 Linked Items
+# homm3snd/BUTTON.wav       - Currency LOW T2
+# homm3snd/COLDRAY.wav      - Quality Gems
+# homm3snd/Chat.wav         - Currency LOW T1
 # homm3snd/Cure.wav         - Div Cards (not currency related)
 # homm3snd/Curse.wav        - Div Cards Corrupted
-# homm3snd/BIND.wav         - Low Essences
-# homm3snd/Dragon.wav       - High Essences
-# homm3snd/Graveyard.wav    - Logbooks
-# homm3snd/GetProtection.wav- Guardian Maps
-# homm3snd/GENIE.wav        - Awakened/Exceptional Gems/Div Cards
-# homm3snd/COLDRAY.wav      - Quality Gems
+# homm3snd/DANGER.wav       - Error (missed) Items
+# homm3snd/DEFAULT.wav      - Quest / Heist Targets
 # homm3snd/Decay.wav        - Quality Flasks
-# homm3snd/Mystery.wav      - Sanctum Research
-# homm3snd/Temple.wav       - Atzoatl Temple Vials
-# homm3snd/Preyer.wav       - Delve Resonator 1-2 sockets
-# homm3snd/View.wav         - Delve Resonator 3 sockets
-# homm3snd/ARMGEDN.wav      - Delve Resonator 4 sockets
-# homm3snd/Lighthouse.wav   - Heist Blueprints
-# homm3snd/BLOODLUS.wav     - 6 Linked Items
+# homm3snd/Disease.wav      - Trash Uniques / Unique Div Cards
+# homm3snd/Dragon.wav       - High Essences
+# homm3snd/FAERIE.wav       - Currency TOP T1
+# homm3snd/FLAGMINE.wav     - Currency MID T3
+# homm3snd/GENIE.wav        - Awakened/Exceptional Gems/Div Cards
+# homm3snd/GetProtection.wav- Guardian Maps
+# homm3snd/Graveyard.wav    - Logbooks
 # homm3snd/LIGHTBLT.wav     - 5 Linked Items
-# homm3snd/Pickup01.wav     - Build Amulets,Rings,Belts
-# homm3snd/Pickup02.wav     - Build Helmets
-# homm3snd/Pickup03.wav     - Build Boots
-# homm3snd/Pickup04.wav     - Build Gloves
-# homm3snd/Pickup05.wav     - Build Body
-# homm3snd/Pickup06.wav     - Build Off Hand
-# homm3snd/Pickup07.wav     - Build Main Hand
-# homm3snd/Nwherolv.wav     - Maps White / Contracts
-# homm3snd/MORALE.wav       - Maps Yellow
-# homm3snd/NewDay.wav       - Maps Red / Sacrifice Fragments
-# homm3snd/NewWeek.wav      - Boss Fragments / Harvest
-# homm3snd/NEWMONTH.wav     - Uber Fragments
-# homm3snd/Obelisk.wav      - Maven Fragmnent
+# homm3snd/LUCK.wav         - Currency TOP T3
+# homm3snd/Lighthouse.wav   - Heist Blueprints
 # homm3snd/MILITARY.wav     - Influenced Maps
+# homm3snd/MORALE.wav       - 5 Specials Maps Yellow
+# homm3snd/Mystery.wav      - 3 Seasonal Sanctum Research
+# homm3snd/NEWMONTH.wav     - 5 Specials T1 Boss Fragments (Uber, Sirus)
+# homm3snd/NOMAD.wav        - 5 Specials Div Cards MinimapIcon 0
+# homm3snd/NewDay.wav       - 5 Specials T3 Boss Fragments (Sacrifice), Maps Red
+# homm3snd/NewWeek.wav      - 5 Specials T2 Boss Fragments (Mortal, Shaper, Elder)
+# homm3snd/Nwherolv.wav     - 5 Specials Maps White
+# homm3snd/Obelisk.wav      - 5 Specials Map Fragments Maven
+# homm3snd/Pickup01.wav     - 7 Rarities Rare Pickup (Jewelry)
+# homm3snd/Pickup02.wav     - 7 Rarities Rare Pickup (Helmets)
+# homm3snd/Pickup03.wav     - 7 Rarities Rare Pickup (Boots)
+# homm3snd/Pickup04.wav     - 7 Rarities Rare Pickup (Gloves)
+# homm3snd/Pickup05.wav     - 7 Rarities Rare Pickup (Body)
+# homm3snd/Pickup06.wav     - 7 Rarities Rare Pickup (Off Hand)
+# homm3snd/Pickup07.wav     - 7 Rarities Rare Pickup (Main Hand)
+# homm3snd/Prayer.wav       - 3 Seasonal Delve Resonators (1,2 sockets)
+# homm3snd/ROGUE.wav        - 3 Seasonal Heist Contracts
+# homm3snd/QUEST.wav        - 5 Specials Quest Atlas (Voidstones, Divine Vesels)
+# homm3snd/STORE.wav        - 5 Specials Div Cards MinimapIcon 1
+# homm3snd/SysMsg.wav       - 2 Currency MID T1 (plus other related sections)
+# homm3snd/TREASURE.wav     - 2 Currency TOP T2 (plus other related sections)
+# homm3snd/Temple.wav       - 3 Seasonal Incursion Vials
+# homm3snd/UltimateArtifact - 2 Currency Basic Drop-only Kalandra
+# homm3snd/View.wav         - 3 Seasonal Delve Resonators (3 sockets)
 # TEMP:
-# homm3snd/CHEST.wav        - Scarabs R4 / Legion Emblems
-# homm3snd/STORE.wav        - Scarabs R3
-# homm3snd/BADLUCK.wav      - Scarabs R1-2 / Uniques Multibase
-# homm3snd/Regener.wav      - Legion Incubators
-# homm3snd/Preyer.wav       - Sanctum Relics
-# homm3snd/Paralyze.wav     - Unique Pieces
-# homm3snd/Buildtwn.wav     - Exotic Fractures
-# homm3snd/tailwind.wav     - Fractures
-# homm3snd/View.wav         - Synthesised
-# homm3snd/mirth.wav        - Cluster Jewels
-# FREE: (11)
-# homm3snd/Fortune.wav
+# homm3snd/BADLUCK.wav      - 4 Specific Uniques Multibase Belts
+# homm3snd/Badmrle.wav      - 5 Specials Vault Keys
+# homm3snd/Bless.wav        - 3 Seasonal Sanctum Relics
+# homm3snd/Buildtwn.wav     - 4 Specific Fractured Exotic
+# homm3snd/CHEST.wav        - 3 Seasonal Legion Emblems
+# homm3snd/Forget.wav       - 3 Seasonal Betrayal Scarabs
+# homm3snd/Fortune.wav      - 6 Identify Global in progress
+# homm3snd/Paralyze.wav     - 4 Specific Unique Pieces
+# homm3snd/Poison.wav       - 4 Specific Linked Sockets 4 under area 68
+# homm3snd/RESURECT.wav     - 4 Specific Influenced Double
+# homm3snd/Regener.wav      - 3 Seasonal Legion Incubators
+# homm3snd/Slayer.wav       - 3 Seasonal Harvest Sacred Blossom
+# homm3snd/VISIONS.wav      - 4 Specific Synthesised Items
+# homm3snd/mirth.wav        - 5 Specials Jewels Cluster
+# homm3snd/tailwind.wav     - 4 Specific Fractured Items
+# FREE: (2)
 # homm3snd/Berserk.wav
-# homm3snd/Forget.wav
-# homm3snd/VISIONS.wav
-# homm3snd/Slayer.wav
-# homm3snd/Poison.wav
-# homm3snd/Bless.wav
-# homm3snd/ROGUE.wav
-# homm3snd/Badmrle.wav
-# homm3snd/RESURECT.wav
 # homm3snd/Gazebo.wav
 ###  1.0.5 ----- Colors
 # Color Gradation (Preferable use this numbers for RGB colors)
