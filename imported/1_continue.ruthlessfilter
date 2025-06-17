@@ -60,15 +60,16 @@ Class == "Skill Gems"
 ###  1.1.2 ----- Quest Items
 Show
 Class == "Quest Items"
+    SetFontSize 45
     CustomAlertSound "homm3snd/DEFAULT.wav"
     MinimapIcon 0 Green Cross
     PlayEffect Green
-    SetFontSize 45
 ###  1.1.3 ----- Gold
 Show
 BaseType == "Gold"
 StackSize >= 4096
     SetFontSize 45
+    MinimapIcon 2 Orange Circle
     SetBackgroundColor 0 0 0 0
     SetBorderColor 0 0 0 0
     SetTextColor 248 216 8

@@ -322,6 +322,7 @@ AreaLevel >= 78
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Alteration"
+    MinimapIcon 2 Blue Circle
     SetTextColor 8 128 248
 ###  2.1.6 ----- Jewelers
 Show

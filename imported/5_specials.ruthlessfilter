@@ -17,11 +17,7 @@ BaseType == "The Eldritch Decay" "Guardian's Challenge" "Altered Perception" "Re
     SetTextColor 192 192 192
 Show
 Class == "Divination Cards"
-BaseType == "Last Hope" "The Obscured" "Sambodhi's Vow" "More is Never Enough" "The Eye of Terror" "The Card Sharp"
-    SetTextColor 192 192 192
-Show
-Class == "Divination Cards"
-BaseType == "Boon of Justice" "Buried Treasure" "The Deal" "Cameria's Cut" "Man With Bear"
+BaseType == "Last Hope" "The Obscured" "Sambodhi's Vow" "More is Never Enough" "The Eye of Terror" "The Card Sharp" "Boon of Justice" "Buried Treasure" "The Deal" "Cameria's Cut" "Man With Bear"
     SetFontSize 42
     SetTextColor 192 192 192
 Show
@@ -53,6 +49,7 @@ BaseType == "The Chains that Bind" "The Dark Mage" "The Surveyor" "Lost Worlds" 
 Show
 Class == "Divination Cards"
 BaseType == "The Fishmonger" "Astral Protection"
+    SetFontSize 42
     SetTextColor 192 192 192
 Show
 Class == "Divination Cards"
@@ -67,6 +64,7 @@ BaseType == "The Arena Champion" "Boundless Realms" "Rain Tempter" "Cartographer
 Show
 Class == "Divination Cards"
 BaseType == "The Metalsmith's Gift"
+    SetFontSize 33
     SetTextColor 192 192 192
 ###  5.1.2 ----- Magic Items
 Show
@@ -77,11 +75,7 @@ BaseType == "The Aspirant" "Further Invention" "Azure Rage"
     SetTextColor 128 128 248
 Show
 Class == "Divination Cards"
-BaseType == "Shard of Fate" "The Web" "The Endurance" "Void of the Elements" "A Familiar Call" "Keeper's Corruption" "The Shortcut"
-    SetTextColor 128 128 248
-Show
-Class == "Divination Cards"
-BaseType == "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon" "The Tyrant" "The Undisputed" "The Golden Era" "The Enforcer"
+BaseType == "Shard of Fate" "The Web" "The Endurance" "Void of the Elements" "A Familiar Call" "Keeper's Corruption" "The Shortcut" "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon" "The Tyrant" "The Undisputed" "The Golden Era" "The Enforcer"
     SetFontSize 42
     SetTextColor 128 128 248
 Show
@@ -115,11 +109,7 @@ BaseType == "Dying Light"
     SetTextColor 248 248 128
 Show
 Class == "Divination Cards"
-BaseType == "The Awakened" "Bijoux"
-    SetTextColor 248 248 128
-Show
-Class == "Divination Cards"
-BaseType == "The Opulent" "Perfection" "The Hale Heart" "Dark Dreams" "Nook's Crown" "Prometheus' Armoury" "The Journalist"
+BaseType == "The Awakened" "Bijoux" "The Opulent" "Perfection" "The Hale Heart" "Dark Dreams" "Nook's Crown" "Prometheus' Armoury" "The Journalist"
     SetFontSize 42
     SetTextColor 248 248 128
 Show
@@ -135,6 +125,7 @@ BaseType == "The Lover"
 Show
 Class == "Divination Cards"
 BaseType == "Lantador's Lost Love"
+    SetFontSize 33
     SetTextColor 248 248 128
 ###  5.1.4 ----- Unique Items
 Show
@@ -216,13 +207,9 @@ BaseType == "The Enlightened" "Home" "Gemcutter's Mercy"
     CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 2 Grey Square
     SetTextColor 32 160 160
-Show # Random20Q Minion20Q SRS20Q ArrowQ20 Skeletons23Q
+Show # Random20Q Minion20Q SRS20Q ArrowQ20 Skeletons23Q Portal1-20Q
 Class == "Divination Cards"
-BaseType == "Gemcutter's Promise" "The Summoner" "Grave Knowledge" "The Doppelganger" "The Skeleton"
-    SetTextColor 32 160 160
-Show # Portal1-20Q
-Class == "Divination Cards"
-BaseType == "The Realm"
+BaseType == "Gemcutter's Promise" "The Summoner" "Grave Knowledge" "The Doppelganger" "The Skeleton" "The Realm"
     SetFontSize 42
     SetTextColor 32 160 160
 Show # Support20L Random20L
@@ -329,7 +316,6 @@ Class == "Life Flasks"
 BaseType "Divine" "Eternal"
 ItemLevel >= 80
     MinimapIcon 2 Red Raindrop
-    SetFontSize 33
 Show
 Class == "Life Flasks"
 BaseType "Divine" "Eternal"
@@ -382,7 +368,6 @@ Class == "Mana Flasks"
 BaseType "Divine" "Eternal"
 ItemLevel >= 82
     MinimapIcon 2 Blue Raindrop
-    SetFontSize 33
 Show
 Class == "Mana Flasks"
 BaseType "Divine" "Eternal"
