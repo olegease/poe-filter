@@ -13,8 +13,7 @@ Show
 Class == "Divination Cards"
 BaseType == "The Eldritch Decay" "Guardian's Challenge" "Altered Perception" "Rebirth and Renewal" "Checkmate" "Something Dark"
     CustomAlertSound "homm3snd/Cure.wav"
-    MinimapIcon 1 Grey Square
-    PlayEffect Grey Temp
+    MinimapIcon 2 Grey Square
     SetTextColor 192 192 192
 Show
 Class == "Divination Cards"
@@ -507,6 +506,7 @@ MapTier < 11
     SetTextColor 192 192 8
 ###  5.5.3 ----- Red
 Show
+MapTier < 17
 Class == "Maps"
 HasInfluence None
     CustomAlertSound "homm3snd/NewDay.wav"
@@ -516,7 +516,7 @@ HasInfluence None
 ###  5.5.4 ----- Other (Influenced, unknown?)
 Show
 Class == "Maps"
-    CustomAlertSound "homm3snd/MILITARY.wav"
+    CustomAlertSound "homm3snd/Gazebo.wav"
     MinimapIcon 0 Cyan Square
     PlayEffect Cyan
     SetTextColor 8 192 192

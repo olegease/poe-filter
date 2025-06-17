@@ -133,13 +133,14 @@ SynthesisedItem True
     PlayEffect Cyan Temp
     SetTextColor 128 216 192
 ##   4.5   --- Influenced
-###  4.5.1 ----- Exotic
-Show # Influenced Maps
+###  4.5.0 ----- Maps
+Show
 Class == "Maps"
 HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
     CustomAlertSound "homm3snd/MILITARY.wav"
     MinimapIcon 0 Cyan Square
     PlayEffect Cyan
+###  4.5.1 ----- Exotic
 Show # Double Influenced Items
 HasInfluence "Shaper"
 HasInfluence "Elder"
