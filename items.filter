@@ -168,8 +168,7 @@
 ###  4.1.7 ----- 2 Link
 ##   4.2   --- Unique
 ###  4.2.1 ----- Bases
-###  4.2.2 ----- Global
-###  4.2.3 ----- Pieces
+###  4.2.2 ----- Pieces
 ##   4.3   --- Fractured
 ###  4.3.1 ----- Exotic
 ###  4.3.2 ----- Global
@@ -260,6 +259,8 @@
 ###  7.3.0 ----- Pickup
 ###  7.3.1 ----- Jewellery
 ###  7.3.2 ----- Equipment
+##   7.4   --- Unique Items
+###  7.4.1 ----- Global
 #    8     - Mistaken
 ##   8.1   --- Global
 ###  8.1.1 ----- Everything

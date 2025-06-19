@@ -321,3 +321,44 @@ Hide
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
     SetFontSize 30
+##   7.4   --- Unique Items
+###  7.4.1 ----- Global
+Show
+Class == "Belts"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Moon
+    PlayEffect Brown Temp
+Show
+Class "Flasks"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Raindrop
+    PlayEffect Brown Temp
+Show
+Class "Jewels"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Star
+    PlayEffect Brown Temp
+Show
+Class == "Amulets" "Rings"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Diamond
+    PlayEffect Brown Temp
+Show
+Class == "Shields" "Quivers"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Brown UpsideDownHouse
+Show
+Class == "Body Armours" "Gloves" "Boots" "Helmets"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Brown Square
+Show
+Class "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Staves"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Brown Kite

@@ -17,6 +17,7 @@ LinkedSockets 5
 ###  4.1.3 ----- 6 Socket
 Show
 Sockets 6
+Rarity < Unique
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
@@ -25,6 +26,7 @@ Sockets 6
 Show
 LinkedSockets 4
 AreaLevel < 68
+Rarity < Unique
     CustomAlertSound "homm3snd/Poison.wav"
     MinimapIcon 2 White Pentagon
     SetTextColor 248 248 248
@@ -64,47 +66,7 @@ Rarity Unique
     CustomAlertSound "homm3snd/BADLUCK.wav"
     MinimapIcon 0 Brown Moon
     PlayEffect Brown
-###  4.2.2 ----- Global
-Show
-Class == "Belts"
-Rarity Unique
-    CustomAlertSound "homm3snd/Disease.wav"
-    MinimapIcon 1 Brown Moon
-    PlayEffect Brown Temp
-Show
-Class "Flasks"
-Rarity Unique
-    CustomAlertSound "homm3snd/Disease.wav"
-    MinimapIcon 1 Brown Raindrop
-    PlayEffect Brown Temp
-Show
-Class "Jewels"
-Rarity Unique
-    CustomAlertSound "homm3snd/Disease.wav"
-    MinimapIcon 1 Brown Star
-    PlayEffect Brown Temp
-Show
-Class == "Amulets" "Rings"
-Rarity Unique
-    CustomAlertSound "homm3snd/Disease.wav"
-    MinimapIcon 1 Brown Diamond
-    PlayEffect Brown Temp
-Show
-Class == "Shields" "Quivers"
-Rarity Unique
-    CustomAlertSound "homm3snd/Disease.wav"
-    MinimapIcon 2 Brown UpsideDownHouse
-Show
-Class == "Body Armours" "Gloves" "Boots" "Helmets"
-Rarity Unique
-    CustomAlertSound "homm3snd/Disease.wav"
-    MinimapIcon 2 Brown Square
-Show
-Class "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Staves"
-Rarity Unique
-    CustomAlertSound "homm3snd/Disease.wav"
-    MinimapIcon 2 Brown Kite
-###  4.2.3 ----- Pieces
+###  4.2.2 ----- Pieces
 Show
 Class == "Pieces"
     CustomAlertSound "homm3snd/Paralyze.wav"
