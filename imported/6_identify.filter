@@ -13,3 +13,7 @@ HasExplicitMod >= 1 "of the Deathless" "Exalter's" "of Harmony" "Overseer's" "of
     CustomAlertSound "homm3snd/Fortune.wav"
     MinimapIcon 0 Pink Hexagon
     PlayEffect Pink
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Identified True
+    SetFontSize 33

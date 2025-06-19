@@ -178,6 +178,11 @@ BaseType "Prime"
     SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
     SetTextColor 128 88 8
+###  3.5.3 ----- Explicits
+Show
+Identified True
+HasExplicitMod "Subterranean" "Underground"
+    MinimapIcon 2 Red Cross
 ##   3.6   --- Betrayal
 ###  3.6.1 ----- Scarabs
 Show
@@ -187,6 +192,11 @@ BaseType "Scarab"
     MinimapIcon 0 White Hexagon
     PlayEffect White
     SetTextColor 8 8 8
+###  3.6.2   --- Veiled
+Show
+Identified True
+HasExplicitMod "Veil"
+    MinimapIcon 2 White Cross
 ##   3.7   --- Legion
 ###  3.7.1 ----- Incubators
 Show
