@@ -98,6 +98,12 @@ SynthesisedItem True
 ###  4.5.0 ----- Maps
 Show
 Class == "Maps"
+ZanaMemory True
+    CustomAlertSound "homm3snd/DANGER.wav"
+    MinimapIcon 0 Cyan Square
+    PlayEffect Cyan
+Show
+Class == "Maps"
 HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
     CustomAlertSound "homm3snd/MILITARY.wav"
     MinimapIcon 0 Cyan Square
@@ -250,9 +256,3 @@ Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Corrupted True
     SetFontSize 33
-##   4.8   --- Zana
-###  4.8.1 ----- Memory
-Show
-ZanaMemory True
-    MinimapIcon 0 Cyan Star
-    PlayEffect Cyan
