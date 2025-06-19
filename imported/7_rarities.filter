@@ -322,7 +322,15 @@ Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" 
 Rarity Rare
     SetFontSize 30
 ##   7.4   --- Unique Items
-###  7.4.1 ----- Global
+###  7.4.1 ----- Bases
+Show
+Class == "Belts"
+BaseType == "Leather Belt" "Heavy Belt"
+Rarity Unique
+    CustomAlertSound "homm3snd/BADLUCK.wav"
+    MinimapIcon 0 Brown Moon
+    PlayEffect Brown
+###  7.4.2 ----- Global
 Show
 Class == "Belts"
 Rarity Unique
@@ -362,3 +370,9 @@ Class "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Stave
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 2 Brown Kite
+###  7.4.3 ----- Pieces
+Show
+Class == "Pieces"
+    CustomAlertSound "homm3snd/Paralyze.wav"
+    MinimapIcon 0 Brown Square
+    PlayEffect Brown

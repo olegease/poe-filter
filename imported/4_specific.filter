@@ -57,21 +57,13 @@ LinkedSockets 2
 AreaLevel < 17
 Rarity < Magic
     SetFontSize 33
-##   4.2   --- Unique
-###  4.2.1 ----- Bases
+##   4.2   --- Memory Strands
+###  4.2.0 ----- TODO
 Show
-Class == "Belts"
-BaseType == "Leather Belt" "Heavy Belt"
-Rarity Unique
-    CustomAlertSound "homm3snd/BADLUCK.wav"
-    MinimapIcon 0 Brown Moon
-    PlayEffect Brown
-###  4.2.2 ----- Pieces
-Show
-Class == "Pieces"
-    CustomAlertSound "homm3snd/Paralyze.wav"
-    MinimapIcon 0 Brown Square
-    PlayEffect Brown
+MemoryStrands >= 1
+    CustomAlertSound "homm3snd/DANGER.wav"
+    MinimapIcon 0 Cyan Raindrop
+    PlayEffect Cyan
 ##   4.3   --- Fractured
 ###  4.3.1 ----- Exotic
 Show
