@@ -233,18 +233,22 @@ Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Corrupted True
 CorruptedMods >= 3
+Rarity < Unique
     MinimapIcon 2 Red Cross
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Corrupted True
 CorruptedMods 2
+Rarity < Unique
     SetFontSize 39
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Corrupted True
 CorruptedMods 1
+Rarity < Unique
     SetFontSize 36
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Corrupted True
+Rarity < Unique
     SetFontSize 33
