@@ -85,30 +85,18 @@ Class == "Amulets" "Belts" "Rings"
 Rarity Magic
     SetFontSize 36
 ###  7.2.2 ----- Equipment
-Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
-Rarity Magic
-AreaLevel < 73
-DropLevel >= 55
-    SetFontSize 36
-Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
-Rarity Magic
-AreaLevel < 68
-DropLevel >= 45
-    SetFontSize 36
-Show
+Hide
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Magic
 AreaLevel < 55
 DropLevel >= 33
-    SetFontSize 36
+    SetFontSize 30
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Magic
 AreaLevel < 45
 DropLevel >= 13
-    SetFontSize 36
+    SetFontSize 33
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Magic
@@ -120,7 +108,7 @@ Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" 
 Rarity Magic
 AreaLevel < 13
 DropLevel >= 1
-    SetFontSize 36
+    SetFontSize 39
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Magic
@@ -256,14 +244,12 @@ Show
 Class == "Amulets" "Rings"
 Rarity Rare
 AreaLevel < 68
-    MinimapIcon 0 Yellow Diamond
-    PlayEffect Yellow
+    MinimapIcon 2 Yellow Diamond
 Show
 Class == "Belts"
 Rarity Rare
 AreaLevel < 68
-    MinimapIcon 0 Yellow Moon
-    PlayEffect Yellow
+    MinimapIcon 2 Yellow Moon
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Rare
