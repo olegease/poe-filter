@@ -112,53 +112,57 @@
 ###  3.3.2 ----- Binding
 ###  3.3.3 ----- Horizons
 ###  3.3.4 ----- Annulment
-##   3.4   --- Incursion
-###  3.4.1 ----- Vials
-###  3.4.2 ----- Items
-##   3.5   --- Delve
-###  3.5.1 ----- Fossils
-###  3.5.2 ----- Resonators
-###  3.5.3 ----- Explicits
-##   3.6   --- Betrayal
-###  3.6.1 ----- Scarabs
-###  3.6.2   --- Veiled
-##   3.7   --- Legion
-###  3.7.1 ----- Incubators
-###  3.7.2 ----- Splinters
-###  3.7.3 ----- Emblems
-##   3.8   --- Blight
-###  3.8.1 ----- Oils
-##   3.9   --- Delirium
-###  3.9.1 ----- Orbs
-###  3.9.2 ----- Splinters
-###  3.9.3 ----- Simulacrum
-##   3.10  --- Harvest
-###  3.10.1----- Lifeforce
-###  3.10.2----- Blossom
-##   3.11  --- Heist
-###  3.11.1----- Markers
-###  3.11.2----- Contracts
-###  3.11.3----- Blueprints
-###  3.11.4----- Gear
-##   3.12  --- Ritual
-###  3.12.1----- Splinters
-###  3.12.2----- Vessel
-###  3.12.3----- Blood
-##   3.13  --- Ultimatum
-###  3.13.1----- Catalysts
-##   3.14  --- Expedition
-###  3.14.1----- Logbooks
-###  3.14.2----- Reroll currency
-##   3.15  --- Sanctum
-###  3.15.1----- Research
-###  3.15.2----- Relics
-##   3.16  --- Affliction
-###  3.16.1----- Tinctures
-###  3.16.2----- Charms
-###  3.16.3----- Corpses
-##   3.17  --- Settlers
-###  3.17.1----- Gold
-###  3.17.2----- Runes
+##   3.4   --- Abyss
+###  3.4.1 ----- Jewels
+###  3.4.2 ----- Belts
+##   3.5   --- Incursion
+###  3.5.1 ----- Vials
+###  3.5.2 ----- Items
+##   3.6   --- Delve
+###  3.6.1 ----- Fossils
+###  3.6.2 ----- Resonators
+###  3.6.3 ----- Explicits
+##   3.7   --- Betrayal
+###  3.7.1 ----- Scarabs
+###  3.7.2   --- Veiled
+##   3.8   --- Legion
+###  3.8.1 ----- Incubators
+###  3.8.2 ----- Splinters
+###  3.8.3 ----- Emblems
+##   3.9   --- Blight
+###  3.9.1 ----- Oils
+##   3.10  --- Delirium
+###  3.10.1----- Orbs
+###  3.10.2----- Splinters
+###  3.10.3----- Simulacrum
+###  3.10.4----- Jewels
+##   3.11  --- Harvest
+###  3.11.1----- Lifeforce
+###  3.11.2----- Blossom
+##   3.12  --- Heist
+###  3.12.1----- Markers
+###  3.12.2----- Contracts
+###  3.12.3----- Blueprints
+###  3.12.4----- Gear
+##   3.13  --- Ritual
+###  3.13.1----- Splinters
+###  3.13.2----- Vessel
+###  3.13.3----- Blood
+##   3.14  --- Ultimatum
+###  3.14.1----- Catalysts
+##   3.15  --- Expedition
+###  3.15.1----- Logbooks
+###  3.15.2----- Reroll currency
+##   3.16  --- Sanctum
+###  3.16.1----- Research
+###  3.16.2----- Relics
+##   3.17  --- Affliction
+###  3.17.1----- Tinctures
+###  3.17.2----- Charms
+###  3.17.3----- Corpses
+##   3.18  --- Settlers
+###  3.18.1----- Gold
+###  3.18.2----- Runes
 #    4     - Specific
 ##   4.1   --- Sockets
 ###  4.1.1 ----- 6 link
@@ -199,9 +203,7 @@
 ###  5.1.7 ----- Gems
 ###  5.1.8 ----- Other Divinations
 ##   5.2   --- Jewels
-###  5.2.1 ----- Cluster
-###  5.2.2 ----- Abyss
-###  5.2.3 ----- Basic
+###  5.2.1 ----- Basic
 ##   5.3   --- Flasks
 ###  5.3.1 ----- Quality
 ###  5.3.2 ----- Utility

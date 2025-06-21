@@ -244,23 +244,7 @@ BaseType == "The Gambler"
     SetFontSize 39
     SetTextColor 8 192 248
 ##   5.2   --- Jewels
-###  5.2.1 ----- Cluster
-Show
-Class "Jewels"
-BaseType "Cluster"
-    CustomAlertSound "homm3snd/mirth.wav"
-    MinimapIcon 0 Purple Star
-    PlayEffect Purple
-###  5.2.2 ----- Abyss
-Show
-Class == "Abyss Jewels"
-Rarity Rare
-    SetFontSize 42
-Hide
-Class == "Abyss Jewels"
-Rarity < Rare
-    SetFontSize 24
-###  5.2.3 ----- Basic
+###  5.2.1 ----- Basic
 Show
 Class == "Jewels"
 Rarity Rare
