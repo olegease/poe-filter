@@ -80,10 +80,10 @@ AreaLevel < 45
 Rarity Magic
     MinimapIcon 1 Blue Moon
     PlayEffect Blue Temp
-Show
+Hide
 Class == "Amulets" "Belts" "Rings"
 Rarity Magic
-    SetFontSize 36
+    SetFontSize 30
 ###  7.2.2 ----- Equipment
 Hide
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
@@ -258,45 +258,39 @@ Rarity Rare
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
-AreaLevel < 83
-DropLevel >= 68
-    SetFontSize 42
-Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
-Rarity Rare
 AreaLevel < 78
 DropLevel >= 55
-    SetFontSize 42
+    SetFontSize 33
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
 AreaLevel < 73
 DropLevel >= 45
-    SetFontSize 42
+    SetFontSize 33
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
 AreaLevel < 68
 DropLevel >= 33
-    SetFontSize 42
+    SetFontSize 36
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
 AreaLevel < 55
 DropLevel >= 13
-    SetFontSize 42
+    SetFontSize 36
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
 AreaLevel < 45
 DropLevel >= 8
-    SetFontSize 42
+    SetFontSize 39
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
 AreaLevel < 33
 DropLevel >= 4
-    SetFontSize 42
+    SetFontSize 39
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
