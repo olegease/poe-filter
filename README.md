@@ -1,9 +1,16 @@
 # POE-FILTER
 > handmade filter for Path of Exile base game and ruthless mode using Heroes of Might and Magic III sounds for item drops
 
+> Disclaimer: All audio assets are the property of their respective copyright owners. This is a free, non-commercial fan project
+
 Last Updated on 3.25 Settlers League
 
 Could potentially misrepresent valuable items or show too much, so use with care!
+
+## Usage
+> alpha version, no releases
+
+- copy: `homm3snd/` `imported/` folders with `items.filter` andor `items.ruthlessfilter` into `Path of Exile` filter folder (check game client open folder functionality for correct path)
 
 ## Notes
 > `TODO`
