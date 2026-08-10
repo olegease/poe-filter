@@ -1,20 +1,20 @@
-#    4     - Specific
-##   4.1   --- Sockets
-###  4.1.1 ----- 6 link
+#     4       - Specific
+##    4.1     --- Sockets
+###   4.1.1   ----- 6 Link
 Show
 LinkedSockets 6
     CustomAlertSound "homm3snd/BLOODLUS.wav"
     MinimapIcon 0 Red Pentagon
     PlayEffect Red
     SetTextColor 248 248 248
-###  4.1.2 ----- 5 link
+###   4.1.2   ----- 5 Link
 Show
 LinkedSockets 5
     CustomAlertSound "homm3snd/LIGHTBLT.wav"
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
     SetTextColor 248 248 248
-###  4.1.3 ----- 6 Socket
+###   4.1.3   ----- 6 Socket
 Show
 Sockets 6
 Rarity < Unique
@@ -22,7 +22,7 @@ Rarity < Unique
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
     SetTextColor 248 248 248
-###  4.1.4 ----- 4 link
+###   4.1.4   ----- 4 Link
 Show
 LinkedSockets 4
 AreaLevel < 68
@@ -30,7 +30,7 @@ Rarity < Unique
     CustomAlertSound "homm3snd/Poison.wav"
     MinimapIcon 2 White Pentagon
     SetTextColor 248 248 248
-###  4.1.5 ----- RGB
+###   4.1.5   ----- RGB
 Show
 Class "One Hand" "Gloves" "Helmets" "Shields" "Daggers" "Claws" "Boots" "Wands"
 SocketGroup RGB
@@ -45,62 +45,104 @@ Rarity Normal
     SetFontSize 36
     SetBackgroundColor 128 88 8
     SetTextColor 8 8 8
-###  4.1.6 ----- 3 Link
+###   4.1.6   ----- 3 Link
 Show
 LinkedSockets 3
 AreaLevel < 34
 Rarity < Rare
     SetFontSize 39
-###  4.1.7 ----- 2 Link
+###   4.1.7   ----- 2 Link
 Show
 LinkedSockets 2
 AreaLevel < 17
 Rarity < Magic
     SetFontSize 33
-##   4.2   --- Memory Strands
-###  4.2.0 ----- TODO
+##    4.2     --- Unique
+###   4.2.1   ----- Bases
 Show
-MemoryStrands >= 1
-    CustomAlertSound "homm3snd/DANGER.wav"
-    MinimapIcon 0 Cyan Raindrop
-    PlayEffect Cyan
-##   4.3   --- Fractured
-###  4.3.1 ----- Exotic
+Class == "Belts"
+BaseType == "Leather Belt" "Heavy Belt"
+Rarity Unique
+    CustomAlertSound "homm3snd/BADLUCK.wav"
+    MinimapIcon 0 Brown Moon
+    PlayEffect Brown
+###   4.2.2   ----- Global
+Show
+Class == "Belts"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Moon
+    PlayEffect Brown Temp
+Show
+Class "Flasks"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Raindrop
+    PlayEffect Brown Temp
+Show
+Class "Jewels"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Star
+    PlayEffect Brown Temp
+Show
+Class == "Amulets" "Rings"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Diamond
+    PlayEffect Brown Temp
+Show
+Class == "Shields" "Quivers"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Brown UpsideDownHouse
+Show
+Class == "Body Armours" "Gloves" "Boots" "Helmets"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Brown Square
+Show
+Class "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Staves"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Brown Kite
+###   4.2.3   ----- Pieces
+Show
+Class == "Pieces"
+    CustomAlertSound "homm3snd/Paralyze.wav"
+    MinimapIcon 0 Brown Square
+    PlayEffect Brown
+##    4.3     --- Fractured
+###   4.3.1   ----- Exotic
 Show
 Class "Jewels" "Flasks"
 FracturedItem True
     CustomAlertSound "homm3snd/Buildtwn.wav"
     MinimapIcon 0 Cyan Raindrop
     PlayEffect Cyan
-###  4.3.2 ----- Global
+###   4.3.2   ----- Global
 Show
 FracturedItem True
     CustomAlertSound "homm3snd/tailwind.wav"
     MinimapIcon 2 Cyan Raindrop
-##   4.4   --- Synthesised
-###  4.4.1 ----- Exotic
-###  4.4.2 ----- Global
+##    4.4     --- Synthesised
+###   4.4.1   ----- Exotic
+###   4.4.2   ----- Global
 Show
 SynthesisedItem True
     CustomAlertSound "homm3snd/VISIONS.wav"
     MinimapIcon 2 Cyan Raindrop
     PlayEffect Cyan Temp
     SetTextColor 128 216 192
-##   4.5   --- Influenced
-###  4.5.0 ----- Maps
-Show
-Class == "Maps"
-ZanaMemory True
-    CustomAlertSound "homm3snd/DANGER.wav"
-    MinimapIcon 0 Cyan Square
-    PlayEffect Cyan
+##    4.5     --- Influenced
+###   4.5.0   ----- Maps
 Show
 Class == "Maps"
 HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
     CustomAlertSound "homm3snd/MILITARY.wav"
     MinimapIcon 0 Cyan Square
     PlayEffect Cyan
-###  4.5.1 ----- Exotic
+###   4.5.1   ----- Exotic
 Show # Double Influenced Items
 HasInfluence "Shaper"
 HasInfluence "Elder"
@@ -191,12 +233,12 @@ HasInfluence "Warlord"
     CustomAlertSound "homm3snd/RESURECT.wav"
     MinimapIcon 0 Cyan Cross
     PlayEffect Cyan
-###  4.5.2 ----- Global
+###   4.5.2   ----- Global
 Show # Remaining Influenced Items
 HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
     MinimapIcon 2 Cyan Cross
-##   4.6   --- Elditch
-###  4.6.1 ----- Exotic
+##    4.6     --- Eldritch
+###   4.6.1   ----- Exotic
 Show
 HasSearingExarchImplicit >= 5
     MinimapIcon 0 Red Cross
@@ -213,42 +255,73 @@ Show
 HasEaterOfWorldsImplicit >= 3
     MinimapIcon 1 Red Cross
     PlayEffect Red Temp
-###  4.6.2 ----- Global
+###   4.6.2   ----- Global
 Show
 HasSearingExarchImplicit >= 1
     MinimapIcon 2 Red Cross
 Show
 HasEaterOfWorldsImplicit >= 1
     MinimapIcon 2 Red Cross
-##   4.7   --- Corrupted
-###  4.7.1 ----- Exotic
+##    4.7     --- Corrupted
+###   4.7.1   ----- Exotic
 Show
 Class "Jewels"
 Corrupted True
 CorruptedMods >= 1
     MinimapIcon 0 Red Cross
     PlayEffect Red
-###  4.7.2 ----- Global
+###   4.7.2   ----- Global
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Corrupted True
 CorruptedMods >= 3
-Rarity < Unique
     MinimapIcon 2 Red Cross
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Corrupted True
 CorruptedMods 2
-Rarity < Unique
     SetFontSize 39
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Corrupted True
 CorruptedMods 1
-Rarity < Unique
     SetFontSize 36
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Corrupted True
-Rarity < Unique
+    SetFontSize 33
+##    4.8     --- Zana
+###   4.8.1   ----- Memory
+Show
+ZanaMemory True
+    MinimapIcon 0 Cyan Star
+    PlayEffect Cyan
+##    4.9     --- Identified
+###   4.9.1   ----- Exotic
+Show
+Class "Jewels"
+Identified True
+HasExplicitMod "Vivid" "Cerebral"
+HasExplicitMod "of Wounding" "of Zeal"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+Show
+Class "Jewels"
+Identified True
+HasExplicitMod "Vivid" "Cerebral"
+    MinimapIcon 2 Red Cross
+###   4.9.2   ----- Veiled
+Show
+Identified True
+HasExplicitMod "Veil"
+    MinimapIcon 2 White Cross
+###   4.9.3   ----- Delve
+Show
+Identified True
+HasExplicitMod "Subterranean" "Underground"
+    MinimapIcon 2 Red Cross
+###   4.9.4   ----- Global
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Identified True
     SetFontSize 33

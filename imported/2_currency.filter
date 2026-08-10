@@ -1,6 +1,6 @@
-#    2     - Currency
-##   2.0   --- Tainted
-###  2.0.0 ----- All
+#     2       - Currency
+##    2.0     --- Tainted
+###   2.0.0   ----- All
 Show
 Class == "Stackable Currency"
 BaseType "Tainted"
@@ -9,8 +9,8 @@ BaseType "Tainted"
     PlayEffect Red
     SetBackgroundColor 248 216 8
     SetTextColor 64 64 88
-##   2.1   --- Basic Vendor
-###  2.1.1 ----- Wisdom
+##    2.1     --- Basic Vendor
+###   2.1.1   ----- Wisdom
 Show
 Class == "Stackable Currency"
 BaseType == "Scroll of Wisdom"
@@ -74,7 +74,7 @@ BaseType == "Scroll of Wisdom"
     SetFontSize 33
     SetBorderColor 88 32 64
     SetTextColor 88 32 64
-###  2.1.2 ----- Portal
+###   2.1.2   ----- Portal
 Show
 Class == "Stackable Currency"
 BaseType == "Portal Scroll"
@@ -138,7 +138,7 @@ BaseType == "Portal Scroll"
     SetFontSize 39
     SetBorderColor 32 88 192
     SetTextColor 32 88 192
-###  2.1.3 ----- Transmutation
+###   2.1.3   ----- Transmutation
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Transmutation"
@@ -201,7 +201,7 @@ Class == "Stackable Currency"
 BaseType == "Orb of Transmutation"
     SetFontSize 39
     SetTextColor 8 8 248
-###  2.1.4 ----- Augmentation
+###   2.1.4   ----- Augmentation
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Augmentation"
@@ -263,7 +263,7 @@ Class == "Stackable Currency"
 BaseType == "Orb of Augmentation"
     SetFontSize 39
     SetTextColor 8 128 248
-###  2.1.5 ----- Alteration
+###   2.1.5   ----- Alteration
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Alteration"
@@ -324,7 +324,7 @@ Class == "Stackable Currency"
 BaseType == "Orb of Alteration"
     MinimapIcon 2 Blue Circle
     SetTextColor 8 128 248
-###  2.1.6 ----- Jewelers
+###   2.1.6   ----- Jewelers
 Show
 Class == "Stackable Currency"
 BaseType == "Jeweller's Orb"
@@ -332,7 +332,7 @@ BaseType == "Jeweller's Orb"
     MinimapIcon 2 Grey Circle
     SetBackgroundColor 160 128 8
     SetTextColor 64 64 64
-###  2.1.7 ----- Chromatic
+###   2.1.7   ----- Chromatic
 Show
 Class == "Stackable Currency"
 BaseType == "Chromatic Orb"
@@ -340,7 +340,7 @@ BaseType == "Chromatic Orb"
     MinimapIcon 2 White Circle
     SetBackgroundColor 160 128 8
     SetTextColor 8 8 8
-###  2.1.8 ----- Fusing
+###   2.1.8   ----- Fusing
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Fusing"
@@ -348,7 +348,7 @@ BaseType == "Orb of Fusing"
     MinimapIcon 2 Grey Circle
     SetBackgroundColor 160 128 8
     SetTextColor 64 64 64
-###  2.1.9 ----- Chance
+###   2.1.9   ----- Chance
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Chance"
@@ -356,7 +356,7 @@ BaseType == "Orb of Chance"
     MinimapIcon 2 Blue Circle
     SetBackgroundColor 160 128 8
     SetTextColor 88 88 88
-###  2.1.10----- Scouring
+###   2.1.10  ----- Scouring
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Scouring"
@@ -364,7 +364,7 @@ BaseType == "Orb of Scouring"
     MinimapIcon 1 White Circle
     SetBackgroundColor 160 128 8
     SetTextColor 64 64 64
-###  2.1.11----- Regret
+###   2.1.11  ----- Regret
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Regret"
@@ -372,7 +372,7 @@ BaseType == "Orb of Regret"
     MinimapIcon 1 White Circle
     SetBackgroundColor 160 128 8
     SetTextColor 64 64 64
-###  2.1.12----- Alchemy
+###   2.1.12  ----- Alchemy
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Alchemy"
@@ -380,8 +380,8 @@ BaseType == "Orb of Alchemy"
     MinimapIcon 1 Yellow Circle
     SetBackgroundColor 160 128 8
     SetTextColor 64 64 8
-##   2.2   --- Basic Quality Vendor
-###  2.2.1 ----- Scrap
+##    2.2     --- Basic Quality Vendor
+###   2.2.1   ----- Scrap
 Show
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
@@ -440,7 +440,7 @@ Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
     SetFontSize 33
     SetTextColor 8 8 8
-###  2.2.2 ----- Whetstone
+###   2.2.2   ----- Whetstone
 Show
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
@@ -485,21 +485,21 @@ Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 83
 StackSize < 4
-    SetFontSize 24
+    SetFontSize 30
     SetTextColor 8 8 8
 Hide
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 78
 StackSize < 2
-    SetFontSize 24
+    SetFontSize 30
     SetTextColor 8 8 8
 Show
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
     SetFontSize 36
     SetTextColor 8 8 8
-###  2.2.3 ----- Bubble
+###   2.2.3   ----- Bauble
 Show
 Class == "Stackable Currency"
 BaseType == "Glassblower's Bauble"
@@ -507,8 +507,8 @@ BaseType == "Glassblower's Bauble"
     MinimapIcon 2 Yellow Circle
     SetBackgroundColor 160 128 8
     SetTextColor 8 8 8
-##   2.3   --- Basic Master Vendor
-###  2.3.1 ----- Unmaking
+##    2.3     --- Basic Master Vendor
+###   2.3.1   ----- Unmaking
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Unmaking"
@@ -517,7 +517,7 @@ BaseType == "Orb of Unmaking"
     PlayEffect Yellow
     SetBackgroundColor 216 192 8
     SetTextColor 64 64 64
-###  2.3.2 ----- Chisel
+###   2.3.2   ----- Chisel
 Show
 Class == "Stackable Currency"
 BaseType == "Cartographer's Chisel"
@@ -526,9 +526,9 @@ BaseType == "Cartographer's Chisel"
     PlayEffect Yellow
     SetBackgroundColor 216 192 8
     SetTextColor 8 8 8
-###  2.3.3 ----- Bestiary
-##   2.4   --- Basic Droponly
-###  2.4.1 ----- Instilling Orb
+###   2.3.3   ----- Bestiary (TODO)
+##    2.4     --- Basic Drop Only
+###   2.4.1   ----- Instilling Orb
 Show
 Class == "Stackable Currency"
 BaseType == "Instilling Orb"
@@ -536,7 +536,7 @@ BaseType == "Instilling Orb"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 8
     SetTextColor 32 128 88
-###  2.4.2 ----- Enkindling Orb
+###   2.4.2   ----- Enkindling Orb
 Show
 Class == "Stackable Currency"
 BaseType == "Enkindling Orb"
@@ -544,7 +544,7 @@ BaseType == "Enkindling Orb"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 8
     SetTextColor 32 128 88
-###  2.4.3 ----- Deck
+###   2.4.3   ----- Deck
 Show
 Class == "Stackable Currency"
 BaseType == "Stacked Deck"
@@ -552,7 +552,7 @@ BaseType == "Stacked Deck"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 8
     SetTextColor 64 64 64
-###  2.4.4 ----- Reports
+###   2.4.4   ----- Reports
 Show
 Class == "Stackable Currency"
 BaseType "Scouting Report"
@@ -560,7 +560,7 @@ BaseType "Scouting Report"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 8
     SetTextColor 64 64 8
-###  2.4.5 ----- Ember
+###   2.4.5   ----- Ember
 Show
 Class == "Stackable Currency"
 BaseType == "Lesser Eldritch Ember"
@@ -568,7 +568,7 @@ BaseType == "Lesser Eldritch Ember"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 8
     SetTextColor 248 8 64
-###  2.4.6 ----- Ichor
+###   2.4.6   ----- Ichor
 Show
 Class == "Stackable Currency"
 BaseType == "Lesser Eldritch Ichor"
@@ -576,7 +576,7 @@ BaseType == "Lesser Eldritch Ichor"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 8
     SetTextColor 64 8 248
-###  2.4.7 ----- Regal
+###   2.4.7   ----- Regal
 Show
 Class == "Stackable Currency"
 BaseType == "Regal Orb"
@@ -585,7 +585,7 @@ BaseType == "Regal Orb"
     PlayEffect Orange Temp
     SetBackgroundColor 216 192 8
     SetTextColor 192 192 128
-###  2.4.8 ----- Chaos
+###   2.4.8   ----- Chaos
 Show
 Class == "Stackable Currency"
 BaseType == "Chaos Orb"
@@ -594,7 +594,7 @@ BaseType == "Chaos Orb"
     PlayEffect Orange Temp
     SetBackgroundColor 216 192 8
     SetTextColor 128 64 8
-###  2.4.9 ----- Vaal
+###   2.4.9   ----- Vaal
 Show
 Class == "Stackable Currency"
 BaseType == "Vaal Orb"
@@ -603,7 +603,7 @@ BaseType == "Vaal Orb"
     PlayEffect Orange Temp
     SetBackgroundColor 216 192 8
     SetTextColor 216 8 8
-###  2.4.10----- Blessed
+###   2.4.10  ----- Blessed
 Show
 Class == "Stackable Currency"
 BaseType == "Blessed Orb"
@@ -612,7 +612,7 @@ BaseType == "Blessed Orb"
     PlayEffect Orange Temp
     SetBackgroundColor 216 192 8
     SetTextColor 128 64 8
-###  2.4.11----- Prism
+###   2.4.11  ----- Prism
 Show
 Class == "Stackable Currency"
 BaseType == "Gemcutter's Prism"
@@ -621,7 +621,7 @@ BaseType == "Gemcutter's Prism"
     PlayEffect Orange Temp
     SetBackgroundColor 216 192 8
     SetTextColor 64 64 64
-###  2.4.12----- Exalted
+###   2.4.12  ----- Exalted
 Show
 Class == "Stackable Currency"
 BaseType == "Exalted Orb"
@@ -630,7 +630,7 @@ BaseType == "Exalted Orb"
     PlayEffect Red
     SetBackgroundColor 248 216 8
     SetTextColor 248 8 8
-###  2.4.13 ----- Divine
+###   2.4.13  ----- Divine
 Show
 Class == "Stackable Currency"
 BaseType == "Divine Orb"
@@ -639,7 +639,7 @@ BaseType == "Divine Orb"
     PlayEffect Red
     SetBackgroundColor 248 216 8
     SetTextColor 248 8 8
-###  2.4.14----- Box
+###   2.4.14  ----- Box
 Show
 Class == "Stackable Currency"
 BaseType == "Valdo's Puzzle Box"
@@ -648,7 +648,7 @@ BaseType == "Valdo's Puzzle Box"
     PlayEffect Red
     SetBackgroundColor 248 216 8
     SetTextColor 8 248 248
-###  2.4.15 ----- Sacred
+###   2.4.15  ----- Sacred
 Show
 Class == "Stackable Currency"
 BaseType == "Sacred Orb"
@@ -658,7 +658,7 @@ BaseType == "Sacred Orb"
     SetBackgroundColor 248 216 8
     SetBorderColor 248 8 8
     SetTextColor 248 8 8
-###  2.4.16 ----- Kalandra
+###   2.4.16  ----- Kalandra
 Show
 Class == "Stackable Currency"
 BaseType == "Mirror of Kalandra"
@@ -668,8 +668,8 @@ BaseType == "Mirror of Kalandra"
     SetBackgroundColor 248 248 248
     SetBorderColor 248 8 8
     SetTextColor 248 8 8
-###  2.5   --- Basic Droponly Monster Restrict
-###  2.5.1 ----- All
+##    2.5     --- Basic Drop Only Monster Restricted
+###   2.5.1   ----- All
 Show
 Class == "Stackable Currency"
 BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Reflecting Mist" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"

@@ -260,15 +260,6 @@ Show
 Class == "Abyss Jewels"
 Rarity < Rare
     SetFontSize 24
-###   5.2.3   ----- Basic
-Show
-Class == "Jewels"
-Rarity Rare
-    SetFontSize 42
-Show
-Class == "Jewels"
-Rarity < Rare
-    SetFontSize 24
 ##    5.3     --- Flasks
 ###   5.3.1   ----- Quality
 Show

@@ -485,14 +485,14 @@ Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 83
 StackSize < 4
-    SetFontSize 24
+    SetFontSize 30
     SetTextColor 8 8 8
 Show
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
 AreaLevel >= 78
 StackSize < 2
-    SetFontSize 24
+    SetFontSize 30
     SetTextColor 8 8 8
 Show
 Class == "Stackable Currency"

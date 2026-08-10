@@ -293,14 +293,51 @@ BaseType == "Simulacrum Splinter"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 160 128 8
     SetBorderColor 8 8 8
-###   3.9.3   ----- Simulacrum (TODO)
+###   3.9.3   ----- Simulacrum
+Class == "Map Fragments"
+BaseType == "Simulacrum"
+    CustomAlertSound "homm3snd/NewWeek.wav"
+    MinimapIcon 0 Grey Hexagon
+    PlayEffect Grey
+    SetTextColor 192 192 192
 ##    3.10    --- Harvest (League v3.11)
 ###   3.10.1  ----- Lifeforce
 Show
 Class == "Stackable Currency"
 BaseType == "Wild Crystallised Lifeforce"
+StackSize < 16
+    SetFontSize 33
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Wild Crystallised Lifeforce"
+StackSize < 64
+    SetFontSize 39
+    SetBackgroundColor 192 160 8
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Wild Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Circle
+    SetBackgroundColor 248 216 8
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Vivid Crystallised Lifeforce"
+StackSize < 16
+    SetFontSize 33
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Vivid Crystallised Lifeforce"
+StackSize < 64
+    SetFontSize 39
+    SetBackgroundColor 192 160 8
     SetBorderColor 128 32 32
     SetTextColor 192 64 88
 Show
@@ -308,13 +345,30 @@ Class == "Stackable Currency"
 BaseType == "Vivid Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Circle
+    SetBackgroundColor 248 216 8
     SetBorderColor 64 64 8
     SetTextColor 128 160 32
 Show
 Class == "Stackable Currency"
 BaseType == "Primal Crystallised Lifeforce"
+StackSize < 16
+    SetFontSize 33
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Primal Crystallised Lifeforce"
+StackSize < 64
+    SetFontSize 39
+    SetBackgroundColor 192 160 8
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Primal Crystallised Lifeforce"
     CustomAlertSound "homm3snd/Chat.wav"
     MinimapIcon 2 Orange Circle
+    SetBackgroundColor 248 216 8
     SetBorderColor 32 64 88
     SetTextColor 64 160 192
 Show

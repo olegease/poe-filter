@@ -17,6 +17,7 @@ LinkedSockets 5
 ###   4.1.3   ----- 6 Socket
 Show
 Sockets 6
+Rarity < Unique
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 0 Orange Pentagon
     PlayEffect Orange
@@ -25,6 +26,7 @@ Sockets 6
 Show
 LinkedSockets 4
 AreaLevel < 68
+Rarity < Unique
     CustomAlertSound "homm3snd/Poison.wav"
     MinimapIcon 2 White Pentagon
     SetTextColor 248 248 248
@@ -294,32 +296,3 @@ Show
 ZanaMemory True
     MinimapIcon 0 Cyan Star
     PlayEffect Cyan
-##    4.9     --- Identified
-###   4.9.1   ----- Exotic
-Show
-Class "Jewels"
-Identified True
-HasExplicitMod "Vivid" "Cerebral"
-HasExplicitMod "of Wounding" "of Zeal"
-    MinimapIcon 0 Red Cross
-    PlayEffect Red
-Show
-Class "Jewels"
-Identified True
-HasExplicitMod "Vivid" "Cerebral"
-    MinimapIcon 2 Red Cross
-###   4.9.2   ----- Veiled
-Show
-Identified True
-HasExplicitMod "Veil"
-    MinimapIcon 2 White Cross
-###   4.9.3   ----- Delve
-Show
-Identified True
-HasExplicitMod "Subterranean" "Underground"
-    MinimapIcon 2 Red Cross
-###   4.9.4   ----- Global
-Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
-Identified True
-    SetFontSize 33

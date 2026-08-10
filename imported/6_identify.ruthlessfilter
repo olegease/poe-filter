@@ -2,6 +2,26 @@
 ##    6.1     --- Global
 ###   6.1.1   ----- In Progress
 Show
+Class "Jewels"
+Identified True
+HasExplicitMod "Vivid" "Cerebral"
+HasExplicitMod "of Wounding" "of Zeal"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+Show
+Class "Jewels"
+Identified True
+HasExplicitMod "Vivid" "Cerebral"
+    MinimapIcon 2 Red Cross
+Show
+Identified True
+HasExplicitMod "Veil"
+    MinimapIcon 2 White Cross
+Show
+Identified True
+HasExplicitMod "Subterranean" "Underground"
+    MinimapIcon 2 Red Cross
+Show
 Identified True
 HasExplicitMod >= 2 "Dragon's" "Perandus'" "of Excavation"
     CustomAlertSound "homm3snd/Fortune.wav"
@@ -13,3 +33,7 @@ HasExplicitMod >= 1 "of the Deathless" "Exalter's" "of Harmony" "Overseer's" "of
     CustomAlertSound "homm3snd/Fortune.wav"
     MinimapIcon 0 Pink Hexagon
     PlayEffect Pink
+Show
+Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Identified True
+    SetFontSize 33

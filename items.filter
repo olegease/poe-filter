@@ -1,267 +1,266 @@
-# Version: 0.0.64
-# Contents
-#    1     - Continue
-##   1.0   --- Notes
-###  1.0.1 ----- Overview
-###  1.0.2 ----- Tiers
-###  1.0.3 ----- Icons
-###  1.0.4 ----- Sounds
-###  1.0.5 ----- Colors
-##   1.1   --- Mandatory
-###  1.1.1 ----- Starting
-###  1.1.2 ----- Quest Items
-###  1.1.3 ----- Gold
-##   1.2   --- Drop sounds
-###  1.2.1 ----- All items
-##   1.3   --- Text
-###  1.3.1 ----- Normal Rarity
-###  1.3.2 ----- Magic Rarity
-###  1.3.3 ----- Rare Rarity
-###  1.3.4 ----- Unique Rarity
-###  1.3.5 ----- Gems
-###  1.3.6 ----- Fractured
-###  1.3.7 ----- Synthesised
-###  1.3.8 ----- Influenced
-###  1.3.9 ----- Corrupted
-###  1.3.10----- Crafted
-##   1.4   --- Background
-###  1.4.1 ----- Currency
-###  1.4.2 ----- Weapons
-###  1.4.3 ----- Armours
-###  1.4.4 ----- Off-hands
-###  1.4.5 ----- Jewellery
-###  1.4.6 ----- Mana Flasks
-###  1.4.7 ----- Life Flasks
-###  1.4.8 ----- Hybrid Flasks
-###  1.4.9 ----- Utility Flasks
-###  1.4.10----- Divination Cards
-###  1.4.11----- Gems
-###  1.4.12----- Tainted Currency
-###  1.4.13----- Jewels
-###  1.4.14----- Fragments
-###  1.4.15----- Maps
-##   1.5   --- Border
-###  1.5.1 ----- Strength bases
-###  1.5.2 ----- Dexterity bases
-###  1.5.3 ----- Intelligence bases
-###  1.5.4 ----- Str/Dex bases
-###  1.5.5 ----- Dex/Int bases
-###  1.5.6 ----- Int/Str bases
-###  1.5.7 ----- Str/Dex/Int bases
-###  1.5.8 ----- Divination Cards
-###  1.5.9 ----- Gems
-###  1.5.10----- Normal Maps
-###  1.5.11----- Magic Maps
-###  1.5.12----- Rare Maps
-###  1.5.13----- Corrupted Maps
-###  1.5.14----- Unique Maps
-##   1.6   --- Font
-###  1.6.1 ----- All items
-#    2     - Currency
-##   2.0   --- Tainted
-###  2.0.0 ----- All
-##   2.1   --- Basic Vendor
-###  2.1.1 ----- Wisdom
-###  2.1.2 ----- Portal
-###  2.1.3 ----- Transmutation
-###  2.1.4 ----- Augmentation
-###  2.1.5 ----- Alteration
-###  2.1.6 ----- Jewelers
-###  2.1.7 ----- Chromatic
-###  2.1.8 ----- Fusing
-###  2.1.9 ----- Chance
-###  2.1.10----- Scouring
-###  2.1.11----- Regret
-###  2.1.12----- Alchemy
-##   2.2   --- Basic Quality Vendor
-###  2.2.1 ----- Scrap
-###  2.2.2 ----- Whetstone
-###  2.2.3 ----- Bubble
-##   2.3   --- Basic Master Vendor
-###  2.3.1 ----- Unmaking
-###  2.3.2 ----- Chisel
-###  2.3.3 ----- Bestiary
-##   2.4   --- Basic Droponly
-###  2.4.1 ----- Instilling Orb
-###  2.4.2 ----- Enkindling Orb
-###  2.4.3 ----- Deck
-###  2.4.4 ----- Reports
-###  2.4.5 ----- Ember
-###  2.4.6 ----- Ichor
-###  2.4.7 ----- Regal
-###  2.4.8 ----- Chaos
-###  2.4.9 ----- Vaal
-###  2.4.10----- Blessed
-###  2.4.11----- Prism
-###  2.4.12----- Exalted
-###  2.4.13----- Divine
-###  2.4.14----- Box
-###  2.4.15----- Sacred
-###  2.4.16----- Kalandra
-###  2.5   --- Basic Droponly Monster Restrict
-###  2.5.1 ----- All
-#    3     - Seasonal
-##   3.1   --- Essence
-###  3.1.1 ----- Group F
-###  3.1.2 ----- Tiers
-##   3.2   --- Breach
-###  3.2.1 ----- Splinters
-###  3.2.2 ----- Blessings
-##   3.3   --- Harbinger
-###  3.3.1 ----- Shards
-###  3.3.2 ----- Binding
-###  3.3.3 ----- Horizons
-###  3.3.4 ----- Annulment
-##   3.4   --- Abyss
-###  3.4.1 ----- Jewels
-###  3.4.2 ----- Belts
-##   3.5   --- Incursion
-###  3.5.1 ----- Vials
-###  3.5.2 ----- Items
-##   3.6   --- Delve
-###  3.6.1 ----- Fossils
-###  3.6.2 ----- Resonators
-###  3.6.3 ----- Explicits
-##   3.7   --- Betrayal
-###  3.7.1 ----- Scarabs
-###  3.7.2   --- Veiled
-##   3.8   --- Legion
-###  3.8.1 ----- Incubators
-###  3.8.2 ----- Splinters
-###  3.8.3 ----- Emblems
-##   3.9   --- Blight
-###  3.9.1 ----- Oils
-##   3.10  --- Delirium
-###  3.10.1----- Orbs
-###  3.10.2----- Splinters
-###  3.10.3----- Simulacrum
-###  3.10.4----- Jewels
-##   3.11  --- Harvest
-###  3.11.1----- Lifeforce
-###  3.11.2----- Blossom
-##   3.12  --- Heist
-###  3.12.1----- Markers
-###  3.12.2----- Contracts
-###  3.12.3----- Blueprints
-###  3.12.4----- Gear
-##   3.13  --- Ritual
-###  3.13.1----- Splinters
-###  3.13.2----- Vessel
-###  3.13.3----- Blood
-##   3.14  --- Ultimatum
-###  3.14.1----- Catalysts
-##   3.15  --- Expedition
-###  3.15.1----- Logbooks
-###  3.15.2----- Reroll currency
-##   3.16  --- Sanctum
-###  3.16.1----- Research
-###  3.16.2----- Relics
-##   3.17  --- Affliction
-###  3.17.1----- Tinctures
-###  3.17.2----- Charms
-###  3.17.3----- Corpses
-##   3.18  --- Settlers
-###  3.18.1----- Gold
-###  3.18.2----- Runes
-#    4     - Specific
-##   4.1   --- Sockets
-###  4.1.1 ----- 6 link
-###  4.1.2 ----- 5 link
-###  4.1.3 ----- 6 Socket
-###  4.1.4 ----- 4 link
-###  4.1.5 ----- RGB
-###  4.1.6 ----- 3 Link
-###  4.1.7 ----- 2 Link
-##   4.2   --- Memory Strands
-###  4.2.0 ----- TODO
-##   4.3   --- Fractured
-###  4.3.1 ----- Exotic
-###  4.3.2 ----- Global
-##   4.4   --- Synthesised
-###  4.4.1 ----- Exotic
-###  4.4.2 ----- Global
-##   4.5   --- Influenced
-###  4.5.0 ----- Maps
-###  4.5.1 ----- Exotic
-###  4.5.2 ----- Global
-##   4.6   --- Elditch
-###  4.6.1 ----- Exotic
-###  4.6.2 ----- Global
-##   4.7   --- Corrupted
-###  4.7.1 ----- Exotic
-###  4.7.2 ----- Global
-#    5     - Specials
-##   5.1   --- Divination Cards
-###  5.1.0 ----- Unknown
-###  5.1.1 ----- Fragments
-###  5.1.2 ----- Normal Items
-###  5.1.2 ----- Magic Items
-###  5.1.3 ----- Rare Items
-###  5.1.4 ----- Unique Items
-###  5.1.5 ----- Corrupted
-###  5.1.6 ----- Currency
-###  5.1.7 ----- Gems
-###  5.1.8 ----- Other Divinations
-##   5.2   --- Jewels
-###  5.2.1 ----- Basic
-##   5.3   --- Flasks
-###  5.3.1 ----- Quality
-###  5.3.2 ----- Utility
-###  5.3.3 ----- Life
-###  5.3.4 ----- Mana
-###  5.3.5 ----- Hybrid
-##   5.4   --- Gems
-###  5.4.1 ----- Awakened
-###  5.4.2 ----- Exceptional
-###  5.4.3 ----- High Level and Quality
-###  5.4.4 ----- High Quality
-###  5.4.5 ----- High Level
-###  5.4.6 ----- Campaign
-##   5.5   --- Maps
-###  5.5.1 ----- White
-###  5.5.2 ----- Yellow
-###  5.5.3 ----- Red
-###  5.5.4 ----- Other (Influenced, unknown?)
-##   5.6   --- Map Fragments
-###  5.6.1 ----- Vessel
-###  5.6.2 ----- Atziri
-###  5.6.3 ----- Shaper
-###  5.6.4 ----- Elder
-###  5.6.5 ----- Uber
-###  5.6.6 ----- Sirus
-###  5.6.7 ----- Maven
-##   5.7   --- Miscellaneous map item
-###  5.7.1 ----- All
-##   5.8   --- Memories
-###  5.8.1 ----- All
-##   5.9   --- Voidstones
-###  5.9.1 ----- All
-##   5.10  --- Vault
-###  5.10.1----- Keys
-##   5.11  --- Lab Items
-###  5.11.1----- Keys
-###  5.11.2----- Trinkets
-#    6     - Identify
-##   6.1   --- Global
-###  6.1.1 ----- In Progress
-#    7     - Rarities
-##   7.1   --- Normal Items
-###  7.1.1 ----- Jewellery
-###  7.1.2 ----- Equipment
-##   7.2   --- Magic Items
-###  7.2.1 ----- Jewellery
-###  7.2.2 ----- Equipment
-##   7.3   --- Rare Items
-###  7.3.0 ----- Pickup
-###  7.3.1 ----- Jewellery
-###  7.3.2 ----- Equipment
-##   7.4   --- Unique Items
-###  7.4.1 ----- Bases
-###  7.4.2 ----- Global
-###  7.4.3 ----- Pieces
-#    8     - Mistaken
-##   8.1   --- Global
-###  8.1.1 ----- Everything
+# Version: 0.0.65
+#     0       - Contents
+##    0.1     --- Notes
+###   0.1.1   ----- Overview
+###   0.1.2   ----- Tiers
+###   0.1.3   ----- Icons
+###   0.1.4   ----- Sounds
+###   0.1.5   ----- Colors
+#     1       - Continue
+##    1.1     --- Mandatory
+###   1.1.1   ----- Starting
+###   1.1.2   ----- Quest Items
+###   1.1.3   ----- Gold
+##    1.2     --- Drop Sounds
+###   1.2.1   ----- All Items
+##    1.3     --- Text
+###   1.3.1   ----- Normal Rarity
+###   1.3.2   ----- Magic Rarity
+###   1.3.3   ----- Rare Rarity
+###   1.3.4   ----- Unique Rarity
+###   1.3.5   ----- Gems
+###   1.3.6   ----- Fractured
+###   1.3.7   ----- Synthesised
+###   1.3.8   ----- Influenced
+###   1.3.9   ----- Corrupted
+###   1.3.10  ----- Crafted
+##    1.4     --- Background
+###   1.4.1   ----- Currency
+###   1.4.2   ----- Weapons
+###   1.4.3   ----- Armours
+###   1.4.4   ----- Off-hands
+###   1.4.5   ----- Jewellery
+###   1.4.6   ----- Mana Flasks
+###   1.4.7   ----- Life Flasks
+###   1.4.8   ----- Hybrid Flasks
+###   1.4.9   ----- Utility Flasks
+###   1.4.10  ----- Divination Cards
+###   1.4.11  ----- Gems
+###   1.4.12  ----- Tainted Currency
+###   1.4.13  ----- Jewels
+###   1.4.14  ----- Fragments
+###   1.4.15  ----- Maps
+##    1.5     --- Border
+###   1.5.1   ----- Strength Bases
+###   1.5.2   ----- Dexterity Bases
+###   1.5.3   ----- Intelligence Bases
+###   1.5.4   ----- Strength and Dexterity Bases
+###   1.5.5   ----- Dexterity and Intelligence Bases
+###   1.5.6   ----- Intelligence and Strength Bases
+###   1.5.7   ----- Strength and Dexterity and Intelligence Bases
+###   1.5.8   ----- Divination Cards
+###   1.5.9   ----- Gems
+###   1.5.10  ----- Normal Maps
+###   1.5.11  ----- Magic Maps
+###   1.5.12  ----- Rare Maps
+###   1.5.13  ----- Corrupted Maps
+###   1.5.14  ----- Unique Maps
+##    1.6     --- Font
+###   1.6.1   ----- All Items
+#     2       - Currency
+##    2.0     --- Tainted
+###   2.0.0   ----- All
+##    2.1     --- Basic Vendor
+###   2.1.1   ----- Wisdom
+###   2.1.2   ----- Portal
+###   2.1.3   ----- Transmutation
+###   2.1.4   ----- Augmentation
+###   2.1.5   ----- Alteration
+###   2.1.6   ----- Jewelers
+###   2.1.7   ----- Chromatic
+###   2.1.8   ----- Fusing
+###   2.1.9   ----- Chance
+###   2.1.10  ----- Scouring
+###   2.1.11  ----- Regret
+###   2.1.12  ----- Alchemy
+##    2.2     --- Basic Quality Vendor
+###   2.2.1   ----- Scrap
+###   2.2.2   ----- Whetstone
+###   2.2.3   ----- Bauble
+##    2.3     --- Basic Master Vendor
+###   2.3.1   ----- Unmaking
+###   2.3.2   ----- Chisel
+###   2.3.3   ----- Bestiary (TODO)
+##    2.4     --- Basic Drop Only
+###   2.4.1   ----- Instilling Orb
+###   2.4.2   ----- Enkindling Orb
+###   2.4.3   ----- Deck
+###   2.4.4   ----- Reports
+###   2.4.5   ----- Ember
+###   2.4.6   ----- Ichor
+###   2.4.7   ----- Regal
+###   2.4.8   ----- Chaos
+###   2.4.9   ----- Vaal
+###   2.4.10  ----- Blessed
+###   2.4.11  ----- Prism
+###   2.4.12  ----- Exalted
+###   2.4.13  ----- Divine
+###   2.4.14  ----- Box
+###   2.4.15  ----- Sacred
+###   2.4.16  ----- Kalandra
+##    2.5     --- Basic Drop Only Monster Restricted
+###   2.5.1   ----- All
+#     3       - Seasonal
+##    3.1     --- Essence (League v2.4)
+###   3.1.1   ----- Group F
+###   3.1.2   ----- Tiers
+##    3.2     --- Breach (League v2.5)
+###   3.2.1   ----- Splinters
+###   3.2.2   ----- Blessings
+###   3.2.3   ----- Breachstones (TODO)
+##    3.3     --- Harbinger (League v3.0)
+###   3.3.1   ----- Shards
+###   3.3.2   ----- Binding
+###   3.3.3   ----- Horizons
+###   3.3.4   ----- Annulment
+##    3.4     --- Incursion (League v3.3)
+###   3.4.1   ----- Vials
+###   3.4.2   ----- Items (TODO)
+##    3.5     --- Delve (League v3.4)
+###   3.5.1   ----- Fossils
+###   3.5.2   ----- Resonators
+##    3.6     --- Betrayal (League v3.5)
+###   3.6.1   ----- Scarabs
+##    3.7     --- Legion (League v3.7)
+###   3.7.1   ----- Incubators
+###   3.7.2   ----- Splinters
+###   3.7.3   ----- Emblems
+##    3.8     --- Blight (League v3.8)
+###   3.8.1   ----- Oils
+##    3.9     --- Delirium (League v3.10)
+###   3.9.1   ----- Orbs
+###   3.9.2   ----- Splinters
+###   3.9.3   ----- Simulacrum
+##    3.10    --- Harvest (League v3.11)
+###   3.10.1  ----- Lifeforce
+###   3.10.2  ----- Blossom
+##    3.11    --- Heist (League v3.12)
+###   3.11.1  ----- Markers
+###   3.11.2  ----- Contracts
+###   3.11.3  ----- Blueprints
+###   3.11.4  ----- Targets
+###   3.11.5  ----- Equipment
+##    3.12    --- Ritual (League v3.13)
+###   3.12.1  ----- Splinters
+###   3.12.2  ----- Vessel
+###   3.12.3  ----- Blood
+##    3.13    --- Ultimatum (League v3.14)
+###   3.13.1  ----- Catalysts
+##    3.14    --- Expedition (League v3.15)
+###   3.14.1  ----- Logbooks
+###   3.14.2  ----- Reroll Currency
+##    3.15    --- Sanctum (League v3.20)
+###   3.15.1  ----- Research
+###   3.15.2  ----- Relics
+##    3.16    --- Affliction (League v3.23)
+###   3.16.1  ----- Tinctures
+###   3.16.2  ----- Charms
+###   3.16.3  ----- Corpses
+##    3.17    --- Settlers (League v3.25)
+###   3.17.1  ----- Runes
+#     4       - Specific
+##    4.1     --- Sockets
+###   4.1.1   ----- 6 Link
+###   4.1.2   ----- 5 Link
+###   4.1.3   ----- 6 Socket
+###   4.1.4   ----- 4 Link
+###   4.1.5   ----- RGB
+###   4.1.6   ----- 3 Link
+###   4.1.7   ----- 2 Link
+##    4.2     --- Unique
+###   4.2.1   ----- Bases
+###   4.2.2   ----- Global
+###   4.2.3   ----- Pieces
+##    4.3     --- Fractured
+###   4.3.1   ----- Exotic
+###   4.3.2   ----- Global
+##    4.4     --- Synthesised
+###   4.4.1   ----- Exotic
+###   4.4.2   ----- Global
+##    4.5     --- Influenced
+###   4.5.0   ----- Maps
+###   4.5.1   ----- Exotic
+###   4.5.2   ----- Global
+##    4.6     --- Eldritch
+###   4.6.1   ----- Exotic
+###   4.6.2   ----- Global
+##    4.7     --- Corrupted
+###   4.7.1   ----- Exotic
+###   4.7.2   ----- Global
+##    4.8     --- Zana
+###   4.8.1   ----- Memory
+#     5       - Specials
+##    5.1     --- Divination Cards
+###   5.1.0   ----- Unknown
+###   5.1.1   ----- Fragments
+###   5.1.2   ----- Normal Items
+###   5.1.3   ----- Magic Items
+###   5.1.4   ----- Rare Items
+###   5.1.5   ----- Unique Items
+###   5.1.6   ----- Corrupted
+###   5.1.7   ----- Currency
+###   5.1.8   ----- Gems
+###   5.1.9   ----- Other Divinations
+##    5.2     --- Jewels
+###   5.2.1   ----- Cluster
+###   5.2.2   ----- Abyss
+##    5.3     --- Flasks
+###   5.3.1   ----- Quality
+###   5.3.2   ----- Utility
+###   5.3.3   ----- Life
+###   5.3.4   ----- Mana
+###   5.3.5   ----- Hybrid
+##    5.4     --- Gems
+###   5.4.1   ----- Awakened
+###   5.4.2   ----- Exceptional
+###   5.4.3   ----- High Level and Quality
+###   5.4.4   ----- High Level
+###   5.4.5   ----- High Quality
+###   5.4.6   ----- Campaign
+##    5.5     --- Maps
+###   5.5.1   ----- White
+###   5.5.2   ----- Yellow
+###   5.5.3   ----- Red
+###   5.5.4   ----- Other (Influenced, unknown?)
+##    5.6     --- Map Fragments
+###   5.6.1   ----- Vessel
+###   5.6.2   ----- Atziri
+###   5.6.3   ----- Shaper
+###   5.6.4   ----- Elder
+###   5.6.5   ----- Uber
+###   5.6.6   ----- Sirus
+###   5.6.7   ----- Maven
+##    5.7     --- Miscellaneous Map Items
+###   5.7.1   ----- All
+##    5.8     --- Memories
+###   5.8.1   ----- All
+##    5.9     --- Voidstones
+###   5.9.1   ----- All
+##    5.10    --- Vault
+###   5.10.1  ----- Keys
+##    5.11    --- Lab Items
+###   5.11.1  ----- Keys
+###   5.11.2  ----- Trinkets
+#     6       - Identify
+##    6.1     --- Global
+###   6.1.1   ----- In Progress
+#     7       - Rarities
+##    7.1     --- Normal Items
+###   7.1.0   ----- Basic Jewels
+###   7.1.1   ----- Jewellery
+###   7.1.2   ----- Equipment
+##    7.2     --- Magic Items
+###   7.2.0   ----- Basic Jewels
+###   7.2.1   ----- Jewellery
+###   7.2.2   ----- Equipment
+##    7.3     --- Rare Items
+###   7.3.0   ----- Basic Jewels
+###   7.3.1   ----- Pickup
+###   7.3.2   ----- Jewellery
+###   7.3.3   ----- Equipment
+#     8       - Mistaken
+##    8.1     --- Global
+###   8.1.1   ----- Everything
 
 Import "imported/1_continue.filter"
 Import "imported/2_currency.filter"
@@ -272,16 +271,17 @@ Import "imported/6_identify.filter"
 Import "imported/7_rarities.filter"
 Import "imported/8_mistaken.filter"
 
-##   1.0   --- Notes
-###  1.0.1 ----- Overview
+#     0       - Contents
+##    0.1     --- Notes
+###   0.1.1   ----- Overview
 # Filter for SSF
 # default font size for all items 45
-###  1.0.2 ----- Tiers
+###   0.1.2   ----- Tiers
 # Tiers split into 11: 8 tiers for show items, 3 tiers for hidden items,
-# and 8 for items without sound icon and playeffect
-# 1 tier: show, font 45, sound, minimapicon 0, playeffect
-# 2 tier: show, font 45, sound, minimapicon 1, playeffect temp
-# 3 tier: show, font 45, sound, minimapicon 2
+# and 8 for items without sound, icon and play effect
+# 1 tier: show, font 45, sound, minimap icon 0, play effect
+# 2 tier: show, font 45, sound, minimap icon 1, play effect temporary
+# 3 tier: show, font 45, sound, minimap icon 2
 # 4 tier: show, font 45
 # 5 tier: show, font 42
 # 6 tier: show, font 39
@@ -290,7 +290,7 @@ Import "imported/8_mistaken.filter"
 # 9 tier: hide, font 30 (show in ruthless)
 #10 tier: hide, font 24 (show in ruthless)
 #11 tier: hide, font 18 (show in ruthless)
-###  1.0.3 ----- Icons
+###   0.1.3   ----- Icons
 # Yellow Circle          - Currency Basic
 # Orange Citcle          - Currency Droponly
 # Red    Circle          - Currency Monster Restrict
@@ -315,72 +315,81 @@ Import "imported/8_mistaken.filter"
 # Yellow Pentagon        - Delve Socketable
 # Orange Pentagon        - 6 Socket
 # Red    Pentagon        - 6 Links
-###  1.0.4 ----- Sounds
-# homm3snd/DEFAULT.wav      - 1 Continue Quest (related quest items)
-# homm3snd/BUTTON.wav       - 2 Currency LOW T2 (plus other related sections)
-# homm3snd/Chat.wav         - 2 Currency LOW T1 (plus other related sections)
-# homm3snd/FLAGMINE.wav     - 2 Currency MID T3 (plus other related sections)
-# homm3snd/Age.wav          - 2 Currency MID T2 (plus other related sections)
-# homm3snd/SysMsg.wav       - 2 Currency MID T1 (plus other related sections)
-# homm3snd/LUCK.wav         - 2 Currency TOP T3 (plus other related sections)
-# homm3snd/TREASURE.wav     - 2 Currency TOP T2 (plus other related sections)
-# homm3snd/FAERIE.wav       - 2 Currency TOP T1 (plus other related sections)
-# homm3snd/UltimateArtifact - 2 Currency ULT T0 Drop-only Kalandra
-# homm3snd/BIND.wav         - 3 Seasonal Essences T3
-# homm3snd/Berserk.wav      - 3 Seasonal Essences T2
-# homm3snd/Dragon.wav       - 3 Seasonal Essences T1
-# homm3snd/GetProtection.wav- 3 Seasonal Essences T0
-# homm3snd/Temple.wav       - 3 Seasonal Incursion Vials
-# homm3snd/Prayer.wav       - 3 Seasonal Delve Resonators T3 (1,2 sockets)
-# homm3snd/View.wav         - 3 Seasonal Delve Resonators T2 (3 sockets)
-# homm3snd/ARMGEDN.wav      - 3 Seasonal Delve Resonators T1 (4 sockets)
-# homm3snd/Forget.wav       - 3 Seasonal Betrayal Scarabs
-# homm3snd/Regener.wav      - 3 Seasonal Legion Incubators
-# homm3snd/CHEST.wav        - 3 Seasonal Legion Emblems
-# homm3snd/Slayer.wav       - 3 Seasonal Harvest Sacred Blossom
-# homm3snd/ROGUE.wav        - 3 Seasonal Heist Contracts
-# homm3snd/Lighthouse.wav   - 3 Seasonal Heist Blueprints
-# homm3snd/Graveyard.wav    - 3 Seasonal Expedition Logbooks
-# homm3snd/Bless.wav        - 3 Seasonal Sanctum Relics
-# homm3snd/Mystery.wav      - 3 Seasonal Sanctum Research
-# homm3snd/Disease.wav      - 4 Specific Uniques Trash (related Div Cards)
-# homm3snd/Paralyze.wav     - 4 Specific Unique Pieces
-# homm3snd/BADLUCK.wav      - 4 Specific Uniques Multibase Belts
-# homm3snd/Poison.wav       - 4 Specific Sockets 4 Linked
-# homm3snd/LIGHTBLT.wav     - 4 Specific Sockets 5 Linked
-# homm3snd/BLOODLUS.wav     - 4 Specific Sockets 6 Linked
-# homm3snd/VISIONS.wav      - 4 Specific Synthesised Items
-# homm3snd/tailwind.wav     - 4 Specific Fractured Items
-# homm3snd/Buildtwn.wav     - 4 Specific Fractured Exotic
-# homm3snd/RESURECT.wav     - 4 Specific Influenced Double
-# homm3snd/MILITARY.wav     - 4 Specific Influenced Maps
-# homm3snd/Nwherolv.wav     - 5 Specials Maps T1-5 (White)
-# homm3snd/MORALE.wav       - 5 Specials Maps T6-10 (Yellow)
-# homm3snd/Gazebo.wav       - 5 Specials Maps Unknown
-# homm3snd/NewDay.wav       - 5 Specials Maps Fragments Boss T3 (Sacrifice), Maps Red
-# homm3snd/NewWeek.wav      - 5 Specials Maps Fragments Boss T2 (Mortal, Shaper, Elder)
-# homm3snd/NEWMONTH.wav     - 5 Specials Mpas Fragments Boss T1 (Uber, Sirus)
-# homm3snd/Obelisk.wav      - 5 Specials Maps Fragments Maven
-# homm3snd/QUEST.wav        - 5 Specials Quest Atlas (Voidstones, Divine Vesels)
-# homm3snd/Badmrle.wav      - 5 Specials Vault Keys
-# homm3snd/COLDRAY.wav      - 5 Specials Gems Low
-# homm3snd/GENIE.wav        - 5 Specials Gems Top (related Div Cards)
-# homm3snd/Curse.wav        - 5 Specials Div Cards Corrupted
-# homm3snd/Cure.wav         - 5 Specials Div Cards T3 (MinimapIcon 2)
-# homm3snd/STORE.wav        - 5 Specials Div Cards T2 (MinimapIcon 1)
-# homm3snd/NOMAD.wav        - 5 Specials Div Cards T1 (MinimapIcon 0)
-# homm3snd/mirth.wav        - 5 Specials Jewels Cluster
-# homm3snd/Decay.wav        - 5 Specials Flasks Quality
-# homm3snd/Fortune.wav      - 6 Identify Global in progress
-# homm3snd/Pickup01.wav     - 7 Rarities Rare Pickup (Jewelry)
-# homm3snd/Pickup02.wav     - 7 Rarities Rare Pickup (Helmets)
-# homm3snd/Pickup03.wav     - 7 Rarities Rare Pickup (Boots)
-# homm3snd/Pickup04.wav     - 7 Rarities Rare Pickup (Gloves)
-# homm3snd/Pickup05.wav     - 7 Rarities Rare Pickup (Body)
-# homm3snd/Pickup06.wav     - 7 Rarities Rare Pickup (Off Hand)
-# homm3snd/Pickup07.wav     - 7 Rarities Rare Pickup (Main Hand)
-# homm3snd/DANGER.wav       - 8 Mistaken (missed items)
-###  1.0.5 ----- Colors
+###   0.1.4   ----- Sounds
+# Starting Class Sounds (played on starting class gem drop):
+# `homm3snd/starting/CstleTown.mp3`    - Scion
+# `homm3snd/starting/Dungeon.mp3`      - Duelist
+# `homm3snd/starting/FortressTown.mp3` - Shadow
+# `homm3snd/starting/InfernoTown.mp3`  - Marauder
+# `homm3snd/starting/NecroTown.mp3`    - Witch
+# `homm3snd/starting/Rampart.mp3`      - Ranger
+# `homm3snd/starting/StrongHold.mp3`   - Templar
+# Item Drop Sounds
+# `homm3snd/DEFAULT.wav`          - 1 Continue Quest (related quest items)
+# `homm3snd/BUTTON.wav`           - 2 Currency LOW T2 (plus other related sections)
+# `homm3snd/Chat.wav`             - 2 Currency LOW T1 (plus other related sections)
+# `homm3snd/FLAGMINE.wav`         - 2 Currency MID T3 (plus other related sections)
+# `homm3snd/Age.wav`              - 2 Currency MID T2 (plus other related sections)
+# `homm3snd/SysMsg.wav`           - 2 Currency MID T1 (plus other related sections)
+# `homm3snd/LUCK.wav`             - 2 Currency TOP T3 (plus other related sections)
+# `homm3snd/TREASURE.wav`         - 2 Currency TOP T2 (plus other related sections)
+# `homm3snd/FAERIE.wav`           - 2 Currency TOP T1 (plus other related sections)
+# `homm3snd/UltimateArtifact.wav` - 2 Currency ULT T0 Drop-only Kalandra
+# `homm3snd/BIND.wav`             - 3 Seasonal Essences T3
+# `homm3snd/Berserk.wav`          - 3 Seasonal Essences T2
+# `homm3snd/Dragon.wav`           - 3 Seasonal Essences T1
+# `homm3snd/GetProtection.wav`    - 3 Seasonal Essences T0
+# `homm3snd/Temple.wav`           - 3 Seasonal Incursion Vials
+# `homm3snd/Prayer.wav`           - 3 Seasonal Delve Resonators T3 (1,2 sockets)
+# `homm3snd/View.wav`             - 3 Seasonal Delve Resonators T2 (3 sockets)
+# `homm3snd/ARMGEDN.wav`          - 3 Seasonal Delve Resonators T1 (4 sockets)
+# `homm3snd/Forget.wav`           - 3 Seasonal Betrayal Scarabs
+# `homm3snd/Regener.wav`          - 3 Seasonal Legion Incubators
+# `homm3snd/CHEST.wav`            - 3 Seasonal Legion Emblems
+# `homm3snd/Slayer.wav`           - 3 Seasonal Harvest Sacred Blossom
+# `homm3snd/ROGUE.wav`            - 3 Seasonal Heist Contracts
+# `homm3snd/Lighthouse.wav`       - 3 Seasonal Heist Blueprints
+# `homm3snd/Graveyard.wav`        - 3 Seasonal Expedition Logbooks
+# `homm3snd/Bless.wav`            - 3 Seasonal Sanctum Relics
+# `homm3snd/Mystery.wav`          - 3 Seasonal Sanctum Research
+# `homm3snd/Disease.wav`          - 4 Specific Uniques Trash (related Div Cards)
+# `homm3snd/Paralyze.wav`         - 4 Specific Unique Pieces
+# `homm3snd/BADLUCK.wav`          - 4 Specific Uniques Multibase Belts
+# `homm3snd/Poison.wav`           - 4 Specific Sockets 4 Linked
+# `homm3snd/LIGHTBLT.wav`         - 4 Specific Sockets 5 Linked
+# `homm3snd/BLOODLUS.wav`         - 4 Specific Sockets 6 Linked
+# `homm3snd/VISIONS.wav`          - 4 Specific Synthesised Items
+# `homm3snd/tailwind.wav`         - 4 Specific Fractured Items
+# `homm3snd/Buildtwn.wav`         - 4 Specific Fractured Exotic
+# `homm3snd/RESURECT.wav`         - 4 Specific Influenced Double
+# `homm3snd/MILITARY.wav`         - 4 Specific Influenced Maps
+# `homm3snd/Nwherolv.wav`         - 5 Specials Maps T1-5 (White)
+# `homm3snd/MORALE.wav`           - 5 Specials Maps T6-10 (Yellow)
+# `homm3snd/Gazebo.wav`           - 5 Specials Maps Unknown
+# `homm3snd/NewDay.wav`           - 5 Specials Maps Fragments Boss T3 (Sacrifice), Maps Red
+# `homm3snd/NewWeek.wav`          - 5 Specials Maps Fragments Boss T2 (Mortal, Shaper, Elder)
+# `homm3snd/NEWMONTH.wav`         - 5 Specials Maps Fragments Boss T1 (Uber, Sirus)
+# `homm3snd/Obelisk.wav`          - 5 Specials Maps Fragments Maven
+# `homm3snd/QUEST.wav`            - 5 Specials Quest Atlas (Voidstones, Divine Vesels)
+# `homm3snd/Badmrle.wav`          - 5 Specials Vault Keys
+# `homm3snd/COLDRAY.wav`          - 5 Specials Gems Low
+# `homm3snd/GENIE.wav`            - 5 Specials Gems Top (related Div Cards)
+# `homm3snd/Curse.wav`            - 5 Specials Div Cards Corrupted
+# `homm3snd/Cure.wav`             - 5 Specials Div Cards T3 (MinimapIcon 2)
+# `homm3snd/STORE.wav`            - 5 Specials Div Cards T2 (MinimapIcon 1)
+# `homm3snd/NOMAD.wav`            - 5 Specials Div Cards T1 (MinimapIcon 0)
+# `homm3snd/mirth.wav`            - 5 Specials Jewels Cluster
+# `homm3snd/Decay.wav`            - 5 Specials Flasks Quality
+# `homm3snd/Fortune.wav`          - 6 Identify Global in progress
+# `homm3snd/Pickup01.wav`         - 7 Rarities Rare Pickup (Jewelry)
+# `homm3snd/Pickup02.wav`         - 7 Rarities Rare Pickup (Helmets)
+# `homm3snd/Pickup03.wav`         - 7 Rarities Rare Pickup (Boots)
+# `homm3snd/Pickup04.wav`         - 7 Rarities Rare Pickup (Gloves)
+# `homm3snd/Pickup05.wav`         - 7 Rarities Rare Pickup (Body)
+# `homm3snd/Pickup06.wav`         - 7 Rarities Rare Pickup (Off Hand)
+# `homm3snd/Pickup07.wav`         - 7 Rarities Rare Pickup (Main Hand)
+# `homm3snd/DANGER.wav`           - 8 Mistaken (missed items)
+###   0.1.5   ----- Colors
 # Color Gradation (Preferable use this numbers for RGB colors)
 # Dark:    8  32    64  88
 # Grey:         128

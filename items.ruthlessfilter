@@ -130,7 +130,7 @@
 ##    3.9     --- Delirium (League v3.10)
 ###   3.9.1   ----- Orbs
 ###   3.9.2   ----- Splinters
-###   3.9.3   ----- Simulacrum (TODO)
+###   3.9.3   ----- Simulacrum
 ##    3.10    --- Harvest (League v3.11)
 ###   3.10.1  ----- Lifeforce
 ###   3.10.2  ----- Blossom
@@ -189,11 +189,6 @@
 ###   4.7.2   ----- Global
 ##    4.8     --- Zana
 ###   4.8.1   ----- Memory
-##    4.9     --- Identified
-###   4.9.1   ----- Exotic
-###   4.9.2   ----- Veiled
-###   4.9.3   ----- Delve
-###   4.9.4   ----- Global
 #     5       - Specials
 ##    5.1     --- Divination Cards
 ###   5.1.0   ----- Unknown
@@ -209,7 +204,6 @@
 ##    5.2     --- Jewels
 ###   5.2.1   ----- Cluster
 ###   5.2.2   ----- Abyss
-###   5.2.3   ----- Basic
 ##    5.3     --- Flasks
 ###   5.3.1   ----- Quality
 ###   5.3.2   ----- Utility
@@ -252,15 +246,18 @@
 ###   6.1.1   ----- In Progress
 #     7       - Rarities
 ##    7.1     --- Normal Items
+###   7.1.0   ----- Basic Jewels
 ###   7.1.1   ----- Jewellery
 ###   7.1.2   ----- Equipment
 ##    7.2     --- Magic Items
+###   7.2.0   ----- Basic Jewels
 ###   7.2.1   ----- Jewellery
 ###   7.2.2   ----- Equipment
 ##    7.3     --- Rare Items
-###   7.3.0   ----- Pickup
-###   7.3.1   ----- Jewellery
-###   7.3.2   ----- Equipment
+###   7.3.0   ----- Basic Jewels
+###   7.3.1   ----- Pickup
+###   7.3.2   ----- Jewellery
+###   7.3.3   ----- Equipment
 #     8       - Mistaken
 ##    8.1     --- Global
 ###   8.1.1   ----- Everything

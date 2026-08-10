@@ -1,5 +1,10 @@
 #     7       - Rarities
 ##    7.1     --- Normal Items
+###   7.1.0   ----- Basic Jewels
+Show
+Class == "Jewels"
+Rarity Normal
+    SetFontSize 18
 ###   7.1.1   ----- Jewellery
 Show
 Class == "Amulets" "Rings"
@@ -67,6 +72,11 @@ Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" 
 Rarity Normal
     SetFontSize 18
 ##    7.2     --- Magic Items
+###   7.2.0   ----- Basic Jewels
+Show
+Class == "Jewels"
+Rarity Magic
+    SetFontSize 24
 ###   7.2.1   ----- Jewellery
 Show
 Class == "Amulets" "Rings"
@@ -141,7 +151,12 @@ Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" 
 Rarity Magic
     SetFontSize 24
 ##    7.3     --- Rare Items
-###   7.3.0   ----- Pickup
+###   7.3.0   ----- Basic Jewels
+Show
+Class == "Jewels"
+Rarity Rare
+    SetFontSize 42
+###   7.3.1   ----- Pickup
 Show
 Class == "Amulets"
 BaseType == "Blue Pearl Amulet" "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet"
@@ -251,7 +266,7 @@ BaseType == "Opal Sceptre" "Nightmare Mace" "Runic Hatchet" "Eternal Sword" "Imp
 Rarity Rare
     CustomAlertSound "homm3snd/Pickup07.wav"
     MinimapIcon 2 Purple Kite
-###   7.3.1   ----- Jewellery
+###   7.3.2   ----- Jewellery
 Show
 Class == "Amulets" "Rings"
 Rarity Rare
@@ -268,7 +283,7 @@ Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Rare
     SetFontSize 42
-###   7.3.2   ----- Equipment
+###   7.3.3   ----- Equipment
 Show
 Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
 Rarity Rare
