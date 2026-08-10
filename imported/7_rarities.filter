@@ -1,7 +1,7 @@
 #     7       - Rarities
 ##    7.1     --- Normal Items
 ###   7.1.0   ----- Basic Jewels
-Show
+Hide
 Class == "Jewels"
 Rarity Normal
     SetFontSize 18
@@ -73,7 +73,7 @@ Rarity Normal
     SetFontSize 18
 ##    7.2     --- Magic Items
 ###   7.2.0   ----- Basic Jewels
-Show
+Hide
 Class == "Jewels"
 Rarity Magic
     SetFontSize 24
