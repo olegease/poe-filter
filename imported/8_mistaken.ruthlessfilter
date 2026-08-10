@@ -1,6 +1,6 @@
-#    8     - Mistaken
-##   8.1   --- Global
-###  8.1.1 ----- Everything
+#     8       - Mistaken
+##    8.1     --- Global
+###   8.1.1   ----- Everything
 Show
     CustomAlertSound "homm3snd/DANGER.wav"
     MinimapIcon 0 Red Star
