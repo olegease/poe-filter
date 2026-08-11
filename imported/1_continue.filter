@@ -51,7 +51,7 @@ Class == "Skill Gems"
     CustomAlertSound "homm3snd/starting/Rampart.mp3" 150
 Show
 AreaLevel 1
-BaseType == "Glacial Hammer"
+BaseType == "Holy Strike"
 Class == "Skill Gems"
     SetFontSize 45
     MinimapIcon 0 Green Triangle
