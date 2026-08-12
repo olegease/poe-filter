@@ -5,6 +5,9 @@
 
 Last Updated on 3.25 Settlers League
 
+## NO LONGER SUPPORTED
+> use as starting point example
+
 Could potentially misrepresent valuable items or show too much, so use with care!
 
 ## Usage
