@@ -84,7 +84,7 @@ Equipment (Helmets, Globes, Boots, and Body Armor) are considered an ability cla
 
 Weapons and off-hands considered to be utility class
 
-- `RR`: Marauder, Duelist, Templar (Maces)
+- `RR`: Marauder, Duelist, Templar (`Maces`)
   - Support:
     -  1: `Chance to Bleed`, `Ruthless`
     -  4: `Ancestral Call`
@@ -100,7 +100,7 @@ Weapons and off-hands considered to be utility class
     - 24: `Autoexertion`, `Determination`, `Dread Banner`, `General's Cry`, `Infernal Cry`, `Pride`, `Vengeful Cry`
     - 28: `Shockwave Totem`
     - 34: `Flame Link`, `Immortal Call`
-- `RG`: Duelist, Marauder, Scion (`Axes`)
+- `RG`: Duelist, Marauder, Scion (`Axes, Str>=Dex: Swords`)
   - Support:
     -  8: `Ballista Totem`
     - 31: `Expert Retaliation`
@@ -110,7 +110,7 @@ Weapons and off-hands considered to be utility class
     - 16: `Defiance Banner`, `Eviscerate`, `Flesh and Stone`, `Swordstorm`, `Warlord's Mark`
     - 24: `Rallying Cry`
     - 34: `Summon Stone Golem`
-- `RB`: Templar, Scion, Marauder (`Sceptres, Warstaves`)
+- `RB`: Templar, Scion, Marauder (`Str>=Int: Sceptres, Staves, Warstaves`)
   - Support:
     -  1: `Hallow`
     -  8: `Flamewood`, `Spell Totem`
@@ -141,7 +141,7 @@ Weapons and off-hands considered to be utility class
     - 24: `Alchemist's Mark`, `Grace`, `Haste`
     - 28: `Artillery Ballista`, `Charged Dash`, `Thunderstorm`
     - 34: `Intuitive Link`, `Phase Run`
-- `GB`: Shadow, Ranger, Scion (`Claws`)
+- `GB`: Shadow, Ranger, Scion (`Dex>=Int: Claws, [Rune] Daggers`)
   - Support:
     -  4: `Swift Assembly`
     -  8: `Chance to Flee`, `Locus Mine`, `Manaforged Arrows`, `Multiple Traps`, `Trap`, `Void Manipulation`
@@ -157,7 +157,7 @@ Weapons and off-hands considered to be utility class
     - 24: `Hatred`, `Purity of Ice`, `Temporal Chains`
     - 28: `Flamethrower Trap`, `Ice Trap`, `Seismic Trap`
     - 34: `Ambush`, `Summon Ice Golem`
-- `GR`: Duelist, Scion, Ranger (`Swords`)
+- `GR`: Duelist, Scion, Ranger (`Dex>=Str: Swords`)
   - Support:
     -  1: `Momentum`
     -  8: `Additional Accuracy`
@@ -186,7 +186,7 @@ Weapons and off-hands considered to be utility class
     - 28: `Dark Bargain`, `Hexblast`, `Raise Spectre`, `Summon Reaper`
     - 34: `Soul Link`, `Summon Carrion Golem`, `Summon Chaos Golem`
     - 38: `Arcanist Brand`
-- `BR`: Templar, Witch, Scion (`Staves`)
+- `BR`: Templar, Witch, Scion (`Int>=Str: Sceptres, Staves, Warstaves`)
   - Support:
     -  8: `Combustion`, `Infernal Legion`
     - 18: `Exemplar`, `Physical to Lightning`
@@ -195,15 +195,16 @@ Weapons and off-hands considered to be utility class
   - Utility:
     -  4: `Summon Holy Relic`
     - 16: `Brand Recall`, `Divine Retribution`
-    - 24: `Flammability`, `Purity of Elements`, `Armageddon Brand`, `Penance Brand`
-- `BG`: Shadow, Scion, Witch (`Daggers, Rune Daggers`)
+    - 24: `Flammability`, `Purity of Elements`
+    - 28: `Armageddon Brand`, `Penance Brand`
+- `BG`: Shadow, Scion, Witch (`Int>=Dex: Claws, [Rune] Daggers`)
   - Support:
     -  1: `Prismatic Burst`
     -  4: `Infused Channelling`
     -  8: `Blastchain Mine`, `Devour`, `Unbound Ailments`
     - 18: `Trinity`
     - 31: `Charged Mines`, `Focussed Channelling`, `High-Impact Mine`, `Pinpoint`
-    - 38: `Bonechill`,  `Cast when Stunned`, `Cast while Channelling`, `Decay`, `Minefield`
+    - 38: `Bonechill`, `Cast when Stunned`, `Cast while Channelling`, `Decay`, `Minefield`
   - Utility:
     -  1: `Stormblast Mine`
     -  4: `Conversion Trap`
