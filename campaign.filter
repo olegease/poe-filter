@@ -2954,74 +2954,74 @@ Show
 # `homm3snd/mirth.wav`            : Cluster Jewels
 # `homm3snd/tailwind.wav`         : Fractured items
 # -- icons (color shape pairs with beams for more valuable items in same color)
-# Blue Circle            :
+# Blue Circle            : Transmutation, Aumentation, Alteration and Chance orbs
 # Blue Cross             :
-# Blue Diamond           :
+# Blue Diamond           : Magic Amultets and Rings
 # Blue Hexagon           :
 # Blue Kite              :
-# Blue Moon              :
+# Blue Moon              : Magic Belts
 # Blue Pentagon          :
-# Blue Raindrop          :
+# Blue Raindrop          : Mana Flasks
 # Blue Square            :
 # Blue Star              :
 # Blue Triangle          :
 # Blue UpsideDownHouse   :
 # Brown Circle           :
 # Brown Cross            :
-# Brown Diamond          :
+# Brown Diamond          : Unique Amultes and Rings
 # Brown Hexagon          :
-# Brown Kite             :
-# Brown Moon             :
+# Brown Kite             : Unique Weapons
+# Brown Moon             : Unique Belts
 # Brown Pentagon         :
-# Brown Raindrop         :
-# Brown Square           :
-# Brown Star             :
+# Brown Raindrop         : Unique Flasks
+# Brown Square           : Unique Armours and Pieces
+# Brown Star             : Unique Jewels (including Abyss) (and Vault Keys: move?)
 # Brown Triangle         :
-# Brown UpsideDownHouse  :
+# Brown UpsideDownHouse  : Unique Shields and Quivers
 # Cyan Circle            :
-# Cyan Cross             :
+# Cyan Cross             : Double Influenced and Influenced items
 # Cyan Diamond           :
 # Cyan Hexagon           :
 # Cyan Kite              :
 # Cyan Moon              :
 # Cyan Pentagon          :
-# Cyan Raindrop          :
-# Cyan Square            :
-# Cyan Star              :
+# Cyan Raindrop          : Fractured items
+# Cyan Square            : Influenced Maps
+# Cyan Star              : Zana Memory
 # Cyan Triangle          :
 # Cyan UpsideDownHouse   :
 # Green Circle           :
-# Green Cross            :
+# Green Cross            : Quest Items (campaign only?)
 # Green Diamond          :
-# Green Hexagon          :
+# Green Hexagon          : Memories and Atlas Upgrade Items
 # Green Kite             :
 # Green Moon             :
 # Green Pentagon         :
-# Green Raindrop         :
-# Green Square           :
+# Green Raindrop         : Utility Flasks
+# Green Square           : Sanctum Research
 # Green Star             :
-# Green Triangle         :
+# Green Triangle         : Gems
 # Green UpsideDownHouse  :
-# Grey Circle            :
-# Grey Cross             :
+# Grey Circle            : Jeweller's and Fusing orbs
+# Grey Cross             : Expedition Logbooks
 # Grey Diamond           :
-# Grey Hexagon           :
+# Grey Hexagon           : Simulacrum
 # Grey Kite              :
 # Grey Moon              :
-# Grey Pentagon          : Gems
+# Grey Pentagon          : Gems Starting
 # Grey Raindrop          :
-# Grey Square            :
+# Grey Square            : Divination Cards
 # Grey Star              :
 # Grey Triangle          :
 # Grey UpsideDownHouse   :
-# Orange Circle          :
-# Orange Cross           :
-# Orange Diamond         :
+# Orange Circle          : Gold and Currency
+# Orange Cross           : Breach Splinters
+# Orange Diamond         : Blight Oils and Ultimatum Catalysts
 # Orange Hexagon         :
 # Orange Kite            :
 # Orange Moon            :
-# Orange Pentagon        :
-# Orange Raindrop        :
+# Orange Pentagon        : 6-Sockets and 5-Linked items
+# Orange Raindrop        : Tinctures
 # Orange Square          :
 # Orange Star            :
 # Orange Triangle        :
@@ -3029,8 +3029,8 @@ Show
 # Pink Circle            :
 # Pink Cross             :
 # Pink Diamond           :
-# Pink Hexagon           :
-# Pink Kite              :
+# Pink Hexagon           : Sanctum Relics and Identified items with rarity mods
+# Pink Kite              : Essences
 # Pink Moon              :
 # Pink Pentagon          :
 # Pink Raindrop          :
@@ -3040,49 +3040,49 @@ Show
 # Pink UpsideDownHouse   :
 # Purple Circle          :
 # Purple Cross           :
-# Purple Diamond         :
+# Purple Diamond         : Pickup Amultes and Rings
 # Purple Hexagon         :
-# Purple Kite            :
-# Purple Moon            :
+# Purple Kite            : Pickup Weapons
+# Purple Moon            : Pickup Belts
 # Purple Pentagon        :
 # Purple Raindrop        :
-# Purple Square          :
-# Purple Star            :
+# Purple Square          : Pickup Armours and T17 Maps
+# Purple Star            : Cluster Jewels
 # Purple Triangle        :
-# Purple UpsideDownHouse :
-# Red Circle             :
-# Red Cross              :
+# Purple UpsideDownHouse : Pickup Shields
+# Red Circle             : Top Currency
+# Red Cross              : many TODO needs split and moved
 # Red Diamond            :
-# Red Hexagon            :
+# Red Hexagon            : Boss related Map Fragments and Misc Map Items
 # Red Kite               :
 # Red Moon               :
-# Red Pentagon           :
-# Red Raindrop           :
-# Red Square             :
+# Red Pentagon           : 6-Linked
+# Red Raindrop           : Life Flasks
+# Red Square             : Red [T11-T16] Maps and Heist Blueprints
 # Red Star               : Error
 # Red Triangle           :
 # Red UpsideDownHouse    :
-# White Circle           :
-# White Cross            :
-# White Diamond          :
-# White Hexagon          :
+# White Circle           : Low-tier Currency
+# White Cross            : Veiled Items
+# White Diamond          : Normal Amulets and Rings
+# White Hexagon          : Scarabs
 # White Kite             :
-# White Moon             :
-# White Pentagon         :
-# White Raindrop         :
-# White Square           :
+# White Moon             : Normal Belts
+# White Pentagon         : 4-Linked items
+# White Raindrop         : Recipe Flasks (high quality flasks)
+# White Square           : White [T1,T5] Maps and Contracts
 # White Star             :
 # White Triangle         :
 # White UpsideDownHouse  :
-# Yellow Circle          :
+# Yellow Circle          : Mid-tier currency
 # Yellow Cross           :
-# Yellow Diamond         :
+# Yellow Diamond         : Rare Amulets and Rings
 # Yellow Hexagon         :
-# Yellow Kite            :
-# Yellow Moon            :
-# Yellow Pentagon        :
+# Yellow Kite            : Incubators (TODO remove)
+# Yellow Moon            : Rare Belts
+# Yellow Pentagon        : Delve Resonators
 # Yellow Raindrop        :
-# Yellow Square          :
+# Yellow Square          : Yellow [T6,T10] Maps
 # Yellow Star            :
 # Yellow Triangle        :
 # Yellow UpsideDownHouse :
