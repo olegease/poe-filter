@@ -1,4 +1,6 @@
 # COMMENT
+# TODO: remove all leftovers for atlas and map related filtering
+# DO NOT USE THIS FILTER PAST CAMPAIGN GAME CONTENT!!!
 # filter only for campaign, items added as they drop
 # this filter not highlight any item that drops only in atlas (mapping) content
 # it is purely designs for campaign play-through (hate mapping content anyway)
@@ -176,22 +178,22 @@ Class == "Stackable Currency"
     Continue
 ###   1.4.2   ----- Weapons
 Show
-Class "Bows" "Swords" "Axes" "Daggers" "Claws" "Maces" "Sceptres" "Staves" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Sceptres" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
     SetBackgroundColor 64 8 8
     Continue
 ###   1.4.3   ----- Armours
 Show
-Class "Body Armours" "Boots" "Gloves" "Helmets"
+Class == "Body Armours" "Boots" "Gloves" "Helmets"
     SetBackgroundColor 8 64 8
     Continue
 ###   1.4.4   ----- Off-hands
 Show
-Class "Shields" "Quivers"
+Class == "Quivers" "Shields"
     SetBackgroundColor 64 64 8
     Continue
 ###   1.4.5   ----- Jewellery
 Show
-Class "Rings" "Amulets" "Belts"
+Class == "Amulets" "Belts" "Rings"
     SetBackgroundColor 8 8 64
     Continue
 ###   1.4.6   ----- Mana Flasks
@@ -221,7 +223,7 @@ Class == "Divination Cards"
     Continue
 ###   1.4.11  ----- Gems
 Show
-Class "Gems"
+Class == "Skill Gems" "Support Gems"
     SetBackgroundColor 32 64 64
     Continue
 ###   1.4.12  ----- Tainted Currency
@@ -232,7 +234,7 @@ BaseType "Tainted"
     Continue
 ###   1.4.13  ----- Jewels
 Show
-Class "Jewels"
+Class == "Abyss Jewels" "Jewels"
     SetBackgroundColor 64 88 128
     Continue
 ###   1.4.14  ----- Fragments
@@ -317,7 +319,7 @@ Class == "Divination Cards"
     Continue
 ###   1.5.9   ----- Gems
 Show
-Class "Gems"
+Class == "Skill Gems" "Support Gems"
     SetBorderColor 64 88 64
     Continue
 ###   1.5.10  ----- Normal Maps
@@ -361,7 +363,7 @@ Show
 Show
 Class == "Stackable Currency"
 BaseType "Tainted"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 216 8
@@ -982,7 +984,7 @@ BaseType == "Gemcutter's Prism"
 Show
 Class == "Stackable Currency"
 BaseType == "Exalted Orb"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 216 8
@@ -991,7 +993,7 @@ BaseType == "Exalted Orb"
 Show
 Class == "Stackable Currency"
 BaseType == "Divine Orb"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 216 8
@@ -1000,7 +1002,7 @@ BaseType == "Divine Orb"
 Show
 Class == "Stackable Currency"
 BaseType == "Valdo's Puzzle Box"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 216 8
@@ -1009,7 +1011,7 @@ BaseType == "Valdo's Puzzle Box"
 Show
 Class == "Stackable Currency"
 BaseType == "Sacred Orb"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 216 8
@@ -1030,7 +1032,7 @@ BaseType == "Mirror of Kalandra"
 Show
 Class == "Stackable Currency"
 BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Reflecting Mist" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 216 8
@@ -1100,7 +1102,7 @@ Show
 Class == "Stackable Currency"
 BaseType "Blessing of"
 BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Orange Cross
     PlayEffect Orange
     SetBackgroundColor 248 216 8
@@ -1113,7 +1115,7 @@ Show
 Class == "Stackable Currency"
 BaseType "Shard"
 BaseType "Mirror" "Fracturing"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetBackgroundColor 248 216 8
@@ -1165,7 +1167,7 @@ BaseType == "Orb of Horizons"
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Annulment"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetBackgroundColor 248 216 8
@@ -1174,6 +1176,7 @@ BaseType == "Orb of Annulment"
 Show
 Class == "Stackable Currency"
 BaseType "Vial of"
+BaseType "Awakening" "Consequence" "Dominance" "the Ghost" "Fate" "Sacrifice" "the Ritual" "Summoning" "Transcendence"
     CustomAlertSound "homm3snd/Temple.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
@@ -1306,7 +1309,7 @@ Show
 Class == "Stackable Currency"
 BaseType "Oil"
 BaseType "Golden" "Tainted" "Reflective" "Prismatic"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Orange Diamond
     PlayEffect Orange
     SetBackgroundColor 248 216 8
@@ -1411,7 +1414,7 @@ BaseType == "Primal Crystallised Lifeforce"
 Show
 Class == "Stackable Currency"
 BaseType == "Sacred Crystallised Lifeforce"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetBorderColor 88 88 128
@@ -1585,14 +1588,14 @@ Rarity < Unique
     SetTextColor 248 248 248
 ###   4.1.5   ----- RGB
 Show
-Class "One Hand" "Gloves" "Helmets" "Shields" "Daggers" "Claws" "Boots" "Wands"
+Class == "Claws" "Daggers" "Boots" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Shields" "Wands"
 SocketGroup RGB
 Rarity Normal
     SetFontSize 42
     SetBackgroundColor 128 88 8
     SetTextColor 8 8 8
 Show
-Class "Two Hand" "Body Armours" "Staves" "Sceptres" "Bows"
+Class == "Body Armours" "Bows" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves" "Warstaves"
 SocketGroup RGB
 Rarity Normal
     SetFontSize 36
@@ -1614,7 +1617,7 @@ Rarity < Magic
 ###   4.2.1   ----- Bases
 Show
 Class == "Belts"
-BaseType == "Leather Belt" "Heavy Belt"
+BaseType == "Heavy Belt" "Leather Belt"
 Rarity Unique
     CustomAlertSound "homm3snd/BADLUCK.wav"
     MinimapIcon 0 Brown Moon
@@ -1627,13 +1630,13 @@ Rarity Unique
     MinimapIcon 1 Brown Moon
     PlayEffect Brown Temp
 Show
-Class "Flasks"
+Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Utility Flasks"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 1 Brown Raindrop
     PlayEffect Brown Temp
 Show
-Class "Jewels"
+Class == "Abyss Jewels" "Jewels"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 1 Brown Star
@@ -1650,12 +1653,12 @@ Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 2 Brown UpsideDownHouse
 Show
-Class == "Body Armours" "Gloves" "Boots" "Helmets"
+Class == "Body Armours" "Boots" "Gloves" "Helmets"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 2 Brown Square
 Show
-Class "Axes" "Maces" "Daggers" "Claws" "Sceptres" "Bows" "Swords" "Wands" "Staves"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Unique
     CustomAlertSound "homm3snd/Disease.wav"
     MinimapIcon 2 Brown Kite
@@ -1668,7 +1671,7 @@ Class == "Pieces"
 ##    4.3     --- Fractured
 ###   4.3.1   ----- Exotic
 Show
-Class "Jewels" "Flasks"
+Class == "Abyss Jewels" "Jewels" "Life Flasks" "Mana Flasks" "Utility Flasks"
 FracturedItem True
     CustomAlertSound "homm3snd/Buildtwn.wav"
     MinimapIcon 0 Cyan Raindrop
@@ -1685,7 +1688,6 @@ Show
 SynthesisedItem True
     CustomAlertSound "homm3snd/VISIONS.wav"
     MinimapIcon 2 Cyan Raindrop
-    PlayEffect Cyan Temp
     SetTextColor 128 216 192
 ##    4.5     --- Influenced
 ###   4.5.0   ----- Maps
@@ -1818,29 +1820,29 @@ HasEaterOfWorldsImplicit >= 1
 ##    4.7     --- Corrupted
 ###   4.7.1   ----- Exotic
 Show
-Class "Jewels"
+Class == "Abyss Jewels" "Jewels"
 Corrupted True
 CorruptedMods >= 1
     MinimapIcon 0 Red Cross
     PlayEffect Red
 ###   4.7.2   ----- Global
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Corrupted True
 CorruptedMods >= 3
     MinimapIcon 2 Red Cross
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Corrupted True
 CorruptedMods 2
     SetFontSize 39
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Corrupted True
 CorruptedMods 1
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Corrupted True
     SetFontSize 33
 ##    4.8     --- Zana
@@ -1852,14 +1854,14 @@ ZanaMemory True
 ##    4.9     --- Identified
 ###   4.9.1   ----- Exotic
 Show
-Class "Jewels"
+Class == "Jewels"
 Identified True
 HasExplicitMod "Vivid" "Cerebral"
 HasExplicitMod "of Wounding" "of Zeal"
     MinimapIcon 0 Red Cross
     PlayEffect Red
 Show
-Class "Jewels"
+Class == "Jewels"
 Identified True
 HasExplicitMod "Vivid" "Cerebral"
     MinimapIcon 2 Red Cross
@@ -1875,7 +1877,7 @@ HasExplicitMod "Subterranean" "Underground"
     MinimapIcon 2 Red Cross
 ###   4.9.4   ----- Global
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Identified True
     SetFontSize 33
 #     5       - Specials
@@ -2053,7 +2055,7 @@ BaseType == "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Expl
 Show # 1xKalandra 10xDivine 40xRegret 1xMirrorShard 1xEldersExalt 19xMirrorShard 1xTaintedMystic 5xElditchChaos 7xDivine 5xDivine 2xDivine 2xFracturing
 Class == "Divination Cards"
 BaseType == "House of Mirrors" "The Sephirot" "The Innocent" "Seven Years Bad Luck" "The Long Con" "Unrequited Love" "The Transformation" "Darker Half" "Divine Beauty" "Brother's Gift" "The Fortunate" "I See Brothers"
-    CustomAlertSound "homm3snd/Faerie.wav"
+    CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Grey Square
     PlayEffect Grey
     SetTextColor 248 216 8
@@ -2126,7 +2128,7 @@ BaseType == "The Gambler"
 ##    5.2     --- Jewels
 ###   5.2.1   ----- Cluster
 Show
-Class "Jewels"
+Class == "Jewels"
 BaseType "Cluster"
     CustomAlertSound "homm3snd/mirth.wav"
     MinimapIcon 0 Purple Star
@@ -2152,18 +2154,18 @@ Rarity < Rare
 ##    5.3     --- Flasks
 ###   5.3.1   ----- Quality
 Show
-Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks"
 Quality >= 20
     CustomAlertSound "homm3snd/Decay.wav"
     MinimapIcon 2 White Raindrop
     SetTextColor 248 248 248
 Show
-Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks"
 Quality >= 8
     SetFontSize 39
     SetTextColor 248 248 248
 Show
-Class == "Mana Flasks" "Life Flasks" "Hybrid Flasks"
+Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks"
 Quality >= 5
     SetFontSize 33
     SetTextColor 248 248 248
@@ -2292,21 +2294,21 @@ Class == "Hybrid Flasks"
 ##    5.4     --- Gems
 ###   5.4.1   ----- Awakened
 Show
-Class "Gems"
+Class == "Support Gems"
 BaseType "Awakened"
     CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 0 Green Triangle
     PlayEffect Green
 ###   5.4.2   ----- Exceptional
 Show
-Class "Gems"
+Class == "Support Gems"
 BaseType "Enlighten" "Enhance" "Empower"
     CustomAlertSound "homm3snd/GENIE.wav"
     MinimapIcon 0 Green Triangle
     PlayEffect Green
 ###   5.4.3   ----- High Level and Quality
 Show
-Class "Gems"
+Class == "Skill Gems" "Support Gems"
 Quality >= 20
 GemLevel >= 20
     CustomAlertSound "homm3snd/GENIE.wav"
@@ -2314,44 +2316,48 @@ GemLevel >= 20
     PlayEffect Green
 ###   5.4.4   ----- High Level
 Show
-Class "Gems"
+Class == "Skill Gems" "Support Gems"
 GemLevel >= 20
     CustomAlertSound "homm3snd/COLDRAY.wav"
     MinimapIcon 1 Green Triangle
     PlayEffect Green Temp
 ###   5.4.5   ----- High Quality
 Show
-Class "Gems"
+Class == "Skill Gems" "Support Gems"
 Quality >= 20
     CustomAlertSound "homm3snd/COLDRAY.wav"
     MinimapIcon 1 Green Triangle
     PlayEffect Green Temp
 Show
-Class "Gems"
+Class == "Skill Gems" "Support Gems"
 Quality >= 14
     CustomAlertSound "homm3snd/COLDRAY.wav"
     MinimapIcon 2 Green Triangle
 Show
-Class "Gems"
+Class == "Skill Gems" "Support Gems"
 Quality >= 8
     SetFontSize 42
 Show
-Class "Gems"
+Class == "Skill Gems" "Support Gems"
 Quality >= 1
     SetFontSize 33
 Show
-Class "Gems"
+Class == "Skill Gems"
 BaseType "Vaal"
     SetFontSize 39
 ###   5.4.6   ----- Campaign
 Show
-Class "Gems"
+Class == "Skill Gems" "Support Gems"
 AreaLevel < 68
     SetFontSize 33
 Hide
-Class "Gems"
+Class == "Skill Gems"
 AreaLevel >= 68
     SetFontSize 18
+Hide
+Class == "Support Gems"
+AreaLevel >= 68
+    SetFontSize 30
 ##    5.5     --- Maps
 ###   5.5.1   ----- White
 Show
@@ -2500,14 +2506,14 @@ Class == "Labyrinth Trinkets"
 ##    6.1     --- Global
 ###   6.1.1   ----- In Progress
 Show
-Class "Jewels"
+Class == "Jewels"
 Identified True
 HasExplicitMod "Vivid" "Cerebral"
 HasExplicitMod "of Wounding" "of Zeal"
     MinimapIcon 0 Red Cross
     PlayEffect Red
 Show
-Class "Jewels"
+Class == "Jewels"
 Identified True
 HasExplicitMod "Vivid" "Cerebral"
     MinimapIcon 2 Red Cross
@@ -2532,7 +2538,7 @@ HasExplicitMod >= 1 "of the Deathless" "Exalter's" "of Harmony" "Overseer's" "of
     MinimapIcon 0 Pink Hexagon
     PlayEffect Pink
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Identified True
     SetFontSize 33
 #     7       - Rarities
@@ -2559,65 +2565,65 @@ Rarity Normal
     SetFontSize 30
 ###   7.1.2   ----- Equipment
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 AreaLevel < 73
 DropLevel >= 68
     SetFontSize 30
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 AreaLevel < 68
 DropLevel >= 55
     SetFontSize 30
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 AreaLevel < 55
 DropLevel >= 45
     SetFontSize 30
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 AreaLevel < 45
 DropLevel >= 33
     SetFontSize 30
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 AreaLevel < 33
 DropLevel >= 13
     SetFontSize 30
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 AreaLevel < 13
 DropLevel >= 8
     SetFontSize 30
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 AreaLevel < 8
 DropLevel >= 2
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 AreaLevel < 2
 DropLevel >= 1
     SetFontSize 42
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 DropLevel >= 83
     SetFontSize 30
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
 DropLevel >= 78
     SetFontSize 24
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Normal
     SetFontSize 18
 ##    7.2     --- Magic Items
@@ -2645,58 +2651,58 @@ Rarity Magic
     SetFontSize 36
 ###   7.2.2   ----- Equipment
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
 AreaLevel < 73
 DropLevel >= 55
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
 AreaLevel < 68
 DropLevel >= 45
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
 AreaLevel < 55
 DropLevel >= 33
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
 AreaLevel < 45
 DropLevel >= 13
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
 AreaLevel < 33
 DropLevel >= 8
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
 AreaLevel < 13
 DropLevel >= 1
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
 DropLevel >= 83
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
 DropLevel >= 78
     SetFontSize 36
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
 DropLevel >= 73
     SetFontSize 36
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Magic
     SetFontSize 24
 ##    7.3     --- Rare Items
@@ -2834,55 +2840,55 @@ Rarity Rare
     SetFontSize 42
 ###   7.3.3   ----- Equipment
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Rare
 AreaLevel < 83
 DropLevel >= 68
     SetFontSize 42
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Rare
 AreaLevel < 78
 DropLevel >= 55
     SetFontSize 42
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Rare
 AreaLevel < 73
 DropLevel >= 45
     SetFontSize 42
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Rare
 AreaLevel < 68
 DropLevel >= 33
     SetFontSize 42
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Rare
 AreaLevel < 55
 DropLevel >= 13
     SetFontSize 42
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Rare
 AreaLevel < 45
 DropLevel >= 8
     SetFontSize 42
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Rare
 AreaLevel < 33
 DropLevel >= 4
     SetFontSize 42
 Show
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Rare
 AreaLevel < 13
 DropLevel >= 1
     SetFontSize 42
 Hide
-Class "Axes" "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "Maces" "Quivers" "Sceptres" "Shields" "Staves" "Swords" "Wands"
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
 Rarity Rare
     SetFontSize 30
 #     8       - Mistaken
@@ -2894,10 +2900,10 @@ Show
     PlayEffect Red
     SetBackgroundColor 8 8 248
     SetBorderColor 8 248 8
-    SetTextColor 8 248 248
+    SetTextColor 248 8 8
 # END OF FILTER
 # ============================================================================ #
-# NOTES
+# NOTES (TODO: remove atlas and map related contents this is campaign filter)
 # -- colors
 # Dark  :   8  32    64  88
 # Grey  :        128
@@ -2912,70 +2918,70 @@ Show
 # `homm3snd/starting/Rampart.mp3`      : Ranger
 # `homm3snd/starting/StrongHold.mp3`   : Templar
 # ---- items drop
-# `homm3snd/ARMGEDN.wav`          :
-# `homm3snd/Age.wav`              :
-# `homm3snd/BADLUCK.wav`          :
-# `homm3snd/BIND.wav`             :
-# `homm3snd/BLOODLUS.wav`         :
-# `homm3snd/BUTTON.wav`           :
-# `homm3snd/Badmrle.wav`          :
-# `homm3snd/Berserk.wav`          :
-# `homm3snd/Bless.wav`            :
-# `homm3snd/Buildtwn.wav`         :
-# `homm3snd/CHEST.wav`            :
-# `homm3snd/COLDRAY.wav`          :
-# `homm3snd/Chat.wav`             :
-# `homm3snd/Cure.wav`             :
-# `homm3snd/Curse.wav`            :
-# `homm3snd/DANGER.wav`           : Error
-# `homm3snd/DEFAULT.wav`          :
-# `homm3snd/Decay.wav`            :
-# `homm3snd/Disease.wav`          :
-# `homm3snd/Dragon.wav`           :
-# `homm3snd/FAERIE.wav`           :
-# `homm3snd/FLAGMINE.wav`         :
-# `homm3snd/Forget.wav`           :
-# `homm3snd/Fortune.wav`          :
-# `homm3snd/GENIE.wav`            :
-# `homm3snd/Gazebo.wav`           :
-# `homm3snd/GetProtection.wav`    :
-# `homm3snd/Graveyard.wav`        :
-# `homm3snd/LIGHTBLT.wav`         :
-# `homm3snd/LUCK.wav`             :
-# `homm3snd/Lighthouse.wav`       :
-# `homm3snd/MILITARY.wav`         :
-# `homm3snd/MORALE.wav`           :
-# `homm3snd/Mystery.wav`          :
-# `homm3snd/NEWMONTH.wav`         :
-# `homm3snd/NOMAD.wav`            :
-# `homm3snd/NewDay.wav`           :
-# `homm3snd/NewWeek.wav`          :
-# `homm3snd/Nwherolv.wav`         :
-# `homm3snd/Obelisk.wav`          :
-# `homm3snd/Paralyze.wav`         :
-# `homm3snd/Pickup01.wav`         :
-# `homm3snd/Pickup02.wav`         :
-# `homm3snd/Pickup03.wav`         :
-# `homm3snd/Pickup04.wav`         :
-# `homm3snd/Pickup05.wav`         :
-# `homm3snd/Pickup06.wav`         :
-# `homm3snd/Pickup07.wav`         :
-# `homm3snd/Poison.wav`           :
-# `homm3snd/Prayer.wav`           :
-# `homm3snd/QUEST.wav`            :
-# `homm3snd/RESURECT.wav`         :
-# `homm3snd/ROGUE.wav`            :
-# `homm3snd/Regener.wav`          :
-# `homm3snd/STORE.wav`            :
-# `homm3snd/Slayer.wav`           :
-# `homm3snd/SysMsg.wav`           :
-# `homm3snd/TREASURE.wav`         :
-# `homm3snd/Temple.wav`           :
-# `homm3snd/UltimateArtifact.wav` :
-# `homm3snd/VISIONS.wav`          :
-# `homm3snd/View.wav`             :
-# `homm3snd/mirth.wav`            :
-# `homm3snd/tailwind.wav`         :
+# `homm3snd/ARMGEDN.wav`          : Delve Prime Resonator
+# `homm3snd/Age.wav`              : Jeweller's, Chromatic and Fusing orbs, Fossils and Rogue's Marker
+# `homm3snd/BADLUCK.wav`          : Unique Heavy and Leather Belt bases
+# `homm3snd/BIND.wav`             : Essences low tier
+# `homm3snd/BLOODLUS.wav`         : 6-Links
+# `homm3snd/BUTTON.wav`           : Portal and Wisdom Scrolls
+# `homm3snd/Badmrle.wav`          : Vault Keys
+# `homm3snd/Berserk.wav`          : Essences mid tier
+# `homm3snd/Bless.wav`            : Sanctum Relics
+# `homm3snd/Buildtwn.wav`         : Exotic Fractured items
+# `homm3snd/CHEST.wav`            : Legion Timeless Emblem
+# `homm3snd/COLDRAY.wav`          : Gems high quality
+# `homm3snd/Chat.wav`             : Low Tier Currency, Big Lifeforce Stacks
+# `homm3snd/Cure.wav`             : some Divination Cards (TODO: review types of cards)
+# `homm3snd/Curse.wav`            : Divination Cards low tier related to corrupted items
+# `homm3snd/DANGER.wav`           : Error and unknown (TODO: make also disabled divination cards) divination cards
+# `homm3snd/DEFAULT.wav`          : Quest Related Items (Campaign, Labirinth, Heist Targets)
+# `homm3snd/Decay.wav`            : Flasks high quality
+# `homm3snd/Disease.wav`          : Most Uniques and Unique Related Divination Cards
+# `homm3snd/DRAGON.wav`           : Essences top tier
+# `homm3snd/FAERIE.wav`           : Tainted and high tier Currency
+# `homm3snd/FLAGMINE.wav`         : Currency low tier
+# `homm3snd/Forget.wav`           : Scarab Map Fragments
+# `homm3snd/Fortune.wav`          : Rarity mods related identified items
+# `homm3snd/GENIE.wav`            : Gem top tier and top tier gem related Divination Cards
+# `homm3snd/Gazebo.wav`           : Maps tier 17 and other unknowns
+# `homm3snd/GetProtection.wav`    : Essences best
+# `homm3snd/Graveyard.wav`        : Expedition Logbooks
+# `homm3snd/LIGHTBLT.wav`         : 5-Links
+# `homm3snd/LUCK.wav`             : Currency mid tier
+# `homm3snd/Lighthouse.wav`       : Heist Blueprints
+# `homm3snd/MILITARY.wav`         : Maps Influenced
+# `homm3snd/MORALE.wav`           : Maps Yellow
+# `homm3snd/Mystery.wav`          : Sanctum Research
+# `homm3snd/NEWMONTH.wav`         : Maps top boss
+# `homm3snd/NOMAD.wav`            : Divination Cards top tier
+# `homm3snd/NewDay.wav`           : Maps Red and low boss
+# `homm3snd/NewWeek.wav`          : Maps mid boss
+# `homm3snd/Nwherolv.wav`         : Maps White
+# `homm3snd/Obelisk.wav`          : Maven's Writ
+# `homm3snd/Paralyze.wav`         : Unique Pieces
+# `homm3snd/Pickup01.wav`         : Amulets, Belts and Rings pickups
+# `homm3snd/Pickup02.wav`         : Helmets pickups
+# `homm3snd/Pickup03.wav`         : Boots pickups
+# `homm3snd/Pickup04.wav`         : Gloves pickups
+# `homm3snd/Pickup05.wav`         : Body pickups
+# `homm3snd/Pickup06.wav`         : Shileds pickups
+# `homm3snd/Pickup07.wav`         : Weapons pickups
+# `homm3snd/Poison.wav`           : 4-Links in Campaign, non-uniques
+# `homm3snd/Prayer.wav`           : Delve Primitive and Potent Resonators
+# `homm3snd/QUEST.wav`            : Atlas Related quest items
+# `homm3snd/RESURECT.wav`         : Double Influenced items
+# `homm3snd/ROGUE.wav`            : Heist Contracts
+# `homm3snd/Regener.wav`          : Legion Incubators (TODO: remove)
+# `homm3snd/STORE.wav`            : Divination Cards mid tier
+# `homm3snd/Slayer.wav`           : Sacred Blossom map fragment
+# `homm3snd/SysMsg.wav`           : Currency mid tier
+# `homm3snd/TREASURE.wav`         : Currency mid+ tier
+# `homm3snd/Temple.wav`           : Incursion Vails
+# `homm3snd/UltimateArtifact.wav` : Mirror of Kalandra
+# `homm3snd/VISIONS.wav`          : Synthesised items
+# `homm3snd/View.wav`             : Delve Powerful Resonator
+# `homm3snd/mirth.wav`            : Cluster Jewels
+# `homm3snd/tailwind.wav`         : Fractured items
 # -- icons (color shape pairs with beams for more valuable items in same color)
 # Blue Circle            :
 # Blue Cross             :
