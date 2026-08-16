@@ -1581,7 +1581,7 @@ Rarity < Unique
 ###   4.1.4   ----- 4 Link
 Show
 LinkedSockets 4
-AreaLevel < 68
+AreaLevel < 50
 Rarity < Unique
     CustomAlertSound "homm3snd/Poison.wav"
     MinimapIcon 2 White Pentagon
@@ -1604,13 +1604,13 @@ Rarity Normal
 ###   4.1.6   ----- 3 Link
 Show
 LinkedSockets 3
-AreaLevel < 34
+AreaLevel < 25
 Rarity < Rare
     SetFontSize 39
 ###   4.1.7   ----- 2 Link
 Show
 LinkedSockets 2
-AreaLevel < 17
+AreaLevel < 12
 Rarity < Magic
     SetFontSize 33
 ##    4.2     --- Unique
