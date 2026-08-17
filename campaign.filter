@@ -850,7 +850,14 @@ BaseType == "Instilling Orb" "Enkindling Orb"
     SetTextColor 32 128 64
 Show
 Class == "Stackable Currency"
-BaseType == "Stacked Deck" "Scouting Report"
+BaseType == "Stacked Deck"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 192 160 32
+    SetTextColor 64 64 64
+Show
+Class == "Stackable Currency"
+BaseType "Scouting Report"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32
