@@ -1,0 +1,2988 @@
+# COMMENT
+# TODO: remove all leftovers for atlas and map related filtering
+# TODO: remove all filtering for removed (but still accessible via standard)
+# \ items, so they would show as Mistaken (Error) items with danger sound
+# DO NOT USE THIS FILTER PAST CAMPAIGN GAME CONTENT!!!
+# filter only for campaign
+# this filter not highlight any item that drops only in atlas (mapping) content
+# it is purely designs for campaign play-through (hate mapping content anyway)
+# filter based on `items` filters (which is no longer supported!)
+# items from campaign only or contents available from campaign,
+# maps are hidden in base game and show as fully transparent font size 18 in
+# ruthless mode
+# END OF COMMENT
+# ============================================================================ #
+# FILTER
+#     1       - Continue
+##    1.1     --- Mandatory
+###   1.1.1   ----- Starting
+Show
+AreaLevel 1
+BaseType == "Spectral Throw"
+Class == "Skill Gems"
+    CustomAlertSound "homm3snd/starting/CstleTown.mp3" 150
+    MinimapIcon 0 Grey Pentagon
+    PlayEffect Grey
+    SetFontSize 45
+Show
+AreaLevel 1
+BaseType == "Double Strike"
+Class == "Skill Gems"
+    CustomAlertSound "homm3snd/starting/Dungeon.mp3" 150
+    MinimapIcon 0 Grey Pentagon
+    PlayEffect Grey
+    SetFontSize 45
+Show
+AreaLevel 1
+BaseType == "Viper Strike"
+Class == "Skill Gems"
+    CustomAlertSound "homm3snd/starting/FortressTown.mp3" 150
+    MinimapIcon 0 Grey Pentagon
+    PlayEffect Grey
+    SetFontSize 45
+Show
+AreaLevel 1
+BaseType == "Heavy Strike"
+Class == "Skill Gems"
+    CustomAlertSound "homm3snd/starting/InfernoTown.mp3" 150
+    MinimapIcon 0 Grey Pentagon
+    PlayEffect Grey
+    SetFontSize 45
+Show
+AreaLevel 1
+BaseType == "Fireball"
+Class == "Skill Gems"
+    CustomAlertSound "homm3snd/starting/NecroTown.mp3" 150
+    MinimapIcon 0 Grey Pentagon
+    PlayEffect Grey
+    SetFontSize 45
+Show
+AreaLevel 1
+BaseType == "Burning Arrow"
+Class == "Skill Gems"
+    CustomAlertSound "homm3snd/starting/Rampart.mp3" 150
+    MinimapIcon 0 Grey Pentagon
+    PlayEffect Grey
+    SetFontSize 45
+Show
+AreaLevel 1
+BaseType == "Holy Strike"
+Class == "Skill Gems"
+    CustomAlertSound "homm3snd/starting/StrongHold.mp3" 150
+    MinimapIcon 0 Grey Pentagon
+    PlayEffect Grey
+    SetFontSize 45
+###   1.1.2   ----- Quest Items
+Show
+Class == "Quest Items"
+    SetFontSize 45
+    CustomAlertSound "homm3snd/DEFAULT.wav"
+    MinimapIcon 0 Green Cross
+    PlayEffect Green
+###   1.1.3   ----- Gold
+Show
+BaseType == "Gold"
+StackSize >= 4096
+    SetFontSize 45
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 248 216 64
+Show
+BaseType == "Gold"
+StackSize >=  512
+    SetFontSize 42
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 216 192 32
+Show
+BaseType == "Gold"
+StackSize >= 64
+    SetFontSize 39
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 192 160 32
+Show
+BaseType == "Gold"
+StackSize >= 8
+    SetFontSize 36
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 160 128 8
+Show
+BaseType == "Gold"
+    SetFontSize 33
+    SetBackgroundColor 0 0 0 0
+    SetBorderColor 0 0 0 0
+    SetTextColor 128 88 8
+##    1.2     --- Drop Sounds
+###   1.2.1   ----- All Items
+Show
+    DisableDropSound
+    Continue
+##    1.3     --- Text
+###   1.3.1   ----- Normal Rarity
+Show
+Rarity Normal
+    SetTextColor 192 192 192
+    Continue
+###   1.3.2   ----- Magic Rarity
+Show
+Rarity Magic
+    SetTextColor 128 128 248
+    Continue
+###   1.3.3   ----- Rare Rarity
+Show
+Rarity Rare
+    SetTextColor 248 248 128
+    Continue
+###   1.3.4   ----- Unique Rarity
+Show
+Rarity Unique
+    SetTextColor 160 88 32
+    Continue
+###   1.3.5   ----- Gems
+Show
+Class "Gems"
+    SetTextColor 32 160 160
+    Continue
+###   1.3.6   ----- Fractured
+Show
+FracturedItem True
+    SetTextColor 160 160 88
+    Continue
+###   1.3.7   ----- Synthesised
+Show
+SynthesisedItem True
+    SetTextColor 160 160 88
+    Continue
+###   1.3.8   ----- Influenced
+Show
+HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
+    SetTextColor 160 160 88
+    Continue
+###   1.3.9   ----- Corrupted
+Show
+Corrupted True
+    SetTextColor  216 8 8
+    Continue
+###   1.3.10  ----- Crafted
+Show
+Identified True
+HasExplicitMod "Veil" "Chosen" "Order" "Craft" "Upgraded" "Subterranean" "Underground"
+    SetTextColor 192 216 248
+    Continue
+##    1.4     --- Background
+###   1.4.1   ----- Currency
+Show
+Class == "Stackable Currency"
+    SetBackgroundColor 128 88 8
+    Continue
+###   1.4.2   ----- Weapons
+Show
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Sceptres" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+    SetBackgroundColor 64 8 8
+    Continue
+###   1.4.3   ----- Armours
+Show
+Class == "Body Armours" "Boots" "Gloves" "Helmets"
+    SetBackgroundColor 8 64 8
+    Continue
+###   1.4.4   ----- Off-hands
+Show
+Class == "Quivers" "Shields"
+    SetBackgroundColor 64 64 8
+    Continue
+###   1.4.5   ----- Jewellery
+Show
+Class == "Amulets" "Belts" "Rings"
+    SetBackgroundColor 8 8 64
+    Continue
+###   1.4.6   ----- Mana Flasks
+Show
+Class == "Mana Flasks"
+    SetBackgroundColor 64 64 216
+    Continue
+###   1.4.7   ----- Life Flasks
+Show
+Class == "Life Flasks"
+    SetBackgroundColor 128 32 32
+    Continue
+###   1.4.8   ----- Hybrid Flasks
+Show
+Class == "Hybrid Flasks"
+    SetBackgroundColor 128 32 128
+    Continue
+###   1.4.9   ----- Utility Flasks
+Show
+Class == "Utility Flasks"
+    SetBackgroundColor 32 128 64
+    Continue
+###   1.4.10  ----- Divination Cards
+Show
+Class == "Divination Cards"
+    SetBackgroundColor 64 64 64
+    Continue
+###   1.4.11  ----- Gems
+Show
+Class == "Skill Gems" "Support Gems"
+    SetBackgroundColor 32 64 64
+    Continue
+###   1.4.12  ----- Tainted Currency
+Show
+Class == "Stackable Currency"
+BaseType "Tainted"
+    SetBackgroundColor 216 8 8
+    Continue
+###   1.4.13  ----- Jewels
+Show
+Class == "Abyss Jewels" "Jewels"
+    SetBackgroundColor 64 88 128
+    Continue
+###   1.4.14  ----- Fragments
+Show
+Class == "Map Fragments"
+    SetBackgroundColor 192 192 192
+    Continue
+###   1.4.15  ----- Maps
+Show
+Class == "Maps"
+    SetBackgroundColor 8 8 8
+    Continue
+##    1.5     --- Border
+###   1.5.1   ----- Strength Bases
+Show
+BaseArmour >= 1
+    SetBorderColor 248 8 8
+    Continue
+Show
+Class == "One Hand Maces" "Two Hand Maces"
+    SetBorderColor 248 8 8
+    Continue
+###   1.5.2   ----- Dexterity Bases
+Show
+BaseEvasion >= 1
+    SetBorderColor 8 248 8
+    Continue
+Show
+Class == "Bows" "Thrusting One Hand Swords"
+    SetBorderColor 8 248 8
+    Continue
+###   1.5.3   ----- Intelligence Bases
+Show
+BaseEnergyShield >= 1
+    SetBorderColor 8 8 248
+    Continue
+Show
+Class == "Wands"
+    SetBorderColor 8 8 248
+    Continue
+###   1.5.4   ----- Strength and Dexterity Bases
+Show
+BaseArmour >= 1
+BaseEvasion >= 1
+    SetBorderColor 248 248 8
+    Continue
+Show
+Class == "One Hand Axes" "One Hand Swords" "Two Hand Axes" "Two Hand Swords"
+    SetBorderColor 248 248 8
+    Continue
+###   1.5.5   ----- Dexterity and Intelligence Bases
+Show
+BaseEvasion >= 1
+BaseEnergyShield >= 1
+    SetBorderColor 8 248 248
+    Continue
+Show
+Class == "Claws" "Daggers" "Rune Daggers"
+    SetBorderColor 8 248 248
+    Continue
+###   1.5.6   ----- Intelligence and Strength Bases
+Show
+BaseEnergyShield >= 1
+BaseArmour >= 1
+    SetBorderColor 248 8 248
+    Continue
+Show
+Class == "Sceptres" "Staves" "Warstaves"
+    SetBorderColor 248 8 248
+    Continue
+###   1.5.7   ----- Strength and Dexterity and Intelligence Bases
+Show
+BaseArmour >= 1
+BaseEvasion >= 1
+BaseEnergyShield >= 1
+    SetBorderColor 248 248 248
+    Continue
+###   1.5.8   ----- Divination Cards
+Show
+Class == "Divination Cards"
+    SetBorderColor 8 8 8
+    Continue
+###   1.5.9   ----- Gems
+Show
+Class == "Skill Gems" "Support Gems"
+    SetBorderColor 64 88 64
+    Continue
+###   1.5.10  ----- Normal Maps
+Show
+Class == "Maps"
+Rarity Normal
+    SetBorderColor 216 216 216
+    Continue
+###   1.5.11  ----- Magic Maps
+Show
+Class == "Maps"
+Rarity Magic
+    SetBorderColor 128 128 248
+    Continue
+###   1.5.12  ----- Rare Maps
+Show
+Class == "Maps"
+Rarity Rare
+    SetBorderColor 248 248 128
+    Continue
+###   1.5.13  ----- Corrupted Maps
+Show
+Class == "Maps"
+Corrupted True
+    SetBorderColor 216 8 8
+    Continue
+###   1.5.14  ----- Unique Maps
+Show
+Class == "Maps"
+Rarity Unique
+    SetBorderColor 160 88 32
+    Continue
+##    1.6     --- Font
+###   1.6.1   ----- All Items
+Show
+    SetFontSize 45
+    Continue
+#     2       - Currency
+##    2.0     --- Tainted
+###   2.0.0   ----- All
+Show
+Class == "Stackable Currency"
+BaseType "Tainted"
+    CustomAlertSound "homm3snd/FAERIE.wav"
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+    SetBackgroundColor 248 216 64
+    SetTextColor 128 32 8
+##    2.1     --- Basic Vendor
+###   2.1.1   ----- Wisdom
+Show
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
+StackSize 40
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 White Circle
+    SetBackgroundColor 160 128 8
+    SetBorderColor 88 32 64
+    SetTextColor 88 32 64
+Show
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
+StackSize >= 8
+    CustomAlertSound "homm3snd/BUTTON.wav"
+    MinimapIcon 2 White Circle
+    SetBorderColor 88 32 64
+    SetTextColor 88 32 64
+Show
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
+AreaLevel < 45
+    CustomAlertSound "homm3snd/BUTTON.wav"
+    MinimapIcon 2 White Circle
+    SetBorderColor 88 32 64
+    SetTextColor 88 32 64
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
+AreaLevel >= 83
+StackSize < 8
+    SetFontSize 18
+    SetBorderColor 88 32 64
+    SetTextColor 88 32 64
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
+AreaLevel >= 78
+StackSize < 6
+    SetFontSize 18
+    SetBorderColor 88 32 64
+    SetTextColor 88 32 64
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
+AreaLevel >= 73
+StackSize < 5
+    SetFontSize 18
+    SetBorderColor 88 32 64
+    SetTextColor 88 32 64
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
+AreaLevel >= 68
+StackSize < 4
+    SetFontSize 18
+    SetBorderColor 88 32 64
+    SetTextColor 88 32 64
+Show
+Class == "Stackable Currency"
+BaseType == "Scroll of Wisdom"
+    SetFontSize 33
+    SetBorderColor 88 32 64
+    SetTextColor 88 32 64
+###   2.1.2   ----- Portal
+Show
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
+StackSize 40
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 White Circle
+    SetBackgroundColor 160 128 8
+    SetBorderColor 32 64 88
+    SetTextColor 32 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
+StackSize >= 8
+    CustomAlertSound "homm3snd/BUTTON.wav"
+    MinimapIcon 2 White Circle
+    SetBorderColor 32 64 88
+    SetTextColor 32 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
+AreaLevel < 68
+    CustomAlertSound "homm3snd/BUTTON.wav"
+    MinimapIcon 2 White Circle
+    SetBorderColor 32 64 88
+    SetTextColor 32 64 88
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
+AreaLevel >= 83
+StackSize < 6
+    SetFontSize 24
+    SetBorderColor 32 64 88
+    SetTextColor 32 64 88
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
+AreaLevel >= 78
+StackSize < 5
+    SetFontSize 24
+    SetBorderColor 32 64 88
+    SetTextColor 32 64 88
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
+AreaLevel >= 73
+StackSize < 4
+    SetFontSize 24
+    SetBorderColor 32 64 88
+    SetTextColor 32 64 88
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
+AreaLevel >= 68
+StackSize < 3
+    SetFontSize 24
+    SetBorderColor 32 64 88
+    SetTextColor 32 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Portal Scroll"
+    SetFontSize 39
+    SetBorderColor 32 64 88
+    SetTextColor 32 64 88
+###   2.1.3   ----- Transmutation
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
+StackSize 40
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 0 Blue Circle
+    PlayEffect Blue
+    SetBackgroundColor 192 160 32
+    SetTextColor 8 32 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
+StackSize >= 12
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 0 Blue Circle
+    PlayEffect Blue
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 32 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
+StackSize >= 8
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 1 Blue Circle
+    PlayEffect Blue Temp
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 32 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
+StackSize >= 5
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Blue Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 32 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
+AreaLevel < 68
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Blue Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 32 128
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
+AreaLevel >= 83
+StackSize < 3
+    SetFontSize 30
+    SetTextColor 8 32 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
+AreaLevel >= 78
+StackSize < 3
+    SetFontSize 33
+    SetTextColor 8 32 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Transmutation"
+    SetFontSize 39
+    SetTextColor 8 32 128
+###   2.1.4   ----- Augmentation
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
+StackSize 30
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 0 Blue Circle
+    PlayEffect Blue
+    SetBackgroundColor 192 160 32
+    SetTextColor 8 64 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
+StackSize >= 12
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 0 Blue Circle
+    PlayEffect Blue
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 64 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
+StackSize >= 8
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 1 Blue Circle
+    PlayEffect Blue Temp
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 64 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
+StackSize >= 5
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Blue Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 64 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
+AreaLevel < 68
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Blue Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 64 128
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
+AreaLevel >= 83
+StackSize < 3
+    SetFontSize 30
+    SetTextColor 8 64 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
+AreaLevel >= 78
+    SetFontSize 33
+    SetTextColor 8 64 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Augmentation"
+    SetFontSize 39
+    SetTextColor 8 64 128
+###   2.1.5   ----- Alteration
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
+StackSize 20
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 0 Blue Circle
+    PlayEffect Blue
+    SetBackgroundColor 192 128 8
+    SetTextColor 8 88 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
+StackSize >= 8
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 0 Blue Circle
+    PlayEffect Blue
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 88 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
+StackSize >= 5
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 1 Blue Circle
+    PlayEffect Blue Temp
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 88 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
+StackSize >= 3
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Blue Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 88 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
+AreaLevel < 73
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Blue Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 88 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
+AreaLevel >= 83
+    SetFontSize 33
+    SetTextColor 8 88 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
+AreaLevel >= 78
+    SetFontSize 39
+    SetTextColor 8 88 128
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alteration"
+    MinimapIcon 2 Blue Circle
+    SetTextColor 8 88 128
+###   2.1.6   ----- MID T2
+Show
+Class == "Stackable Currency"
+BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Fusing"
+    CustomAlertSound "homm3snd/Age.wav"
+    MinimapIcon 2 Grey Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 248 248 248
+###   2.1.9   ----- MID T1
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Chance" "Orb of Scouring" "Orb of Regret" "Orb of Alchemy"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 2 Blue Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 88 88 88
+##    2.2     --- Basic Quality Vendor
+###   2.2.1   ----- Scrap
+Show
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
+StackSize 40
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 0 White Circle
+    PlayEffect White
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
+StackSize >= 20
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 0 White Circle
+    PlayEffect White
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
+StackSize >= 16
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 1 White Circle
+    PlayEffect White Temp
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
+StackSize >= 12
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 White Circle
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
+AreaLevel < 45
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 White Circle
+    SetTextColor 8 8 8
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
+AreaLevel >= 83
+StackSize < 8
+    SetFontSize 24
+    SetTextColor 8 8 8
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
+AreaLevel >= 78
+StackSize < 4
+    SetFontSize 24
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Armourer's Scrap"
+    SetFontSize 33
+    SetTextColor 8 8 8
+###   2.2.2   ----- Whetstone
+Show
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
+StackSize 40
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 0 White Circle
+    PlayEffect White
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
+StackSize >= 12
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 0 White Circle
+    PlayEffect White
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
+StackSize >= 10
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 1 White Circle
+    PlayEffect White Temp
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
+StackSize >= 8
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 White Circle
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
+AreaLevel < 68
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 White Circle
+    SetTextColor 8 8 8
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
+AreaLevel >= 83
+StackSize < 4
+    SetFontSize 30
+    SetTextColor 8 8 8
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
+AreaLevel >= 78
+StackSize < 2
+    SetFontSize 30
+    SetTextColor 8 8 8
+Show
+Class == "Stackable Currency"
+BaseType == "Blacksmith's Whetstone"
+    SetFontSize 36
+    SetTextColor 8 8 8
+###   2.2.3   ----- Bauble
+Show
+Class == "Stackable Currency"
+BaseType == "Glassblower's Bauble"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Yellow Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 8 8
+##    2.3     --- Basic Master Vendor
+###   2.3.1   ----- Unmaking
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Unmaking" "Cartographer's Chisel"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 0 Yellow Circle
+    PlayEffect Yellow
+    SetBackgroundColor 216 192 32
+    SetTextColor 8 8 8
+###   2.3.3   ----- Bestiary (TODO)
+##    2.4     --- Basic Drop Only
+###   2.4.1   ----- TOP T3
+Show
+Class == "Stackable Currency"
+BaseType == "Instilling Orb" "Enkindling Orb"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 192 160 32
+    SetTextColor 32 128 64
+Show
+Class == "Stackable Currency"
+BaseType == "Stacked Deck"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 192 160 32
+    SetTextColor 64 64 64
+Show
+Class == "Stackable Currency"
+BaseType "Scouting Report"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 192 160 32
+    SetTextColor 64 64 64
+###   2.4.5   ----- Ember
+Show
+Class == "Stackable Currency"
+BaseType == "Lesser Eldritch Ember"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 192 160 32
+    SetTextColor 160 8 64
+###   2.4.6   ----- Ichor
+Show
+Class == "Stackable Currency"
+BaseType == "Lesser Eldritch Ichor"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 192 160 32
+    SetTextColor 64 8 160
+###   2.4.7   ----- TOP T2
+Show
+Class == "Stackable Currency"
+BaseType == "Regal Orb" "Chaos Orb" "Vaal Orb" "Blessed Orb" "Gemcutter's Prism"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Circle
+    PlayEffect Orange Temp
+    SetBackgroundColor 216 192 32
+    SetTextColor 192 64 64
+###   2.4.12  ----- TOP T1
+Show
+Class == "Stackable Currency"
+BaseType == "Exalted Orb" "Divine Orb" "Valdo's Puzzle Box" "Sacred Orb"
+    CustomAlertSound "homm3snd/FAERIE.wav"
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+    SetBackgroundColor 248 216 64
+    SetTextColor 216 8 8
+###   2.4.16  ----- ULT T0 (Kalandra)
+Show
+Class == "Stackable Currency"
+BaseType == "Mirror of Kalandra"
+    CustomAlertSound "homm3snd/UltimateArtifact.wav"
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+    SetBackgroundColor 248 248 248
+    SetTextColor 248 8 8
+##    2.5     --- Basic Drop Only Monster Restricted
+###   2.5.1   ----- All
+Show
+Class == "Stackable Currency"
+BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Reflecting Mist" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
+    CustomAlertSound "homm3snd/FAERIE.wav"
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+    SetBackgroundColor 248 216 64
+    SetTextColor 248 8 8
+#     3       - Seasonal
+##    3.1     --- Essence (League v2.4)
+###   3.1.1   ----- Group F
+Show
+Class == "Stackable Currency"
+BaseType "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
+    CustomAlertSound "homm3snd/GetProtection.wav"
+    MinimapIcon 0 Pink Kite
+    PlayEffect Pink
+    SetTextColor 248 8 248
+###   3.1.2   ----- Tiers
+Show
+Class == "Stackable Currency"
+BaseType "Deafening Essence" "Remnant of Corruption"
+    CustomAlertSound "homm3snd/DRAGON.wav"
+    MinimapIcon 0 Pink Kite
+    PlayEffect Pink
+    SetTextColor 216 8 216
+Show
+Class == "Stackable Currency"
+BaseType "Essence"
+BaseType "Shrieking" "Screaming"
+    CustomAlertSound "homm3snd/Berserk.wav"
+    MinimapIcon 1 Pink Kite
+    PlayEffect Pink Temp
+    SetTextColor 192 8 192
+Show
+Class == "Stackable Currency"
+BaseType "Essence"
+BaseType "Wailing" "Weeping"
+    CustomAlertSound "homm3snd/BIND.wav"
+    MinimapIcon 2 Pink Kite
+    SetTextColor 160 8 160
+Show
+Class == "Stackable Currency"
+BaseType "Essence"
+BaseType "Muttering" "Whispering"
+    SetFontSize 42
+    SetTextColor 128 8 128
+##    3.2     --- Breach (League v2.5)
+###   3.2.1   ----- Splinters
+Show
+Class == "Stackable Currency"
+StackSize >= 8
+BaseType "Splinter of"
+BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 1 Orange Cross
+    PlayEffect Orange Temp
+    SetBackgroundColor 160 128 8
+    SetBorderColor 64 8 88
+    SetTextColor 128 32 216
+Show
+Class == "Stackable Currency"
+BaseType "Splinter of"
+BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Cross
+    SetBorderColor 64 8 88
+    SetTextColor 128 32 216
+###   3.2.2   ----- Blessings
+Show
+Class == "Stackable Currency"
+BaseType "Blessing of"
+BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
+    CustomAlertSound "homm3snd/FAERIE.wav"
+    MinimapIcon 0 Orange Cross
+    PlayEffect Orange
+    SetBackgroundColor 248 216 64
+    SetBorderColor 64 8 88
+    SetTextColor 128 32 216
+###   3.2.3   ----- Breachstones (TODO)
+##    3.3     --- Harbinger (League v3.0)
+###   3.3.1   ----- Shards
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Mirror" "Fracturing"
+    CustomAlertSound "homm3snd/FAERIE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 248 216 64
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Harbinger's" "Annulment" "Exalted"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 1 Orange Circle
+    PlayEffect Orange Temp
+    SetBackgroundColor 160 128 8
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Horizon" "Ancient" "Chaos"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Binding" "Regal" "Alchemy" "Engineer's"
+    SetFontSize 39
+Show
+Class == "Stackable Currency"
+BaseType "Shard"
+BaseType "Alteration" "Transmutation"
+    SetFontSize 42
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Scroll Fragment"
+    SetFontSize 18
+###   3.3.2   ----- Binding
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Binding"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 192 160 32
+    SetTextColor 192 192 88
+###   3.3.3   ----- Horizons
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Horizons"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Circle
+    PlayEffect Orange Temp
+    SetBackgroundColor 216 192 32
+###   3.3.4   ----- Annulment
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Annulment"
+    CustomAlertSound "homm3snd/FAERIE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 248 216 64
+##    3.4     --- Incursion (League v3.3)
+###   3.4.1   ----- Vials
+Show
+Class == "Stackable Currency"
+BaseType "Vial of"
+BaseType "Awakening" "Consequence" "Dominance" "the Ghost" "Fate" "Sacrifice" "the Ritual" "Summoning" "Transcendence"
+    CustomAlertSound "homm3snd/Temple.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetTextColor 160 88 32
+###   3.4.2   ----- Items (TODO)
+##    3.5     --- Delve (League v3.4)
+###   3.5.1   ----- Fossils
+Show
+Class == "Stackable Currency"
+BaseType "Fossil"
+    CustomAlertSound "homm3snd/Age.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBorderColor 248 128 8
+    SetTextColor 216 216 8
+###   3.5.2   ----- Resonators
+Show
+Class == "Delve Stackable Socketable Currency"
+BaseType "Primitive" "Potent"
+    CustomAlertSound "homm3snd/Prayer.wav"
+    MinimapIcon 2 Yellow Pentagon
+    SetBackgroundColor 248 248 128
+    SetBorderColor 64 64 8
+    SetTextColor 128 88 8
+Show
+Class == "Delve Stackable Socketable Currency"
+BaseType "Powerful"
+    CustomAlertSound "homm3snd/View.wav"
+    MinimapIcon 1 Yellow Pentagon
+    PlayEffect Yellow Temp
+    SetBackgroundColor 248 248 128
+    SetBorderColor 64 64 8
+    SetTextColor 128 88 8
+Show
+Class == "Delve Stackable Socketable Currency"
+BaseType "Prime"
+    CustomAlertSound "homm3snd/ARMGEDN.wav"
+    MinimapIcon 0 Yellow Pentagon
+    PlayEffect Yellow
+    SetBackgroundColor 248 248 128
+    SetBorderColor 64 64 8
+    SetTextColor 128 88 8
+##    3.6     --- Betrayal (League v3.5)
+###   3.6.1   ----- Scarabs
+Show
+Class == "Map Fragments"
+BaseType "Scarab"
+    CustomAlertSound "homm3snd/Forget.wav"
+    MinimapIcon 0 White Hexagon
+    PlayEffect White
+    SetTextColor 8 8 8
+##    3.7     --- Legion (League v3.7)
+###   3.7.1   ----- Incubators
+Show
+Class == "Incubators"
+    CustomAlertSound "homm3snd/Regener.wav"
+    MinimapIcon 0 Yellow Kite
+    PlayEffect Yellow
+    SetBackgroundColor 128 108 20
+    SetBorderColor 80 64 8
+    SetTextColor 216 192 64
+###   3.7.2   ----- Splinters
+Show
+Class == "Stackable Currency"
+BaseType "Timeless"
+BaseType "Splinter"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 64 64
+###   3.7.3   ----- Emblems
+Show
+Class == "Map Fragments"
+BaseType "Emblem"
+BaseType "Timeless"
+    CustomAlertSound "homm3snd/CHEST.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 64 192 192
+##    3.8     --- Blight (League v3.8)
+###   3.8.1   ----- Oils
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Clear"
+    SetFontSize 33
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Sepia" "Amber"
+    SetFontSize 36
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Verdant" "Teal"
+    SetFontSize 39
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Azure" "Indigo"
+    SetFontSize 42
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Violet" "Crimson"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Orange Diamond
+    SetBackgroundColor 192 160 32
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Opalescent" "Black" "Silver"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Orange Diamond
+    PlayEffect Orange Temp
+    SetBackgroundColor 216 192 32
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+Show
+Class == "Stackable Currency"
+BaseType "Oil"
+BaseType "Golden" "Tainted" "Reflective" "Prismatic"
+    CustomAlertSound "homm3snd/FAERIE.wav"
+    MinimapIcon 0 Orange Diamond
+    PlayEffect Orange
+    SetBackgroundColor 248 216 64
+    SetBorderColor 8 128 32
+    SetTextColor 8 160 32
+##    3.9     --- Delirium (League v3.10)
+###   3.9.1   ----- Orbs
+Show
+Class == "Stackable Currency"
+BaseType "Delirium Orb"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 216 192 32
+    SetBorderColor 8 8 8
+###   3.9.2   ----- Splinters
+Show
+Class == "Stackable Currency"
+BaseType == "Simulacrum Splinter"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 160 128 8
+    SetBorderColor 8 8 8
+###   3.9.3   ----- Simulacrum
+Class == "Map Fragments"
+BaseType == "Simulacrum"
+    CustomAlertSound "homm3snd/NewWeek.wav"
+    MinimapIcon 0 Grey Hexagon
+    PlayEffect Grey
+    SetTextColor 192 192 192
+##    3.10    --- Harvest (League v3.11)
+###   3.10.1  ----- Lifeforce
+Show
+Class == "Stackable Currency"
+BaseType == "Wild Crystallised Lifeforce"
+StackSize < 16
+    SetFontSize 33
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Wild Crystallised Lifeforce"
+StackSize < 64
+    SetFontSize 39
+    SetBackgroundColor 192 160 32
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Wild Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 248 216 64
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Vivid Crystallised Lifeforce"
+StackSize < 16
+    SetFontSize 33
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Vivid Crystallised Lifeforce"
+StackSize < 64
+    SetFontSize 39
+    SetBackgroundColor 192 160 32
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Vivid Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 248 216 64
+    SetBorderColor 64 64 8
+    SetTextColor 128 160 32
+Show
+Class == "Stackable Currency"
+BaseType == "Primal Crystallised Lifeforce"
+StackSize < 16
+    SetFontSize 33
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Primal Crystallised Lifeforce"
+StackSize < 64
+    SetFontSize 39
+    SetBackgroundColor 192 160 32
+    SetBorderColor 128 32 32
+    SetTextColor 192 64 88
+Show
+Class == "Stackable Currency"
+BaseType == "Primal Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/Chat.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 248 216 64
+    SetBorderColor 32 64 88
+    SetTextColor 64 160 192
+Show
+Class == "Stackable Currency"
+BaseType == "Sacred Crystallised Lifeforce"
+    CustomAlertSound "homm3snd/FAERIE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBorderColor 88 88 128
+    SetTextColor 88 88 128
+###   3.10.2  ----- Blossom
+Show
+Class == "Map Fragments"
+BaseType == "Sacred Blossom"
+    CustomAlertSound "homm3snd/Slayer.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 248 64 64
+##    3.11    --- Heist (League v3.12)
+###   3.11.1  ----- Markers
+Show
+Class == "Stackable Currency"
+BaseType == "Rogue's Marker"
+    CustomAlertSound "homm3snd/Age.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 160 128 8
+    SetTextColor 248 160 128
+###   3.11.2  ----- Contracts
+Show
+Class == "Contracts"
+    CustomAlertSound "homm3snd/ROGUE.wav"
+    MinimapIcon 0 White Square
+    PlayEffect White
+    SetBackgroundColor 8 8 8
+    SetBorderColor 8 8 8
+###   3.11.3  ----- Blueprints
+Show
+Class == "Blueprints"
+    CustomAlertSound "homm3snd/Lighthouse.wav"
+    MinimapIcon 0 Red Square
+    PlayEffect Red
+    SetBackgroundColor 192 160 128
+    SetBorderColor 88 64 64
+###   3.11.4  ----- Targets
+Show
+Class == "Heist Targets"
+    CustomAlertSound "homm3snd/DEFAULT.wav"
+    MinimapIcon 0 Green Cross
+    PlayEffect Green
+###   3.11.5  ----- Equipment
+Show
+Class "Heist"
+Class "Gear" "Tools" "Brooches" "Cloaks"
+##    3.12    --- Ritual (League v3.13)
+###   3.12.1  ----- Splinters
+Show
+Class == "Stackable Currency"
+BaseType == "Ritual Splinter"
+    MinimapIcon 2 Red Cross
+    SetTextColor 192 8 8
+###   3.12.2  ----- Vessel
+Show
+Class == "Stackable Currency"
+BaseType == "Ritual Vessel"
+    MinimapIcon 1 Red Cross
+    PlayEffect Red Temp
+    SetTextColor 192 8 8
+###   3.12.3  ----- Blood
+Show
+Class == "Map Fragments"
+BaseType == "Blood-filled Vessel"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+    SetTextColor 192 8 8
+##    3.13    --- Ultimatum (League v3.14)
+###   3.13.1  ----- Catalysts
+Show
+Class == "Stackable Currency"
+BaseType "Catalyst"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 0 Orange Diamond
+    PlayEffect Orange
+    SetBackgroundColor 160 128 8
+##    3.14    --- Expedition (League v3.15)
+###   3.14.1  ----- Logbooks
+Show
+Class == "Expedition Logbooks"
+    CustomAlertSound "homm3snd/Graveyard.wav"
+    MinimapIcon 0 Grey Cross
+    PlayEffect Grey
+    SetBackgroundColor 98 108 100
+    SetBorderColor 64 128 64
+###   3.14.2  ----- Reroll Currency
+Show
+Class == "Stackable Currency"
+BaseType == "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Orange Circle
+    PlayEffect Orange
+    SetBackgroundColor 216 192 32
+    SetBorderColor 64 128 64
+    SetTextColor 88 128 88
+##    3.15    --- Sanctum (League v3.20)
+###   3.15.1  ----- Research
+Show
+Class == "Sanctum Research"
+BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
+    CustomAlertSound "homm3snd/Mystery.wav"
+    MinimapIcon 0 Green Square
+    PlayEffect Green
+    SetBackgroundColor 80 70 60
+    SetBorderColor 64 216 64
+    SetTextColor 64 216 64
+###   3.15.2  ----- Relics
+Show
+Class == "Relics"
+    CustomAlertSound "homm3snd/Bless.wav"
+    MinimapIcon 2 Pink Hexagon
+    SetBackgroundColor 88 64 64
+    SetBorderColor 64 216 64
+##    3.16    --- Affliction (League v3.23)
+###   3.16.1  ----- Tinctures
+Show
+Class == "Tinctures"
+    MinimapIcon 2 Orange Raindrop
+###   3.16.2  ----- Charms
+Show
+Class == "Charms"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+###   3.16.3  ----- Corpses
+Show
+Class == "Corpses"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+##    3.17    --- Settlers (League v3.25)
+###   3.17.1  ----- Runes
+Class == "Stackable Currency"
+BaseType "Rune"
+BaseType "Life" "Sun" "Bound" "War" "River" "Bounty" "Journey" "Mountain" "Time" "Power"
+    CustomAlertSound "homm3snd/FLAGMINE.wav"
+    MinimapIcon 2 Orange Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 8 8 8
+#     4       - Specific
+##    4.1     --- Sockets
+###   4.1.1   ----- 6 Link
+Show
+LinkedSockets 6
+    CustomAlertSound "homm3snd/BLOODLUS.wav"
+    MinimapIcon 0 Red Pentagon
+    PlayEffect Red
+    SetTextColor 248 248 248
+###   4.1.2   ----- 5 Link
+Show
+LinkedSockets 5
+    CustomAlertSound "homm3snd/LIGHTBLT.wav"
+    MinimapIcon 0 Orange Pentagon
+    PlayEffect Orange
+    SetTextColor 248 248 248
+###   4.1.3   ----- 6 Socket
+Show
+Sockets 6
+Rarity < Unique
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Orange Pentagon
+    PlayEffect Orange
+    SetTextColor 248 248 248
+###   4.1.4   ----- 4 Link
+Show
+LinkedSockets 4
+AreaLevel < 50
+Rarity < Unique
+    CustomAlertSound "homm3snd/Poison.wav"
+    MinimapIcon 2 White Pentagon
+    SetTextColor 248 248 248
+###   4.1.5   ----- RGB
+Show
+Class == "Claws" "Daggers" "Boots" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Shields" "Wands"
+SocketGroup RGB
+Rarity Normal
+    SetFontSize 42
+    SetBackgroundColor 128 88 8
+    SetTextColor 8 8 8
+Show
+Class == "Body Armours" "Bows" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves" "Warstaves"
+SocketGroup RGB
+Rarity Normal
+    SetFontSize 36
+    SetBackgroundColor 128 88 8
+    SetTextColor 8 8 8
+###   4.1.6   ----- 3 Link
+Show
+LinkedSockets 3
+AreaLevel < 25
+Rarity < Rare
+    SetFontSize 39
+###   4.1.7   ----- 2 Link
+Show
+LinkedSockets 2
+AreaLevel < 12
+Rarity < Magic
+    SetFontSize 33
+##    4.2     --- Unique
+###   4.2.1   ----- Bases
+Show
+Class == "Belts"
+BaseType == "Heavy Belt" "Leather Belt"
+Rarity Unique
+    CustomAlertSound "homm3snd/BADLUCK.wav"
+    MinimapIcon 0 Brown Moon
+    PlayEffect Brown
+###   4.2.2   ----- Global
+Show
+Class == "Belts"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Moon
+    PlayEffect Brown Temp
+Show
+Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks" "Utility Flasks"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Raindrop
+    PlayEffect Brown Temp
+Show
+Class == "Abyss Jewels" "Jewels"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Star
+    PlayEffect Brown Temp
+Show
+Class == "Amulets" "Rings"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 1 Brown Diamond
+    PlayEffect Brown Temp
+Show
+Class == "Shields" "Quivers"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Brown UpsideDownHouse
+Show
+Class == "Body Armours" "Boots" "Gloves" "Helmets"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Brown Square
+Show
+Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Unique
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Brown Kite
+###   4.2.3   ----- Pieces
+Show
+Class == "Pieces"
+    CustomAlertSound "homm3snd/Paralyze.wav"
+    MinimapIcon 0 Brown Square
+    PlayEffect Brown
+##    4.3     --- Fractured
+###   4.3.1   ----- Exotic
+Show
+Class == "Abyss Jewels" "Jewels" "Life Flasks" "Mana Flasks" "Utility Flasks"
+FracturedItem True
+    CustomAlertSound "homm3snd/Buildtwn.wav"
+    MinimapIcon 0 Cyan Raindrop
+    PlayEffect Cyan
+###   4.3.2   ----- Global
+Show
+FracturedItem True
+    CustomAlertSound "homm3snd/tailwind.wav"
+    MinimapIcon 2 Cyan Raindrop
+##    4.4     --- Synthesised
+###   4.4.1   ----- Exotic
+###   4.4.2   ----- Global
+Show
+SynthesisedItem True
+    CustomAlertSound "homm3snd/VISIONS.wav"
+    MinimapIcon 2 Cyan Raindrop
+    SetTextColor 128 216 192
+##    4.5     --- Influenced
+###   4.5.0   ----- Maps
+Show
+Class == "Maps"
+HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
+    CustomAlertSound "homm3snd/MILITARY.wav"
+    MinimapIcon 0 Cyan Square
+    PlayEffect Cyan
+###   4.5.1   ----- Exotic
+Show # Double Influenced Items
+HasInfluence "Shaper"
+HasInfluence "Elder"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Shaper"
+HasInfluence "Crusader"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Shaper"
+HasInfluence "Hunter"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Shaper"
+HasInfluence "Redeemer"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Shaper"
+HasInfluence "Warlord"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Elder"
+HasInfluence "Crusader"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Elder"
+HasInfluence "Hunter"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Elder"
+HasInfluence "Redeemer"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Elder"
+HasInfluence "Warlord"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Crusader"
+HasInfluence "Hunter"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Crusader"
+HasInfluence "Redeemer"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Crusader"
+HasInfluence "Warlord"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Hunter"
+HasInfluence "Redeemer"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Hunter"
+HasInfluence "Warlord"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+Show # Double Influenced Items
+HasInfluence "Redeemer"
+HasInfluence "Warlord"
+    CustomAlertSound "homm3snd/RESURECT.wav"
+    MinimapIcon 0 Cyan Cross
+    PlayEffect Cyan
+###   4.5.2   ----- Global
+Show # Remaining Influenced Items
+HasInfluence "Shaper" "Elder" "Crusader" "Hunter" "Redeemer" "Warlord"
+    MinimapIcon 2 Cyan Cross
+##    4.6     --- Eldritch
+###   4.6.1   ----- Exotic
+Show
+HasSearingExarchImplicit >= 5
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+Show
+HasEaterOfWorldsImplicit >= 5
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+Show
+HasSearingExarchImplicit >= 3
+    MinimapIcon 1 Red Cross
+    PlayEffect Red Temp
+Show
+HasEaterOfWorldsImplicit >= 3
+    MinimapIcon 1 Red Cross
+    PlayEffect Red Temp
+###   4.6.2   ----- Global
+Show
+HasSearingExarchImplicit >= 1
+    MinimapIcon 2 Red Cross
+Show
+HasEaterOfWorldsImplicit >= 1
+    MinimapIcon 2 Red Cross
+##    4.7     --- Corrupted
+###   4.7.1   ----- Exotic
+Show
+Class == "Abyss Jewels" "Jewels"
+Corrupted True
+CorruptedMods >= 1
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+###   4.7.2   ----- Global
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Corrupted True
+CorruptedMods >= 3
+    MinimapIcon 2 Red Cross
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Corrupted True
+CorruptedMods 2
+    SetFontSize 39
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Corrupted True
+CorruptedMods 1
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Corrupted True
+    SetFontSize 33
+##    4.8     --- Zana
+###   4.8.1   ----- Memory
+Show
+ZanaMemory True
+    MinimapIcon 0 Cyan Star
+    PlayEffect Cyan
+#     5       - Specials
+##    5.1     --- Divination Cards
+###   5.1.0   ----- Unknown
+Show
+Class == "Divination Cards"
+BaseType == "Avian Pursuit" "Temperance" "Lonely Warrior" "Toxic Tidings" "Friendship" "The Long Watch"
+    CustomAlertSound "homm3snd/DANGER.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 248 8 8
+###   5.1.1   ----- Fragments
+Show
+Class == "Divination Cards"
+BaseType == "The Eldritch Decay" "Guardian's Challenge" "Altered Perception" "Rebirth and Renewal" "Checkmate" "Something Dark"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "Last Hope" "The Obscured" "Sambodhi's Vow" "More is Never Enough" "The Eye of Terror" "The Card Sharp" "Boon of Justice" "Buried Treasure" "The Deal" "Cameria's Cut" "Man With Bear"
+    SetFontSize 42
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "Her Mask" "The Puzzle"
+    SetFontSize 39
+    SetTextColor 192 192 192
+###   5.1.2   ----- Normal Items
+Show
+Class == "Divination Cards"
+BaseType == "The White Knight" "Draped in Dreams" "Magnum Opus" "Auspicious Ambitions" "Eldritch Perfection"
+    CustomAlertSound "homm3snd/NOMAD.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Celestial Justicar" "Bowyer's Dream" "Immortal Resolve" "The Celestial Stone" "The Sacrifice" "Imperial Legacy" "Broken Promises" "Duality"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Chains that Bind" "The Dark Mage" "The Surveyor" "Lost Worlds" "The Ethereal" "The Warlord" "The Dapper Prodigy" "Emperor of Purity" "The Porcupine"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Fishmonger" "Astral Protection"
+    SetFontSize 42
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Flora's Gift" "The Jeweller's Boon" "The Catch"
+    SetFontSize 39
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Arena Champion" "Boundless Realms" "Rain Tempter" "Cartographer's Delight"
+    SetFontSize 36
+    SetTextColor 192 192 192
+Show
+Class == "Divination Cards"
+BaseType == "The Metalsmith's Gift"
+    SetFontSize 33
+    SetTextColor 192 192 192
+###   5.1.3   ----- Magic Items
+Show
+Class == "Divination Cards"
+BaseType == "The Aspirant" "Further Invention" "Azure Rage"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 128 128 248
+Show
+Class == "Divination Cards"
+BaseType == "Shard of Fate" "The Web" "The Endurance" "Void of the Elements" "A Familiar Call" "Keeper's Corruption" "The Shortcut" "The Road to Power" "The Spoiled Prince" "Merciless Armament" "The Surgeon" "The Tyrant" "The Undisputed" "The Golden Era" "The Enforcer"
+    SetFontSize 42
+    SetTextColor 128 128 248
+Show
+Class == "Divination Cards"
+BaseType == "The Jester" "Blessing of God" "The Lord of Celebration" "The Archmage's Right Hand" "The Tumbleweed" "The Brawny Battle Mage" "Who Asked"
+    SetFontSize 39
+    SetTextColor 128 128 248
+Show
+Class == "Divination Cards"
+BaseType == "The Twins" "The Lord in Black" "The Rabid Rhoa" "Struck by Lightning" "The Bear Woman"
+    SetFontSize 36
+    SetTextColor 128 128 248
+Show
+Class == "Divination Cards"
+BaseType == "The Carrion Crow" "The King's Blade" "The Inoculated" "Prosperity" "The Sigil" "The Mountain"
+    SetFontSize 33
+    SetTextColor 128 128 248
+###   5.1.4   ----- Rare Items
+Show
+Class == "Divination Cards"
+BaseType == "Imperfect Memories" "A Dusty Memory" "Soul Quenched"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "Dying Light"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "The Awakened" "Bijoux" "The Opulent" "Perfection" "The Hale Heart" "Dark Dreams" "Nook's Crown" "Prometheus' Armoury" "The Journalist"
+    SetFontSize 42
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "Destined to Crumble"
+    SetFontSize 39
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "The Lover"
+    SetFontSize 36
+    SetTextColor 248 248 128
+Show
+Class == "Divination Cards"
+BaseType == "Lantador's Lost Love"
+    SetFontSize 33
+    SetTextColor 248 248 128
+###   5.1.5   ----- Unique Items
+Show
+Class == "Divination Cards"
+BaseType == "The Doctor" "Judging Voices" "The Apothecary" "The Shieldbearer"
+    CustomAlertSound "homm3snd/NOMAD.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 160 88 32
+Show
+Class == "Divination Cards"
+BaseType == "The Samurai's Eye" "Peaceful Moments" "Cursed Words" "Winter's Embrace" "The Forgotten Treasure" "The Prince of Darkness" "Justified Ambition" "Father's Love"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 160 88 32
+Show
+Class == "Divination Cards"
+BaseType == "Humility" "Jack in the Box" "The Battle Born" "The Drunken Aristocrat" "The Gladiator" "The Hermit" "The Hunger" "The Incantation" "The King's Heart" "The Pact" "The Queen" "The Scarred Meadow" "The Sun" "The Watcher" "The Wind" "Time-Lost Relic" "Doedre's Madness" "The Betrayal" "The Last One Standing" "The Pack Leader" "Death" "The Conduit" "Assassin's Favour" "Hunter's Resolve" "Scholar of the Seas" "The Tower" "The Vast" "Hubris" "Hunter's Reward" "The Aesthete" "Glimmer of Hope" "The Body" "The Demoness" "The Offering" "Birth of the Three" "Rats" "The Dragon" "Tranquillity" "Earth Drinker" "The Lion" "The Risk" "The Wolf's Shadow" "Heterochromia" "Thunderous Skies" "The Cursed King" "The Harvester" "The Lunaris Priestess" "The Stormcaller" "Light and Truth" "The Calling" "The Formless Sea" "The Penitent" "The Soul" "The Valkyrie" "The Visionary" "The Wolf" "Mawr Blaidd" "The Oath" "The Scavenger" "Mitts" "The Coming Storm" "The Forsaken" "The Garish Power" "The Polymath" "The Spark and the Flame" "The Standoff" "The Wolven King's Bite" "The Wretched" "Might is Right" "The Blazing Fire" "Rebirth" "The Breach" "The Dreamer" "The World Eater" "The Admirer" "The Army of Blood" "The Beast" "The Dreamland" "The Fathomless Depths" "The Master" "The Mayor" "The Professor" "The Sword King's Salute" "The Witch" "Beauty Through Death" "Boon of the First Ones" "The Endless Darkness" "The Twilight Moon" "A Dab of Ink" "The Life Thief" "Alone in the Darkness" "Dark Temptation" "The Mad King" "The Messenger" "Pride of the First Ones" "The Deep Ones" "The Primordial" "Thirst for Knowledge" "The Wolf's Legacy" "Vile Power" "Baited Expectations" "Succor of the Sinless" "The Craving" "The Escape" "Council of Cats" "The Progeny of Lunaris" "A Note in the Wind" "The Academic" "The Cache" "Haunting Shadows" "Reckless Ambition" "The Whiteout" "Prejudice" "Sambodhi's Wisdom" "The Adventuring Spirit" "Costly Curio" "The Last Supper" "The Mind's Eyes" "The Offspring" "Chasing Risk" "Desperate Crusade" "Eternal Bonds" "Misery in Darkness" "Silence and Frost" "The One That Got Away" "The Dungeon Master" "The Forward Gaze" "Broken Truce" "Choking Guilt" "Endless Night" "Lethean Temptation" "Alivia's Grace" "The Return of the Rat" "The Wedding Gift" "Fire Of Unknown Origin"
+    CustomAlertSound "homm3snd/Disease.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 160 88 32
+###   5.1.6   ----- Corrupted
+Show
+Class == "Divination Cards"
+BaseType == "The Fiend" "The Demon" "The Cheater" "Desecrated Virtue" "A Modest Request" "The Eternal War" "Lachrymal Necrosis" "The Destination" "The Leviathan" "The Price of Devotion" "The Insane Cat"
+    CustomAlertSound "homm3snd/NOMAD.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 216 8 8
+Show
+Class == "Divination Cards"
+BaseType == "Arrogance of the Vaal" "The Easy Stroll" "The Gulf" "Brotherhood in Exile" "Fateful Meeting" "Love Through Ice" "Luminous Trove" "The Shepherd's Sandals" "Matryoshka"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 216 8 8
+Show
+Class == "Divination Cards"
+BaseType == "Hope" "The Avenger" "The Brittle Emperor" "The Cataclysm" "The Explorer" "The Feast" "The Poet" "The Warden" "The Artist" "The Encroaching Darkness" "The One With All" "The Siren" "The Dragon's Heart" "The Gentleman" "The Mercenary" "The Trial" "Wealth and Power" "Audacity" "Pride Before the Fall" "The Lich" "Anarchy's Price" "Blind Venture" "The Fletcher" "The Thaumaturgist" "Volatile Power" "A Mother's Parting Gift" "The Traitor" "Turn the Other Cheek" "Treasure Hunter" "The Throne" "Lysah's Respite" "Dialla's Subjugation" "Call to the First Ones" "Lingering Remnants" "The Wolverine" "Atziri's Arsenal" "Left to Fate" "The Eye of the Dragon" "The Ruthless Ceinture" "Forbidden Power" "The Deceiver" "The Insatiable" "The Darkest Dream" "The Rite of Elements" "The Undaunted" "The Price of Protection" "The Wilted Rose" "The Landing" "Burning Blood" "Echoes of Love" "Vanity" "Akil's Prophecy" "Azyran's Reward" "Remembrance" "The Damned" "The Old Man" "The Price of Loyalty" "Deathly Designs" "Etched in Blood" "Squandered Prosperity" "The Bones" "The Chosen" "The Strategist" "Gift of Asenath" "The Greatest Intentions" "The Hive of Knowledge" "The Bitter Blossom" "The Unexpected Prize" "Triskaidekaphobia" "Unchained" "The Astromancer" "Deadly Joy" "The Enthusiasts" "The Emptiness" "The Price of Prescience" "A Stone Perfected" "The Fox in the Brambles" "The Magma Crab" "A Fate Worse Than Death" "From Bone to Ashes" "A Chilling Wind" "Poisoned Faith" "Assassin's Gift"
+    CustomAlertSound "homm3snd/Curse.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 216 8 8
+###   5.1.7   ----- Currency
+Show # 1xKalandra 10xDivine 40xRegret 1xMirrorShard 1xEldersExalt 19xMirrorShard 1xTaintedMystic 5xElditchChaos 7xDivine 5xDivine 2xDivine 2xFracturing
+Class == "Divination Cards"
+BaseType == "House of Mirrors" "The Sephirot" "The Innocent" "Seven Years Bad Luck" "The Long Con" "Unrequited Love" "The Transformation" "Darker Half" "Divine Beauty" "Brother's Gift" "The Fortunate" "I See Brothers"
+    CustomAlertSound "homm3snd/FAERIE.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 248 216 8
+Show # 3xExalt 1xExalt 10xVaal 10xPrism 10xRegret 10xChaos 10xChisel 10xDeck 2xExalted 30xScouring 4xTaintedMystic 9xT6Essense 3xT7Essense 2xESextant 1xHarbinger 3xAnnul 10xExalted 1xAnnul 20xReport 10xSextant 5xFossil 5xExalt 10xDeliorb 10xVial 7xExalt 10xIncubator 10xOil 10xUnmaking
+Class == "Divination Cards"
+BaseType == "Abandoned Wealth" "The Hoarder" "The Inventor" "The Union" "Vinia's Token" "The Wrath" "The Cartographer" "Lucky Deck" "The Saint's Treasure" "No Traces" "The Rusted Bard" "Harmony of Souls" "The Cacophony" "Monochrome" "The Journey" "The Seeker" "Alluring Bounty" "Demigod's Wager" "The Side Quest" "Underground Forest" "The Tinkerer's Table" "Brother's Stash" "Dementophobia" "The Rabbit's Foot" "The Scout" "Parasitic Passengers" "The Tireless Extractor" "Ever-Changing"
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 248 216 8
+Show # 5xChaos 5xRegal 20xFusings 1xPrism 3xChaos 7xAlchemy 3xEssense 20xChance 17xChromes 20xAlteration 10xAlteration 13xAlteration 1xDeliorb 1xDeliorb 1xFertile
+Class == "Divination Cards"
+BaseType == "Chaotic Disposition" "Coveted Possession" "Lucky Connections" "The Gemcutter" "Three Faces in the Dark" "The Survivalist" "Three Voices" "The Fool" "The Heroic Shot" "Acclimatisation" "Society's Remorse" "A Sea of Blue" "Ambitious Obsession" "Disdain" "The Finishing Touch"
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 248 216 8
+Show # 5xRandom 1xChaos 3xFusing 1xVaal 20xQualityRng
+Class == "Divination Cards"
+BaseType == "Emperor's Luck" "Rain of Chaos" "Loyalty" "The Catalyst" "The Master Artisan"
+    SetFontSize 39
+    SetTextColor 248 216 8
+Show # 40xWisdom
+Class == "Divination Cards"
+BaseType == "The Scholar"
+    SetFontSize 33
+    SetTextColor 248 216 8
+###   5.1.8   ----- Gems
+Show # Enlighten3L Exceptional1-20Q Exceptional
+Class == "Divination Cards"
+BaseType == "The Enlightened" "Home" "Gemcutter's Mercy"
+    CustomAlertSound "homm3snd/GENIE.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 32 160 160
+Show # Random20Q Minion20Q SRS20Q ArrowQ20 Skeletons23Q Portal1-20Q
+Class == "Divination Cards"
+BaseType == "Gemcutter's Promise" "The Summoner" "Grave Knowledge" "The Doppelganger" "The Skeleton" "The Realm"
+    SetFontSize 42
+    SetTextColor 32 160 160
+Show # Support20L Random20L
+Class == "Divination Cards"
+BaseType == "Gift of the Gemling Queen" "The Fox"
+    SetFontSize 39
+    SetTextColor 32 160 160
+###   5.1.9   ----- Other Divinations
+Show
+Class == "Divination Cards"
+BaseType == "The Immortal" "The Nurse" "The Patient"
+    CustomAlertSound "homm3snd/NOMAD.wav"
+    MinimapIcon 0 Grey Square
+    PlayEffect Grey
+    SetTextColor 8 192 248
+Show
+Class == "Divination Cards"
+BaseType == "The Void"
+    CustomAlertSound "homm3snd/STORE.wav"
+    MinimapIcon 1 Grey Square
+    PlayEffect Grey Temp
+    SetTextColor 64 64 64
+Show
+Class == "Divination Cards"
+BaseType == "Brush, Paint and Palette"
+    CustomAlertSound "homm3snd/Cure.wav"
+    MinimapIcon 2 Grey Square
+    SetTextColor 64 64 64
+Show
+Class == "Divination Cards"
+BaseType == "The Gambler"
+    SetFontSize 39
+    SetTextColor 8 192 248
+##    5.2     --- Jewels
+###   5.2.1   ----- Cluster
+Show
+Class == "Jewels"
+BaseType "Cluster"
+    CustomAlertSound "homm3snd/mirth.wav"
+    MinimapIcon 0 Purple Star
+    PlayEffect Purple
+###   5.2.2   ----- Abyss
+Show
+Class == "Abyss Jewels"
+Rarity Rare
+    SetFontSize 42
+#HIDESHOW
+Class == "Abyss Jewels"
+Rarity < Rare
+    SetFontSize 24
+###   5.2.3   ----- Basic
+Show
+Class == "Jewels"
+Rarity Rare
+    SetFontSize 42
+#HIDESHOW
+Class == "Jewels"
+Rarity < Rare
+    SetFontSize 24
+##    5.3     --- Flasks
+###   5.3.1   ----- Quality
+Show
+Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks"
+Quality >= 20
+    CustomAlertSound "homm3snd/Decay.wav"
+    MinimapIcon 2 White Raindrop
+    SetTextColor 248 248 248
+Show
+Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks"
+Quality >= 8
+    SetFontSize 39
+    SetTextColor 248 248 248
+Show
+Class == "Hybrid Flasks" "Life Flasks" "Mana Flasks"
+Quality >= 5
+    SetFontSize 33
+    SetTextColor 248 248 248
+###   5.3.2   ----- Utility
+Show
+Class == "Utility Flasks"
+ItemLevel >= 85
+    MinimapIcon 0 Green Raindrop
+    PlayEffect Green
+Show
+Class == "Utility Flasks"
+ItemLevel >= 80
+    MinimapIcon 2 Green Raindrop
+Show
+Class == "Utility Flasks"
+ItemLevel >= 63
+    SetFontSize 42
+Show
+Class == "Utility Flasks"
+AreaLevel < 68
+ItemLevel >= 1
+    SetFontSize 39
+###   5.3.3   ----- Life
+#HIDESHOW
+Class == "Life Flasks"
+AreaLevel >= 83
+    SetFontSize 30
+Show
+Class == "Life Flasks"
+BaseType "Divine" "Eternal"
+ItemLevel >= 80
+    MinimapIcon 2 Red Raindrop
+Show
+Class == "Life Flasks"
+BaseType "Divine" "Eternal"
+AreaLevel < 68
+    SetFontSize 36
+#HIDESHOW
+Class == "Life Flasks"
+BaseType "Divine" "Eternal"
+    SetFontSize 30
+Show
+Class == "Life Flasks"
+BaseType "Hallowed"
+AreaLevel < 60
+    SetFontSize 33
+Show
+Class == "Life Flasks"
+BaseType "Colossal"
+AreaLevel < 42
+    SetFontSize 33
+Show
+Class == "Life Flasks"
+BaseType "Giant"
+AreaLevel < 42
+    SetFontSize 33
+#HIDESHOW
+Class == "Life Flasks"
+BaseType "Hallowed" "Colossal" "Giant"
+    SetFontSize 30
+Show
+Class == "Life Flasks"
+BaseType "Greater" "Large"
+AreaLevel < 24
+    SetFontSize 33
+Show
+Class == "Life Flasks"
+BaseType "Medium" "Small"
+AreaLevel < 10
+    SetFontSize 33
+#HIDESHOW
+Class == "Life Flasks"
+BaseType "Greater" "Large" "Medium" "Small"
+    SetFontSize 18
+#HIDESHOW
+Class == "Life Flasks"
+BaseType "Sacred" "Grand" "Sanctified"
+    SetFontSize 18
+###   5.3.4   ----- Mana
+Show
+Class == "Mana Flasks"
+BaseType "Divine" "Eternal"
+ItemLevel >= 82
+    MinimapIcon 2 Blue Raindrop
+Show
+Class == "Mana Flasks"
+BaseType "Divine" "Eternal"
+AreaLevel < 68
+    SetFontSize 33
+#HIDESHOW
+Class == "Mana Flasks"
+BaseType "Divine" "Eternal"
+    SetFontSize 24
+Show
+Class == "Mana Flasks"
+BaseType "Sanctified" "Hallowed"
+AreaLevel < 60
+    SetFontSize 33
+Show
+Class == "Mana Flasks"
+BaseType "Sacred" "Colossal" "Giant"
+AreaLevel < 42
+    SetFontSize 33
+#HIDESHOW
+Class == "Mana Flasks"
+BaseType "Sanctified" "Hallowed" "Sacred" "Colossal" "Giant"
+    SetFontSize 18
+Show
+Class == "Mana Flasks"
+BaseType "Grand" "Greater" "Large"
+AreaLevel < 24
+    SetFontSize 33
+Show
+Class == "Mana Flasks"
+BaseType "Medium" "Small"
+AreaLevel < 10
+    SetFontSize 33
+#HIDESHOW
+Class == "Mana Flasks"
+BaseType "Grand" "Greater" "Large" "Medium" "Small"
+    SetFontSize 18
+###   5.3.5   ----- Hybrid
+#HIDESHOW
+Class == "Hybrid Flasks"
+    SetFontSize 18
+##    5.4     --- Gems
+#LESS:
+###   5.4.0   ----- Ruthless mode
+Show
+Class == "Support Gems"
+    CustomAlertSound "homm3snd/GENIE.wav"
+    MinimapIcon 0 Green Pentagon
+    PlayEffect Green
+Show
+Class == "Skill Gems"
+    CustomAlertSound "homm3snd/COLDRAY.wav"
+    MinimapIcon 1 Green Pentagon
+    PlayEffect Green Temp
+#NORM:
+###   5.4.1   ----- Awakened
+Show
+Class == "Support Gems"
+BaseType "Awakened"
+    CustomAlertSound "homm3snd/GENIE.wav"
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+###   5.4.2   ----- Exceptional
+Show
+Class == "Support Gems"
+BaseType "Enlighten" "Enhance" "Empower"
+    CustomAlertSound "homm3snd/GENIE.wav"
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+###   5.4.3   ----- High Level and Quality
+Show
+Class == "Skill Gems" "Support Gems"
+Quality >= 20
+GemLevel >= 20
+    CustomAlertSound "homm3snd/GENIE.wav"
+    MinimapIcon 0 Green Triangle
+    PlayEffect Green
+###   5.4.4   ----- High Level
+Show
+Class == "Skill Gems" "Support Gems"
+GemLevel >= 20
+    CustomAlertSound "homm3snd/COLDRAY.wav"
+    MinimapIcon 1 Green Triangle
+    PlayEffect Green Temp
+###   5.4.5   ----- High Quality
+Show
+Class == "Skill Gems" "Support Gems"
+Quality >= 20
+    CustomAlertSound "homm3snd/COLDRAY.wav"
+    MinimapIcon 1 Green Triangle
+    PlayEffect Green Temp
+Show
+Class == "Skill Gems" "Support Gems"
+Quality >= 14
+    CustomAlertSound "homm3snd/COLDRAY.wav"
+    MinimapIcon 2 Green Triangle
+Show
+Class == "Skill Gems" "Support Gems"
+Quality >= 8
+    SetFontSize 42
+Show
+Class == "Skill Gems" "Support Gems"
+Quality >= 1
+    SetFontSize 33
+Show
+Class == "Skill Gems"
+BaseType "Vaal"
+    SetFontSize 39
+###   5.4.6   ----- Campaign
+Show
+Class == "Skill Gems" "Support Gems"
+AreaLevel < 68
+    SetFontSize 33
+Hide
+Class == "Skill Gems"
+AreaLevel >= 68
+    SetFontSize 18
+Hide
+Class == "Support Gems"
+AreaLevel >= 68
+    SetFontSize 30
+#ENDS.
+##    5.5     --- Maps
+###   5.5.1   ----- White
+Show
+Class == "Maps"
+MapTier < 6
+    CustomAlertSound "homm3snd/Nwherolv.wav"
+    MinimapIcon 0 White Square
+    PlayEffect White
+    SetTextColor 192 192 192
+###   5.5.2   ----- Yellow
+Show
+Class == "Maps"
+MapTier < 11
+    CustomAlertSound "homm3snd/MORALE.wav"
+    MinimapIcon 0 Yellow Square
+    PlayEffect Yellow
+    SetTextColor 192 192 8
+###   5.5.3   ----- Red
+Show
+MapTier < 17
+Class == "Maps"
+HasInfluence None
+    CustomAlertSound "homm3snd/NewDay.wav"
+    MinimapIcon 0 Red Square
+    PlayEffect Red
+    SetTextColor 192 8 8
+###   5.5.4   ----- Other (Influenced, unknown?)
+Show
+Class == "Maps"
+    CustomAlertSound "homm3snd/Gazebo.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+    SetTextColor 8 192 192
+##    5.6     --- Map Fragments
+###   5.6.1   ----- Vessel
+Show
+Class == "Map Fragments"
+BaseType == "Divine Vessel"
+    CustomAlertSound "homm3snd/QUEST.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetBorderColor 64 64 128
+    SetTextColor 248 64 64
+###   5.6.2   ----- Atziri
+Show
+Class == "Map Fragments"
+BaseType "Sacrifice"
+BaseType "Dusk" "Noon" "Dawn" "Midnight"
+    CustomAlertSound "homm3snd/NewDay.wav"
+    MinimapIcon 2 Red Hexagon
+    SetTextColor 128 64 64
+Show
+Class == "Map Fragments"
+BaseType "Mortal"
+BaseType "Grief" "Ignorance" "Hope" "Rage"
+    CustomAlertSound "homm3snd/NewWeek.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 64 128 64
+###   5.6.3   ----- Shaper
+Show
+Class == "Map Fragments"
+BaseType "Fragment"
+BaseType "Hydra" "Chimera" "Minotaur" "Phoenix"
+    CustomAlertSound "homm3snd/NewWeek.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 128 8 64
+###   5.6.4   ----- Elder
+Show
+Class == "Map Fragments"
+BaseType "Fragment"
+BaseType "Purification" "Constriction" "Eradication" "Enslavement"
+    CustomAlertSound "homm3snd/NewWeek.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 64 8 128
+###   5.6.5   ----- Uber
+Show
+Class == "Map Fragments"
+BaseType "Fragment"
+BaseType "Knowledge" "Shape" "Emptiness" "Terror"
+    CustomAlertSound "homm3snd/NEWMONTH.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 128 8 128
+###   5.6.6   ----- Sirus
+Show
+Class == "Map Fragments"
+BaseType "Crest"
+BaseType "Al-Hezmin's" "Baran's" "Drox's" "Veritania's"
+    CustomAlertSound "homm3snd/NEWMONTH.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 64 128 64
+###   5.6.7   ----- Maven
+Show
+Class == "Map Fragments"
+BaseType == "The Maven's Writ"
+    CustomAlertSound "homm3snd/Obelisk.wav"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+    SetTextColor 8 128 128
+##    5.7     --- Miscellaneous Map Items
+###   5.7.1   ----- All
+Show
+Class == "Misc Map Items"
+    MinimapIcon 0 Red Hexagon
+    PlayEffect Red
+##    5.8     --- Memories
+###   5.8.1   ----- All
+Show
+Class == "Memories"
+    MinimapIcon 0 Green Hexagon
+    PlayEffect Green
+##    5.9     --- Voidstones
+###   5.9.1   ----- All
+Show
+Class == "Atlas Upgrade Items"
+    CustomAlertSound "homm3snd/QUEST.wav"
+    MinimapIcon 0 Green Hexagon
+    PlayEffect Green
+    SetBackgroundColor 216 216 216
+    SetBorderColor 64 192 64
+    SetTextColor 8 248 8
+##    5.10    --- Vault
+###   5.10.1  ----- Keys
+Show
+Class == "Vault Keys"
+    CustomAlertSound "homm3snd/Badmrle.wav"
+    MinimapIcon 0 Brown Star
+    PlayEffect Brown
+##    5.11    --- Lab Items
+###   5.11.1  ----- Keys
+Show
+Class == "Labyrinth Items"
+    CustomAlertSound "homm3snd/DEFAULT.wav"
+    MinimapIcon 0 Green Cross
+    PlayEffect Green
+###   5.11.2  ----- Trinkets
+Show
+Class == "Labyrinth Trinkets"
+    SetFontSize 42
+    SetTextColor 8 248 8
+#     6       - Identify
+##    6.1     --- Global
+###   6.1.1   ----- In Progress
+Show
+Class == "Jewels"
+Identified True
+HasExplicitMod "Vivid" "Cerebral"
+HasExplicitMod "of Wounding" "of Zeal"
+    MinimapIcon 0 Red Cross
+    PlayEffect Red
+Show
+Class == "Jewels"
+Identified True
+HasExplicitMod "Vivid" "Cerebral"
+    MinimapIcon 2 Red Cross
+Show
+Identified True
+HasExplicitMod "Veil"
+    MinimapIcon 2 White Cross
+Show
+Identified True
+HasExplicitMod "Subterranean" "Underground"
+    MinimapIcon 2 Red Cross
+Show
+Identified True
+HasExplicitMod >= 2 "Dragon's" "Perandus'" "of Excavation"
+    CustomAlertSound "homm3snd/Fortune.wav"
+    MinimapIcon 0 Pink Hexagon
+    PlayEffect Pink
+Show
+Identified True
+HasExplicitMod >= 1 "of the Deathless" "Exalter's" "of Harmony" "Overseer's" "of Splintering"
+    CustomAlertSound "homm3snd/Fortune.wav"
+    MinimapIcon 0 Pink Hexagon
+    PlayEffect Pink
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Identified True
+    SetFontSize 33
+#     7       - Rarities
+##    7.1     --- Normal Items
+###   7.1.0   ----- Basic Jewels
+#HIDESHOW
+Class == "Jewels"
+Rarity Normal
+    SetFontSize 18
+###   7.1.1   ----- Jewellery
+Show
+Class == "Amulets" "Rings"
+Rarity Normal
+AreaLevel < 33
+    MinimapIcon 2 White Diamond
+Show
+Class == "Belts"
+Rarity Normal
+AreaLevel < 33
+    MinimapIcon 2 White Moon
+#HIDESHOW
+Class == "Amulets" "Belts" "Rings"
+Rarity Normal
+    SetFontSize 30
+###   7.1.2   ----- Equipment
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+AreaLevel < 73
+DropLevel >= 68
+    SetFontSize 30
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+AreaLevel < 68
+DropLevel >= 55
+    SetFontSize 30
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+AreaLevel < 55
+DropLevel >= 45
+    SetFontSize 30
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+AreaLevel < 45
+DropLevel >= 33
+    SetFontSize 30
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+AreaLevel < 33
+DropLevel >= 13
+    SetFontSize 30
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+AreaLevel < 13
+DropLevel >= 8
+    SetFontSize 30
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+AreaLevel < 8
+DropLevel >= 2
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+AreaLevel < 2
+DropLevel >= 1
+    SetFontSize 42
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+DropLevel >= 83
+    SetFontSize 30
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+DropLevel >= 78
+    SetFontSize 24
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Normal
+    SetFontSize 18
+##    7.2     --- Magic Items
+###   7.2.0   ----- Basic Jewels
+#HIDESHOW
+Class == "Jewels"
+Rarity Magic
+    SetFontSize 24
+###   7.2.1   ----- Jewellery
+Show
+Class == "Amulets" "Rings"
+Rarity Magic
+AreaLevel < 45
+    MinimapIcon 1 Blue Diamond
+    PlayEffect Blue Temp
+Show
+Class == "Belts"
+AreaLevel < 45
+Rarity Magic
+    MinimapIcon 1 Blue Moon
+    PlayEffect Blue Temp
+Show
+Class == "Amulets" "Belts" "Rings"
+Rarity Magic
+    SetFontSize 36
+###   7.2.2   ----- Equipment
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+AreaLevel < 73
+DropLevel >= 55
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+AreaLevel < 68
+DropLevel >= 45
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+AreaLevel < 55
+DropLevel >= 33
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+AreaLevel < 45
+DropLevel >= 13
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+AreaLevel < 33
+DropLevel >= 8
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+AreaLevel < 13
+DropLevel >= 1
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+DropLevel >= 83
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+DropLevel >= 78
+    SetFontSize 36
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+DropLevel >= 73
+    SetFontSize 36
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Magic
+    SetFontSize 24
+##    7.3     --- Rare Items
+###   7.3.0   ----- Basic Jewels
+Show
+Class == "Jewels"
+Rarity Rare
+    SetFontSize 42
+###   7.3.1   ----- Pickup
+Show
+Class == "Amulets"
+BaseType == "Blue Pearl Amulet" "Marble Amulet" "Onyx Amulet" "Turquoise Amulet" "Citrine Amulet" "Agate Amulet"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Purple Diamond
+Show
+Class == "Rings"
+BaseType == "Vermillion Ring" "Opal Ring" "Amethyst Ring" "Bone Ring" "Two-Stone Ring" "Ruby Ring"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Purple Diamond
+Show
+Class == "Belts"
+BaseType == "Crystal Belt" "Vanguard Belt" "Heavy Belt" "Leather Belt" "Rustic Sash" "Stygian Vise"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup01.wav"
+    MinimapIcon 2 Purple Moon
+Show
+Class == "Helmets"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Helmets"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Helmets"
+DropLevel >= 73
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class == "Boots"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Boots"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Boots"
+DropLevel >= 62
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class == "Gloves"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Gloves"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Gloves"
+DropLevel >= 67
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class == "Body Armours"
+DropLevel >= 84
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 0 Purple Square
+    PlayEffect Purple
+Show
+Class == "Body Armours"
+DropLevel >= 78
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 1 Purple Square
+    PlayEffect Purple Temp
+Show
+Class == "Body Armours"
+DropLevel >= 73
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup05.wav"
+    MinimapIcon 2 Purple Square
+Show
+Class == "Shields"
+BaseType == "Colossal Tower Shield" "Lacquered Buckler" "Titanium Spirit Shield" "Fossilised Spirit Shield" "Cardinal Round Shield" "Champion Kite Shield" "Supreme Spiked Shield"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup06.wav"
+    MinimapIcon 2 Purple UpsideDownHouse
+Show
+BaseType == "Opal Sceptre" "Nightmare Mace" "Runic Hatchet" "Eternal Sword" "Imperial Claw" "Ambusher" "Platinum Kris" "Convoking Wand" "Profane Wand" "Prophecy Wand" "Tornado Wand" "Opal Wand" "Demon's Horn" "Imbued Wand"
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup07.wav"
+    MinimapIcon 2 Purple Kite
+###   7.3.2   ----- Jewellery
+Show
+Class == "Amulets" "Rings"
+Rarity Rare
+AreaLevel < 68
+    MinimapIcon 0 Yellow Diamond
+    PlayEffect Yellow
+Show
+Class == "Belts"
+Rarity Rare
+AreaLevel < 68
+    MinimapIcon 0 Yellow Moon
+    PlayEffect Yellow
+Show
+Class == "Amulets" "Belts" "Rings"
+Rarity Rare
+    SetFontSize 42
+###   7.3.3   ----- Equipment
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Rare
+AreaLevel < 83
+DropLevel >= 68
+    SetFontSize 42
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Rare
+AreaLevel < 78
+DropLevel >= 55
+    SetFontSize 42
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Rare
+AreaLevel < 73
+DropLevel >= 45
+    SetFontSize 42
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Rare
+AreaLevel < 68
+DropLevel >= 33
+    SetFontSize 42
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Rare
+AreaLevel < 55
+DropLevel >= 13
+    SetFontSize 42
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Rare
+AreaLevel < 45
+DropLevel >= 8
+    SetFontSize 42
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Rare
+AreaLevel < 33
+DropLevel >= 4
+    SetFontSize 42
+Show
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Rare
+AreaLevel < 13
+DropLevel >= 1
+    SetFontSize 42
+#HIDESHOW
+Class == "Body Armours" "Boots" "Bows" "Claws" "Daggers" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Quivers" "Rune Daggers" "Sceptres" "Shields" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
+Rarity Rare
+    SetFontSize 30
+#     8       - Mistaken
+##    8.1     --- Global
+###   8.1.1   ----- Everything
+Show
+    CustomAlertSound "homm3snd/DANGER.wav"
+    MinimapIcon 0 Red Star
+    PlayEffect Red
+    SetBackgroundColor 8 8 248
+    SetBorderColor 8 248 8
+    SetTextColor 248 8 8
+# END OF FILTER
+# ============================================================================ #
+# NOTES (TODO: remove atlas and map related contents this is campaign filter)
+# -- colors
+# Dark  :   8  32    64  88
+# Grey  :        128
+# Light : 160 192   216 248
+# ---- gold text color to currency background color relation (TODO: make text color appropriate and look good with backgrounds)
+# Gold T5 (128  88  8) text color same as Currency LOW T2-T1 background color
+# Gold T4 (160 128  8) text color same as Currency MID T3-T1 background color
+# Gold T3 (192 160 32) text color same as Currency TOP T3-T3 background color
+# Gold T2 (216 192 32) text color same as Currency TOP T2-T2 background color
+# Gold T1 (248 216 64) text color same as Currency TOP T1-T1 background color
+# Gold T2 ()
+# -- sounds
+# ---- starting class gem drop
+# `homm3snd/starting/CstleTown.mp3`    : Scion
+# `homm3snd/starting/Dungeon.mp3`      : Duelist
+# `homm3snd/starting/FortressTown.mp3` : Shadow
+# `homm3snd/starting/InfernoTown.mp3`  : Marauder
+# `homm3snd/starting/NecroTown.mp3`    : Witch
+# `homm3snd/starting/Rampart.mp3`      : Ranger
+# `homm3snd/starting/StrongHold.mp3`   : Templar
+# ---- items drop
+# `homm3snd/ARMGEDN.wav`          : Delve Prime Resonator
+# `homm3snd/Age.wav`              : Currency MID T2: Jeweller's, Chromatic and Fusing orbs, Fossils and Rogue's Marker
+# `homm3snd/BADLUCK.wav`          : Unique Heavy and Leather Belt bases
+# `homm3snd/BIND.wav`             : Essences low tier
+# `homm3snd/BLOODLUS.wav`         : 6-Links
+# `homm3snd/BUTTON.wav`           : Currency LOW T2: Portal and Wisdom Scrolls
+# `homm3snd/Badmrle.wav`          : Vault Keys
+# `homm3snd/Berserk.wav`          : Essences mid tier
+# `homm3snd/Bless.wav`            : Sanctum Relics
+# `homm3snd/Buildtwn.wav`         : Exotic Fractured items
+# `homm3snd/CHEST.wav`            : Legion Timeless Emblem
+# `homm3snd/COLDRAY.wav`          : Gems high quality
+# `homm3snd/Chat.wav`             : Currency LOW T1 and Big Lifeforce Stacks
+# `homm3snd/Cure.wav`             : some Divination Cards (TODO: review types of cards)
+# `homm3snd/Curse.wav`            : Divination Cards low tier related to corrupted items
+# `homm3snd/DANGER.wav`           : Error and unknown (TODO: make also disabled divination cards) divination cards
+# `homm3snd/DEFAULT.wav`          : Quest Related Items (Campaign, Labirinth, Heist Targets)
+# `homm3snd/Decay.wav`            : Flasks high quality
+# `homm3snd/Disease.wav`          : Most Uniques and Unique Related Divination Cards
+# `homm3snd/DRAGON.wav`           : Essences top tier
+# `homm3snd/FAERIE.wav`           : Currency TOP T1: Tainted and other best Currency
+# `homm3snd/FLAGMINE.wav`         : Currency MID T3
+# `homm3snd/Forget.wav`           : Scarab Map Fragments
+# `homm3snd/Fortune.wav`          : Rarity mods related identified items
+# `homm3snd/GENIE.wav`            : Gem top tier and top tier gem related Divination Cards
+# `homm3snd/Gazebo.wav`           : Maps tier 17 and other unknowns
+# `homm3snd/GetProtection.wav`    : Essences best
+# `homm3snd/Graveyard.wav`        : Expedition Logbooks
+# `homm3snd/LIGHTBLT.wav`         : 5-Links
+# `homm3snd/LUCK.wav`             : Currency TOP T3: lowest of top tier
+# `homm3snd/Lighthouse.wav`       : Heist Blueprints
+# `homm3snd/MILITARY.wav`         : Maps Influenced
+# `homm3snd/MORALE.wav`           : Maps Yellow
+# `homm3snd/Mystery.wav`          : Sanctum Research
+# `homm3snd/NEWMONTH.wav`         : Maps top boss
+# `homm3snd/NOMAD.wav`            : Divination Cards top tier
+# `homm3snd/NewDay.wav`           : Maps Red and low boss
+# `homm3snd/NewWeek.wav`          : Maps mid boss
+# `homm3snd/Nwherolv.wav`         : Maps White
+# `homm3snd/Obelisk.wav`          : Maven's Writ
+# `homm3snd/Paralyze.wav`         : Unique Pieces
+# `homm3snd/Pickup01.wav`         : Amulets, Belts and Rings pickups
+# `homm3snd/Pickup02.wav`         : Helmets pickups
+# `homm3snd/Pickup03.wav`         : Boots pickups
+# `homm3snd/Pickup04.wav`         : Gloves pickups
+# `homm3snd/Pickup05.wav`         : Body pickups
+# `homm3snd/Pickup06.wav`         : Shileds pickups
+# `homm3snd/Pickup07.wav`         : Weapons pickups
+# `homm3snd/Poison.wav`           : 4-Links in Campaign, non-uniques
+# `homm3snd/Prayer.wav`           : Delve Primitive and Potent Resonators
+# `homm3snd/QUEST.wav`            : Atlas Related quest items
+# `homm3snd/RESURECT.wav`         : Double Influenced items
+# `homm3snd/ROGUE.wav`            : Heist Contracts
+# `homm3snd/Regener.wav`          : Legion Incubators (TODO: remove)
+# `homm3snd/STORE.wav`            : Divination Cards mid tier
+# `homm3snd/Slayer.wav`           : Sacred Blossom map fragment
+# `homm3snd/SysMsg.wav`           : Currency MID T1
+# `homm3snd/TREASURE.wav`         : Currency TOP T2
+# `homm3snd/Temple.wav`           : Incursion Vails
+# `homm3snd/UltimateArtifact.wav` : Mirror of Kalandra
+# `homm3snd/VISIONS.wav`          : Synthesised items
+# `homm3snd/View.wav`             : Delve Powerful Resonator
+# `homm3snd/mirth.wav`            : Cluster Jewels
+# `homm3snd/tailwind.wav`         : Fractured items
+# -- icons (color shape pairs with beams for more valuable items in same color)
+# Blue Circle            : Transmutation, Aumentation, Alteration and Chance orbs
+# Blue Cross             :
+# Blue Diamond           : Magic Amultets and Rings
+# Blue Hexagon           :
+# Blue Kite              :
+# Blue Moon              : Magic Belts
+# Blue Pentagon          :
+# Blue Raindrop          : Mana Flasks
+# Blue Square            :
+# Blue Star              :
+# Blue Triangle          :
+# Blue UpsideDownHouse   :
+# Brown Circle           :
+# Brown Cross            :
+# Brown Diamond          : Unique Amultes and Rings
+# Brown Hexagon          :
+# Brown Kite             : Unique Weapons
+# Brown Moon             : Unique Belts
+# Brown Pentagon         :
+# Brown Raindrop         : Unique Flasks
+# Brown Square           : Unique Armours and Pieces
+# Brown Star             : Unique Jewels (including Abyss) (and Vault Keys: move?)
+# Brown Triangle         :
+# Brown UpsideDownHouse  : Unique Shields and Quivers
+# Cyan Circle            :
+# Cyan Cross             : Double Influenced and Influenced items
+# Cyan Diamond           :
+# Cyan Hexagon           :
+# Cyan Kite              :
+# Cyan Moon              :
+# Cyan Pentagon          :
+# Cyan Raindrop          : Fractured items
+# Cyan Square            : Influenced Maps
+# Cyan Star              : Zana Memory
+# Cyan Triangle          :
+# Cyan UpsideDownHouse   :
+# Green Circle           :
+# Green Cross            : Quest Items (campaign only?)
+# Green Diamond          :
+# Green Hexagon          : Memories and Atlas Upgrade Items
+# Green Kite             :
+# Green Moon             :
+# Green Pentagon         :
+# Green Raindrop         : Utility Flasks
+# Green Square           : Sanctum Research
+# Green Star             :
+# Green Triangle         : Gems
+# Green UpsideDownHouse  :
+# Grey Circle            : Jeweller's and Fusing orbs
+# Grey Cross             : Expedition Logbooks
+# Grey Diamond           :
+# Grey Hexagon           : Simulacrum
+# Grey Kite              :
+# Grey Moon              :
+# Grey Pentagon          : Gems Starting
+# Grey Raindrop          :
+# Grey Square            : Divination Cards
+# Grey Star              :
+# Grey Triangle          :
+# Grey UpsideDownHouse   :
+# Orange Circle          : Gold and Currency
+# Orange Cross           : Breach Splinters
+# Orange Diamond         : Blight Oils and Ultimatum Catalysts
+# Orange Hexagon         :
+# Orange Kite            :
+# Orange Moon            :
+# Orange Pentagon        : 6-Sockets and 5-Linked items
+# Orange Raindrop        : Tinctures
+# Orange Square          :
+# Orange Star            :
+# Orange Triangle        :
+# Orange UpsideDownHouse :
+# Pink Circle            :
+# Pink Cross             :
+# Pink Diamond           :
+# Pink Hexagon           : Sanctum Relics and Identified items with rarity mods
+# Pink Kite              : Essences
+# Pink Moon              :
+# Pink Pentagon          :
+# Pink Raindrop          :
+# Pink Square            :
+# Pink Star              :
+# Pink Triangle          :
+# Pink UpsideDownHouse   :
+# Purple Circle          :
+# Purple Cross           :
+# Purple Diamond         : Pickup Amultes and Rings
+# Purple Hexagon         :
+# Purple Kite            : Pickup Weapons
+# Purple Moon            : Pickup Belts
+# Purple Pentagon        :
+# Purple Raindrop        :
+# Purple Square          : Pickup Armours and T17 Maps
+# Purple Star            : Cluster Jewels
+# Purple Triangle        :
+# Purple UpsideDownHouse : Pickup Shields
+# Red Circle             : Top Currency
+# Red Cross              : many TODO needs split and moved
+# Red Diamond            :
+# Red Hexagon            : Boss related Map Fragments and Misc Map Items
+# Red Kite               :
+# Red Moon               :
+# Red Pentagon           : 6-Linked
+# Red Raindrop           : Life Flasks
+# Red Square             : Red [T11-T16] Maps and Heist Blueprints
+# Red Star               : Error
+# Red Triangle           :
+# Red UpsideDownHouse    :
+# White Circle           : Low-tier Currency
+# White Cross            : Veiled Items
+# White Diamond          : Normal Amulets and Rings
+# White Hexagon          : Scarabs
+# White Kite             :
+# White Moon             : Normal Belts
+# White Pentagon         : 4-Linked items
+# White Raindrop         : Recipe Flasks (high quality flasks)
+# White Square           : White [T1,T5] Maps and Contracts
+# White Star             :
+# White Triangle         :
+# White UpsideDownHouse  :
+# Yellow Circle          : Mid-tier currency
+# Yellow Cross           :
+# Yellow Diamond         : Rare Amulets and Rings
+# Yellow Hexagon         :
+# Yellow Kite            : Incubators (TODO remove)
+# Yellow Moon            : Rare Belts
+# Yellow Pentagon        : Delve Resonators
+# Yellow Raindrop        :
+# Yellow Square          : Yellow [T6,T10] Maps
+# Yellow Star            :
+# Yellow Triangle        :
+# Yellow UpsideDownHouse :
+# END OF NOTES

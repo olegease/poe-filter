@@ -1,5 +1,5 @@
 root = true
-[*.{filter,md,ruthlessfilter}]
+[*.{cxx,easefilter,filter,md,ruthlessfilter}]
 charset = utf-8
 end_of_line = lf
 indent_size = 4
