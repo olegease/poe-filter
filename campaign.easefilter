@@ -13,9 +13,9 @@
 # END OF COMMENT
 # ============================================================================ #
 # FILTER
-#TEXT:- Continue
-#TEXT:--- Mandatory
-#TEXT:----- Starting
+#PART:- Continue
+#PART:--- Mandatory
+#PART:----- Starting
 Show
 AreaLevel 1
 BaseType == "Spectral Throw"
@@ -72,14 +72,14 @@ Class == "Skill Gems"
     MinimapIcon 0 Grey Pentagon
     PlayEffect Grey
     SetFontSize 45
-#TEXT:----- Quest Items
+#PART:----- Quest Items
 Show
 Class == "Quest Items"
     SetFontSize 45
     CustomAlertSound "homm3snd/DEFAULT.wav"
     MinimapIcon 0 Green Cross
     PlayEffect Green
-#TEXT:----- Gold
+#PART:----- Gold
 Show
 BaseType == "Gold"
 StackSize >= 4096
@@ -115,142 +115,142 @@ BaseType == "Gold"
     SetBackgroundColor 0 0 0 0
     SetBorderColor 0 0 0 0
     SetTextColor 128 88 8
-#TEXT:--- Drop Sounds
-#TEXT:----- All Items
+#PART:--- Drop Sounds
+#PART:----- All Items
 Show
     DisableDropSound
     Continue
-#TEXT:--- Text
-#TEXT:----- Normal Rarity
+#PART:--- Text
+#PART:----- Normal Rarity
 Show
 Rarity Normal
     SetTextColor 192 192 192
     Continue
-#TEXT:----- Magic Rarity
+#PART:----- Magic Rarity
 Show
 Rarity Magic
     SetTextColor 128 128 248
     Continue
-#TEXT:----- Rare Rarity
+#PART:----- Rare Rarity
 Show
 Rarity Rare
     SetTextColor 248 248 128
     Continue
-#TEXT:----- Unique Rarity
+#PART:----- Unique Rarity
 Show
 Rarity Unique
     SetTextColor 160 88 32
     Continue
-#TEXT:----- Gems
+#PART:----- Gems
 Show
 Class "Gems"
     SetTextColor 32 160 160
     Continue
-#TEXT:----- Fractured
+#PART:----- Fractured
 Show
 FracturedItem True
     SetTextColor 160 160 88
     Continue
-#TEXT:----- Synthesised
+#PART:----- Synthesised
 Show
 SynthesisedItem True
     SetTextColor 160 160 88
     Continue
-#TEXT:----- Influenced
+#PART:----- Influenced
 Show
 HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     SetTextColor 160 160 88
     Continue
-#TEXT:----- Corrupted
+#PART:----- Corrupted
 Show
 Corrupted True
     SetTextColor  216 8 8
     Continue
-#TEXT:----- Crafted
+#PART:----- Crafted
 Show
 Identified True
 HasExplicitMod "Veil" "Chosen" "Order" "Craft" "Upgraded" "Subterranean" "Underground"
     SetTextColor 192 216 248
     Continue
-#TEXT:--- Background
-#TEXT:----- Currency
+#PART:--- Background
+#PART:----- Currency
 Show
 Class == "Stackable Currency"
     SetBackgroundColor 128 88 8
     Continue
-#TEXT:----- Weapons
+#PART:----- Weapons
 Show
 Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Sceptres" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
     SetBackgroundColor 64 8 8
     Continue
-#TEXT:----- Armours
+#PART:----- Armours
 Show
 Class == "Body Armours" "Boots" "Gloves" "Helmets"
     SetBackgroundColor 8 64 8
     Continue
-#TEXT:----- Off-hands
+#PART:----- Off-hands
 Show
 Class == "Quivers" "Shields"
     SetBackgroundColor 64 64 8
     Continue
-#TEXT:----- Jewellery
+#PART:----- Jewellery
 Show
 Class == "Amulets" "Belts" "Rings"
     SetBackgroundColor 8 8 64
     Continue
-#TEXT:----- Mana Flasks
+#PART:----- Mana Flasks
 Show
 Class == "Mana Flasks"
     SetBackgroundColor 64 64 216
     Continue
-#TEXT:----- Life Flasks
+#PART:----- Life Flasks
 Show
 Class == "Life Flasks"
     SetBackgroundColor 128 32 32
     Continue
-#TEXT:----- Hybrid Flasks
+#PART:----- Hybrid Flasks
 Show
 Class == "Hybrid Flasks"
     SetBackgroundColor 128 32 128
     Continue
-#TEXT:----- Utility Flasks
+#PART:----- Utility Flasks
 Show
 Class == "Utility Flasks"
     SetBackgroundColor 32 128 64
     Continue
-#TEXT:----- Divination Cards
+#PART:----- Divination Cards
 Show
 Class == "Divination Cards"
     SetBackgroundColor 64 64 64
     Continue
-#TEXT:----- Gems
+#PART:----- Gems
 Show
 Class == "Skill Gems" "Support Gems"
     SetBackgroundColor 32 64 64
     Continue
-#TEXT:----- Tainted Currency
+#PART:----- Tainted Currency
 Show
 Class == "Stackable Currency"
 BaseType "Tainted"
     SetBackgroundColor 216 8 8
     Continue
-#TEXT:----- Jewels
+#PART:----- Jewels
 Show
 Class == "Abyss Jewels" "Jewels"
     SetBackgroundColor 64 88 128
     Continue
-#TEXT:----- Fragments
+#PART:----- Fragments
 Show
 Class == "Map Fragments"
     SetBackgroundColor 192 192 192
     Continue
-#TEXT:----- Maps
+#PART:----- Maps
 Show
 Class == "Maps"
     SetBackgroundColor 8 8 8
     Continue
-#TEXT:--- Border
-#TEXT:----- Strength Bases
+#PART:--- Border
+#PART:----- Strength Bases
 Show
 BaseArmour >= 1
     SetBorderColor 248 8 8
@@ -259,7 +259,7 @@ Show
 Class == "One Hand Maces" "Two Hand Maces"
     SetBorderColor 248 8 8
     Continue
-#TEXT:----- Dexterity Bases
+#PART:----- Dexterity Bases
 Show
 BaseEvasion >= 1
     SetBorderColor 8 248 8
@@ -268,7 +268,7 @@ Show
 Class == "Bows" "Thrusting One Hand Swords"
     SetBorderColor 8 248 8
     Continue
-#TEXT:----- Intelligence Bases
+#PART:----- Intelligence Bases
 Show
 BaseEnergyShield >= 1
     SetBorderColor 8 8 248
@@ -277,7 +277,7 @@ Show
 Class == "Wands"
     SetBorderColor 8 8 248
     Continue
-#TEXT:----- Strength and Dexterity Bases
+#PART:----- Strength and Dexterity Bases
 Show
 BaseArmour >= 1
 BaseEvasion >= 1
@@ -287,7 +287,7 @@ Show
 Class == "One Hand Axes" "One Hand Swords" "Two Hand Axes" "Two Hand Swords"
     SetBorderColor 248 248 8
     Continue
-#TEXT:----- Dexterity and Intelligence Bases
+#PART:----- Dexterity and Intelligence Bases
 Show
 BaseEvasion >= 1
 BaseEnergyShield >= 1
@@ -297,7 +297,7 @@ Show
 Class == "Claws" "Daggers" "Rune Daggers"
     SetBorderColor 8 248 248
     Continue
-#TEXT:----- Intelligence and Strength Bases
+#PART:----- Intelligence and Strength Bases
 Show
 BaseEnergyShield >= 1
 BaseArmour >= 1
@@ -307,61 +307,61 @@ Show
 Class == "Sceptres" "Staves" "Warstaves"
     SetBorderColor 248 8 248
     Continue
-#TEXT:----- Strength and Dexterity and Intelligence Bases
+#PART:----- Strength and Dexterity and Intelligence Bases
 Show
 BaseArmour >= 1
 BaseEvasion >= 1
 BaseEnergyShield >= 1
     SetBorderColor 248 248 248
     Continue
-#TEXT:----- Divination Cards
+#PART:----- Divination Cards
 Show
 Class == "Divination Cards"
     SetBorderColor 8 8 8
     Continue
-#TEXT:----- Gems
+#PART:----- Gems
 Show
 Class == "Skill Gems" "Support Gems"
     SetBorderColor 64 88 64
     Continue
-#TEXT:----- Normal Maps
+#PART:----- Normal Maps
 Show
 Class == "Maps"
 Rarity Normal
     SetBorderColor 216 216 216
     Continue
-#TEXT:----- Magic Maps
+#PART:----- Magic Maps
 Show
 Class == "Maps"
 Rarity Magic
     SetBorderColor 128 128 248
     Continue
-#TEXT:----- Rare Maps
+#PART:----- Rare Maps
 Show
 Class == "Maps"
 Rarity Rare
     SetBorderColor 248 248 128
     Continue
-#TEXT:----- Corrupted Maps
+#PART:----- Corrupted Maps
 Show
 Class == "Maps"
 Corrupted True
     SetBorderColor 216 8 8
     Continue
-#TEXT:----- Unique Maps
+#PART:----- Unique Maps
 Show
 Class == "Maps"
 Rarity Unique
     SetBorderColor 160 88 32
     Continue
-#TEXT:--- Font
-#TEXT:----- All Items
+#PART:--- Font
+#PART:----- All Items
 Show
     SetFontSize 45
     Continue
-#TEXT:- Currency
-#TEXT:--- Tainted
-#TEXT:----- All
+#PART:- Currency
+#PART:--- Tainted
+#PART:----- All
 Show
 Class == "Stackable Currency"
 BaseType "Tainted"
@@ -370,8 +370,8 @@ BaseType "Tainted"
     PlayEffect Red
     SetBackgroundColor 248 216 64
     SetTextColor 128 32 8
-##    2.1     --- Basic Vendor
-###   2.1.1   ----- Wisdom
+#PART:--- Basic Vendor
+#PART:----- Wisdom
 Show
 Class == "Stackable Currency"
 BaseType == "Scroll of Wisdom"
@@ -435,7 +435,7 @@ BaseType == "Scroll of Wisdom"
     SetFontSize 33
     SetBorderColor 88 32 64
     SetTextColor 88 32 64
-###   2.1.2   ----- Portal
+#PART:----- Portal
 Show
 Class == "Stackable Currency"
 BaseType == "Portal Scroll"
@@ -499,7 +499,7 @@ BaseType == "Portal Scroll"
     SetFontSize 39
     SetBorderColor 32 64 88
     SetTextColor 32 64 88
-###   2.1.3   ----- Transmutation
+#PART:----- Transmutation
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Transmutation"
@@ -562,7 +562,7 @@ Class == "Stackable Currency"
 BaseType == "Orb of Transmutation"
     SetFontSize 39
     SetTextColor 8 32 128
-###   2.1.4   ----- Augmentation
+#PART:----- Augmentation
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Augmentation"
@@ -624,7 +624,7 @@ Class == "Stackable Currency"
 BaseType == "Orb of Augmentation"
     SetFontSize 39
     SetTextColor 8 64 128
-###   2.1.5   ----- Alteration
+#PART:----- Alteration
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Alteration"
@@ -685,7 +685,7 @@ Class == "Stackable Currency"
 BaseType == "Orb of Alteration"
     MinimapIcon 2 Blue Circle
     SetTextColor 8 88 128
-###   2.1.6   ----- MID T2
+#PART:----- MID T2
 Show
 Class == "Stackable Currency"
 BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Fusing"
@@ -693,7 +693,7 @@ BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Fusing"
     MinimapIcon 2 Grey Circle
     SetBackgroundColor 160 128 8
     SetTextColor 248 248 248
-###   2.1.9   ----- MID T1
+#PART:----- MID T1
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Chance" "Orb of Scouring" "Orb of Regret" "Orb of Alchemy"
@@ -701,8 +701,8 @@ BaseType == "Orb of Chance" "Orb of Scouring" "Orb of Regret" "Orb of Alchemy"
     MinimapIcon 2 Blue Circle
     SetBackgroundColor 160 128 8
     SetTextColor 88 88 88
-##    2.2     --- Basic Quality Vendor
-###   2.2.1   ----- Scrap
+#PART:--- Basic Quality Vendor
+#PART:----- Scrap
 Show
 Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
@@ -761,7 +761,7 @@ Class == "Stackable Currency"
 BaseType == "Armourer's Scrap"
     SetFontSize 33
     SetTextColor 8 8 8
-###   2.2.2   ----- Whetstone
+#PART:----- Whetstone
 Show
 Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
@@ -820,7 +820,7 @@ Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
     SetFontSize 36
     SetTextColor 8 8 8
-###   2.2.3   ----- Bauble
+#PART:----- Bauble
 Show
 Class == "Stackable Currency"
 BaseType == "Glassblower's Bauble"
@@ -828,8 +828,8 @@ BaseType == "Glassblower's Bauble"
     MinimapIcon 2 Yellow Circle
     SetBackgroundColor 160 128 8
     SetTextColor 8 8 8
-##    2.3     --- Basic Master Vendor
-###   2.3.1   ----- Unmaking
+#PART:--- Basic Master Vendor
+#PART:----- Unmaking
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Unmaking" "Cartographer's Chisel"
@@ -838,9 +838,9 @@ BaseType == "Orb of Unmaking" "Cartographer's Chisel"
     PlayEffect Yellow
     SetBackgroundColor 216 192 32
     SetTextColor 8 8 8
-###   2.3.3   ----- Bestiary (TODO)
-##    2.4     --- Basic Drop Only
-###   2.4.1   ----- TOP T3
+#PART:----- Bestiary (TODO)
+#PART:--- Basic Drop Only
+#PART:----- TOP T3
 Show
 Class == "Stackable Currency"
 BaseType == "Instilling Orb" "Enkindling Orb"
@@ -862,7 +862,7 @@ BaseType "Scouting Report"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32
     SetTextColor 64 64 64
-###   2.4.5   ----- Ember
+#PART:----- Ember
 Show
 Class == "Stackable Currency"
 BaseType == "Lesser Eldritch Ember"
@@ -870,7 +870,7 @@ BaseType == "Lesser Eldritch Ember"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32
     SetTextColor 160 8 64
-###   2.4.6   ----- Ichor
+#PART:----- Ichor
 Show
 Class == "Stackable Currency"
 BaseType == "Lesser Eldritch Ichor"
@@ -878,7 +878,7 @@ BaseType == "Lesser Eldritch Ichor"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32
     SetTextColor 64 8 160
-###   2.4.7   ----- TOP T2
+#PART:----- TOP T2
 Show
 Class == "Stackable Currency"
 BaseType == "Regal Orb" "Chaos Orb" "Vaal Orb" "Blessed Orb" "Gemcutter's Prism"
@@ -887,7 +887,7 @@ BaseType == "Regal Orb" "Chaos Orb" "Vaal Orb" "Blessed Orb" "Gemcutter's Prism"
     PlayEffect Orange Temp
     SetBackgroundColor 216 192 32
     SetTextColor 192 64 64
-###   2.4.12  ----- TOP T1
+#PART:----- TOP T1
 Show
 Class == "Stackable Currency"
 BaseType == "Exalted Orb" "Divine Orb" "Valdo's Puzzle Box" "Sacred Orb"
@@ -896,7 +896,7 @@ BaseType == "Exalted Orb" "Divine Orb" "Valdo's Puzzle Box" "Sacred Orb"
     PlayEffect Red
     SetBackgroundColor 248 216 64
     SetTextColor 216 8 8
-###   2.4.16  ----- ULT T0 (Kalandra)
+#PART:----- ULT T0 (Kalandra)
 Show
 Class == "Stackable Currency"
 BaseType == "Mirror of Kalandra"
@@ -905,8 +905,8 @@ BaseType == "Mirror of Kalandra"
     PlayEffect Red
     SetBackgroundColor 248 248 248
     SetTextColor 248 8 8
-##    2.5     --- Basic Drop Only Monster Restricted
-###   2.5.1   ----- All
+#PART:--- Basic Drop Only Monster Restricted
+#PART:----- All
 Show
 Class == "Stackable Currency"
 BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Reflecting Mist" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
@@ -915,9 +915,9 @@ BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldri
     PlayEffect Red
     SetBackgroundColor 248 216 64
     SetTextColor 248 8 8
-#     3       - Seasonal
-##    3.1     --- Essence (League v2.4)
-###   3.1.1   ----- Group F
+#PART:- Seasonal
+#PART:--- Essence (League v2.4)
+#PART:----- Group F
 Show
 Class == "Stackable Currency"
 BaseType "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
