@@ -1,6 +1,7 @@
 #include <array>
 #include <cassert>
 #include <filesystem>
+#include <format>
 #include <fstream>
 #include <iostream>
 #include <stdexcept>
@@ -13,6 +14,9 @@ inline constexpr char EndL = '\n';
 
 namespace app {
     using Size = std::size_t;
+    using Int0 = std::int8_t;
+    template< typename Type > using Out = Type &;
+    template< typename Type > using Ref = Type const &;
     template < typename Type, Size size > using Flat = std::array< Type, size >;
     using Text = std::string;
     using View = std::string_view;
@@ -20,18 +24,34 @@ namespace app {
 
     using namespace std::string_view_literals;
 
-    enum class Case : std::int8_t {
+    enum class Case : Int0 {
         Out = 0, In_Norm, In_Less
+    };
+
+    enum class Rank : Int0 {
+        None, Depth1, Depth2, Depth3
     };
 
     struct State {
         Size currLine{ 0 };
         Text currErrt{ "" };
         Case currCase{ Case::Out };
+        Rank currRank{ Rank::None };
+        View currText{ ""sv };
+        Size currDep1{ 0 };
+        Size currDep2{ 0 };
+        Size currDep3{ 0 };
+    };
+
+    struct TextState {
+        Text norm;
+        Text less;
+        Text normContents;
+        Text lessContents;
     };
 
     enum class Rule : std::int8_t {
-        Not = 0, Hide_Show, Norm, Less, Ends, Size_,
+        Not = 0, Text, Hide_Show, Norm, Less, Ends, Size_,
         Error = -1
     };
     constexpr Size rule_size( ) { return static_cast< Size >( Rule::Size_ ); }
@@ -41,12 +61,23 @@ namespace app {
         auto checkFirst = line.substr( 1, 1 );
         if ( line[0] != '#' or checkFirst == " "sv or checkFirst == "#"sv ) return Rule::Not;
 
-        static constexpr Flat< View, rule_size( ) > rules{{
-            ""sv, "#HIDESHOW"sv, "#NORM:", "#LESS:", "#ENDS."
+        static constexpr Flat< std::pair< View, Rule >, 5 > rules{{
+            { "#TEXT:*"sv, Rule::Text },
+            { "#HIDESHOW$"sv, Rule::Hide_Show },
+            { "#NORM:$"sv, Rule::Norm },
+            { "#LESS:$"sv, Rule::Less },
+            { "#ENDS.$"sv, Rule::Ends }
         }};
 
-        for ( Size i = 1u; i < rules.size( ); ++i ) {
-            if ( rules[i] == line ) return static_cast< Rule >( i );
+        for ( auto const [view,rule] : rules ) {
+            char last = view.back( );
+            View checkLine{ ""sv }, checkRule{ view.substr( 0, view.size( ) - 1 ) };
+            switch ( last ) {
+                case '*': checkLine = line.substr( 0, checkRule.size( ) ); break;
+                case '$': checkLine = line; break;
+                default: assert( false and APP "logic error in parse_rule, rule does not change with `*` or `$`" ); return Rule::Error;
+            }
+            if ( checkRule == checkLine ) return rule;
         }
 
         return Rule::Error;
@@ -64,13 +95,15 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
 
     if ( not in ) throw std::runtime_error{ APP ": Could not open input file" };
 
-    Text line, textNorm, textLess;
-    line.reserve( 1u << 12u ); // 4096?
     Size inSize = std::filesystem::file_size( inputFilename );
     if ( inSize > ( 1u << 20u ) ) throw std::runtime_error{ APP ": input file exceeds 1MiB, too large maybe wrong file?" };
+
+    Text line;
+    line.reserve( 1u << 12u ); // 4096?
+    TextState text;
     // input file size technically would always be bigger, so only one allocation needed
-    textNorm.reserve( inSize );
-    textLess.reserve( inSize );
+    text.norm.reserve( inSize );
+    text.less.reserve( inSize );
 
     State state;
     while ( std::getline( in, line ) ) {
@@ -80,20 +113,44 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
         }
         ++state.currLine;
         Rule rule = parse_rule( line );
-        auto process_default = [&line,&textNorm,&textLess]( State const &currState ) {
+        auto process_default = [&line,&text]( Ref< State > currState ) {
             auto state = currState.currCase;
             bool writeNorm = state == Case::Out or state == Case::In_Norm;
             bool writeLess = state == Case::Out or state == Case::In_Less;
-            if ( writeNorm ) textNorm += line + EndL;
-            if ( writeLess ) textLess += line + EndL;
+            if ( writeNorm ) text.norm += line + EndL;
+            if ( writeLess ) text.less += line + EndL;
         };
-        auto process_hideshow = [&textNorm,&textLess]( State &state ) {
+        auto process_text = [&line,&text]( Out< State > state ) {
+            Size from = 5;
+            assert( line[from] == ':' and "TODO" );
+            Size count{ 0 };
+            while ( line[++from] == '-' ) ++count;
+            switch ( count ) {
+                case 1: ++state.currDep1; state.currDep2 = 0; state.currDep3 = 0; break;
+                case 3: ++state.currDep2; state.currDep3 = 0; break;
+                case 5: ++state.currDep3; break;
+                default: state.currErrt = APP ": #TEXT rule invalid count of `-` characters"; return;
+            }
+            Text title, tail{ line.substr( 6 ) };
+
+            using namespace std::string_literals;
+            Text dep1 = std::to_string( state.currDep1 );
+            Text dep2 = std::to_string( state.currDep2 );
+            Text dep3 = std::to_string( state.currDep3 );
+            if/*_*/ ( state.currDep3 ) title += "###   "s + dep1 + '.' + dep2 + '.' + dep3 + std::string( 6 - dep1.size( ) - dep2.size( ) - dep3.size( ), ' ' ) + tail;
+            else if ( state.currDep2 ) title += "##    "s + dep1 + '.' + dep2 + std::string( 7 - dep1.size( ) - dep2.size( ),  ' ' ) + tail;
+            else if ( state.currDep1 ) title += "#     "s + dep1 + std::string( 8 - dep1.size( ), ' ' ) + tail;
+            text.norm += title + EndL;
+            text.less += title + EndL;
+        };
+        auto process_hideshow = [&text]( Out< State > state ) {
             if ( state.currCase != Case::Out ) state.currErrt = APP ": #HIDESHOW rule required to be outside #NORM or #LESS case";
-            textNorm += "Hide\n";
-            textLess += "Show\n";
+            text.norm += "Hide\n";
+            text.less += "Show\n";
         };
         switch ( rule ) {
             case Rule::Not: process_default( state ); continue;
+            case Rule::Text: process_text( state ); continue;
             case Rule::Hide_Show: process_hideshow( state ); continue;
             case Rule::Norm: state.currCase = Case::In_Norm; continue;
             case Rule::Less: state.currCase = Case::In_Less; continue;
@@ -116,8 +173,8 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
 
     if ( not outNorm or not outLess ) throw std::runtime_error{ APP ": Could not create or overwrite out files" };
 
-    outNorm << textNorm;
-    outLess << textLess;
+    outNorm << text.norm;
+    outLess << text.less;
 
 } catch ( std::exception const &e ) {
     std::cerr << "std::exception: " << e.what( ) << EndL;

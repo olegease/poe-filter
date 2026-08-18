@@ -13,9 +13,9 @@
 # END OF COMMENT
 # ============================================================================ #
 # FILTER
-#     1       - Continue
-##    1.1     --- Mandatory
-###   1.1.1   ----- Starting
+#TEXT:- Continue
+#TEXT:--- Mandatory
+#TEXT:----- Starting
 Show
 AreaLevel 1
 BaseType == "Spectral Throw"
@@ -72,14 +72,14 @@ Class == "Skill Gems"
     MinimapIcon 0 Grey Pentagon
     PlayEffect Grey
     SetFontSize 45
-###   1.1.2   ----- Quest Items
+#TEXT:----- Quest Items
 Show
 Class == "Quest Items"
     SetFontSize 45
     CustomAlertSound "homm3snd/DEFAULT.wav"
     MinimapIcon 0 Green Cross
     PlayEffect Green
-###   1.1.3   ----- Gold
+#TEXT:----- Gold
 Show
 BaseType == "Gold"
 StackSize >= 4096
@@ -115,142 +115,142 @@ BaseType == "Gold"
     SetBackgroundColor 0 0 0 0
     SetBorderColor 0 0 0 0
     SetTextColor 128 88 8
-##    1.2     --- Drop Sounds
-###   1.2.1   ----- All Items
+#TEXT:--- Drop Sounds
+#TEXT:----- All Items
 Show
     DisableDropSound
     Continue
-##    1.3     --- Text
-###   1.3.1   ----- Normal Rarity
+#TEXT:--- Text
+#TEXT:----- Normal Rarity
 Show
 Rarity Normal
     SetTextColor 192 192 192
     Continue
-###   1.3.2   ----- Magic Rarity
+#TEXT:----- Magic Rarity
 Show
 Rarity Magic
     SetTextColor 128 128 248
     Continue
-###   1.3.3   ----- Rare Rarity
+#TEXT:----- Rare Rarity
 Show
 Rarity Rare
     SetTextColor 248 248 128
     Continue
-###   1.3.4   ----- Unique Rarity
+#TEXT:----- Unique Rarity
 Show
 Rarity Unique
     SetTextColor 160 88 32
     Continue
-###   1.3.5   ----- Gems
+#TEXT:----- Gems
 Show
 Class "Gems"
     SetTextColor 32 160 160
     Continue
-###   1.3.6   ----- Fractured
+#TEXT:----- Fractured
 Show
 FracturedItem True
     SetTextColor 160 160 88
     Continue
-###   1.3.7   ----- Synthesised
+#TEXT:----- Synthesised
 Show
 SynthesisedItem True
     SetTextColor 160 160 88
     Continue
-###   1.3.8   ----- Influenced
+#TEXT:----- Influenced
 Show
 HasInfluence Shaper Elder Crusader Hunter Redeemer Warlord
     SetTextColor 160 160 88
     Continue
-###   1.3.9   ----- Corrupted
+#TEXT:----- Corrupted
 Show
 Corrupted True
     SetTextColor  216 8 8
     Continue
-###   1.3.10  ----- Crafted
+#TEXT:----- Crafted
 Show
 Identified True
 HasExplicitMod "Veil" "Chosen" "Order" "Craft" "Upgraded" "Subterranean" "Underground"
     SetTextColor 192 216 248
     Continue
-##    1.4     --- Background
-###   1.4.1   ----- Currency
+#TEXT:--- Background
+#TEXT:----- Currency
 Show
 Class == "Stackable Currency"
     SetBackgroundColor 128 88 8
     Continue
-###   1.4.2   ----- Weapons
+#TEXT:----- Weapons
 Show
 Class == "Bows" "Claws" "Daggers" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Sceptres" "Staves" "Thrusting One Hand Swords" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Wands" "Warstaves"
     SetBackgroundColor 64 8 8
     Continue
-###   1.4.3   ----- Armours
+#TEXT:----- Armours
 Show
 Class == "Body Armours" "Boots" "Gloves" "Helmets"
     SetBackgroundColor 8 64 8
     Continue
-###   1.4.4   ----- Off-hands
+#TEXT:----- Off-hands
 Show
 Class == "Quivers" "Shields"
     SetBackgroundColor 64 64 8
     Continue
-###   1.4.5   ----- Jewellery
+#TEXT:----- Jewellery
 Show
 Class == "Amulets" "Belts" "Rings"
     SetBackgroundColor 8 8 64
     Continue
-###   1.4.6   ----- Mana Flasks
+#TEXT:----- Mana Flasks
 Show
 Class == "Mana Flasks"
     SetBackgroundColor 64 64 216
     Continue
-###   1.4.7   ----- Life Flasks
+#TEXT:----- Life Flasks
 Show
 Class == "Life Flasks"
     SetBackgroundColor 128 32 32
     Continue
-###   1.4.8   ----- Hybrid Flasks
+#TEXT:----- Hybrid Flasks
 Show
 Class == "Hybrid Flasks"
     SetBackgroundColor 128 32 128
     Continue
-###   1.4.9   ----- Utility Flasks
+#TEXT:----- Utility Flasks
 Show
 Class == "Utility Flasks"
     SetBackgroundColor 32 128 64
     Continue
-###   1.4.10  ----- Divination Cards
+#TEXT:----- Divination Cards
 Show
 Class == "Divination Cards"
     SetBackgroundColor 64 64 64
     Continue
-###   1.4.11  ----- Gems
+#TEXT:----- Gems
 Show
 Class == "Skill Gems" "Support Gems"
     SetBackgroundColor 32 64 64
     Continue
-###   1.4.12  ----- Tainted Currency
+#TEXT:----- Tainted Currency
 Show
 Class == "Stackable Currency"
 BaseType "Tainted"
     SetBackgroundColor 216 8 8
     Continue
-###   1.4.13  ----- Jewels
+#TEXT:----- Jewels
 Show
 Class == "Abyss Jewels" "Jewels"
     SetBackgroundColor 64 88 128
     Continue
-###   1.4.14  ----- Fragments
+#TEXT:----- Fragments
 Show
 Class == "Map Fragments"
     SetBackgroundColor 192 192 192
     Continue
-###   1.4.15  ----- Maps
+#TEXT:----- Maps
 Show
 Class == "Maps"
     SetBackgroundColor 8 8 8
     Continue
-##    1.5     --- Border
-###   1.5.1   ----- Strength Bases
+#TEXT:--- Border
+#TEXT:----- Strength Bases
 Show
 BaseArmour >= 1
     SetBorderColor 248 8 8
@@ -259,7 +259,7 @@ Show
 Class == "One Hand Maces" "Two Hand Maces"
     SetBorderColor 248 8 8
     Continue
-###   1.5.2   ----- Dexterity Bases
+#TEXT:----- Dexterity Bases
 Show
 BaseEvasion >= 1
     SetBorderColor 8 248 8
@@ -268,7 +268,7 @@ Show
 Class == "Bows" "Thrusting One Hand Swords"
     SetBorderColor 8 248 8
     Continue
-###   1.5.3   ----- Intelligence Bases
+#TEXT:----- Intelligence Bases
 Show
 BaseEnergyShield >= 1
     SetBorderColor 8 8 248
@@ -277,7 +277,7 @@ Show
 Class == "Wands"
     SetBorderColor 8 8 248
     Continue
-###   1.5.4   ----- Strength and Dexterity Bases
+#TEXT:----- Strength and Dexterity Bases
 Show
 BaseArmour >= 1
 BaseEvasion >= 1
@@ -287,7 +287,7 @@ Show
 Class == "One Hand Axes" "One Hand Swords" "Two Hand Axes" "Two Hand Swords"
     SetBorderColor 248 248 8
     Continue
-###   1.5.5   ----- Dexterity and Intelligence Bases
+#TEXT:----- Dexterity and Intelligence Bases
 Show
 BaseEvasion >= 1
 BaseEnergyShield >= 1
@@ -297,7 +297,7 @@ Show
 Class == "Claws" "Daggers" "Rune Daggers"
     SetBorderColor 8 248 248
     Continue
-###   1.5.6   ----- Intelligence and Strength Bases
+#TEXT:----- Intelligence and Strength Bases
 Show
 BaseEnergyShield >= 1
 BaseArmour >= 1
@@ -307,61 +307,61 @@ Show
 Class == "Sceptres" "Staves" "Warstaves"
     SetBorderColor 248 8 248
     Continue
-###   1.5.7   ----- Strength and Dexterity and Intelligence Bases
+#TEXT:----- Strength and Dexterity and Intelligence Bases
 Show
 BaseArmour >= 1
 BaseEvasion >= 1
 BaseEnergyShield >= 1
     SetBorderColor 248 248 248
     Continue
-###   1.5.8   ----- Divination Cards
+#TEXT:----- Divination Cards
 Show
 Class == "Divination Cards"
     SetBorderColor 8 8 8
     Continue
-###   1.5.9   ----- Gems
+#TEXT:----- Gems
 Show
 Class == "Skill Gems" "Support Gems"
     SetBorderColor 64 88 64
     Continue
-###   1.5.10  ----- Normal Maps
+#TEXT:----- Normal Maps
 Show
 Class == "Maps"
 Rarity Normal
     SetBorderColor 216 216 216
     Continue
-###   1.5.11  ----- Magic Maps
+#TEXT:----- Magic Maps
 Show
 Class == "Maps"
 Rarity Magic
     SetBorderColor 128 128 248
     Continue
-###   1.5.12  ----- Rare Maps
+#TEXT:----- Rare Maps
 Show
 Class == "Maps"
 Rarity Rare
     SetBorderColor 248 248 128
     Continue
-###   1.5.13  ----- Corrupted Maps
+#TEXT:----- Corrupted Maps
 Show
 Class == "Maps"
 Corrupted True
     SetBorderColor 216 8 8
     Continue
-###   1.5.14  ----- Unique Maps
+#TEXT:----- Unique Maps
 Show
 Class == "Maps"
 Rarity Unique
     SetBorderColor 160 88 32
     Continue
-##    1.6     --- Font
-###   1.6.1   ----- All Items
+#TEXT:--- Font
+#TEXT:----- All Items
 Show
     SetFontSize 45
     Continue
-#     2       - Currency
-##    2.0     --- Tainted
-###   2.0.0   ----- All
+#TEXT:- Currency
+#TEXT:--- Tainted
+#TEXT:----- All
 Show
 Class == "Stackable Currency"
 BaseType "Tainted"
