@@ -1,3 +1,240 @@
+# CONTENTS
+#     1       - Continue
+##    1.1     --- Mandatory
+###   1.1.1   ----- Starting
+###   1.1.2   ----- Quest Items
+###   1.1.3   ----- Gold
+##    1.2     --- Drop Sounds
+###   1.2.1   ----- All Items
+##    1.3     --- Text
+###   1.3.1   ----- Normal Rarity
+###   1.3.2   ----- Magic Rarity
+###   1.3.3   ----- Rare Rarity
+###   1.3.4   ----- Unique Rarity
+###   1.3.5   ----- Gems
+###   1.3.6   ----- Fractured
+###   1.3.7   ----- Synthesised
+###   1.3.8   ----- Influenced
+###   1.3.9   ----- Corrupted
+###   1.3.10  ----- Crafted
+##    1.4     --- Background
+###   1.4.1   ----- Currency
+###   1.4.2   ----- Weapons
+###   1.4.3   ----- Armours
+###   1.4.4   ----- Off-hands
+###   1.4.5   ----- Jewellery
+###   1.4.6   ----- Mana Flasks
+###   1.4.7   ----- Life Flasks
+###   1.4.8   ----- Hybrid Flasks
+###   1.4.9   ----- Utility Flasks
+###   1.4.10  ----- Divination Cards
+###   1.4.11  ----- Gems
+###   1.4.12  ----- Tainted Currency
+###   1.4.13  ----- Jewels
+###   1.4.14  ----- Fragments
+###   1.4.15  ----- Maps
+##    1.5     --- Border
+###   1.5.1   ----- Strength Bases
+###   1.5.2   ----- Dexterity Bases
+###   1.5.3   ----- Intelligence Bases
+###   1.5.4   ----- Strength and Dexterity Bases
+###   1.5.5   ----- Dexterity and Intelligence Bases
+###   1.5.6   ----- Intelligence and Strength Bases
+###   1.5.7   ----- Strength and Dexterity and Intelligence Bases
+###   1.5.8   ----- Divination Cards
+###   1.5.9   ----- Gems
+###   1.5.10  ----- Normal Maps
+###   1.5.11  ----- Magic Maps
+###   1.5.12  ----- Rare Maps
+###   1.5.13  ----- Corrupted Maps
+###   1.5.14  ----- Unique Maps
+##    1.6     --- Font
+###   1.6.1   ----- All Items
+#     2       - Currency
+##    2.1     --- Tainted
+###   2.1.1   ----- All
+##    2.2     --- Basic Vendor
+###   2.2.1   ----- Wisdom
+###   2.2.2   ----- Portal
+###   2.2.3   ----- Transmutation
+###   2.2.4   ----- Augmentation
+###   2.2.5   ----- Alteration
+###   2.2.6   ----- MID T2
+###   2.2.7   ----- MID T1
+##    2.3     --- Basic Quality Vendor
+###   2.3.1   ----- Scrap
+###   2.3.2   ----- Whetstone
+###   2.3.3   ----- Bauble
+##    2.4     --- Basic Master Vendor
+###   2.4.1   ----- Unmaking
+###   2.4.2   ----- Bestiary (TODO)
+##    2.5     --- Basic Drop Only
+###   2.5.1   ----- TOP T3
+###   2.5.2   ----- Ember
+###   2.5.3   ----- Ichor
+###   2.5.4   ----- TOP T2
+###   2.5.5   ----- TOP T1
+###   2.5.6   ----- ULT T0 (Kalandra)
+##    2.6     --- Basic Drop Only Monster Restricted
+###   2.6.1   ----- All
+#     3       - Seasonal
+##    3.1     --- Essence (League v2.4)
+###   3.1.1   ----- Group F
+###   3.1.2   ----- Tiers
+##    3.2     --- Breach (League v2.5)
+###   3.2.1   ----- Splinters
+###   3.2.2   ----- Blessings
+###   3.2.3   ----- Breachstones (TODO)
+##    3.3     --- Harbinger (League v3.0)
+###   3.3.1   ----- Shards
+###   3.3.2   ----- Binding
+###   3.3.3   ----- Horizons
+###   3.3.4   ----- Annulment
+##    3.4     --- Incursion (League v3.3)
+###   3.4.1   ----- Vials
+###   3.4.2   ----- Items (TODO)
+##    3.5     --- Delve (League v3.4)
+###   3.5.1   ----- Fossils
+###   3.5.2   ----- Resonators
+##    3.6     --- Betrayal (League v3.5)
+###   3.6.1   ----- Scarabs
+##    3.7     --- Legion (League v3.7)
+###   3.7.1   ----- Incubators
+###   3.7.2   ----- Splinters
+###   3.7.3   ----- Emblems
+##    3.8     --- Blight (League v3.8)
+###   3.8.1   ----- Oils
+##    3.9     --- Delirium (League v3.10)
+###   3.9.1   ----- Orbs
+###   3.9.2   ----- Splinters
+###   3.9.3   ----- Simulacrum
+##    3.10    --- Harvest (League v3.11)
+###   3.10.1  ----- Lifeforce
+###   3.10.2  ----- Blossom
+##    3.11    --- Heist (League v3.12)
+###   3.11.1  ----- Markers
+###   3.11.2  ----- Contracts
+###   3.11.3  ----- Blueprints
+###   3.11.4  ----- Targets
+###   3.11.5  ----- Equipment
+##    3.12    --- Ritual (League v3.13)
+###   3.12.1  ----- Splinters
+###   3.12.2  ----- Vessel
+###   3.12.3  ----- Blood
+##    3.13    --- Ultimatum (League v3.14)
+###   3.13.1  ----- Catalysts
+##    3.14    --- Expedition (League v3.15)
+###   3.14.1  ----- Logbooks
+###   3.14.2  ----- Reroll Currency
+##    3.15    --- Sanctum (League v3.20)
+###   3.15.1  ----- Research
+###   3.15.2  ----- Relics
+##    3.16    --- Affliction (League v3.23)
+###   3.16.1  ----- Tinctures
+###   3.16.2  ----- Charms
+###   3.16.3  ----- Corpses
+##    3.17    --- Settlers (League v3.25)
+###   3.17.1  ----- Runes
+#     4       - Specific
+##    4.1     --- Sockets
+###   4.1.1   ----- 6 Link
+###   4.1.2   ----- 5 Link
+###   4.1.3   ----- 6 Socket
+###   4.1.4   ----- 4 Link
+###   4.1.5   ----- RGB
+###   4.1.6   ----- 3 Link
+###   4.1.7   ----- 2 Link
+##    4.2     --- Unique
+###   4.2.1   ----- Bases
+###   4.2.2   ----- Global
+###   4.2.3   ----- Pieces
+##    4.3     --- Fractured
+###   4.3.1   ----- Exotic
+###   4.3.2   ----- Global
+##    4.4     --- Synthesised
+###   4.4.1   ----- Exotic
+###   4.4.2   ----- Global
+##    4.5     --- Influenced
+###   4.5.1   ----- Maps
+###   4.5.2   ----- Exotic
+###   4.5.3   ----- Global
+##    4.6     --- Eldritch
+###   4.6.1   ----- Exotic
+###   4.6.2   ----- Global
+##    4.7     --- Corrupted
+###   4.7.1   ----- Exotic
+###   4.7.2   ----- Global
+##    4.8     --- Zana
+###   4.8.1   ----- Memory
+#     5       - Specials
+##    5.1     --- Divination Cards
+###   5.1.1   ----- Unknown
+###   5.1.2   ----- Fragments
+###   5.1.3   ----- Normal Items
+###   5.1.4   ----- Magic Items
+###   5.1.5   ----- Rare Items
+###   5.1.6   ----- Unique Items
+###   5.1.7   ----- Corrupted
+###   5.1.8   ----- Currency
+###   5.1.9   ----- Gems
+###   5.1.10  ----- Other Divinations
+##    5.2     --- Jewels
+###   5.2.1   ----- Cluster
+###   5.2.2   ----- Abyss
+###   5.2.3   ----- Basic
+##    5.3     --- Flasks
+###   5.3.1   ----- Quality
+###   5.3.2   ----- Utility
+###   5.3.3   ----- Life
+###   5.3.4   ----- Mana
+###   5.3.5   ----- Hybrid
+##    5.4     --- Gems
+###   5.4.1   ----- Ruthless mode (TODO)
+##    5.5     --- Maps
+###   5.5.1   ----- White
+###   5.5.2   ----- Yellow
+###   5.5.3   ----- Red
+###   5.5.4   ----- Other (Influenced, unknown?)
+##    5.6     --- Map Fragments
+###   5.6.1   ----- Vessel
+###   5.6.2   ----- Atziri
+###   5.6.3   ----- Shaper
+###   5.6.4   ----- Elder
+###   5.6.5   ----- Uber
+###   5.6.6   ----- Sirus
+###   5.6.7   ----- Maven
+##    5.7     --- Miscellaneous Map Items
+###   5.7.1   ----- All
+##    5.8     --- Memories
+###   5.8.1   ----- All
+##    5.9     --- Voidstones
+###   5.9.1   ----- All
+##    5.10    --- Vault
+###   5.10.1  ----- Keys
+##    5.11    --- Lab Items
+###   5.11.1  ----- Keys
+###   5.11.2  ----- Trinkets
+#     6       - Identify
+##    6.1     --- Global
+###   6.1.1   ----- In Progress
+#     7       - Rarities
+##    7.1     --- Normal Items
+###   7.1.1   ----- Basic Jewels
+###   7.1.2   ----- Jewellery
+###   7.1.3   ----- Equipment
+##    7.2     --- Magic Items
+###   7.2.1   ----- Basic Jewels
+###   7.2.2   ----- Jewellery
+###   7.2.3   ----- Equipment
+##    7.3     --- Rare Items
+###   7.3.1   ----- Basic Jewels
+###   7.3.2   ----- Pickup
+###   7.3.3   ----- Jewellery
+###   7.3.4   ----- Equipment
+#     8       - Mistaken
+##    8.1     --- Global
+###   8.1.1   ----- Everything
+# END OF CONTENTS
 # COMMENT
 # TODO: remove all leftovers for atlas and map related filtering
 # TODO: remove all filtering for removed (but still accessible via standard)

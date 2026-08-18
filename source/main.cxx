@@ -101,9 +101,9 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
     Text line;
     line.reserve( 1u << 12u ); // 4096?
     TextState text;
-    // input file size technically would always be bigger, so only one allocation needed
-    text.norm.reserve( inSize );
-    text.less.reserve( inSize );
+    // NOTE: avoid additional allocations
+    text.norm.reserve( inSize << 1u );
+    text.less.reserve( inSize << 1u );
 
     State state;
     while ( std::getline( in, line ) ) {
@@ -189,7 +189,7 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
     if ( not outNorm or not outLess ) throw std::runtime_error{ APP ": Could not create or overwrite out files" };
 
     outNorm << text.normContents << "# END OF CONTENTS\n" << text.norm;
-    outLess << text.less;
+    outLess << text.lessContents << "# END OF CONTENTS\n" << text.less;
 
 } catch ( std::exception const &e ) {
     std::cerr << "std::exception: " << e.what( ) << EndL;
