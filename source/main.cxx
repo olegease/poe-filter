@@ -46,8 +46,8 @@ namespace app {
     struct TextState {
         Text norm;
         Text less;
-        Text normContents;
-        Text lessContents;
+        Text normContents{ "# CONTENTS\n"sv };
+        Text lessContents{ "# CONTENTS\n"sv };
     };
 
     enum class Rule : std::int8_t {
@@ -134,14 +134,22 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
             Text title, tail{ line.substr( 6 ) };
 
             using namespace std::string_literals;
-            Text dep1 = std::to_string( state.currDep1 );
-            Text dep2 = std::to_string( state.currDep2 );
-            Text dep3 = std::to_string( state.currDep3 );
-            if/*_*/ ( state.currDep3 ) title += "###   "s + dep1 + '.' + dep2 + '.' + dep3 + std::string( 6 - dep1.size( ) - dep2.size( ) - dep3.size( ), ' ' ) + tail;
-            else if ( state.currDep2 ) title += "##    "s + dep1 + '.' + dep2 + std::string( 7 - dep1.size( ) - dep2.size( ),  ' ' ) + tail;
-            else if ( state.currDep1 ) title += "#     "s + dep1 + std::string( 8 - dep1.size( ), ' ' ) + tail;
+            if ( state.currDep3 ) {
+                Text parts = std::format( "{}.{}.{}", state.currDep1, state.currDep2, state.currDep3 );
+                title += std::format( "###   {:<8}{}", parts, tail );
+            } else if ( state.currDep2 ) {
+                Text parts = std::format( "{}.{}", state.currDep1, state.currDep2 );
+                title += std::format( "##    {:<8}{}", parts, tail );
+            } else {
+                // NOTE: state `currDep1` should always be at least one at this point
+                assert( state.currDep1 and APP ": assert cannot be zero here" );
+                Text parts = std::format( "{}", state.currDep1 );
+                title += std::format( "#     {:<8}{}", parts, tail );
+            }
             text.norm += title + EndL;
             text.less += title + EndL;
+            text.normContents += title + EndL;
+            text.lessContents += title + EndL;
         };
         auto process_hideshow = [&text]( Out< State > state ) {
             if ( state.currCase != Case::Out ) state.currErrt = APP ": #HIDESHOW rule required to be outside #NORM or #LESS case";
@@ -173,7 +181,7 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
 
     if ( not outNorm or not outLess ) throw std::runtime_error{ APP ": Could not create or overwrite out files" };
 
-    outNorm << text.norm;
+    outNorm << text.normContents << "# END OF CONTENTS\n" << text.norm;
     outLess << text.less;
 
 } catch ( std::exception const &e ) {
