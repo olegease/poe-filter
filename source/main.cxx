@@ -51,7 +51,7 @@ namespace app {
     };
 
     enum class Rule : std::int8_t {
-        Not = 0, Text, Hide_Show, Norm, Less, Ends, Size_,
+        Not = 0, Part, Hide_Show, Norm, Less, Ends, Size_,
         Error = -1
     };
     constexpr Size rule_size( ) { return static_cast< Size >( Rule::Size_ ); }
@@ -62,7 +62,7 @@ namespace app {
         if ( line[0] != '#' or checkFirst == " "sv or checkFirst == "#"sv ) return Rule::Not;
 
         static constexpr Flat< std::pair< View, Rule >, 5 > rules{{
-            { "#TEXT:*"sv, Rule::Text },
+            { "#PART:*"sv, Rule::Part },
             { "#HIDESHOW$"sv, Rule::Hide_Show },
             { "#NORM:$"sv, Rule::Norm },
             { "#LESS:$"sv, Rule::Less },
@@ -158,7 +158,7 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
         };
         switch ( rule ) {
             case Rule::Not: process_default( state ); continue;
-            case Rule::Text: process_text( state ); continue;
+            case Rule::Part: process_text( state ); continue;
             case Rule::Hide_Show: process_hideshow( state ); continue;
             case Rule::Norm: state.currCase = Case::In_Norm; continue;
             case Rule::Less: state.currCase = Case::In_Less; continue;
