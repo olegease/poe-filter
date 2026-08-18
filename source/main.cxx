@@ -1,5 +1,6 @@
 #include <array>
 #include <cassert>
+#include <cstdlib>
 #include <filesystem>
 #include <format>
 #include <fstream>
@@ -75,7 +76,7 @@ namespace app {
             switch ( last ) {
                 case '*': checkLine = line.substr( 0, checkRule.size( ) ); break;
                 case '$': checkLine = line; break;
-                default: assert( false and APP "logic error in parse_rule, rule does not change with `*` or `$`" ); return Rule::Error;
+                default: assert( false and APP ": logic error in parse_rule, rule does not change with `*` or `$`" ); return Rule::Error;
             }
             if ( checkRule == checkLine ) return rule;
         }
@@ -174,7 +175,7 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
         }
         // NOTE: only rule errors should reach here
         auto ruleNum = static_cast< int >( rule );
-        assert( ruleNum < 0 and "assert: logic error - expected only rule errors" );
+        assert( ruleNum < 0 and APP ": assert logic error - expected only rule errors" );
         std::cerr << APP << ": rule warning " << ruleNum << " line " << state.currLine << EndL;
         std::cerr << "\t" << line.substr( 0, 256 ) << EndL;
     }
@@ -191,8 +192,16 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
     outNorm << text.normContents << "# END OF CONTENTS\n" << text.norm;
     outLess << text.lessContents << "# END OF CONTENTS\n" << text.less;
 
-} catch ( std::exception const &e ) {
+    outNorm.close( );
+    outLess.close( );
+
+    if ( outNorm.fail() or outLess.fail() ) throw std::runtime_error{ APP ": Failed writing data to out files" };
+
+    return EXIT_SUCCESS;
+} catch ( app::Ref< std::exception > e ) {
     std::cerr << "std::exception: " << e.what( ) << EndL;
+    return EXIT_FAILURE;
 } catch ( ... ) {
     std::cerr << "... exception" << EndL;
+    return EXIT_FAILURE;
 }

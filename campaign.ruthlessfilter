@@ -235,6 +235,7 @@
 ##    8.1     --- Global
 ###   8.1.1   ----- Everything
 # END OF CONTENTS
+# ============================================================================ #
 # COMMENT
 # TODO: remove all leftovers for atlas and map related filtering
 # TODO: remove all filtering for removed (but still accessible via standard)
