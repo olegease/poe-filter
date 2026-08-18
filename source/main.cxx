@@ -121,6 +121,9 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
             if ( writeLess ) text.less += line + EndL;
         };
         auto process_text = [&line,&text]( Out< State > state ) {
+            // NOTE: currently parts depth numbers are shared between `NORMal`
+            // \ and `ruthLESS` mode, so it would mean there can be missing
+            // \ of some numbers in singular filter contents (intentional)
             Size from = 5;
             assert( line[from] == ':' and "TODO" );
             Size count{ 0 };
@@ -146,10 +149,14 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
                 Text parts = std::format( "{}", state.currDep1 );
                 title += std::format( "#     {:<8}{}", parts, tail );
             }
-            text.norm += title + EndL;
-            text.less += title + EndL;
-            text.normContents += title + EndL;
-            text.lessContents += title + EndL;
+            if ( state.currCase == Case::Out or state.currCase == Case::In_Norm ) {
+                text.norm += title + EndL;
+                text.normContents += title + EndL;
+            }
+            if ( state.currCase == Case::Out or state.currCase == Case::In_Less ) {
+                text.less += title + EndL;
+                text.lessContents += title + EndL;
+            }
         };
         auto process_hideshow = [&text]( Out< State > state ) {
             if ( state.currCase != Case::Out ) state.currErrt = APP ": #HIDESHOW rule required to be outside #NORM or #LESS case";
