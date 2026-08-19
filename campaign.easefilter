@@ -689,19 +689,19 @@ BaseType == "Orb of Alteration"
 #PART:----- MID T2
 Show
 Class == "Stackable Currency"
-BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Fusing"
+BaseType == "Jeweller's Orb" "Orb of Fusing" "Orb of Chance"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 2 Grey Circle
     SetBackgroundColor 160 128 8
-    SetTextColor 248 248 248
+    SetTextColor 88 88 88
 #PART:----- MID T1
 Show
 Class == "Stackable Currency"
-BaseType == "Orb of Chance" "Orb of Scouring" "Orb of Regret" "Orb of Alchemy"
+BaseType == "Orb of Scouring" "Orb of Regret" "Orb of Alchemy"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 2 Blue Circle
     SetBackgroundColor 160 128 8
-    SetTextColor 88 88 88
+    SetTextColor 248 248 248
 #PART:--- Basic Quality Vendor
 #PART:----- Scrap
 Show
@@ -821,19 +821,11 @@ Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
     SetFontSize 36
     SetTextColor 8 8 8
-#PART:----- Bauble
-Show
-Class == "Stackable Currency"
-BaseType == "Glassblower's Bauble"
-    CustomAlertSound "homm3snd/FLAGMINE.wav"
-    MinimapIcon 2 Yellow Circle
-    SetBackgroundColor 160 128 8
-    SetTextColor 8 8 8
 #PART:--- Basic Master Vendor
 #PART:----- Unmaking
 Show
 Class == "Stackable Currency"
-BaseType == "Orb of Unmaking" "Cartographer's Chisel"
+BaseType == "Orb of Unmaking"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 0 Yellow Circle
     PlayEffect Yellow
@@ -844,14 +836,14 @@ BaseType == "Orb of Unmaking" "Cartographer's Chisel"
 #PART:----- TOP T3
 Show
 Class == "Stackable Currency"
-BaseType == "Instilling Orb" "Enkindling Orb"
+BaseType == "Enkindling Orb" "Glassblower's Bauble" "Instilling Orb"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32
     SetTextColor 32 128 64
 Show
 Class == "Stackable Currency"
-BaseType == "Stacked Deck"
+BaseType == "Chromatic Orb" "Stacked Deck"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32

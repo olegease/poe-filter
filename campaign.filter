@@ -64,7 +64,6 @@
 ##    2.3     --- Basic Quality Vendor
 ###   2.3.1   ----- Scrap
 ###   2.3.2   ----- Whetstone
-###   2.3.3   ----- Bauble
 ##    2.4     --- Basic Master Vendor
 ###   2.4.1   ----- Unmaking
 ###   2.4.2   ----- Bestiary (TODO)
@@ -931,19 +930,19 @@ BaseType == "Orb of Alteration"
 ###   2.2.6   ----- MID T2
 Show
 Class == "Stackable Currency"
-BaseType == "Jeweller's Orb" "Chromatic Orb" "Orb of Fusing"
+BaseType == "Jeweller's Orb" "Orb of Fusing" "Orb of Chance"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 2 Grey Circle
     SetBackgroundColor 160 128 8
-    SetTextColor 248 248 248
+    SetTextColor 88 88 88
 ###   2.2.7   ----- MID T1
 Show
 Class == "Stackable Currency"
-BaseType == "Orb of Chance" "Orb of Scouring" "Orb of Regret" "Orb of Alchemy"
+BaseType == "Orb of Scouring" "Orb of Regret" "Orb of Alchemy"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 2 Blue Circle
     SetBackgroundColor 160 128 8
-    SetTextColor 88 88 88
+    SetTextColor 248 248 248
 ##    2.3     --- Basic Quality Vendor
 ###   2.3.1   ----- Scrap
 Show
@@ -1063,19 +1062,11 @@ Class == "Stackable Currency"
 BaseType == "Blacksmith's Whetstone"
     SetFontSize 36
     SetTextColor 8 8 8
-###   2.3.3   ----- Bauble
-Show
-Class == "Stackable Currency"
-BaseType == "Glassblower's Bauble"
-    CustomAlertSound "homm3snd/FLAGMINE.wav"
-    MinimapIcon 2 Yellow Circle
-    SetBackgroundColor 160 128 8
-    SetTextColor 8 8 8
 ##    2.4     --- Basic Master Vendor
 ###   2.4.1   ----- Unmaking
 Show
 Class == "Stackable Currency"
-BaseType == "Orb of Unmaking" "Cartographer's Chisel"
+BaseType == "Orb of Unmaking"
     CustomAlertSound "homm3snd/SysMsg.wav"
     MinimapIcon 0 Yellow Circle
     PlayEffect Yellow
@@ -1086,14 +1077,14 @@ BaseType == "Orb of Unmaking" "Cartographer's Chisel"
 ###   2.5.1   ----- TOP T3
 Show
 Class == "Stackable Currency"
-BaseType == "Instilling Orb" "Enkindling Orb"
+BaseType == "Enkindling Orb" "Glassblower's Bauble" "Instilling Orb"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32
     SetTextColor 32 128 64
 Show
 Class == "Stackable Currency"
-BaseType == "Stacked Deck"
+BaseType == "Chromatic Orb" "Stacked Deck"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32

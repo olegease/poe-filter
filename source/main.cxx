@@ -113,11 +113,10 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
             throw std::runtime_error{ state.currErrt };
         }
         ++state.currLine;
-        Rule rule = parse_rule( line );
-        auto process_default = [&line,&text]( Ref< State > currState ) {
-            auto state = currState.currCase;
-            bool writeNorm = state == Case::Out or state == Case::In_Norm;
-            bool writeLess = state == Case::Out or state == Case::In_Less;
+        auto process_default = [&line,&text]( Ref< State > state ) {
+            Case c = state.currCase;
+            bool writeNorm = c == Case::Out or c == Case::In_Norm;
+            bool writeLess = c == Case::Out or c == Case::In_Less;
             if ( writeNorm ) text.norm += line + EndL;
             if ( writeLess ) text.less += line + EndL;
         };
@@ -164,6 +163,7 @@ int main( [[maybe_unused]] int argc, [[maybe_unused]] char *argv[] ) try {
             text.norm += "Hide\n";
             text.less += "Show\n";
         };
+        Rule rule = parse_rule( line );
         switch ( rule ) {
             case Rule::Not: process_default( state ); continue;
             case Rule::Part: process_text( state ); continue;
