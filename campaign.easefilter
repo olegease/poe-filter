@@ -372,6 +372,23 @@ BaseType "Tainted"
     SetBackgroundColor 248 216 64
     SetTextColor 128 32 8
 #PART:--- Basic Vendor
+#PART:----- Shards
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Scroll Fragment"
+    SetFontSize 18
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Transmutation Shard"
+    SetFontSize 24
+#HIDESHOW
+Class == "Stackable Currency"
+BaseType == "Alteration Shard"
+    SetFontSize 30
+Show
+Class == "Stackable Currency"
+BaseType "Alchemy Shard"
+    SetFontSize 36
 #PART:----- Wisdom
 Show
 Class == "Stackable Currency"
@@ -843,7 +860,7 @@ BaseType == "Enkindling Orb" "Glassblower's Bauble" "Instilling Orb"
     SetTextColor 32 128 64
 Show
 Class == "Stackable Currency"
-BaseType == "Chromatic Orb" "Stacked Deck"
+BaseType == "Chromatic Orb" "Stacked Deck" "Orb of Binding"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32
@@ -874,7 +891,7 @@ BaseType == "Lesser Eldritch Ichor"
 #PART:----- TOP T2
 Show
 Class == "Stackable Currency"
-BaseType == "Regal Orb" "Chaos Orb" "Vaal Orb" "Blessed Orb" "Gemcutter's Prism"
+BaseType == "Ancient Orb" "Blessed Orb" "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Vaal Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
@@ -883,7 +900,7 @@ BaseType == "Regal Orb" "Chaos Orb" "Vaal Orb" "Blessed Orb" "Gemcutter's Prism"
 #PART:----- TOP T1
 Show
 Class == "Stackable Currency"
-BaseType == "Exalted Orb" "Divine Orb" "Valdo's Puzzle Box" "Sacred Orb"
+BaseType == "Divine Orb" "Exalted Orb" "Fracturing Orb" "Fracturing Shard" "Orb of Annulment" "Sacred Orb" "Valdo's Puzzle Box"
     CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
@@ -892,7 +909,7 @@ BaseType == "Exalted Orb" "Divine Orb" "Valdo's Puzzle Box" "Sacred Orb"
 #PART:----- ULT T0 (Kalandra)
 Show
 Class == "Stackable Currency"
-BaseType == "Mirror of Kalandra"
+BaseType == "Mirror Shard" "Mirror of Kalandra"
     CustomAlertSound "homm3snd/UltimateArtifact.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
@@ -980,68 +997,6 @@ BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
     SetBorderColor 64 8 88
     SetTextColor 128 32 216
 #PART:----- Breachstones (TODO)
-#PART:--- Harbinger (League v3.0)
-#PART:----- Shards
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Mirror" "Fracturing"
-    CustomAlertSound "homm3snd/FAERIE.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-    SetBackgroundColor 248 216 64
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Harbinger's" "Annulment" "Exalted"
-    CustomAlertSound "homm3snd/SysMsg.wav"
-    MinimapIcon 1 Orange Circle
-    PlayEffect Orange Temp
-    SetBackgroundColor 160 128 8
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Horizon" "Ancient" "Chaos"
-    CustomAlertSound "homm3snd/Chat.wav"
-    MinimapIcon 2 Orange Circle
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Binding" "Regal" "Alchemy" "Engineer's"
-    SetFontSize 39
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Alteration" "Transmutation"
-    SetFontSize 42
-#HIDESHOW
-Class == "Stackable Currency"
-BaseType == "Scroll Fragment"
-    SetFontSize 18
-#PART:----- Binding
-Show
-Class == "Stackable Currency"
-BaseType == "Orb of Binding"
-    CustomAlertSound "homm3snd/LUCK.wav"
-    MinimapIcon 2 Orange Circle
-    SetBackgroundColor 192 160 32
-    SetTextColor 192 192 88
-#PART:----- Horizons
-Show
-Class == "Stackable Currency"
-BaseType == "Orb of Horizons"
-    CustomAlertSound "homm3snd/TREASURE.wav"
-    MinimapIcon 1 Orange Circle
-    PlayEffect Orange Temp
-    SetBackgroundColor 216 192 32
-#PART:----- Annulment
-Show
-Class == "Stackable Currency"
-BaseType == "Orb of Annulment"
-    CustomAlertSound "homm3snd/FAERIE.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-    SetBackgroundColor 248 216 64
 #PART:--- Incursion (League v3.3)
 #PART:----- Vials
 Show
