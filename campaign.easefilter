@@ -706,19 +706,33 @@ BaseType == "Orb of Alteration"
 #PART:----- MID T2
 Show
 Class == "Stackable Currency"
-BaseType == "Jeweller's Orb" "Orb of Fusing" "Orb of Chance"
+BaseType == "Jeweller's Orb" "Orb of Fusing"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 2 Grey Circle
     SetBackgroundColor 160 128 8
     SetTextColor 88 88 88
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Chance"
+    CustomAlertSound "homm3snd/Age.wav"
+    MinimapIcon 2 Blue Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 88 88 128
 #PART:----- MID T1
 Show
 Class == "Stackable Currency"
-BaseType == "Orb of Scouring" "Orb of Regret" "Orb of Alchemy"
+BaseType == "Orb of Scouring" "Orb of Regret"
     CustomAlertSound "homm3snd/SysMsg.wav"
-    MinimapIcon 2 Blue Circle
+    MinimapIcon 2 White Circle
     SetBackgroundColor 160 128 8
-    SetTextColor 248 248 248
+    SetTextColor 216 216 216
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alchemy"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 2 Yellow Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 216 248 216
 #PART:--- Basic Quality Vendor
 #PART:----- Scrap
 Show
@@ -900,26 +914,26 @@ BaseType == "Ancient Orb" "Blessed Orb" "Chaos Orb" "Gemcutter's Prism" "Regal O
 #PART:----- TOP T1
 Show
 Class == "Stackable Currency"
-BaseType == "Divine Orb" "Exalted Orb" "Fracturing Orb" "Fracturing Shard" "Orb of Annulment" "Sacred Orb" "Valdo's Puzzle Box"
+BaseType == "Divine Orb" "Exalted Orb" "Fracturing Orb" "Fracturing Shard" "Orb of Annulment" "Reflecting Mist" "Sacred Orb" "Valdo's Puzzle Box"
     CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 216 64
     SetTextColor 216 8 8
-#PART:----- ULT T0 (Kalandra)
+#PART:----- ULT T0
 Show
 Class == "Stackable Currency"
-BaseType == "Mirror Shard" "Mirror of Kalandra"
+BaseType == "Hinekora's Lock" "Mirror Shard" "Mirror of Kalandra"
     CustomAlertSound "homm3snd/UltimateArtifact.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 248 248
     SetTextColor 248 8 8
 #PART:--- Basic Drop Only Monster Restricted
-#PART:----- All
+#PART:----- All (TODO: tiering or splitting)
 Show
 Class == "Stackable Currency"
-BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Reflecting Mist" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
+BaseType == "Awakener's Orb" "Chaotic Astrolabe" "Crescent Splinter" "Crusader's Exalted Orb" "Deceptive Astrolabe" "Elder's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Fruiting Astrolabe" "Fungal Astrolabe" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Grasping Astrolabe" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Lightless Astrolabe" "Maven's Chisel of Avarice" "Maven's Chisel of Divination" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Scarabs" "Memory of Loneliness" "Memory of Reverence" "Nameless Astrolabe" "Orb of Conflict" "Orb of Dominance" "Orb of Intention" "Orb of Remembrance" "Orb of Unravelling" "Redeemer's Exalted Orb" "Runic Astrolabe" "Shaper's Exalted Orb" "Templar Astrolabe" "Timeless Astrolabe" "Warlord's Exalted Orb"
     CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
