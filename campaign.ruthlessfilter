@@ -54,13 +54,14 @@
 ##    2.1     --- Tainted
 ###   2.1.1   ----- All
 ##    2.2     --- Basic Vendor
-###   2.2.1   ----- Wisdom
-###   2.2.2   ----- Portal
-###   2.2.3   ----- Transmutation
-###   2.2.4   ----- Augmentation
-###   2.2.5   ----- Alteration
-###   2.2.6   ----- MID T2
-###   2.2.7   ----- MID T1
+###   2.2.1   ----- Shards
+###   2.2.2   ----- Wisdom
+###   2.2.3   ----- Portal
+###   2.2.4   ----- Transmutation
+###   2.2.5   ----- Augmentation
+###   2.2.6   ----- Alteration
+###   2.2.7   ----- MID T2
+###   2.2.8   ----- MID T1
 ##    2.3     --- Basic Quality Vendor
 ###   2.3.1   ----- Scrap
 ###   2.3.2   ----- Whetstone
@@ -73,66 +74,57 @@
 ###   2.5.3   ----- Ichor
 ###   2.5.4   ----- TOP T2
 ###   2.5.5   ----- TOP T1
-###   2.5.6   ----- ULT T0 (Kalandra)
+###   2.5.6   ----- ULT T0
 ##    2.6     --- Basic Drop Only Monster Restricted
-###   2.6.1   ----- All
+###   2.6.1   ----- All (TODO: tiering or splitting)
 #     3       - Seasonal
 ##    3.1     --- Essence (League v2.4)
 ###   3.1.1   ----- Group F
 ###   3.1.2   ----- Tiers
-##    3.2     --- Breach (League v2.5)
-###   3.2.1   ----- Splinters
-###   3.2.2   ----- Blessings
-###   3.2.3   ----- Breachstones (TODO)
-##    3.3     --- Harbinger (League v3.0)
-###   3.3.1   ----- Shards
-###   3.3.2   ----- Binding
-###   3.3.3   ----- Horizons
-###   3.3.4   ----- Annulment
-##    3.4     --- Incursion (League v3.3)
-###   3.4.1   ----- Vials
-###   3.4.2   ----- Items (TODO)
-##    3.5     --- Delve (League v3.4)
-###   3.5.1   ----- Fossils
-###   3.5.2   ----- Resonators
-##    3.6     --- Betrayal (League v3.5)
-###   3.6.1   ----- Scarabs
-##    3.7     --- Legion (League v3.7)
-###   3.7.1   ----- Splinters
-###   3.7.2   ----- Emblems
-##    3.8     --- Blight (League v3.8)
-###   3.8.1   ----- Oils
-##    3.9     --- Delirium (League v3.10)
-###   3.9.1   ----- Orbs
-###   3.9.2   ----- Splinters
-###   3.9.3   ----- Simulacrum
-##    3.10    --- Harvest (League v3.11)
-###   3.10.1  ----- Lifeforce
-###   3.10.2  ----- Blossom
-##    3.11    --- Heist (League v3.12)
-###   3.11.1  ----- Markers
-###   3.11.2  ----- Contracts
-###   3.11.3  ----- Blueprints
-###   3.11.4  ----- Targets
-###   3.11.5  ----- Equipment
-##    3.12    --- Ritual (League v3.13)
-###   3.12.1  ----- Splinters
-###   3.12.2  ----- Vessel
-###   3.12.3  ----- Blood
-##    3.13    --- Ultimatum (League v3.14)
-###   3.13.1  ----- Catalysts
-##    3.14    --- Expedition (League v3.15)
-###   3.14.1  ----- Logbooks
-###   3.14.2  ----- Reroll Currency
-##    3.15    --- Sanctum (League v3.20)
-###   3.15.1  ----- Research
-###   3.15.2  ----- Relics
-##    3.16    --- Affliction (League v3.23)
-###   3.16.1  ----- Tinctures
-###   3.16.2  ----- Charms
-###   3.16.3  ----- Corpses
-##    3.17    --- Settlers (League v3.25)
-###   3.17.1  ----- Runes
+##    3.2     --- Incursion (League v3.3)
+###   3.2.1   ----- Vials
+###   3.2.2   ----- Items (TODO)
+##    3.3     --- Delve (League v3.4)
+###   3.3.1   ----- Fossils
+###   3.3.2   ----- Resonators
+##    3.4     --- Betrayal (League v3.5)
+###   3.4.1   ----- Scarabs
+##    3.5     --- Legion (League v3.7)
+###   3.5.1   ----- Splinters
+###   3.5.2   ----- Emblems
+##    3.6     --- Blight (League v3.8)
+###   3.6.1   ----- Oils
+##    3.7     --- Delirium (League v3.10)
+###   3.7.1   ----- Orbs
+###   3.7.2   ----- Splinters
+###   3.7.3   ----- Simulacrum
+##    3.8     --- Harvest (League v3.11)
+###   3.8.1   ----- Lifeforce
+###   3.8.2   ----- Blossom
+##    3.9     --- Heist (League v3.12)
+###   3.9.1   ----- Markers
+###   3.9.2   ----- Contracts
+###   3.9.3   ----- Blueprints
+###   3.9.4   ----- Targets
+###   3.9.5   ----- Equipment
+##    3.10    --- Ritual (League v3.13)
+###   3.10.1  ----- Splinters
+###   3.10.2  ----- Vessel
+###   3.10.3  ----- Blood
+##    3.11    --- Ultimatum (League v3.14)
+###   3.11.1  ----- Catalysts
+##    3.12    --- Expedition (League v3.15)
+###   3.12.1  ----- Logbooks
+###   3.12.2  ----- Reroll Currency
+##    3.13    --- Sanctum (League v3.20)
+###   3.13.1  ----- Research
+###   3.13.2  ----- Relics
+##    3.14    --- Affliction (League v3.23)
+###   3.14.1  ----- Tinctures
+###   3.14.2  ----- Charms
+###   3.14.3  ----- Corpses
+##    3.15    --- Settlers (League v3.25)
+###   3.15.1  ----- Runes
 #     4       - Specific
 ##    4.1     --- Sockets
 ###   4.1.1   ----- 6 Link
@@ -607,7 +599,24 @@ BaseType "Tainted"
     SetBackgroundColor 248 216 64
     SetTextColor 128 32 8
 ##    2.2     --- Basic Vendor
-###   2.2.1   ----- Wisdom
+###   2.2.1   ----- Shards
+Show
+Class == "Stackable Currency"
+BaseType == "Scroll Fragment"
+    SetFontSize 18
+Show
+Class == "Stackable Currency"
+BaseType == "Transmutation Shard"
+    SetFontSize 24
+Show
+Class == "Stackable Currency"
+BaseType == "Alteration Shard"
+    SetFontSize 30
+Show
+Class == "Stackable Currency"
+BaseType "Alchemy Shard"
+    SetFontSize 36
+###   2.2.2   ----- Wisdom
 Show
 Class == "Stackable Currency"
 BaseType == "Scroll of Wisdom"
@@ -671,7 +680,7 @@ BaseType == "Scroll of Wisdom"
     SetFontSize 33
     SetBorderColor 88 32 64
     SetTextColor 88 32 64
-###   2.2.2   ----- Portal
+###   2.2.3   ----- Portal
 Show
 Class == "Stackable Currency"
 BaseType == "Portal Scroll"
@@ -735,7 +744,7 @@ BaseType == "Portal Scroll"
     SetFontSize 39
     SetBorderColor 32 64 88
     SetTextColor 32 64 88
-###   2.2.3   ----- Transmutation
+###   2.2.4   ----- Transmutation
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Transmutation"
@@ -798,7 +807,7 @@ Class == "Stackable Currency"
 BaseType == "Orb of Transmutation"
     SetFontSize 39
     SetTextColor 8 32 128
-###   2.2.4   ----- Augmentation
+###   2.2.5   ----- Augmentation
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Augmentation"
@@ -860,7 +869,7 @@ Class == "Stackable Currency"
 BaseType == "Orb of Augmentation"
     SetFontSize 39
     SetTextColor 8 64 128
-###   2.2.5   ----- Alteration
+###   2.2.6   ----- Alteration
 Show
 Class == "Stackable Currency"
 BaseType == "Orb of Alteration"
@@ -921,22 +930,36 @@ Class == "Stackable Currency"
 BaseType == "Orb of Alteration"
     MinimapIcon 2 Blue Circle
     SetTextColor 8 88 128
-###   2.2.6   ----- MID T2
+###   2.2.7   ----- MID T2
 Show
 Class == "Stackable Currency"
-BaseType == "Jeweller's Orb" "Orb of Fusing" "Orb of Chance"
+BaseType == "Jeweller's Orb" "Orb of Fusing"
     CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 2 Grey Circle
     SetBackgroundColor 160 128 8
     SetTextColor 88 88 88
-###   2.2.7   ----- MID T1
 Show
 Class == "Stackable Currency"
-BaseType == "Orb of Scouring" "Orb of Regret" "Orb of Alchemy"
-    CustomAlertSound "homm3snd/SysMsg.wav"
+BaseType == "Orb of Chance"
+    CustomAlertSound "homm3snd/Age.wav"
     MinimapIcon 2 Blue Circle
     SetBackgroundColor 160 128 8
-    SetTextColor 248 248 248
+    SetTextColor 88 88 128
+###   2.2.8   ----- MID T1
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Scouring" "Orb of Regret"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 2 White Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 216 216 216
+Show
+Class == "Stackable Currency"
+BaseType == "Orb of Alchemy"
+    CustomAlertSound "homm3snd/SysMsg.wav"
+    MinimapIcon 2 Yellow Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 216 248 216
 ##    2.3     --- Basic Quality Vendor
 ###   2.3.1   ----- Scrap
 Show
@@ -1078,7 +1101,7 @@ BaseType == "Enkindling Orb" "Glassblower's Bauble" "Instilling Orb"
     SetTextColor 32 128 64
 Show
 Class == "Stackable Currency"
-BaseType == "Chromatic Orb" "Stacked Deck"
+BaseType == "Chromatic Orb" "Stacked Deck" "Orb of Binding"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32
@@ -1109,7 +1132,7 @@ BaseType == "Lesser Eldritch Ichor"
 ###   2.5.4   ----- TOP T2
 Show
 Class == "Stackable Currency"
-BaseType == "Regal Orb" "Chaos Orb" "Vaal Orb" "Blessed Orb" "Gemcutter's Prism"
+BaseType == "Ancient Orb" "Blessed Orb" "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Vaal Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
@@ -1118,26 +1141,26 @@ BaseType == "Regal Orb" "Chaos Orb" "Vaal Orb" "Blessed Orb" "Gemcutter's Prism"
 ###   2.5.5   ----- TOP T1
 Show
 Class == "Stackable Currency"
-BaseType == "Exalted Orb" "Divine Orb" "Valdo's Puzzle Box" "Sacred Orb"
+BaseType == "Divine Orb" "Exalted Orb" "Fracturing Orb" "Fracturing Shard" "Orb of Annulment" "Reflecting Mist" "Sacred Orb" "Valdo's Puzzle Box"
     CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 216 64
     SetTextColor 216 8 8
-###   2.5.6   ----- ULT T0 (Kalandra)
+###   2.5.6   ----- ULT T0
 Show
 Class == "Stackable Currency"
-BaseType == "Mirror of Kalandra"
+BaseType == "Hinekora's Lock" "Mirror Shard" "Mirror of Kalandra"
     CustomAlertSound "homm3snd/UltimateArtifact.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
     SetBackgroundColor 248 248 248
     SetTextColor 248 8 8
 ##    2.6     --- Basic Drop Only Monster Restricted
-###   2.6.1   ----- All
+###   2.6.1   ----- All (TODO: tiering or splitting)
 Show
 Class == "Stackable Currency"
-BaseType == "Awakener's Orb" "Crescent Splinter" "Crusader's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Orb of Conflict" "Orb of Dominance" "Redeemer's Exalted Orb" "Warlord's Exalted Orb" "Reflecting Mist" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Divination" "Maven's Chisel of Scarabs" "Maven's Chisel of Avarice"
+BaseType == "Awakener's Orb" "Chaotic Astrolabe" "Crescent Splinter" "Crusader's Exalted Orb" "Deceptive Astrolabe" "Elder's Exalted Orb" "Eldritch Chaos Orb" "Eldritch Exalted Orb" "Eldritch Orb of Annulment" "Exceptional Eldritch Ember" "Exceptional Eldritch Ichor" "Fruiting Astrolabe" "Fungal Astrolabe" "Grand Eldritch Ember" "Grand Eldritch Ichor" "Grasping Astrolabe" "Greater Eldritch Ember" "Greater Eldritch Ichor" "Hunter's Exalted Orb" "Lightless Astrolabe" "Maven's Chisel of Avarice" "Maven's Chisel of Divination" "Maven's Chisel of Procurement" "Maven's Chisel of Proliferation" "Maven's Chisel of Scarabs" "Memory of Loneliness" "Memory of Reverence" "Nameless Astrolabe" "Orb of Conflict" "Orb of Dominance" "Orb of Intention" "Orb of Remembrance" "Orb of Unravelling" "Redeemer's Exalted Orb" "Runic Astrolabe" "Shaper's Exalted Orb" "Templar Astrolabe" "Timeless Astrolabe" "Warlord's Exalted Orb"
     CustomAlertSound "homm3snd/FAERIE.wav"
     MinimapIcon 0 Red Circle
     PlayEffect Red
@@ -1182,103 +1205,8 @@ BaseType "Essence"
 BaseType "Muttering" "Whispering"
     SetFontSize 42
     SetTextColor 128 8 128
-##    3.2     --- Breach (League v2.5)
-###   3.2.1   ----- Splinters
-Show
-Class == "Stackable Currency"
-StackSize >= 8
-BaseType "Splinter of"
-BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
-    CustomAlertSound "homm3snd/FLAGMINE.wav"
-    MinimapIcon 1 Orange Cross
-    PlayEffect Orange Temp
-    SetBackgroundColor 160 128 8
-    SetBorderColor 64 8 88
-    SetTextColor 128 32 216
-Show
-Class == "Stackable Currency"
-BaseType "Splinter of"
-BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
-    CustomAlertSound "homm3snd/Chat.wav"
-    MinimapIcon 2 Orange Cross
-    SetBorderColor 64 8 88
-    SetTextColor 128 32 216
-###   3.2.2   ----- Blessings
-Show
-Class == "Stackable Currency"
-BaseType "Blessing of"
-BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
-    CustomAlertSound "homm3snd/FAERIE.wav"
-    MinimapIcon 0 Orange Cross
-    PlayEffect Orange
-    SetBackgroundColor 248 216 64
-    SetBorderColor 64 8 88
-    SetTextColor 128 32 216
-###   3.2.3   ----- Breachstones (TODO)
-##    3.3     --- Harbinger (League v3.0)
-###   3.3.1   ----- Shards
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Mirror" "Fracturing"
-    CustomAlertSound "homm3snd/FAERIE.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-    SetBackgroundColor 248 216 64
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Harbinger's" "Annulment" "Exalted"
-    CustomAlertSound "homm3snd/SysMsg.wav"
-    MinimapIcon 1 Orange Circle
-    PlayEffect Orange Temp
-    SetBackgroundColor 160 128 8
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Horizon" "Ancient" "Chaos"
-    CustomAlertSound "homm3snd/Chat.wav"
-    MinimapIcon 2 Orange Circle
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Binding" "Regal" "Alchemy" "Engineer's"
-    SetFontSize 39
-Show
-Class == "Stackable Currency"
-BaseType "Shard"
-BaseType "Alteration" "Transmutation"
-    SetFontSize 42
-Show
-Class == "Stackable Currency"
-BaseType == "Scroll Fragment"
-    SetFontSize 18
-###   3.3.2   ----- Binding
-Show
-Class == "Stackable Currency"
-BaseType == "Orb of Binding"
-    CustomAlertSound "homm3snd/LUCK.wav"
-    MinimapIcon 2 Orange Circle
-    SetBackgroundColor 192 160 32
-    SetTextColor 192 192 88
-###   3.3.3   ----- Horizons
-Show
-Class == "Stackable Currency"
-BaseType == "Orb of Horizons"
-    CustomAlertSound "homm3snd/TREASURE.wav"
-    MinimapIcon 1 Orange Circle
-    PlayEffect Orange Temp
-    SetBackgroundColor 216 192 32
-###   3.3.4   ----- Annulment
-Show
-Class == "Stackable Currency"
-BaseType == "Orb of Annulment"
-    CustomAlertSound "homm3snd/FAERIE.wav"
-    MinimapIcon 0 Orange Circle
-    PlayEffect Orange
-    SetBackgroundColor 248 216 64
-##    3.4     --- Incursion (League v3.3)
-###   3.4.1   ----- Vials
+##    3.2     --- Incursion (League v3.3)
+###   3.2.1   ----- Vials
 Show
 Class == "Stackable Currency"
 BaseType "Vial of"
@@ -1287,9 +1215,9 @@ BaseType "Awakening" "Consequence" "Dominance" "the Ghost" "Fate" "Sacrifice" "t
     MinimapIcon 0 Orange Circle
     PlayEffect Orange
     SetTextColor 160 88 32
-###   3.4.2   ----- Items (TODO)
-##    3.5     --- Delve (League v3.4)
-###   3.5.1   ----- Fossils
+###   3.2.2   ----- Items (TODO)
+##    3.3     --- Delve (League v3.4)
+###   3.3.1   ----- Fossils
 Show
 Class == "Stackable Currency"
 BaseType "Fossil"
@@ -1298,7 +1226,7 @@ BaseType "Fossil"
     PlayEffect Orange
     SetBorderColor 248 128 8
     SetTextColor 216 216 8
-###   3.5.2   ----- Resonators
+###   3.3.2   ----- Resonators
 Show
 Class == "Delve Stackable Socketable Currency"
 BaseType "Primitive" "Potent"
@@ -1325,8 +1253,8 @@ BaseType "Prime"
     SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
     SetTextColor 128 88 8
-##    3.6     --- Betrayal (League v3.5)
-###   3.6.1   ----- Scarabs
+##    3.4     --- Betrayal (League v3.5)
+###   3.4.1   ----- Scarabs
 Show
 Class == "Map Fragments"
 BaseType "Scarab"
@@ -1334,8 +1262,8 @@ BaseType "Scarab"
     MinimapIcon 0 White Hexagon
     PlayEffect White
     SetTextColor 8 8 8
-##    3.7     --- Legion (League v3.7)
-###   3.7.1   ----- Splinters
+##    3.5     --- Legion (League v3.7)
+###   3.5.1   ----- Splinters
 Show
 Class == "Stackable Currency"
 BaseType "Timeless"
@@ -1344,7 +1272,7 @@ BaseType "Splinter"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 160 128 8
     SetTextColor 8 64 64
-###   3.7.2   ----- Emblems
+###   3.5.2   ----- Emblems
 Show
 Class == "Map Fragments"
 BaseType "Emblem"
@@ -1353,8 +1281,8 @@ BaseType "Timeless"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
     SetTextColor 64 192 192
-##    3.8     --- Blight (League v3.8)
-###   3.8.1   ----- Oils
+##    3.6     --- Blight (League v3.8)
+###   3.6.1   ----- Oils
 Show
 Class == "Stackable Currency"
 BaseType "Oil"
@@ -1412,8 +1340,8 @@ BaseType "Golden" "Tainted" "Reflective" "Prismatic"
     SetBackgroundColor 248 216 64
     SetBorderColor 8 128 32
     SetTextColor 8 160 32
-##    3.9     --- Delirium (League v3.10)
-###   3.9.1   ----- Orbs
+##    3.7     --- Delirium (League v3.10)
+###   3.7.1   ----- Orbs
 Show
 Class == "Stackable Currency"
 BaseType "Delirium Orb"
@@ -1422,7 +1350,7 @@ BaseType "Delirium Orb"
     PlayEffect Orange
     SetBackgroundColor 216 192 32
     SetBorderColor 8 8 8
-###   3.9.2   ----- Splinters
+###   3.7.2   ----- Splinters
 Show
 Class == "Stackable Currency"
 BaseType == "Simulacrum Splinter"
@@ -1430,15 +1358,15 @@ BaseType == "Simulacrum Splinter"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 160 128 8
     SetBorderColor 8 8 8
-###   3.9.3   ----- Simulacrum
+###   3.7.3   ----- Simulacrum
 Class == "Map Fragments"
 BaseType == "Simulacrum"
     CustomAlertSound "homm3snd/NewWeek.wav"
     MinimapIcon 0 Grey Hexagon
     PlayEffect Grey
     SetTextColor 192 192 192
-##    3.10    --- Harvest (League v3.11)
-###   3.10.1  ----- Lifeforce
+##    3.8     --- Harvest (League v3.11)
+###   3.8.1   ----- Lifeforce
 Show
 Class == "Stackable Currency"
 BaseType == "Wild Crystallised Lifeforce"
@@ -1516,7 +1444,7 @@ BaseType == "Sacred Crystallised Lifeforce"
     PlayEffect Orange
     SetBorderColor 88 88 128
     SetTextColor 88 88 128
-###   3.10.2  ----- Blossom
+###   3.8.2   ----- Blossom
 Show
 Class == "Map Fragments"
 BaseType == "Sacred Blossom"
@@ -1524,8 +1452,8 @@ BaseType == "Sacred Blossom"
     MinimapIcon 0 Red Hexagon
     PlayEffect Red
     SetTextColor 248 64 64
-##    3.11    --- Heist (League v3.12)
-###   3.11.1  ----- Markers
+##    3.9     --- Heist (League v3.12)
+###   3.9.1   ----- Markers
 Show
 Class == "Stackable Currency"
 BaseType == "Rogue's Marker"
@@ -1534,7 +1462,7 @@ BaseType == "Rogue's Marker"
     PlayEffect Orange
     SetBackgroundColor 160 128 8
     SetTextColor 248 160 128
-###   3.11.2  ----- Contracts
+###   3.9.2   ----- Contracts
 Show
 Class == "Contracts"
     CustomAlertSound "homm3snd/ROGUE.wav"
@@ -1542,7 +1470,7 @@ Class == "Contracts"
     PlayEffect White
     SetBackgroundColor 8 8 8
     SetBorderColor 8 8 8
-###   3.11.3  ----- Blueprints
+###   3.9.3   ----- Blueprints
 Show
 Class == "Blueprints"
     CustomAlertSound "homm3snd/Lighthouse.wav"
@@ -1550,39 +1478,39 @@ Class == "Blueprints"
     PlayEffect Red
     SetBackgroundColor 192 160 128
     SetBorderColor 88 64 64
-###   3.11.4  ----- Targets
+###   3.9.4   ----- Targets
 Show
 Class == "Heist Targets"
     CustomAlertSound "homm3snd/DEFAULT.wav"
     MinimapIcon 0 Green Cross
     PlayEffect Green
-###   3.11.5  ----- Equipment
+###   3.9.5   ----- Equipment
 Show
 Class "Heist"
 Class "Gear" "Tools" "Brooches" "Cloaks"
-##    3.12    --- Ritual (League v3.13)
-###   3.12.1  ----- Splinters
+##    3.10    --- Ritual (League v3.13)
+###   3.10.1  ----- Splinters
 Show
 Class == "Stackable Currency"
 BaseType == "Ritual Splinter"
     MinimapIcon 2 Red Cross
     SetTextColor 192 8 8
-###   3.12.2  ----- Vessel
+###   3.10.2  ----- Vessel
 Show
 Class == "Stackable Currency"
 BaseType == "Ritual Vessel"
     MinimapIcon 1 Red Cross
     PlayEffect Red Temp
     SetTextColor 192 8 8
-###   3.12.3  ----- Blood
+###   3.10.3  ----- Blood
 Show
 Class == "Map Fragments"
 BaseType == "Blood-filled Vessel"
     MinimapIcon 0 Red Cross
     PlayEffect Red
     SetTextColor 192 8 8
-##    3.13    --- Ultimatum (League v3.14)
-###   3.13.1  ----- Catalysts
+##    3.11    --- Ultimatum (League v3.14)
+###   3.11.1  ----- Catalysts
 Show
 Class == "Stackable Currency"
 BaseType "Catalyst"
@@ -1590,8 +1518,8 @@ BaseType "Catalyst"
     MinimapIcon 0 Orange Diamond
     PlayEffect Orange
     SetBackgroundColor 160 128 8
-##    3.14    --- Expedition (League v3.15)
-###   3.14.1  ----- Logbooks
+##    3.12    --- Expedition (League v3.15)
+###   3.12.1  ----- Logbooks
 Show
 Class == "Expedition Logbooks"
     CustomAlertSound "homm3snd/Graveyard.wav"
@@ -1599,7 +1527,7 @@ Class == "Expedition Logbooks"
     PlayEffect Grey
     SetBackgroundColor 98 108 100
     SetBorderColor 64 128 64
-###   3.14.2  ----- Reroll Currency
+###   3.12.2  ----- Reroll Currency
 Show
 Class == "Stackable Currency"
 BaseType == "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion"
@@ -1609,8 +1537,8 @@ BaseType == "Astragali" "Exotic Coinage" "Scrap Metal" "Burial Medallion"
     SetBackgroundColor 216 192 32
     SetBorderColor 64 128 64
     SetTextColor 88 128 88
-##    3.15    --- Sanctum (League v3.20)
-###   3.15.1  ----- Research
+##    3.13    --- Sanctum (League v3.20)
+###   3.13.1  ----- Research
 Show
 Class == "Sanctum Research"
 BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
@@ -1620,30 +1548,30 @@ BaseType "Tome" "Vaults" "Cathedral" "Necropolis"
     SetBackgroundColor 80 70 60
     SetBorderColor 64 216 64
     SetTextColor 64 216 64
-###   3.15.2  ----- Relics
+###   3.13.2  ----- Relics
 Show
 Class == "Relics"
     CustomAlertSound "homm3snd/Bless.wav"
     MinimapIcon 2 Pink Hexagon
     SetBackgroundColor 88 64 64
     SetBorderColor 64 216 64
-##    3.16    --- Affliction (League v3.23)
-###   3.16.1  ----- Tinctures
+##    3.14    --- Affliction (League v3.23)
+###   3.14.1  ----- Tinctures
 Show
 Class == "Tinctures"
     MinimapIcon 2 Orange Raindrop
-###   3.16.2  ----- Charms
+###   3.14.2  ----- Charms
 Show
 Class == "Charms"
     MinimapIcon 0 Red Cross
     PlayEffect Red
-###   3.16.3  ----- Corpses
+###   3.14.3  ----- Corpses
 Show
 Class == "Corpses"
     MinimapIcon 0 Red Cross
     PlayEffect Red
-##    3.17    --- Settlers (League v3.25)
-###   3.17.1  ----- Runes
+##    3.15    --- Settlers (League v3.25)
+###   3.15.1  ----- Runes
 Class == "Stackable Currency"
 BaseType "Rune"
 BaseType "Life" "Sun" "Bound" "War" "River" "Bounty" "Journey" "Mountain" "Time" "Power"
@@ -3064,7 +2992,7 @@ Show
 # Grey Triangle          :
 # Grey UpsideDownHouse   :
 # Orange Circle          : Gold and Currency
-# Orange Cross           : Breach Splinters
+# Orange Cross           :
 # Orange Diamond         : Blight Oils and Ultimatum Catalysts
 # Orange Hexagon         :
 # Orange Kite            :
