@@ -964,39 +964,6 @@ BaseType "Essence"
 BaseType "Muttering" "Whispering"
     SetFontSize 42
     SetTextColor 128 8 128
-#PART:--- Breach (League v2.5)
-#PART:----- Splinters
-Show
-Class == "Stackable Currency"
-StackSize >= 8
-BaseType "Splinter of"
-BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
-    CustomAlertSound "homm3snd/FLAGMINE.wav"
-    MinimapIcon 1 Orange Cross
-    PlayEffect Orange Temp
-    SetBackgroundColor 160 128 8
-    SetBorderColor 64 8 88
-    SetTextColor 128 32 216
-Show
-Class == "Stackable Currency"
-BaseType "Splinter of"
-BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
-    CustomAlertSound "homm3snd/Chat.wav"
-    MinimapIcon 2 Orange Cross
-    SetBorderColor 64 8 88
-    SetTextColor 128 32 216
-#PART:----- Blessings
-Show
-Class == "Stackable Currency"
-BaseType "Blessing of"
-BaseType "Chayula" "Esh" "Tul" "Uul-Netol" "Xoph"
-    CustomAlertSound "homm3snd/FAERIE.wav"
-    MinimapIcon 0 Orange Cross
-    PlayEffect Orange
-    SetBackgroundColor 248 216 64
-    SetBorderColor 64 8 88
-    SetTextColor 128 32 216
-#PART:----- Breachstones (TODO)
 #PART:--- Incursion (League v3.3)
 #PART:----- Vials
 Show
@@ -2853,7 +2820,7 @@ Show
 # Grey Triangle          :
 # Grey UpsideDownHouse   :
 # Orange Circle          : Gold and Currency
-# Orange Cross           : Breach Splinters
+# Orange Cross           :
 # Orange Diamond         : Blight Oils and Ultimatum Catalysts
 # Orange Hexagon         :
 # Orange Kite            :
