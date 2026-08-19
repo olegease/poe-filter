@@ -1100,15 +1100,6 @@ BaseType "Scarab"
     PlayEffect White
     SetTextColor 8 8 8
 #PART:--- Legion (League v3.7)
-#PART:----- Incubators
-Show
-Class == "Incubators"
-    CustomAlertSound "homm3snd/Regener.wav"
-    MinimapIcon 0 Yellow Kite
-    PlayEffect Yellow
-    SetBackgroundColor 128 108 20
-    SetBorderColor 80 64 8
-    SetTextColor 216 192 64
 #PART:----- Splinters
 Show
 Class == "Stackable Currency"
@@ -2834,7 +2825,7 @@ Show
 # `homm3snd/QUEST.wav`            : Atlas Related quest items
 # `homm3snd/RESURECT.wav`         : Double Influenced items
 # `homm3snd/ROGUE.wav`            : Heist Contracts
-# `homm3snd/Regener.wav`          : Legion Incubators (TODO: remove)
+# `homm3snd/Regener.wav`          :
 # `homm3snd/STORE.wav`            : Divination Cards mid tier
 # `homm3snd/Slayer.wav`           : Sacred Blossom map fragment
 # `homm3snd/SysMsg.wav`           : Currency MID T1
@@ -2970,7 +2961,7 @@ Show
 # Yellow Cross           :
 # Yellow Diamond         : Rare Amulets and Rings
 # Yellow Hexagon         :
-# Yellow Kite            : Incubators (TODO remove)
+# Yellow Kite            :
 # Yellow Moon            : Rare Belts
 # Yellow Pentagon        : Delve Resonators
 # Yellow Raindrop        :

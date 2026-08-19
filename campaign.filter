@@ -98,9 +98,8 @@
 ##    3.6     --- Betrayal (League v3.5)
 ###   3.6.1   ----- Scarabs
 ##    3.7     --- Legion (League v3.7)
-###   3.7.1   ----- Incubators
-###   3.7.2   ----- Splinters
-###   3.7.3   ----- Emblems
+###   3.7.1   ----- Splinters
+###   3.7.2   ----- Emblems
 ##    3.8     --- Blight (League v3.8)
 ###   3.8.1   ----- Oils
 ##    3.9     --- Delirium (League v3.10)
@@ -1341,16 +1340,7 @@ BaseType "Scarab"
     PlayEffect White
     SetTextColor 8 8 8
 ##    3.7     --- Legion (League v3.7)
-###   3.7.1   ----- Incubators
-Show
-Class == "Incubators"
-    CustomAlertSound "homm3snd/Regener.wav"
-    MinimapIcon 0 Yellow Kite
-    PlayEffect Yellow
-    SetBackgroundColor 128 108 20
-    SetBorderColor 80 64 8
-    SetTextColor 216 192 64
-###   3.7.2   ----- Splinters
+###   3.7.1   ----- Splinters
 Show
 Class == "Stackable Currency"
 BaseType "Timeless"
@@ -1359,7 +1349,7 @@ BaseType "Splinter"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 160 128 8
     SetTextColor 8 64 64
-###   3.7.3   ----- Emblems
+###   3.7.2   ----- Emblems
 Show
 Class == "Map Fragments"
 BaseType "Emblem"
@@ -3061,7 +3051,7 @@ Show
 # `homm3snd/QUEST.wav`            : Atlas Related quest items
 # `homm3snd/RESURECT.wav`         : Double Influenced items
 # `homm3snd/ROGUE.wav`            : Heist Contracts
-# `homm3snd/Regener.wav`          : Legion Incubators (TODO: remove)
+# `homm3snd/Regener.wav`          :
 # `homm3snd/STORE.wav`            : Divination Cards mid tier
 # `homm3snd/Slayer.wav`           : Sacred Blossom map fragment
 # `homm3snd/SysMsg.wav`           : Currency MID T1
@@ -3197,7 +3187,7 @@ Show
 # Yellow Cross           :
 # Yellow Diamond         : Rare Amulets and Rings
 # Yellow Hexagon         :
-# Yellow Kite            : Incubators (TODO remove)
+# Yellow Kite            :
 # Yellow Moon            : Rare Belts
 # Yellow Pentagon        : Delve Resonators
 # Yellow Raindrop        :
