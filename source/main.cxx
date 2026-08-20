@@ -22,6 +22,7 @@ namespace app {
     using Text = std::string;
     using View = std::string_view;
     using Path = std::filesystem::path;
+    template< typename First, typename Second > using Pair = std::pair< First, Second >;
 
     using namespace std::string_view_literals;
 
@@ -62,7 +63,7 @@ namespace app {
         auto checkFirst = line.substr( 1, 1 );
         if ( line[0] != '#' or checkFirst == " "sv or checkFirst == "#"sv ) return Rule::Not;
 
-        static constexpr Flat< std::pair< View, Rule >, 5 > rules{{
+        static constexpr Flat< Pair< View, Rule >, 5 > rules{{
             { "#PART:*"sv, Rule::Part },
             { "#HIDESHOW$"sv, Rule::Hide_Show },
             { "#NORM:$"sv, Rule::Norm },
