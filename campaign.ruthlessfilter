@@ -67,7 +67,6 @@
 ###   2.3.2   ----- Whetstone
 ##    2.4     --- Basic Master Vendor
 ###   2.4.1   ----- Unmaking
-###   2.4.2   ----- Bestiary (TODO)
 ##    2.5     --- Basic Drop Only
 ###   2.5.1   ----- TOP T3
 ###   2.5.2   ----- Ember
@@ -1085,11 +1084,10 @@ Show
 Class == "Stackable Currency"
 BaseType == "Orb of Unmaking"
     CustomAlertSound "homm3snd/SysMsg.wav"
-    MinimapIcon 0 Yellow Circle
-    PlayEffect Yellow
+    MinimapIcon 0 White Circle
+    PlayEffect White
     SetBackgroundColor 216 192 32
     SetTextColor 8 8 8
-###   2.4.2   ----- Bestiary (TODO)
 ##    2.5     --- Basic Drop Only
 ###   2.5.1   ----- TOP T3
 Show
@@ -1173,38 +1171,42 @@ Show
 Class == "Stackable Currency"
 BaseType "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Essence of Hysteria"
     CustomAlertSound "homm3snd/GetProtection.wav"
-    MinimapIcon 0 Pink Kite
-    PlayEffect Pink
-    SetTextColor 248 8 248
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+    SetBackgroundColor 248 216 64
+    SetTextColor 248 8 8
 ###   3.1.2   ----- Tiers
 Show
 Class == "Stackable Currency"
 BaseType "Deafening Essence" "Remnant of Corruption"
     CustomAlertSound "homm3snd/DRAGON.wav"
-    MinimapIcon 0 Pink Kite
-    PlayEffect Pink
-    SetTextColor 216 8 216
+    MinimapIcon 0 Red Circle
+    PlayEffect Red
+    SetBackgroundColor 216 192 32
+    SetTextColor 248 8 8
 Show
 Class == "Stackable Currency"
 BaseType "Essence"
 BaseType "Shrieking" "Screaming"
     CustomAlertSound "homm3snd/Berserk.wav"
-    MinimapIcon 1 Pink Kite
+    MinimapIcon 1 Pink Circle
     PlayEffect Pink Temp
-    SetTextColor 192 8 192
+    SetBackgroundColor 192 160 32
+    SetTextColor 248 192 216
 Show
 Class == "Stackable Currency"
 BaseType "Essence"
 BaseType "Wailing" "Weeping"
     CustomAlertSound "homm3snd/BIND.wav"
-    MinimapIcon 2 Pink Kite
-    SetTextColor 160 8 160
+    MinimapIcon 2 Pink Circle
+    SetBackgroundColor 160 128 8
+    SetTextColor 248 192 216
 Show
 Class == "Stackable Currency"
 BaseType "Essence"
 BaseType "Muttering" "Whispering"
     SetFontSize 42
-    SetTextColor 128 8 128
+    SetTextColor 248 192 216
 ##    3.2     --- Incursion (League v3.3)
 ###   3.2.1   ----- Vials
 Show
@@ -3006,11 +3008,11 @@ Show
 # Orange Star            :
 # Orange Triangle        :
 # Orange UpsideDownHouse :
-# Pink Circle            :
+# Pink Circle            : Essences
 # Pink Cross             :
 # Pink Diamond           :
 # Pink Hexagon           : Sanctum Relics and Identified items with rarity mods
-# Pink Kite              : Essences
+# Pink Kite              :
 # Pink Moon              :
 # Pink Pentagon          :
 # Pink Raindrop          :
