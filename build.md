@@ -106,8 +106,8 @@ No mapping (atlas content) allowed, only campaign and accessible through campaig
 - Utility:
   -  4: `Crushing Fist`, `Decoy Totem`, `Devouring Totem`, `Rejuvenation Totem`, `Shield Charge`, `Steelskin`, `War Banner`
   - 10: `Enduring Cry`, `Initmidating Cry`, `Leap Slam`, `Vitality`
-  - 12: `Chain Hook`, `Ancestral Cry`
-  - 16: `Molten Shell`, `Seismic Cry`
+  - 12: `Chain Hook`
+  - 16: `Ancestral Cry`, `Molten Shell`, `Seismic Cry`
   - 24: `Autoexertion`, `Determination`, `Dread Banner`, `General's Cry`, `Infernal Cry`, `Pride`, `Vengeful Cry`
   - 28: `Shockwave Totem`
   - 34: `Flame Link`, `Immortal Call`
@@ -253,7 +253,7 @@ No mapping (atlas content) allowed, only campaign and accessible through campaig
 ## Per Class
 
 ### Duelist
-> Weapons: Swords, Axes, Thrusting, Bow/Quiver, Maces
+> Weapons: `Swords`, `Axes`, `Thrusting`, `Bow/Quiver`, `Maces`
 
 - Ability:
   -  1: `Splitting Steel`, `Perforate`, `Spectral Throw`, `Dual Strike`, `Cleave`
@@ -265,12 +265,38 @@ No mapping (atlas content) allowed, only campaign and accessible through campaig
   -  8: `Maim`, `Multiple Projectiles`, `Faster Attacks`, `Added Cold Damage`, `Added Fire Damage`, `Melee Splash`, `Lifetap`, `Additional Accuracy`, `Arrow Nova`, `Ballista Totem`, `Life Gain on Hit`, `Blind`, `Stun`, `Knockback`
   - 18: `Close Combat`, `Melee Physical Damage`, `Damage on Full Life`, `Point Blank`, `Rage`, `Culling Strike`, `Bloodlust`, `Sadism`, `Shockwave`, `Vicious Projectiles`, `Volatility`, `Iron Grip`, `Iron Will`, `Endurance Charge on Melee Stun`
   - 31: `Impale`, `Fortify`, `Expert Retaliation`, `Urgent Orders`, `Focussed Ballista`, `Arrogance`, `Bloodthirst`, `Controlled Blaze`, `Corrupting Cry`, `Fire Penetration`, `Mana Leech`, `Life Leech`, `Less Duration`, `More Duration`, `Pulverise`, `Advanced Traps`, `Cold Penetration`, `Critical Strike Affliction`, `Faster Projectiles`, `Fork`, `Hypothermia`, `Ice Bite`, `Slower Projectiles`, `Swift Affliction`, `Windburst`
+  - 38: `Multistrike`, `Behead`, `Trauma`, `Greater Multiple Projectiles`, `Greater Volley`, `Rupture`, `Barrage`, `Chain`, `Mark on Hit`, `Returning Projectiles`, `Vile Toxins`, `Withering Touch`, `Brutality`, `Eternal Blessing`, `Fist of War`, `Overexertion`
 - Utility:
   -  4: `Dash`, `Shield Charge`, `Sniper's Mark`, `War Banner`, `Blood and Sand`, `Steelskin`, `Shrapnel Ballista`, `Crushing Fist`, `Bear Trap`, `Decoy Totem`, `Devouring Totem`, `Rejuvenation Totem`
   - 10: `Precision`, `Leap Slam`, `Enduring Cry`, `Vitality`, `Initmidating Cry`, `Blink Arrow`, `Mirror Arrow`, `Flicker Strike`
-  - 12: `Ancestral Cry`, `Siege Ballista`, `Blade Trap`, `Chain Hook`
-  - 16: `Flesh and Stone`, `Defiance Banner`, `Swordstorm`, `Eviscerate`, `Glacial Shield Swipe`, `Poacher's Mark`, `Warlord's Mark`, `Molten Shell`, `Seismic Cry`, `Herald of Agony`
+  - 12: `Siege Ballista`, `Blade Trap`, `Chain Hook`
+  - 16: `Flesh and Stone`, `Defiance Banner`, `Swordstorm`, `Eviscerate`, `Glacial Shield Swipe`, `Poacher's Mark`, `Warlord's Mark`, `Molten Shell`, `Seismic Cry`, `Ancestral Cry`, `Herald of Agony`
   - 24: `Pride`, `Dread Banner`, `Determination`, `Grace`, `Haste`, `Autoexertion`, `Vengeful Cry`, `General's Cry`, `Infernal Cry`, `Rallying Cry`, `Alchemist's Mark`
   - 28: `Artillery Ballista`, `Cyclone`, `Charged Dash`, `Thunderstorm`, `Shockwave Totem`
   - 34: `Phase Run`, `Immortal Call`, `Vampiric Link`, `Intuitive Link`, `Flame Link`, `Summon Stone Golem`
-  - 38: `Multistrike`, `Behead`, `Trauma`, `Greater Multiple Projectiles`, `Greater Volley`, `Rupture`, `Barrage`, `Chain`, `Mark on Hit`, `Returning Projectiles`, `Vile Toxins`, `Withering Touch`, `Brutality`, `Eternal Blessing`, `Fist of War`, `Overexertion`
+
+### Marauder
+> Weapons: `Axes`, `Maces`, `Str>=Dex: Swords`, `Str>=Int: Sceptres, Staves, Warstaves`
+
+- Ability:
+  -  1: `Ground Slam`, `Molten Strike`, `Glacial Hammer`, `Heavy Strike`, `Shield Crush`
+  - 12: `Volcanic Fissure`, `Earthshatter`, `Sunder`, `Infernal Blow`, `Corrupting Fever`
+  - 24: `Petrified Blood`
+  - 28: `Tectonic Slam`, `Earthquake`, `Boneshatter`, `Rage Vortex`
+  - 34: `Berserk`
+- Support:
+  -  1: `Ruthless`, `Chance to Bleed`, `Hallow`
+  -  4: `Ancestral Call`
+  -  8: `Added Fire Damage`, `Maim`, `Lifetap`, `Knockback`, `Life Gain on Hit`, `Melee Splash`, `Stun`, `Ballista Totem`, `Flamewood`, `Spell Totem`
+  - 18: `Rage`, `Elemental Damage with Attacks`, `Bloodlust`, `Melee Physical Damage`, `Endurance Charge on Melee Stun`, `Damage on Full Life`, `Iron Grip`, `Iron Will`, `Shockwave`, `Volatility`, `Cruelty`, `Cold to Fire`
+  - 31: `Fire Penetration`, `Fortify`, `Urgent Orders`, `More Duration`, `Less Duration`, `Arrogance`, `Bloodthirst`, `Controlled Blaze`, `Corrupting Cry`, `Life Leech`, `Pulverise`, `Expert Retaliation`, `Blessed Call`, `Burning Damage`, `Excommunicate`, `Generosity`, `Guardian's Blessing`, `Inspiration`
+  - 38: `Cast when Damage Taken`, `Eternal Blessing`, `Behead`, `Brutality`, `Fist of War`, `Overexertion`, `Trauma`, `Multistrike`, `Cast on Melee Kill`, `Multiple Totems`
+- Utility:
+  -  1: `Holy Strike`, `Smite`
+  -  4: `War Banner`, `Shield Charge`, `Steelskin`, `Crushing Fist`, `Blood and Sand`, `Holy Flame Totem`, `Decoy Totem`, `Devouring Totem`, `Rejuvenation Totem`
+  - 10: `Leap Slam`, `Vitality`, `Initmidating Cry`, `Enduring Cry`
+  - 12: `Chain Hook`, `Searing Bond`, `Absolution`
+  - 16: `Molten Shell`, `Herald of Ash`, `Herald of Purity`, `Ancestral Cry`, `Seismic Cry`, `Defiance Banner`, `Eviscerate`, `Flesh and Stone`, `Swordstorm`, `Warlord's Mark`, `Shield of Light`
+  - 24: `Determination`, `Pride`, `Anger`, `Purity of Fire`, `Punishment`, `Vulnerability`, `Autoexertion`, `Infernal Cry`, `General's Cry`, `Vengeful Cry`, `Rallying Cry`, `Battlemage's Cry`, `Dread Banner`
+  - 28: `Consecrated Path`, `Dominating Blow`, `Animate Guardian`, `Shockwave Totem`
+  - 34: `Immortal Call`, `Summon Stone Golem`, `Summon Flame Golem`, `Flame Link`, `Protective Link`
