@@ -22,7 +22,7 @@ AreaLevel 1
 BaseType == "Spectral Throw"
 Class == "Skill Gems"
     CustomAlertSound "homm3snd/starting/CstleTown.mp3" 150
-    MinimapIcon 0 Grey Pentagon
+    MinimapIcon 0 Green Pentagon
     PlayEffect Grey
     SetFontSize 45
 Show
@@ -30,7 +30,7 @@ AreaLevel 1
 BaseType == "Double Strike"
 Class == "Skill Gems"
     CustomAlertSound "homm3snd/starting/Dungeon.mp3" 150
-    MinimapIcon 0 Grey Pentagon
+    MinimapIcon 0 Green Pentagon
     PlayEffect Grey
     SetFontSize 45
 Show
@@ -38,7 +38,7 @@ AreaLevel 1
 BaseType == "Viper Strike"
 Class == "Skill Gems"
     CustomAlertSound "homm3snd/starting/FortressTown.mp3" 150
-    MinimapIcon 0 Grey Pentagon
+    MinimapIcon 0 Green Pentagon
     PlayEffect Grey
     SetFontSize 45
 Show
@@ -46,7 +46,7 @@ AreaLevel 1
 BaseType == "Heavy Strike"
 Class == "Skill Gems"
     CustomAlertSound "homm3snd/starting/InfernoTown.mp3" 150
-    MinimapIcon 0 Grey Pentagon
+    MinimapIcon 0 Green Pentagon
     PlayEffect Grey
     SetFontSize 45
 Show
@@ -54,7 +54,7 @@ AreaLevel 1
 BaseType == "Fireball"
 Class == "Skill Gems"
     CustomAlertSound "homm3snd/starting/NecroTown.mp3" 150
-    MinimapIcon 0 Grey Pentagon
+    MinimapIcon 0 Green Pentagon
     PlayEffect Grey
     SetFontSize 45
 Show
@@ -62,7 +62,7 @@ AreaLevel 1
 BaseType == "Burning Arrow"
 Class == "Skill Gems"
     CustomAlertSound "homm3snd/starting/Rampart.mp3" 150
-    MinimapIcon 0 Grey Pentagon
+    MinimapIcon 0 Green Pentagon
     PlayEffect Grey
     SetFontSize 45
 Show
@@ -70,7 +70,7 @@ AreaLevel 1
 BaseType == "Holy Strike"
 Class == "Skill Gems"
     CustomAlertSound "homm3snd/starting/StrongHold.mp3" 150
-    MinimapIcon 0 Grey Pentagon
+    MinimapIcon 0 Green Pentagon
     PlayEffect Grey
     SetFontSize 45
 #PART:----- Quest Items
@@ -873,7 +873,7 @@ BaseType == "Enkindling Orb" "Glassblower's Bauble" "Instilling Orb"
     SetTextColor 32 128 64
 Show
 Class == "Stackable Currency"
-BaseType == "Chromatic Orb" "Stacked Deck" "Orb of Binding"
+BaseType == "Stacked Deck" "Orb of Binding"
     CustomAlertSound "homm3snd/LUCK.wav"
     MinimapIcon 2 Orange Circle
     SetBackgroundColor 192 160 32
@@ -904,7 +904,7 @@ BaseType == "Lesser Eldritch Ichor"
 #PART:----- TOP T2
 Show
 Class == "Stackable Currency"
-BaseType == "Ancient Orb" "Blessed Orb" "Chaos Orb" "Gemcutter's Prism" "Regal Orb" "Vaal Orb"
+BaseType == "Ancient Orb" "Blessed Orb" "Chaos Orb" "Chromatic Orb" "Gemcutter's Prism" "Regal Orb" "Vaal Orb"
     CustomAlertSound "homm3snd/TREASURE.wav"
     MinimapIcon 1 Orange Circle
     PlayEffect Orange Temp
@@ -1007,7 +1007,7 @@ Show
 Class == "Delve Stackable Socketable Currency"
 BaseType "Primitive" "Potent"
     CustomAlertSound "homm3snd/Prayer.wav"
-    MinimapIcon 2 Yellow Pentagon
+    MinimapIcon 2 Orange Pentagon
     SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
     SetTextColor 128 88 8
@@ -1015,8 +1015,8 @@ Show
 Class == "Delve Stackable Socketable Currency"
 BaseType "Powerful"
     CustomAlertSound "homm3snd/View.wav"
-    MinimapIcon 1 Yellow Pentagon
-    PlayEffect Yellow Temp
+    MinimapIcon 1 Orange Pentagon
+    PlayEffect Orange Temp
     SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
     SetTextColor 128 88 8
@@ -1024,8 +1024,8 @@ Show
 Class == "Delve Stackable Socketable Currency"
 BaseType "Prime"
     CustomAlertSound "homm3snd/ARMGEDN.wav"
-    MinimapIcon 0 Yellow Pentagon
-    PlayEffect Yellow
+    MinimapIcon 0 Orange Pentagon
+    PlayEffect Orange
     SetBackgroundColor 248 248 128
     SetBorderColor 64 64 8
     SetTextColor 128 88 8
@@ -1364,56 +1364,75 @@ LinkedSockets 6
     MinimapIcon 0 Red Pentagon
     PlayEffect Red
     SetTextColor 248 248 248
+#PART:----- RGB
+Show
+SocketGroup RGB
+    CustomAlertSound "homm3snd/TREASURE.wav"
+    MinimapIcon 0 Green Pentagon
+    PlayEffect Red
+    SetBackgroundColor 192 160 32
+    SetTextColor 248 248 248
 #PART:----- 5 Link
 Show
 LinkedSockets 5
+AreaLevel < 73
+ItemLevel < 78
     CustomAlertSound "homm3snd/LIGHTBLT.wav"
-    MinimapIcon 0 Orange Pentagon
-    PlayEffect Orange
-    SetTextColor 248 248 248
+    MinimapIcon 0 Grey Pentagon
+    PlayEffect Grey
 #PART:----- 6 Socket
 Show
 Sockets 6
-Rarity < Unique
-    CustomAlertSound "homm3snd/TREASURE.wav"
-    MinimapIcon 0 Orange Pentagon
-    PlayEffect Orange
-    SetTextColor 248 248 248
+AreaLevel < 78
+ItemLevel < 83
+    CustomAlertSound "homm3snd/LUCK.wav"
+    MinimapIcon 0 Grey Pentagon
+    PlayEffect Grey
 #PART:----- 4 Link
 Show
 LinkedSockets 4
 AreaLevel < 50
-Rarity < Unique
-    CustomAlertSound "homm3snd/Poison.wav"
+ItemLevel < 68
+Rarity Normal
+    CustomAlertSound "homm3snd/Pickup04.wav"
     MinimapIcon 2 White Pentagon
-    SetTextColor 248 248 248
-#PART:----- RGB
 Show
-Class == "Claws" "Daggers" "Boots" "Gloves" "Helmets" "One Hand Axes" "One Hand Maces" "One Hand Swords" "Rune Daggers" "Sceptres" "Shields" "Wands"
-SocketGroup RGB
-Rarity Normal
-    SetFontSize 42
-    SetBackgroundColor 128 88 8
-    SetTextColor 8 8 8
+LinkedSockets 4
+AreaLevel < 50
+ItemLevel < 68
+Rarity Magic
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 2 Cyan Pentagon
 Show
-Class == "Body Armours" "Bows" "Two Hand Axes" "Two Hand Maces" "Two Hand Swords" "Staves" "Warstaves"
-SocketGroup RGB
-Rarity Normal
-    SetFontSize 36
-    SetBackgroundColor 128 88 8
-    SetTextColor 8 8 8
+LinkedSockets 4
+AreaLevel < 50
+ItemLevel < 68
+Rarity Rare
+    CustomAlertSound "homm3snd/Pickup04.wav"
+    MinimapIcon 2 Yellow Pentagon
 #PART:----- 3 Link
 Show
 LinkedSockets 3
 AreaLevel < 25
-Rarity < Rare
-    SetFontSize 39
+ItemLevel < 50
+Rarity Normal
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 2 White Pentagon
+Show
+LinkedSockets 3
+AreaLevel < 25
+ItemLevel < 50
+Rarity Blue
+    CustomAlertSound "homm3snd/Pickup03.wav"
+    MinimapIcon 2 Cyan Pentagon
 #PART:----- 2 Link
 Show
 LinkedSockets 2
 AreaLevel < 12
-Rarity < Magic
-    SetFontSize 33
+ItemLevel < 25
+Rarity Normal
+    CustomAlertSound "homm3snd/Pickup02.wav"
+    MinimapIcon 2 White Pentagon
 #PART:--- Unique
 #PART:----- Bases
 Show
@@ -2082,14 +2101,14 @@ Show
 Class == "Support Gems"
 BaseType "Awakened"
     CustomAlertSound "homm3snd/GENIE.wav"
-    MinimapIcon 0 Green Triangle
+    MinimapIcon 0 Green Pentagon
     PlayEffect Green
 #PART:----- Exceptional
 Show
 Class == "Support Gems"
 BaseType "Enlighten" "Enhance" "Empower"
     CustomAlertSound "homm3snd/GENIE.wav"
-    MinimapIcon 0 Green Triangle
+    MinimapIcon 0 Green Pentagon
     PlayEffect Green
 #PART:----- High Level and Quality
 Show
@@ -2097,27 +2116,27 @@ Class == "Skill Gems" "Support Gems"
 Quality >= 20
 GemLevel >= 20
     CustomAlertSound "homm3snd/GENIE.wav"
-    MinimapIcon 0 Green Triangle
+    MinimapIcon 0 Green Pentagon
     PlayEffect Green
 #PART:----- High Level
 Show
 Class == "Skill Gems" "Support Gems"
 GemLevel >= 20
     CustomAlertSound "homm3snd/COLDRAY.wav"
-    MinimapIcon 1 Green Triangle
+    MinimapIcon 1 Green Pentagon
     PlayEffect Green Temp
 #PART:----- High Quality
 Show
 Class == "Skill Gems" "Support Gems"
 Quality >= 20
     CustomAlertSound "homm3snd/COLDRAY.wav"
-    MinimapIcon 1 Green Triangle
+    MinimapIcon 1 Green Pentagon
     PlayEffect Green Temp
 Show
 Class == "Skill Gems" "Support Gems"
 Quality >= 14
     CustomAlertSound "homm3snd/COLDRAY.wav"
-    MinimapIcon 2 Green Triangle
+    MinimapIcon 2 Green Pentagon
 Show
 Class == "Skill Gems" "Support Gems"
 Quality >= 8
@@ -2755,14 +2774,14 @@ Show
 # `homm3snd/Nwherolv.wav`         : Maps White
 # `homm3snd/Obelisk.wav`          : Maven's Writ
 # `homm3snd/Paralyze.wav`         : Unique Pieces
-# `homm3snd/Pickup01.wav`         : Amulets, Belts and Rings pickups
-# `homm3snd/Pickup02.wav`         : Helmets pickups
-# `homm3snd/Pickup03.wav`         : Boots pickups
-# `homm3snd/Pickup04.wav`         : Gloves pickups
+# `homm3snd/Pickup01.wav`         : (TODO: early Amulets, Belts and Rings) and Amulets, Belts and Rings lately pickups
+# `homm3snd/Pickup02.wav`         : 2-Link early and Helmets lately pickups
+# `homm3snd/Pickup03.wav`         : 3-Link early and Boots lately pickups
+# `homm3snd/Pickup04.wav`         : 4-Link early and Gloves lately pickups
 # `homm3snd/Pickup05.wav`         : Body pickups
 # `homm3snd/Pickup06.wav`         : Shileds pickups
 # `homm3snd/Pickup07.wav`         : Weapons pickups
-# `homm3snd/Poison.wav`           : 4-Links in Campaign, non-uniques
+# `homm3snd/Poison.wav`           :
 # `homm3snd/Prayer.wav`           : Delve Primitive and Potent Resonators
 # `homm3snd/QUEST.wav`            : Atlas Related quest items
 # `homm3snd/RESURECT.wav`         : Double Influenced items
@@ -2809,7 +2828,7 @@ Show
 # Cyan Hexagon           :
 # Cyan Kite              :
 # Cyan Moon              :
-# Cyan Pentagon          :
+# Cyan Pentagon          : Magic Rarity Linked Items
 # Cyan Raindrop          : Fractured items
 # Cyan Square            : Influenced Maps
 # Cyan Star              : Zana Memory
@@ -2821,11 +2840,11 @@ Show
 # Green Hexagon          : Memories and Atlas Upgrade Items
 # Green Kite             :
 # Green Moon             :
-# Green Pentagon         :
+# Green Pentagon         : Gems and `R-G-B` linked items
 # Green Raindrop         : Utility Flasks
 # Green Square           : Sanctum Research
 # Green Star             :
-# Green Triangle         : Gems
+# Green Triangle         :
 # Green UpsideDownHouse  :
 # Grey Circle            : Jeweller's and Fusing orbs
 # Grey Cross             : Expedition Logbooks
@@ -2833,7 +2852,7 @@ Show
 # Grey Hexagon           : Simulacrum
 # Grey Kite              :
 # Grey Moon              :
-# Grey Pentagon          : Gems Starting
+# Grey Pentagon          : `5-Linked` and `6-Socket` items
 # Grey Raindrop          :
 # Grey Square            : Divination Cards
 # Grey Star              :
@@ -2845,7 +2864,7 @@ Show
 # Orange Hexagon         :
 # Orange Kite            :
 # Orange Moon            :
-# Orange Pentagon        : 6-Sockets and 5-Linked items
+# Orange Pentagon        : Delve Resonators
 # Orange Raindrop        : Tinctures
 # Orange Square          :
 # Orange Star            :
@@ -2876,12 +2895,12 @@ Show
 # Purple Triangle        :
 # Purple UpsideDownHouse : Pickup Shields
 # Red Circle             : Top Currency
-# Red Cross              : many TODO needs split and moved
+# Red Cross              : many `TODO` needs split and moved
 # Red Diamond            :
 # Red Hexagon            : Boss related Map Fragments and Misc Map Items
 # Red Kite               :
 # Red Moon               :
-# Red Pentagon           : 6-Linked
+# Red Pentagon           : Valuable `6-Link, R-G-B, 5-Link, 6-Socket` Items
 # Red Raindrop           : Life Flasks
 # Red Square             : Red [T11-T16] Maps and Heist Blueprints
 # Red Star               : Error
@@ -2893,7 +2912,7 @@ Show
 # White Hexagon          : Scarabs
 # White Kite             :
 # White Moon             : Normal Belts
-# White Pentagon         : 4-Linked items
+# White Pentagon         : Normal Rarity Linked Items
 # White Raindrop         : Recipe Flasks (high quality flasks)
 # White Square           : White [T1,T5] Maps and Contracts
 # White Star             :
@@ -2905,7 +2924,7 @@ Show
 # Yellow Hexagon         :
 # Yellow Kite            :
 # Yellow Moon            : Rare Belts
-# Yellow Pentagon        : Delve Resonators
+# Yellow Pentagon        : Rare Rarity Linked Items
 # Yellow Raindrop        :
 # Yellow Square          : Yellow [T6,T10] Maps
 # Yellow Star            :
