@@ -1360,6 +1360,12 @@ BaseType "Life" "Sun" "Bound" "War" "River" "Bounty" "Journey" "Mountain" "Time"
 #PART:----- 6 Link
 Show
 LinkedSockets 6
+Rarity Unique
+    CustomAlertSound "homm3snd/BLOODLUS.wav"
+    MinimapIcon 0 Brown Pentagon
+    PlayEffect Brown
+Show
+LinkedSockets 6
     CustomAlertSound "homm3snd/BLOODLUS.wav"
     MinimapIcon 0 Red Pentagon
     PlayEffect Red
@@ -2442,14 +2448,14 @@ Show
 Class == "Amulets" "Rings"
 Rarity Magic
 AreaLevel < 45
-    MinimapIcon 1 Blue Diamond
-    PlayEffect Blue Temp
+    MinimapIcon 1 Cyan Diamond
+    PlayEffect Cyan Temp
 Show
 Class == "Belts"
 AreaLevel < 45
 Rarity Magic
-    MinimapIcon 1 Blue Moon
-    PlayEffect Blue Temp
+    MinimapIcon 1 Cyan Moon
+    PlayEffect Cyan Temp
 Show
 Class == "Amulets" "Belts" "Rings"
 Rarity Magic
@@ -2800,10 +2806,10 @@ Show
 # -- icons (color shape pairs with beams for more valuable items in same color)
 # Blue Circle            : Transmutation, Aumentation, Alteration and Chance orbs
 # Blue Cross             :
-# Blue Diamond           : Magic Amultets and Rings
+# Blue Diamond           :
 # Blue Hexagon           :
 # Blue Kite              :
-# Blue Moon              : Magic Belts
+# Blue Moon              :
 # Blue Pentagon          :
 # Blue Raindrop          : Mana Flasks
 # Blue Square            :
@@ -2813,10 +2819,10 @@ Show
 # Brown Circle           :
 # Brown Cross            :
 # Brown Diamond          : Unique Amultes and Rings
-# Brown Hexagon          :
+# Brown Hexagon          : TODO: unique atlas or map fragment related items?
 # Brown Kite             : Unique Weapons
 # Brown Moon             : Unique Belts
-# Brown Pentagon         :
+# Brown Pentagon         : Unique `6-Link` items
 # Brown Raindrop         : Unique Flasks
 # Brown Square           : Unique Armours and Pieces
 # Brown Star             : Unique Jewels (including Abyss) (and Vault Keys: move?)
@@ -2824,10 +2830,10 @@ Show
 # Brown UpsideDownHouse  : Unique Shields and Quivers
 # Cyan Circle            :
 # Cyan Cross             : Double Influenced and Influenced items
-# Cyan Diamond           :
+# Cyan Diamond           : Magic Amulets and Rings
 # Cyan Hexagon           :
 # Cyan Kite              :
-# Cyan Moon              :
+# Cyan Moon              : Magic Belts
 # Cyan Pentagon          : Magic Rarity Linked Items
 # Cyan Raindrop          : Fractured items
 # Cyan Square            : Influenced Maps
